@@ -5,12 +5,16 @@ export function Header() {
   return (
     <header className="bg-maroon text-white">
       <div className="container-wide flex items-center justify-between py-5">
-      <Link href="/" className="flex items-center">
+     <Link href="/" className="flex items-center gap-3">
   <img
     src="/assets/logo/subang-logo.png"
-    alt="Subang Philippines"
+    alt="Subang Philippines logo"
     className="h-12 w-auto object-contain"
   />
+
+  <span className="text-xl font-extrabold tracking-tight text-white">
+    Subang Philippines<span className="text-gold">.</span>
+  </span>
 </Link>
 
         <nav className="hidden items-center gap-7 text-sm font-semibold md:flex">
