@@ -12,6 +12,25 @@ export type Story = {
 
 export const stories: Story[] = [
   {
+  slug: "kamera-at-kwento-larena-youth-filmmaking-workshop-2026",
+  type: "Project Story",
+  title: "Kamera at Kwento: A Basic Filmmaking Workshop for Larena Youth",
+  date: "August 26, 2026",
+  excerpt:
+    "Larena youth explored storytelling, cinematography, directing, audio, and editing through a hands-on filmmaking workshop led by Subang Philippines National Executive President Peter John C. Enorio.",
+  category: "Youth Leadership & Participation",
+  image: "/assets/stories/kamera-at-kwento-larena.jpg",
+  partner: "Municipality of Larena",
+  body: [
+    "As part of the Municipality of Larena's Linggo ng Kabataan 2026 celebration, Subang Philippines National Executive President Peter John C. Enorio served as Training and Resource Speaker for “Kamera at Kwento: A Basic Filmmaking Workshop for Larena Youth” on August 26, 2026.",
+    "The workshop brought together students from participating secondary schools in Larena for a hands-on learning session covering pre-production, production, and post-production.",
+    "Participants explored practical skills in storytelling, screenplay development, cinematography, directing, audio production, editing, and visual storytelling.",
+    "Anchored in the National Youth Commission's 2026 theme, “Different Contexts, Common Aspirations,” the workshop encouraged young people to recognize the power of their own experiences and perspectives while using film as a creative platform for expressing shared aspirations, youth concerns, and community stories.",
+    "Following a Learn-Do-Refine methodology, participants transformed their ideas into short film scenes through collaborative writing, shooting, and editing exercises.",
+    "The engagement highlights Subang Philippines' continuing commitment to youth empowerment through creativity, communication, skills development, and meaningful community participation."
+  ]
+}
+  {
     slug: "black-bamboo-propagation-initiative-2026",
     type: "Project Story",
     title: "Growing Resilience, One Bamboo at a Time",
