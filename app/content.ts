@@ -31,6 +31,25 @@ export const stories: Story[] = [
   ]
 },
   {
+  slug: "subang-philippines-agridam-training-2026",
+  type: "Project Story",
+  title: "Subang Philippines Strengthens Disaster Resilience Through AGRIDAM Training",
+  date: "July 21–23, 2026",
+  excerpt:
+    "Subang Philippines National Executive President Peter John C. Enorio participated in AGRIDAM 2026, strengthening his knowledge and skills in community-based disaster risk reduction and management.",
+  category: "Climate & Disaster Resilience",
+  image: "/assets/stories/agridam-training-2026.jpg",
+  partner: "National Youth Commission and Office of Civil Defense",
+  body: [
+    "Subang Philippines continues to strengthen its work in youth leadership and community resilience through the participation of its National Executive President, Peter John C. Enorio, in the AGRIDAM: Agents for RISK and DAMage Management training held from July 21 to 23, 2026, in Dumaguete City, Negros Oriental.",
+    "Organized by the National Youth Commission (NYC) and co-implemented by the Department of National Defense - Office of Civil Defense (DND-OCD), the three-day training brought together young leaders from across the Visayas under the theme “Empowering the Youth for Generational Resilience.”",
+    "The training provided participants with knowledge and practical skills in Community-Based Disaster Risk Reduction and Management (CBDRRM), with emphasis on disaster preparedness, risk reduction, and strengthening resilience at the community level.",
+    "For Subang Philippines, participation in AGRIDAM contributes to its continuing efforts to develop young leaders equipped to understand community risks and support preparedness and resilience initiatives in their respective communities.",
+    "The experience also reinforces the organization's broader commitment to building safer and more resilient communities through youth participation, volunteerism, environmental action, and community-based solutions.",
+    "Through initiatives such as AGRIDAM, Subang Philippines continues to encourage young people to take an active role in preparing communities for disasters and emerging challenges while contributing to a more informed, prepared, and resilient Philippines."
+  ]
+},
+  {
   slug: "subang-siquijor-negros-young-heroes-2026",
   type: "Press Release",
   title: "Subang - Province of Siquijor Chapter Honored at Negros Young Heroes 2026",
