@@ -17,14 +17,15 @@ export function Header() {
   </span>
 </Link>
 
-        <nav className="hidden items-center gap-7 text-sm font-semibold md:flex">
-          <Link href="/about">About</Link>
-          <Link href="/programs">Programs</Link>
-          <Link href="/impact">Impact</Link>
-          <Link href="/leadership">Leadership</Link>
-          <Link href="/founder">Founder’s Corner</Link>
-          <Link href="/stories">Stories & Press</Link>
-        </nav>
+        <nav className="hidden items-center gap-6 text-sm font-semibold md:flex">
+  <Link href="/about">About</Link>
+  <Link href="/programs">Programs</Link>
+  <Link href="/framework">Framework</Link>
+  <Link href="/impact">Impact</Link>
+  <Link href="/leadership">Leadership</Link>
+  <Link href="/founder">Founder’s Corner</Link>
+  <Link href="/stories">Stories & Press</Link>
+</nav>
 
         <div className="flex items-center gap-3">
           <Link
