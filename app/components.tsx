@@ -13,7 +13,7 @@ export function Header() {
   />
 
   <span className="text-xl font-extrabold tracking-tight text-white">
-    Subang Philippines<span className="text-gold">.</span>
+    Subang <span className="text-gold">Philippines</span>
   </span>
 </Link>
 
