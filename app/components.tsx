@@ -5,15 +5,13 @@ export function Header() {
   return (
     <header className="bg-maroon text-white">
       <div className="container-wide flex items-center justify-between py-5">
-        <Link href="/" className="flex items-center gap-3">
-          <span className="grid h-10 w-10 place-items-center rounded-full border border-white/30 text-sm font-extrabold">
-            S
-          </span>
-
-          <span className="text-xl font-extrabold tracking-tight">
-            SUBANG<span className="text-gold">.</span>
-          </span>
-        </Link>
+      <Link href="/" className="flex items-center">
+  <img
+    src="/assets/logo/subang-logo.png"
+    alt="Subang Philippines"
+    className="h-12 w-auto object-contain"
+  />
+</Link>
 
         <nav className="hidden items-center gap-7 text-sm font-semibold md:flex">
           <Link href="/about">About</Link>
@@ -43,12 +41,10 @@ export function Footer() {
   return (
     <footer className="bg-maroon px-5 pb-8 text-white/65">
       <div className="container-wide grid gap-8 border-t border-white/15 pt-8 md:grid-cols-3">
-        <div>
-          <p className="font-extrabold text-white">
-            SUBANG<span className="text-gold">.</span>
-          </p>
-          <p className="mt-3 text-sm leading-6">Live. Create. Inspire.</p>
-        </div>
+       <div>
+  <p className="font-extrabold text-white">Subang Philippines</p>
+  <p className="mt-3 text-sm leading-6">Live. Create. Inspire.</p>
+</div>
 
         <div className="text-sm leading-7">
           <p className="font-bold text-white">Explore</p>
