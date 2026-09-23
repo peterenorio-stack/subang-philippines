@@ -1,48 +1,5 @@
 import { Header, Footer, PageIntro } from "../components";
 
-const milestones = [
-  {
-    year: "2013",
-    title: "Where It Began",
-    text: "A journey of volunteerism and grassroots service began, growing through years of youth leadership and community work.",
-  },
-  {
-    year: "2023",
-    title: "Subang Philippines",
-    text: "Subang Philippines was founded as a youth-led volunteer movement focused on turning ideas, skills, and volunteer energy into community action.",
-  },
-  {
-    year: "2024",
-    title: "Outstanding Youth Volunteer",
-    text: "Named the 2024 Outstanding Youth Volunteer of Central Visayas in the Search for Outstanding Volunteers.",
-  },
-  {
-    year: "2025",
-    title: "Philippine Resilience Awards",
-    text: "Recognized as a Climate and Disaster Resilience Champion through the Philippine Resilience Awards 2025.",
-  },
-  {
-    year: "2026",
-    title: "BAGANI Fellowship",
-    text: "Selected among the Top 50 fellows of the Development Academy of the Philippines BAGANI Fellowship Program under the SIBOL Cohort.",
-  },
-];
-
-const reflections = [
-  {
-    title: "Why We Keep Showing Up",
-    text: "Volunteerism is more than giving time. It is a decision to participate, to care, and to believe that communities can become better through collective action.",
-  },
-  {
-    title: "The Work Behind the Work",
-    text: "Every project begins with people. Behind every planting activity, training, cleanup, campaign, and community initiative are volunteers who choose to contribute what they know and what they can do.",
-  },
-  {
-    title: "To Young People Who Want to Make a Difference",
-    text: "You do not need to wait for a position, a title, or permission to begin contributing. Start where you are, work with others, learn continuously, and let meaningful action speak for itself.",
-  },
-];
-
 export default function Founder() {
   return (
     <main>
@@ -95,9 +52,9 @@ export default function Founder() {
 
               <p>
                 With over 10 years of service in grassroots leadership and
-                public service, he has spearheaded more than 300
-                SDG-aligned initiatives, including ecosystem restoration, food
-                security initiatives, and climate education programs.
+                public service, he has spearheaded more than 300 SDG-aligned
+                initiatives, including ecosystem restoration, food security
+                initiatives, and climate education programs.
               </p>
             </div>
           </div>
@@ -106,46 +63,75 @@ export default function Founder() {
 
       <section className="bg-cream py-24">
         <div className="container-wide">
-          <div className="max-w-3xl">
-            <p className="eyebrow text-green">A Journey of Service</p>
+          <p className="eyebrow text-green">A Journey of Service</p>
 
-            <h2 className="display mt-5 text-4xl text-maroon md:text-5xl">
-              A decade of learning, leading, and serving.
-            </h2>
+          <h2 className="display mt-5 text-4xl text-maroon md:text-5xl">
+            A decade of learning, leading, and serving.
+          </h2>
 
-            <p className="mt-6 text-lg leading-8 text-ink/70">
-              The work that shaped Subang Philippines did not begin with an
-              organization. It began with a commitment to serve and a belief
-              that young people can contribute meaningfully to the communities
-              they call home.
-            </p>
-          </div>
+          <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-5">
+            <article className="bg-white p-6">
+              <p className="text-3xl font-extrabold text-gold">2013</p>
+              <h3 className="mt-4 text-xl font-extrabold text-maroon">
+                Where It Began
+              </h3>
+              <p className="mt-3 text-sm leading-7 text-ink/65">
+                A journey of volunteerism and grassroots service began,
+                growing through years of youth leadership and community work.
+              </p>
+            </article>
 
-          <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-5">
-            {milestones.map((milestone) => (
-              <article
-                key={milestone.year}
-                className="border-t-4 border-maroon bg-white p-6"
-              >
-                <p className="text-3xl font-extrabold text-gold">
-                  {milestone.year}
-                </p>
+            <article className="bg-white p-6">
+              <p className="text-3xl font-extrabold text-gold">2023</p>
+              <h3 className="mt-4 text-xl font-extrabold text-maroon">
+                Subang Philippines
+              </h3>
+              <p className="mt-3 text-sm leading-7 text-ink/65">
+                Subang Philippines was founded as a youth-led volunteer
+                movement focused on turning ideas, skills, and volunteer energy
+                into community action.
+              </p>
+            </article>
 
-                <h3 className="mt-5 text-xl font-extrabold text-maroon">
-                  {milestone.title}
-                </h3>
+            <article className="bg-white p-6">
+              <p className="text-3xl font-extrabold text-gold">2024</p>
+              <h3 className="mt-4 text-xl font-extrabold text-maroon">
+                Outstanding Youth Volunteer
+              </h3>
+              <p className="mt-3 text-sm leading-7 text-ink/65">
+                Named the 2024 Outstanding Youth Volunteer of Central Visayas
+                in the Search for Outstanding Volunteers.
+              </p>
+            </article>
 
-                <p className="mt-4 text-sm leading-7 text-ink/65">
-                  {milestone.text}
-                </p>
-              </article>
-            ))}
+            <article className="bg-white p-6">
+              <p className="text-3xl font-extrabold text-gold">2025</p>
+              <h3 className="mt-4 text-xl font-extrabold text-maroon">
+                Philippine Resilience Awards
+              </h3>
+              <p className="mt-3 text-sm leading-7 text-ink/65">
+                Recognized as a Climate and Disaster Resilience Champion
+                through the Philippine Resilience Awards 2025.
+              </p>
+            </article>
+
+            <article className="bg-white p-6">
+              <p className="text-3xl font-extrabold text-gold">2026</p>
+              <h3 className="mt-4 text-xl font-extrabold text-maroon">
+                BAGANI Fellowship
+              </h3>
+              <p className="mt-3 text-sm leading-7 text-ink/65">
+                Selected among the Top 50 fellows of the Development Academy of
+                the Philippines BAGANI Fellowship Program under the SIBOL
+                Cohort.
+              </p>
+            </article>
           </div>
         </div>
       </section>
 
       <section className="container-wide py-24">
-        <div className="grid gap-12 lg:grid-cols-[1fr_0.8fr] lg:items-start">
+        <div className="grid gap-12 lg:grid-cols-[1fr_0.8fr]">
           <div>
             <p className="eyebrow text-green">Why I Started Subang</p>
 
@@ -201,11 +187,9 @@ export default function Founder() {
               <p className="text-sm font-bold uppercase tracking-[0.12em] text-green">
                 Science
               </p>
-
               <h3 className="mt-4 text-2xl font-extrabold text-maroon">
                 Evidence matters.
               </h3>
-
               <p className="mt-4 leading-7 text-ink/65">
                 Community development becomes stronger when ideas are informed
                 by evidence, technical knowledge, local realities, and a
@@ -217,11 +201,9 @@ export default function Founder() {
               <p className="text-sm font-bold uppercase tracking-[0.12em] text-green">
                 Service
               </p>
-
               <h3 className="mt-4 text-2xl font-extrabold text-maroon">
                 People matter.
               </h3>
-
               <p className="mt-4 leading-7 text-ink/65">
                 Sustainable development is ultimately about people. Listening
                 to communities and creating space for participation is as
@@ -233,11 +215,9 @@ export default function Founder() {
               <p className="text-sm font-bold uppercase tracking-[0.12em] text-green">
                 Action
               </p>
-
               <h3 className="mt-4 text-2xl font-extrabold text-maroon">
                 Action matters.
               </h3>
-
               <p className="mt-4 leading-7 text-ink/65">
                 Good ideas become meaningful when people work together to
                 implement them, evaluate them, improve them, and continue
@@ -248,65 +228,37 @@ export default function Founder() {
         </div>
       </section>
 
-      <section className="container-wide py-24">
-        <p className="eyebrow text-green">Founder’s Voice</p>
-
-        <h2 className="display mt-5 max-w-4xl text-4xl text-maroon md:text-5xl">
-          Reflections from the journey.
-        </h2>
-
-        <div className="mt-12 grid gap-8 md:grid-cols-3">
-          {reflections.map((reflection) => (
-            <article
-              key={reflection.title}
-              className="border-t border-maroon/20 pt-6"
-            >
-              <h3 className="text-2xl font-extrabold text-maroon">
-                {reflection.title}
-              </h3>
-
-              <p className="mt-4 leading-7 text-ink/65">
-                {reflection.text}
-              </p>
-            </article>
-          ))}
-        </div>
-      </section>
-
       <section className="bg-maroon py-24 text-white">
         <div className="container-wide">
-          <div className="max-w-4xl">
-            <p className="eyebrow text-gold">A Message to the Subang Community</p>
+          <p className="eyebrow text-gold">A Message to the Subang Community</p>
 
-            <h2 className="display mt-5 text-4xl md:text-6xl">
-              The work belongs to all of us.
-            </h2>
+          <h2 className="display mt-5 max-w-4xl text-4xl md:text-6xl">
+            The work belongs to all of us.
+          </h2>
 
-            <div className="mt-8 space-y-6 text-lg leading-8 text-white/75">
-              <p>
-                Subang may have started with an idea, but it continues because
-                people choose to give their time, skills, creativity, and
-                courage to something larger than themselves.
-              </p>
+          <div className="mt-8 max-w-3xl space-y-6 text-lg leading-8 text-white/75">
+            <p>
+              Subang may have started with an idea, but it continues because
+              people choose to give their time, skills, creativity, and
+              courage to something larger than themselves.
+            </p>
 
-              <p>
-                To every volunteer, chapter leader, partner, mentor, community
-                member, and young person who has contributed to this journey:
-                thank you for helping turn a vision into something people can
-                experience on the ground.
-              </p>
+            <p>
+              To every volunteer, chapter leader, partner, mentor, community
+              member, and young person who has contributed to this journey:
+              thank you for helping turn a vision into something people can
+              experience on the ground.
+            </p>
 
-              <p>
-                There is still much to learn, much to build, and much to do.
-                And the work continues, one community and one volunteer at a
-                time.
-              </p>
-            </div>
-
-            <p className="mt-10 text-2xl font-extrabold text-gold">
-              Live. Create. Inspire.
+            <p>
+              There is still much to learn, much to build, and much to do. And
+              the work continues, one community and one volunteer at a time.
             </p>
           </div>
+
+          <p className="mt-10 text-2xl font-extrabold text-gold">
+            Live. Create. Inspire.
+          </p>
         </div>
       </section>
 
