@@ -173,31 +173,36 @@ export const officers: Officer[] = [
   },
 
   {
-    name: "Dr. Pet Roey L. Pascual",
-    role: "National Adviser",
-    section: "Advisers"
-  },
-  {
-    name: "Dr. Danny E. Carabio",
-    role: "National Adviser",
-    section: "Advisers"
-  },
+  name: "Dr. Pet Roey L. Pascual",
+  role: "National Adviser",
+  image: "/assets/team/pet-roey-pascual.jpg",
+  section: "Advisers"
+},
+{
+  name: "Dr. Danny E. Carabio",
+  role: "National Adviser",
+  image: "/assets/team/danny-e-carabio.jpg",
+  section: "Advisers"
+},
 
   {
-    name: "Alrose Mae Malinao",
-    role: "Vice President for Environmental Affairs",
-    section: "National Vice Presidents"
-  },
-  {
-    name: "John Blair More J. Omandam",
-    role: "Vice President for Community Affairs",
-    section: "National Vice Presidents"
-  },
-  {
-    name: "Andreev Mattheus Sumile",
-    role: "Vice President for Agriculture and Food Systems",
-    section: "National Vice Presidents"
-  },
+  name: "Alrose Mae Malinao",
+  role: "Vice President for Environmental Affairs",
+  image: "/assets/team/alrose-mae-malinao.jpg",
+  section: "National Vice Presidents"
+},
+{
+  name: "John Blair More J. Omandam",
+  role: "Vice President for Community Affairs",
+  image: "/assets/team/john-blair-more-j-omandam.jpg",
+  section: "National Vice Presidents"
+},
+{
+  name: "Andreev Mattheus Sumile",
+  role: "Vice President for Agriculture and Food Systems",
+  image: "/assets/team/andreev-mattheus-sumile.jpg",
+  section: "National Vice Presidents"
+},
   {
     name: "Shaina Faith D. Visorro",
     role: "Vice President for Science and Technology",
@@ -210,16 +215,18 @@ export const officers: Officer[] = [
     section: "National Vice Presidents",
     vacant: true
   },
-  {
-    name: "Angelo M. Asas",
-    role: "Vice President for Luzon",
-    section: "National Vice Presidents"
-  },
-  {
-    name: "Erll Vincent Villadares",
-    role: "Vice President for Visayas",
-    section: "National Vice Presidents"
-  },
+{
+  name: "Angelo M. Asas",
+  role: "Vice President for Luzon",
+  image: "/assets/team/angelo-m-asas.jpg",
+  section: "National Vice Presidents"
+},
+{
+  name: "Erll Vincent Villadares",
+  role: "Vice President for Visayas",
+  image: "/assets/team/erll-vincent-villadares.jpg",
+  section: "National Vice Presidents"
+},
   {
     name: "Vice President for Mindanao",
     role: "Position Vacant",
@@ -228,25 +235,29 @@ export const officers: Officer[] = [
   },
 
   {
-    name: "Andrewkyle E. Oroc",
-    role: "Director for Administration and Finance",
-    section: "National Directors"
-  },
-  {
-    name: "Ron Janbert P. Ofquila",
-    role: "Director for Resource Generation",
-    section: "National Directors"
-  },
-  {
-    name: "Rod Santiago Jr. Lebumfacil",
-    role: "Director for Communications",
-    section: "National Directors"
-  },
-  {
-    name: "Dennis B. Bendulo",
-    role: "Director for Human Resources",
-    section: "National Directors"
-  },
+  name: "Andrewkyle E. Oroc",
+  role: "Director for Administration and Finance",
+  image: "/assets/team/andrewkyle-e-oroc.jpg",
+  section: "National Directors"
+},
+{
+  name: "Ron Janbert P. Ofquila",
+  role: "Director for Resource Generation",
+  image: "/assets/team/ron-janbert-p-ofquila.jpg",
+  section: "National Directors"
+},
+{
+  name: "Rod Santiago Jr. Lebumfacil",
+  role: "Director for Communications",
+  image: "/assets/team/rod-santiago-jr-lebumfacil.jpg",
+  section: "National Directors"
+},
+{
+  name: "Dennis B. Bendulo",
+  role: "Director for Human Resources",
+  image: "/assets/team/dennis-b-bendulo.jpg",
+  section: "National Directors"
+},
 
   {
     name: "Rachel Gulahab",
@@ -256,15 +267,17 @@ export const officers: Officer[] = [
     section: "Provincial Chapter Directors"
   },
   {
-    name: "Krista Marie Frances C. Bicada",
-    role: "Provincial Chapter Director",
-    location: "Subang - Province of Cebu",
-    section: "Provincial Chapter Directors"
-  },
+  name: "Krista Marie Frances C. Bicada",
+  role: "Provincial Chapter Director",
+  location: "Subang - Province of Cebu",
+  image: "/assets/team/krista-marie-frances-c-bicada.jpg",
+  section: "Provincial Chapter Directors"
+},
   {
     name: "Jerecho Jose P. Sumalpong",
     role: "Provincial Chapter Director",
     location: "Subang - Province of Leyte",
+    image: "/assets/team/jerecho-jose-p-sumalpong.jpg",
     section: "Provincial Chapter Directors"
   },
   {
@@ -294,15 +307,17 @@ export const officers: Officer[] = [
     section: "University & College Chapter Executive Presidents"
   },
   {
-    name: "Raf B. Jimenez",
-    role: "University & College Chapter Executive President",
-    location: "Subang - University of San Carlos",
-    section: "University & College Chapter Executive Presidents"
-  },
+  name: "Raf B. Jimenez",
+  role: "University & College Chapter Executive President",
+  location: "Subang - University of San Carlos",
+  image: "/assets/team/raf-b-jimenez.jpg",
+  section: "University & College Chapter Executive Presidents"
+},
   {
     name: "Jerecho Jose P. Sumalpong",
     role: "University & College Chapter Executive President",
     location: "Subang - Visayas State University",
+    image: "/assets/team/jerecho-jose-p-sumalpong.jpg",
     section: "University & College Chapter Executive Presidents"
   },
   {
