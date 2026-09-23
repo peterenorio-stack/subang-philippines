@@ -33,7 +33,7 @@ export const stories: Story[] = [
   {
   slug: "subang-siquijor-negros-young-heroes-2026",
   type: "Press Release",
-  title: "Subang Philippines Siquijor Chapter Honored at Negros Young Heroes 2026",
+  title: "Subang - Province of Siquijor Chapter Honored at Negros Young Heroes 2026",
   date: "July 25, 2026",
   excerpt:
     "Subang Philippines - Province of Siquijor Chapter was recognized under the Samahan Category during Negros Young Heroes 2026: Gawad Parangal sa Kabataan in Dumaguete City.",
