@@ -29,7 +29,7 @@ export const stories: Story[] = [
     "Following a Learn-Do-Refine methodology, participants transformed their ideas into short film scenes through collaborative writing, shooting, and editing exercises.",
     "The engagement highlights Subang Philippines' continuing commitment to youth empowerment through creativity, communication, skills development, and meaningful community participation."
   ]
-}
+},
   {
     slug: "black-bamboo-propagation-initiative-2026",
     type: "Project Story",
