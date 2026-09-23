@@ -31,6 +31,27 @@ export const stories: Story[] = [
   ]
 },
   {
+  slug: "subang-siquijor-negros-young-heroes-2026",
+  type: "Press Release",
+  title: "Subang Philippines Siquijor Chapter Honored at Negros Young Heroes 2026",
+  date: "July 25, 2026",
+  excerpt:
+    "Subang Philippines - Province of Siquijor Chapter was recognized under the Samahan Category during Negros Young Heroes 2026: Gawad Parangal sa Kabataan in Dumaguete City.",
+  category: "Recognition",
+  image: "/assets/press/negros-young-heroes-2026.jpg",
+  partner: "Negros Young Heroes 2026",
+  body: [
+    "Subang Philippines - Province of Siquijor Chapter (SPSC) was recognized during Negros Young Heroes 2026: Gawad Parangal sa Kabataan, receiving distinction under the Samahan Category, which honors youth organizations demonstrating sustained excellence in leadership, volunteerism, and community development across Negros Island and Siquijor.",
+    "The Samahan Category recognizes organizations that have maintained at least two years of meaningful service and whose initiatives have contributed to lasting impact in their communities. The recognition reflects Subang Philippines' continuing work in youth empowerment, education, environmental stewardship, agriculture and food systems, community engagement, leadership development, and volunteerism.",
+    "Representing the organization during the awarding ceremony at the Sofia Soller Sinco Hall of Foundation University in Dumaguete City was the Subang Philippines - Siquijor delegation, headed by National Executive Vice President Dyn Michael M. Lozana and Siquijor Provincial Director Rachel Gulahab.",
+    "Joining the delegation were Erll Vincent Villadares, Vice President for Subang Visayas; Andreev Mattheus Sumile, Vice President for Agriculture and Food Systems; Ylaiza Sucuano, SPSC Human Resource Director; Yhen Alexa Dahili, SPSC Director for Education; Jaynard Cruz, SPSC Director for Environmental Affairs; and Diana Gallendo, Senior Volunteer.",
+    "Since its establishment, Subang Philippines has worked to develop servant leaders and support sustainable, community-driven initiatives that enable young people to participate meaningfully in addressing community challenges. The recognition highlights the collective contributions of the organization's volunteers, officers, partners, and communities.",
+    "The Negros Young Heroes Awards draws inspiration from the legacy of León Kilat, whose courage, patriotism, and selfless service represent the spirit of youth leadership and service celebrated by the recognition.",
+    "For Subang Philippines, the distinction serves as a milestone for the Siquijor Chapter and the volunteers who continue to contribute their time, skills, and effort to community development.",
+    "The organization continues to carry its commitment to Live. Create. Inspire. while working toward resilient communities, empowered young leaders, and meaningful community action across the Philippines."
+  ]
+},
+  {
     slug: "black-bamboo-propagation-initiative-2026",
     type: "Project Story",
     title: "Growing Resilience, One Bamboo at a Time",
