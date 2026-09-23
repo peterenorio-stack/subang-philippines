@@ -1,143 +1,243 @@
 import { Header, Footer } from "../components";
 
 const sdgs = [
-  ["01", "No Poverty", "End poverty in all its forms everywhere."],
-  ["02", "Zero Hunger", "End hunger, achieve food security, and promote sustainable agriculture."],
-  ["03", "Good Health and Well-being", "Promote healthy lives and well-being for all."],
-  ["04", "Quality Education", "Ensure inclusive and equitable quality education and lifelong learning."],
-  ["05", "Gender Equality", "Achieve gender equality and empower women and girls."],
-  ["06", "Clean Water and Sanitation", "Ensure availability and sustainable management of water and sanitation."],
-  ["07", "Affordable and Clean Energy", "Ensure access to affordable, reliable, sustainable, and modern energy."],
-  ["08", "Decent Work and Economic Growth", "Promote sustained, inclusive, and sustainable economic growth and decent work."],
-  ["09", "Industry, Innovation and Infrastructure", "Build resilient infrastructure and foster innovation."],
-  ["10", "Reduced Inequalities", "Reduce inequality within and among countries."],
-  ["11", "Sustainable Cities and Communities", "Make communities inclusive, safe, resilient, and sustainable."],
-  ["12", "Responsible Consumption and Production", "Ensure sustainable consumption and production patterns."],
-  ["13", "Climate Action", "Take urgent action to combat climate change and its impacts."],
-  ["14", "Life Below Water", "Conserve and sustainably use oceans, seas, and marine resources."],
-  ["15", "Life on Land", "Protect, restore, and sustainably manage terrestrial ecosystems."],
-  ["16", "Peace, Justice and Strong Institutions", "Promote peaceful and inclusive societies and accountable institutions."],
-  ["17", "Partnerships for the Goals", "Strengthen implementation through global partnerships."],
+  {
+    number: 1,
+    title: "No Poverty",
+    description:
+      "End poverty in all its forms and expand opportunities for vulnerable communities.",
+  },
+  {
+    number: 2,
+    title: "Zero Hunger",
+    description:
+      "Promote food security, sustainable agriculture, and improved access to nutritious food.",
+  },
+  {
+    number: 3,
+    title: "Good Health and Well-being",
+    description:
+      "Support healthier communities and promote well-being across all ages.",
+  },
+  {
+    number: 4,
+    title: "Quality Education",
+    description:
+      "Advance inclusive learning, skills development, and meaningful educational opportunities.",
+  },
+  {
+    number: 5,
+    title: "Gender Equality",
+    description:
+      "Promote equal opportunities, participation, and dignity for all.",
+  },
+  {
+    number: 6,
+    title: "Clean Water and Sanitation",
+    description:
+      "Support sustainable water resources, sanitation, and community health.",
+  },
+  {
+    number: 7,
+    title: "Affordable and Clean Energy",
+    description:
+      "Encourage accessible, sustainable, and innovative energy solutions.",
+  },
+  {
+    number: 8,
+    title: "Decent Work and Economic Growth",
+    description:
+      "Promote productive livelihoods, entrepreneurship, innovation, and inclusive economic opportunity.",
+  },
+  {
+    number: 9,
+    title: "Industry, Innovation and Infrastructure",
+    description:
+      "Encourage innovation, appropriate technologies, and resilient infrastructure.",
+  },
+  {
+    number: 10,
+    title: "Reduced Inequalities",
+    description:
+      "Promote social inclusion and reduce inequalities within communities.",
+  },
+  {
+    number: 11,
+    title: "Sustainable Cities and Communities",
+    description:
+      "Build safer, more inclusive, sustainable, and resilient communities.",
+  },
+  {
+    number: 12,
+    title: "Responsible Consumption and Production",
+    description:
+      "Promote sustainable resource use, waste reduction, and responsible production.",
+  },
+  {
+    number: 13,
+    title: "Climate Action",
+    description:
+      "Strengthen climate awareness, adaptation, mitigation, and community resilience.",
+  },
+  {
+    number: 14,
+    title: "Life Below Water",
+    description:
+      "Support the protection and sustainable use of marine and coastal ecosystems.",
+  },
+  {
+    number: 15,
+    title: "Life on Land",
+    description:
+      "Protect biodiversity, forests, ecosystems, and terrestrial resources.",
+  },
+  {
+    number: 16,
+    title: "Peace, Justice and Strong Institutions",
+    description:
+      "Promote peaceful communities, active citizenship, accountability, and inclusive institutions.",
+  },
+  {
+    number: 17,
+    title: "Partnerships for the Goals",
+    description:
+      "Build meaningful partnerships that accelerate sustainable development.",
+  },
 ];
 
 const centers = [
-  ["01", "Health", "Promoting healthy communities and supporting youth participation in health-related action."],
-  ["02", "Education", "Advancing learning opportunities, skills development, knowledge sharing, and youth education."],
-  ["03", "Economic Empowerment", "Creating pathways for young people to develop livelihoods, entrepreneurship, innovation, and economic opportunities."],
-  ["04", "Social Inclusion & Equity", "Ensuring that young people and communities can participate meaningfully regardless of circumstance."],
-  ["05", "Peace-building & Security", "Supporting peaceful communities, disaster preparedness, resilience, and constructive youth engagement."],
-  ["06", "Governance", "Encouraging young people to understand, participate in, and contribute to governance."],
-  ["07", "Active Citizenship", "Strengthening volunteerism, civic engagement, community service, and responsible citizenship."],
-  ["08", "Agriculture", "Promoting sustainable agriculture, food security, food systems innovation, and rural development."],
-  ["09", "Environment", "Mobilizing youth for environmental protection, restoration, conservation, and climate action."],
-  ["10", "Global Mobility", "Connecting young Filipinos with opportunities for exchange, collaboration, learning, and participation beyond their communities."],
+  {
+    number: 1,
+    title: "Health",
+    description:
+      "Promoting health awareness, well-being, and access to healthier communities.",
+  },
+  {
+    number: 2,
+    title: "Education",
+    description:
+      "Supporting learning opportunities, skills development, and youth education.",
+  },
+  {
+    number: 3,
+    title: "Economic Empowerment",
+    description:
+      "Creating pathways for entrepreneurship, livelihoods, innovation, and economic participation.",
+  },
+  {
+    number: 4,
+    title: "Social Inclusion & Equity",
+    description:
+      "Advancing inclusion, equal opportunity, and participation for diverse communities.",
+  },
+  {
+    number: 5,
+    title: "Peace-building & Security",
+    description:
+      "Strengthening peace, dialogue, community safety, and youth participation in peace-building.",
+  },
+  {
+    number: 6,
+    title: "Governance",
+    description:
+      "Encouraging transparent, participatory, responsive, and accountable governance.",
+  },
+  {
+    number: 7,
+    title: "Active Citizenship",
+    description:
+      "Mobilizing young people to participate meaningfully in community and civic life.",
+  },
+  {
+    number: 8,
+    title: "Agriculture",
+    description:
+      "Supporting sustainable agriculture, food systems, food security, and rural development.",
+  },
+  {
+    number: 9,
+    title: "Environment",
+    description:
+      "Promoting environmental stewardship, conservation, climate action, and sustainability.",
+  },
+  {
+    number: 10,
+    title: "Global Mobility",
+    description:
+      "Connecting young people with opportunities, networks, learning, and engagement beyond their communities.",
+  },
 ];
 
 const ambitionAreas = [
   {
     title: "Matatag",
-    label: "Strong and Resilient",
-    text: "A Philippines where people, communities, and institutions are capable of facing challenges, adapting to change, and building a secure future.",
+    subtitle: "Strong and Resilient",
+    description:
+      "Communities that are rooted in strong social relationships, capable of responding to challenges, and prepared for shocks and disasters.",
   },
   {
     title: "Maginhawa",
-    label: "Comfortable and Prosperous",
-    text: "A Philippines where people have opportunities to improve their quality of life through education, livelihoods, innovation, and inclusive economic development.",
+    subtitle: "Comfortable and Prosperous",
+    description:
+      "Communities where people can access opportunities, quality services, decent livelihoods, education, health, and a better quality of life.",
   },
   {
     title: "Panatag",
-    label: "Secure and Peaceful",
-    text: "A Philippines where people can live with security, peace, confidence, and trust in their communities and institutions.",
+    subtitle: "Secure and Peaceful",
+    description:
+      "Communities where people feel safe, enjoy peace and stability, and can pursue their aspirations with confidence.",
   },
 ];
 
 const frameworkMatrix = [
   {
-    area: "Food Security & Agriculture",
-    ambition: "Maginhawa",
-    sdgs: "SDG 2, 8, 12",
-    centers: "Agriculture, Economic Empowerment",
+    framework: "Sustainable Development Goals",
+    role: "Global development direction",
+    focus: "17 interconnected goals for people, planet, prosperity, peace, and partnerships.",
   },
   {
-    area: "Environmental Sustainability",
-    ambition: "Matatag, Panatag",
-    sdgs: "SDG 6, 11, 12, 13, 14, 15",
-    centers: "Environment, Agriculture",
+    framework: "Ambisyon Natin 2040",
+    role: "National aspiration",
+    focus: "A long-term Filipino vision of a Matatag, Maginhawa at Panatag na Buhay.",
   },
   {
-    area: "Climate & Disaster Resilience",
-    ambition: "Panatag",
-    sdgs: "SDG 11, 13",
-    centers: "Peace-building & Security, Environment",
-  },
-  {
-    area: "Youth Leadership",
-    ambition: "Matatag",
-    sdgs: "SDG 4, 10, 16, 17",
-    centers: "Education, Governance, Active Citizenship",
-  },
-  {
-    area: "Volunteerism",
-    ambition: "Matatag",
-    sdgs: "SDG 10, 11, 16, 17",
-    centers: "Active Citizenship, Social Inclusion & Equity",
-  },
-  {
-    area: "Science & Innovation",
-    ambition: "Maginhawa",
-    sdgs: "SDG 4, 8, 9",
-    centers: "Education, Economic Empowerment",
-  },
-  {
-    area: "Peace & Civic Participation",
-    ambition: "Matatag, Panatag",
-    sdgs: "SDG 16, 17",
-    centers: "Peace-building & Security, Governance, Active Citizenship",
-  },
-  {
-    area: "Creative & Media Education",
-    ambition: "Matatag, Maginhawa",
-    sdgs: "SDG 4, 10, 16",
-    centers: "Education, Active Citizenship, Global Mobility",
+    framework: "10 Centers of Youth Participation",
+    role: "Youth participation framework",
+    focus:
+      "Ten priority areas that provide pathways for meaningful youth participation in development.",
   },
 ];
 
 const initiatives = [
   {
-    title: "Paglaum Farm",
-    text: "A community-oriented food security initiative connecting sustainable agriculture, local production, and support for students.",
-    sdgs: "SDG 2 • SDG 8 • SDG 12",
-    centers: "Agriculture • Economic Empowerment",
+    title: "Environmental Sustainability",
+    description:
+      "Community-based environmental initiatives including bamboo propagation, native tree growing, riparian rehabilitation, coastal action, and ecological stewardship.",
   },
   {
-    title: "Bamboo & Native Tree Restoration",
-    text: "Environmental initiatives involving bamboo propagation, riparian restoration, and native tree growing to strengthen ecosystems and community resilience.",
-    sdgs: "SDG 11 • SDG 13 • SDG 15",
-    centers: "Environment • Agriculture",
-  },
-  {
-    title: "Community Composting",
-    text: "Microbial composting initiatives that convert organic waste into useful resources while encouraging responsible consumption and production.",
-    sdgs: "SDG 12 • SDG 13 • SDG 15",
-    centers: "Environment • Agriculture",
-  },
-  {
-    title: "Youth Leadership & Volunteerism",
-    text: "Leadership development, volunteer mobilization, civic participation, and community-based action led by young people.",
-    sdgs: "SDG 4 • SDG 10 • SDG 16 • SDG 17",
-    centers: "Education • Governance • Active Citizenship",
+    title: "Food Security & Agriculture",
+    description:
+      "Initiatives that connect young people with sustainable agriculture, food production, community food systems, and practical solutions to food insecurity.",
   },
   {
     title: "Climate & Disaster Resilience",
-    text: "Youth participation in disaster preparedness, risk reduction, resilience education, and community-based resilience initiatives.",
-    sdgs: "SDG 11 • SDG 13",
-    centers: "Peace-building & Security • Environment",
+    description:
+      "Youth engagement in disaster risk reduction, climate action, preparedness, resilience-building, and community-based risk management.",
   },
   {
-    title: "Creative & Media Education",
-    text: "Skills development through filmmaking, storytelling, communications, and creative media that give young people platforms to express community experiences.",
-    sdgs: "SDG 4 • SDG 10 • SDG 16",
-    centers: "Education • Active Citizenship",
+    title: "Youth Leadership & Participation",
+    description:
+      "Leadership development, civic engagement, education, creative expression, and opportunities for young people to contribute to community development.",
+  },
+  {
+    title: "Volunteerism",
+    description:
+      "Mobilizing young people and community volunteers to turn time, skills, ideas, and collective action into meaningful development outcomes.",
+  },
+  {
+    title: "Innovation & Technology",
+    description:
+      "Encouraging practical innovation, science and technology, and locally relevant solutions to community challenges.",
   },
 ];
 
@@ -146,408 +246,494 @@ export default function Framework() {
     <>
       <Header />
 
-      <main className="bg-white text-ink">
+      <main className="bg-white text-slate-900">
         {/* HERO */}
-        <section className="bg-maroon text-white">
-          <div className="container-wide py-16 md:py-24">
-            <p className="text-sm font-bold uppercase tracking-[0.18em] text-gold">
-              Our Development Framework
-            </p>
+        <section className="relative overflow-hidden bg-[#5b1734]">
+          <div className="mx-auto max-w-7xl px-6 py-24 sm:px-8 lg:px-12 lg:py-32">
+            <div className="max-w-4xl">
+              <p className="mb-5 text-sm font-semibold uppercase tracking-[0.25em] text-[#d4af37]">
+                Our Framework
+              </p>
 
-            <h1 className="mt-3 max-w-5xl text-4xl font-extrabold tracking-tight md:text-6xl">
-              Global Goals. National Aspirations. Youth Participation.
-            </h1>
+              <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
+                Global Goals. National Aspirations. Youth Participation.
+              </h1>
 
-            <p className="mt-6 max-w-3xl text-lg leading-7 text-white/80">
-              Subang Philippines connects global development goals, the
-              Philippines&apos; long-term aspirations, and meaningful youth
-              participation with practical community action.
-            </p>
+              <p className="mt-7 max-w-3xl text-lg leading-8 text-white/80 sm:text-xl">
+                Subang Philippines connects global development goals, the
+                Philippines&apos; long-term national aspiration, and meaningful
+                youth participation into one framework for community action.
+              </p>
+            </div>
           </div>
         </section>
 
         {/* THREE FRAMEWORKS */}
-        <section className="border-b border-black/10 bg-paper">
-          <div className="container-wide py-14 md:py-20">
-            <div className="grid gap-5 md:grid-cols-3">
-              <div className="border border-black/10 bg-white p-7">
-                <p className="text-xs font-bold uppercase tracking-[0.16em] text-maroon">
-                  National Vision
-                </p>
-                <h2 className="mt-3 text-2xl font-extrabold">
-                  Ambisyon Natin 2040
-                </h2>
-                <p className="mt-3 text-sm leading-6 text-ink/65">
-                  The Philippines&apos; long-term vision for a strongly rooted,
-                  comfortable, and secure life for Filipinos.
-                </p>
+        <section className="mx-auto max-w-7xl px-6 py-20 sm:px-8 lg:px-12 lg:py-24">
+          <div className="max-w-3xl">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#8b2448]">
+              The Subang Framework
+            </p>
+
+            <h2 className="mt-3 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+              Three frameworks. One direction.
+            </h2>
+
+            <p className="mt-5 text-lg leading-8 text-slate-600">
+              Subang translates broad development aspirations into practical
+              community action by working at the intersection of global goals,
+              national aspirations, and youth participation.
+            </p>
+          </div>
+
+          <div className="mt-12 grid gap-6 lg:grid-cols-3">
+            {/* SDGs */}
+            <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+              <div className="flex h-56 items-center justify-center bg-slate-50 p-8">
+                <img
+                  src="/assets/framework/sdgs-wheel.png"
+                  alt="United Nations Sustainable Development Goals"
+                  className="h-full w-full object-contain"
+                />
               </div>
 
-              <div className="border border-black/10 bg-white p-7">
-                <p className="text-xs font-bold uppercase tracking-[0.16em] text-maroon">
+              <div className="p-7">
+                <p className="text-sm font-semibold uppercase tracking-wider text-[#8b2448]">
                   Global Framework
                 </p>
-                <h2 className="mt-3 text-2xl font-extrabold">
-                  UN Sustainable Development Goals
-                </h2>
-                <p className="mt-3 text-sm leading-6 text-ink/65">
-                  The 17 global goals that provide a shared framework for
-                  ending poverty, protecting the planet, and improving lives.
+
+                <h3 className="mt-2 text-2xl font-bold">
+                  Sustainable Development Goals
+                </h3>
+
+                <p className="mt-4 leading-7 text-slate-600">
+                  The 17 Sustainable Development Goals provide Subang with a
+                  globally recognized direction for sustainable and inclusive
+                  development.
                 </p>
               </div>
+            </div>
 
-              <div className="border border-black/10 bg-white p-7">
-                <p className="text-xs font-bold uppercase tracking-[0.16em] text-maroon">
+            {/* AMBISION */}
+            <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+              <div className="flex h-56 items-center justify-center bg-slate-50 p-8">
+                <img
+                  src="/assets/framework/ambisyon-natin-2040.png"
+                  alt="Ambisyon Natin 2040"
+                  className="h-full w-full object-contain"
+                />
+              </div>
+
+              <div className="p-7">
+                <p className="text-sm font-semibold uppercase tracking-wider text-[#8b2448]">
+                  National Aspiration
+                </p>
+
+                <h3 className="mt-2 text-2xl font-bold">
+                  Ambisyon Natin 2040
+                </h3>
+
+                <p className="mt-4 leading-7 text-slate-600">
+                  The long-term Filipino vision of a{" "}
+                  <span className="font-semibold">
+                    Matatag, Maginhawa at Panatag na Buhay
+                  </span>{" "}
+                  provides a national context for Subang&apos;s development
+                  work.
+                </p>
+              </div>
+            </div>
+
+            {/* 10 CENTERS */}
+            <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+              <div className="flex h-56 items-center justify-center bg-slate-50 p-5">
+                <img
+                  src="/assets/framework/10-centers-youth-participation.jpg"
+                  alt="10 Centers of Youth Participation"
+                  className="h-full w-full object-contain"
+                />
+              </div>
+
+              <div className="p-7">
+                <p className="text-sm font-semibold uppercase tracking-wider text-[#8b2448]">
                   Youth Participation
                 </p>
-                <h2 className="mt-3 text-2xl font-extrabold">
+
+                <h3 className="mt-2 text-2xl font-bold">
                   10 Centers of Youth Participation
-                </h2>
-                <p className="mt-3 text-sm leading-6 text-ink/65">
-                  A youth participation framework covering key areas where
-                  young people can contribute to national development.
+                </h3>
+
+                <p className="mt-4 leading-7 text-slate-600">
+                  The National Youth Commission&apos;s framework provides
+                  concrete areas through which young people can participate in
+                  development.
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* FRAMEWORK FLOW */}
-        <section>
-          <div className="container-wide py-16 md:py-20">
+        {/* HOW THEY CONNECT */}
+        <section className="bg-slate-50">
+          <div className="mx-auto max-w-7xl px-6 py-20 sm:px-8 lg:px-12 lg:py-24">
             <div className="max-w-3xl">
-              <p className="text-sm font-bold uppercase tracking-[0.18em] text-maroon">
-                How We Connect Them
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#8b2448]">
+                How They Connect
               </p>
 
-              <h2 className="mt-3 text-3xl font-extrabold tracking-tight md:text-4xl">
-                Frameworks guide us. Communities define the work.
+              <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">
+                From aspiration to action.
               </h2>
 
-              <p className="mt-5 text-base leading-7 text-ink/65">
-                Subang Philippines uses these frameworks as a common language
-                for designing, connecting, and communicating community
-                initiatives. They help translate broad development aspirations
-                into opportunities for young people and volunteers to act.
+              <p className="mt-5 text-lg leading-8 text-slate-600">
+                These frameworks serve different purposes, but work together to
+                guide how Subang understands problems, designs initiatives,
+                engages young people, and measures meaningful development.
               </p>
             </div>
 
-            <div className="mt-10 grid gap-4 md:grid-cols-4">
-              {[
-                ["01", "Global", "UN Sustainable Development Goals"],
-                ["02", "National", "Ambisyon Natin 2040"],
-                ["03", "Youth", "10 Centers of Youth Participation"],
-                ["04", "Action", "Community-led Programs"],
-              ].map(([number, title, text]) => (
-                <div
-                  key={number}
-                  className="border border-black/10 p-6"
-                >
-                  <p className="text-sm font-extrabold text-maroon">{number}</p>
-                  <h3 className="mt-5 text-xl font-extrabold">{title}</h3>
-                  <p className="mt-2 text-sm leading-6 text-ink/60">{text}</p>
+            <div className="mt-12 grid gap-6 md:grid-cols-3">
+              <div className="rounded-2xl bg-white p-7 shadow-sm ring-1 ring-slate-200">
+                <div className="text-sm font-bold uppercase tracking-wider text-[#8b2448]">
+                  01
                 </div>
-              ))}
+                <h3 className="mt-3 text-xl font-bold">Global Direction</h3>
+                <p className="mt-3 leading-7 text-slate-600">
+                  The SDGs help identify the broader development challenge and
+                  the global goals to which an initiative contributes.
+                </p>
+              </div>
+
+              <div className="rounded-2xl bg-white p-7 shadow-sm ring-1 ring-slate-200">
+                <div className="text-sm font-bold uppercase tracking-wider text-[#8b2448]">
+                  02
+                </div>
+                <h3 className="mt-3 text-xl font-bold">National Context</h3>
+                <p className="mt-3 leading-7 text-slate-600">
+                  Ambisyon Natin 2040 connects community action with the
+                  Philippines&apos; long-term vision for the lives Filipinos
+                  aspire to have.
+                </p>
+              </div>
+
+              <div className="rounded-2xl bg-white p-7 shadow-sm ring-1 ring-slate-200">
+                <div className="text-sm font-bold uppercase tracking-wider text-[#8b2448]">
+                  03
+                </div>
+                <h3 className="mt-3 text-xl font-bold">Youth Action</h3>
+                <p className="mt-3 leading-7 text-slate-600">
+                  The 10 Centers provide practical pathways for young people to
+                  participate, lead, innovate, and contribute.
+                </p>
+              </div>
             </div>
           </div>
         </section>
 
-        {/* AMBISYON */}
-        <section className="bg-paper">
-          <div className="container-wide py-16 md:py-20">
-            <div className="max-w-3xl">
-              <p className="text-sm font-bold uppercase tracking-[0.18em] text-maroon">
-                01 / Ambisyon Natin 2040
+        {/* AMBISION */}
+        <section className="mx-auto max-w-7xl px-6 py-20 sm:px-8 lg:px-12 lg:py-24">
+          <div className="grid items-center gap-12 lg:grid-cols-[0.8fr_1.2fr]">
+            <div>
+              <img
+                src="/assets/framework/ambisyon-natin-2040.png"
+                alt="Ambisyon Natin 2040"
+                className="mx-auto max-h-72 w-full object-contain"
+              />
+            </div>
+
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#8b2448]">
+                Ambisyon Natin 2040
               </p>
 
-              <h2 className="mt-3 text-3xl font-extrabold tracking-tight md:text-4xl">
+              <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">
                 Matatag, Maginhawa at Panatag na Buhay
               </h2>
 
-              <p className="mt-5 text-base leading-7 text-ink/65">
-                Ambisyon Natin 2040 provides the Philippines with a long-term
-                vision of the future Filipinos aspire to have. Subang
-                Philippines connects this national aspiration with community
-                action by working on resilience, livelihoods, education,
-                environmental sustainability, food security, and meaningful
-                citizenship.
-              </p>
-            </div>
-
-            <div className="mt-10 grid gap-5 md:grid-cols-3">
-              {ambitionAreas.map((item) => (
-                <div
-                  key={item.title}
-                  className="border border-black/10 bg-white p-7"
-                >
-                  <p className="text-3xl font-extrabold text-maroon">
-                    {item.title}
-                  </p>
-                  <p className="mt-2 text-sm font-bold uppercase tracking-wide text-gold-dark">
-                    {item.label}
-                  </p>
-                  <p className="mt-5 text-sm leading-6 text-ink/65">
-                    {item.text}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* SDGs */}
-        <section>
-          <div className="container-wide py-16 md:py-20">
-            <div className="max-w-3xl">
-              <p className="text-sm font-bold uppercase tracking-[0.18em] text-maroon">
-                02 / UN Sustainable Development Goals
+              <p className="mt-5 text-lg leading-8 text-slate-600">
+                Subang sees community development as part of a larger national
+                aspiration. Strong communities, meaningful opportunities,
+                sustainable livelihoods, quality education, health, peace,
+                security, and resilience all contribute to the kind of future
+                envisioned by Ambisyon Natin 2040.
               </p>
 
-              <h2 className="mt-3 text-3xl font-extrabold tracking-tight md:text-4xl">
-                17 Goals. One shared agenda for sustainable development.
-              </h2>
-
-              <p className="mt-5 text-base leading-7 text-ink/65">
-                The Sustainable Development Goals provide a global framework
-                for addressing interconnected social, economic, and
-                environmental challenges. Subang Philippines uses the SDGs to
-                align community initiatives with a wider development agenda.
-              </p>
-            </div>
-
-            <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {sdgs.map(([number, title, text]) => (
-                <div
-                  key={number}
-                  className="border border-black/10 bg-white p-5"
-                >
-                  <div className="flex items-start gap-4">
-                    <span className="text-sm font-extrabold text-maroon">
-                      {number}
-                    </span>
-
-                    <div>
-                      <h3 className="font-extrabold">{title}</h3>
-                      <p className="mt-2 text-sm leading-6 text-ink/60">
-                        {text}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            <div className="mt-12 border border-maroon/20 bg-maroon p-7 text-white md:p-9">
-              <p className="text-sm font-bold uppercase tracking-[0.16em] text-gold">
-                Subang Philippines
-              </p>
-
-              <h3 className="mt-3 text-2xl font-extrabold">
-                Areas of direct contribution
-              </h3>
-
-              <p className="mt-4 max-w-3xl text-sm leading-6 text-white/75">
-                While community development is interconnected across the
-                entire SDG framework, Subang Philippines has particularly
-                direct programmatic connections with the following goals.
-              </p>
-
-              <div className="mt-7 flex flex-wrap gap-3">
-                {[
-                  "SDG 2",
-                  "SDG 4",
-                  "SDG 8",
-                  "SDG 9",
-                  "SDG 11",
-                  "SDG 12",
-                  "SDG 13",
-                  "SDG 15",
-                  "SDG 16",
-                  "SDG 17",
-                ].map((item) => (
-                  <span
-                    key={item}
-                    className="border border-white/20 px-4 py-2 text-sm font-bold"
+              <div className="mt-8 grid gap-4 sm:grid-cols-3">
+                {ambitionAreas.map((area) => (
+                  <div
+                    key={area.title}
+                    className="rounded-2xl border border-slate-200 p-5"
                   >
-                    {item}
-                  </span>
+                    <h3 className="text-xl font-bold text-[#8b2448]">
+                      {area.title}
+                    </h3>
+
+                    <p className="mt-1 text-sm font-semibold text-slate-900">
+                      {area.subtitle}
+                    </p>
+
+                    <p className="mt-3 text-sm leading-6 text-slate-600">
+                      {area.description}
+                    </p>
+                  </div>
                 ))}
               </div>
             </div>
           </div>
         </section>
 
-        {/* CENTERS */}
-        <section className="bg-paper">
-          <div className="container-wide py-16 md:py-20">
-            <div className="max-w-3xl">
-              <p className="text-sm font-bold uppercase tracking-[0.18em] text-maroon">
-                03 / 10 Centers of Youth Participation
-              </p>
+        {/* SDGs */}
+        <section className="bg-[#faf8f9]">
+          <div className="mx-auto max-w-7xl px-6 py-20 sm:px-8 lg:px-12 lg:py-24">
+            <div className="grid items-center gap-10 lg:grid-cols-[0.65fr_1.35fr]">
+              <div className="flex justify-center">
+                <img
+                  src="/assets/framework/sdgs-wheel.png"
+                  alt="United Nations Sustainable Development Goals wheel"
+                  className="w-full max-w-sm object-contain"
+                />
+              </div>
 
-              <h2 className="mt-3 text-3xl font-extrabold tracking-tight md:text-4xl">
-                Youth participation has many entry points.
-              </h2>
+              <div>
+                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#8b2448]">
+                  Sustainable Development Goals
+                </p>
 
-              <p className="mt-5 text-base leading-7 text-ink/65">
-                Subang Philippines uses the 10 Centers of Youth Participation
-                as a way to understand where young people can meaningfully
-                contribute to development, governance, community action, and
-                nation-building.
-              </p>
+                <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">
+                  17 Goals for a Better Future
+                </h2>
+
+                <p className="mt-5 text-lg leading-8 text-slate-600">
+                  Subang aligns its initiatives with the SDGs to connect local
+                  action with global development priorities. Different
+                  initiatives may contribute to several goals simultaneously,
+                  reflecting the interconnected nature of sustainable
+                  development.
+                </p>
+              </div>
             </div>
 
-            <div className="mt-10 grid gap-4 md:grid-cols-2">
-              {centers.map(([number, title, text]) => (
+            <div className="mt-14 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
+              {sdgs.map((sdg) => (
                 <div
-                  key={number}
-                  className="border border-black/10 bg-white p-6"
+                  key={sdg.number}
+                  className="group overflow-hidden rounded-xl bg-white shadow-sm ring-1 ring-slate-200 transition hover:-translate-y-1 hover:shadow-md"
                 >
-                  <div className="flex gap-5">
-                    <span className="pt-1 text-sm font-extrabold text-maroon">
-                      {number}
-                    </span>
+                  <div className="aspect-square bg-slate-50">
+                    <img
+                      src={`/assets/framework/sdgs/sdg-${String(
+                        sdg.number
+                      ).padStart(2, "0")}.jpg`}
+                      alt={`Sustainable Development Goal ${sdg.number}: ${sdg.title}`}
+                      className="h-full w-full object-cover"
+                    />
+                  </div>
 
-                    <div>
-                      <h3 className="text-xl font-extrabold">{title}</h3>
-                      <p className="mt-2 text-sm leading-6 text-ink/60">
-                        {text}
-                      </p>
-                    </div>
+                  <div className="p-4">
+                    <p className="text-xs font-bold uppercase tracking-wider text-[#8b2448]">
+                      SDG {sdg.number}
+                    </p>
+
+                    <h3 className="mt-1 text-sm font-bold leading-5 text-slate-900">
+                      {sdg.title}
+                    </h3>
                   </div>
                 </div>
               ))}
             </div>
+
+            <div className="mt-14 rounded-2xl bg-[#5b1734] p-8 text-white sm:p-10">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#d4af37]">
+                Strong Areas of Contribution
+              </p>
+
+              <h3 className="mt-3 text-2xl font-bold sm:text-3xl">
+                Where Subang&apos;s work connects most directly
+              </h3>
+
+              <div className="mt-7 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
+                {[
+                  "SDG 2 · Zero Hunger",
+                  "SDG 4 · Quality Education",
+                  "SDG 8 · Decent Work",
+                  "SDG 9 · Innovation",
+                  "SDG 11 · Sustainable Communities",
+                  "SDG 12 · Responsible Consumption",
+                  "SDG 13 · Climate Action",
+                  "SDG 15 · Life on Land",
+                  "SDG 16 · Strong Institutions",
+                  "SDG 17 · Partnerships",
+                ].map((item) => (
+                  <div
+                    key={item}
+                    className="rounded-xl border border-white/15 bg-white/10 px-4 py-3 text-sm leading-5 text-white/90"
+                  >
+                    {item}
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </section>
 
-        {/* MATRIX */}
-        <section>
-          <div className="container-wide py-16 md:py-20">
+        {/* 10 CENTERS */}
+        <section className="mx-auto max-w-7xl px-6 py-20 sm:px-8 lg:px-12 lg:py-24">
+          <div className="max-w-3xl">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#8b2448]">
+              National Youth Commission
+            </p>
+
+            <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">
+              10 Centers of Youth Participation
+            </h2>
+
+            <p className="mt-5 text-lg leading-8 text-slate-600">
+              Youth participation becomes meaningful when young people have
+              clear spaces to contribute. Subang uses the 10 Centers as a
+              practical guide for connecting volunteer action with the
+              different dimensions of youth development.
+            </p>
+          </div>
+
+          <div className="mt-12 overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 p-5 shadow-sm sm:p-8">
+            <img
+              src="/assets/framework/10-centers-youth-participation.jpg"
+              alt="National Youth Commission 10 Centers of Youth Participation"
+              className="mx-auto max-h-[520px] w-full object-contain"
+            />
+          </div>
+
+          <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {centers.map((center) => (
+              <div
+                key={center.number}
+                className="rounded-2xl border border-slate-200 bg-white p-6 transition hover:-translate-y-1 hover:shadow-md"
+              >
+                <div className="flex items-start gap-4">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#5b1734] text-sm font-bold text-white">
+                    {center.number}
+                  </div>
+
+                  <div>
+                    <h3 className="text-lg font-bold text-slate-900">
+                      {center.title}
+                    </h3>
+
+                    <p className="mt-2 text-sm leading-6 text-slate-600">
+                      {center.description}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* FRAMEWORK MATRIX */}
+        <section className="bg-slate-50">
+          <div className="mx-auto max-w-7xl px-6 py-20 sm:px-8 lg:px-12 lg:py-24">
             <div className="max-w-3xl">
-              <p className="text-sm font-bold uppercase tracking-[0.18em] text-maroon">
-                The Subang Philippines Framework
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#8b2448]">
+                Framework Matrix
               </p>
 
-              <h2 className="mt-3 text-3xl font-extrabold tracking-tight md:text-4xl">
-                One community action can advance several goals.
+              <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">
+                How the three frameworks work together
               </h2>
-
-              <p className="mt-5 text-base leading-7 text-ink/65">
-                Development challenges rarely exist in isolation. Our
-                initiatives therefore connect national aspirations, SDGs, and
-                youth participation rather than treating them as separate
-                agendas.
-              </p>
             </div>
 
-            <div className="mt-10 overflow-x-auto border border-black/10">
-              <table className="w-full min-w-[760px] border-collapse text-left">
-                <thead>
-                  <tr className="bg-maroon text-white">
-                    <th className="px-5 py-4 text-sm font-bold">
-                      Development Area
-                    </th>
-                    <th className="px-5 py-4 text-sm font-bold">
-                      Ambisyon
-                    </th>
-                    <th className="px-5 py-4 text-sm font-bold">
-                      SDGs
-                    </th>
-                    <th className="px-5 py-4 text-sm font-bold">
-                      Youth Participation
-                    </th>
-                  </tr>
-                </thead>
-
-                <tbody>
-                  {frameworkMatrix.map((item, index) => (
-                    <tr
-                      key={item.area}
-                      className={index % 2 === 0 ? "bg-white" : "bg-paper"}
-                    >
-                      <td className="border-t border-black/10 px-5 py-5 text-sm font-bold">
-                        {item.area}
-                      </td>
-                      <td className="border-t border-black/10 px-5 py-5 text-sm text-ink/65">
-                        {item.ambition}
-                      </td>
-                      <td className="border-t border-black/10 px-5 py-5 text-sm text-ink/65">
-                        {item.sdgs}
-                      </td>
-                      <td className="border-t border-black/10 px-5 py-5 text-sm text-ink/65">
-                        {item.centers}
-                      </td>
+            <div className="mt-10 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+              <div className="overflow-x-auto">
+                <table className="w-full min-w-[760px] text-left">
+                  <thead className="bg-[#5b1734] text-white">
+                    <tr>
+                      <th className="px-6 py-5 text-sm font-semibold">
+                        Framework
+                      </th>
+                      <th className="px-6 py-5 text-sm font-semibold">
+                        Role
+                      </th>
+                      <th className="px-6 py-5 text-sm font-semibold">
+                        Focus
+                      </th>
                     </tr>
-                  ))}
-                </tbody>
-              </table>
+                  </thead>
+
+                  <tbody className="divide-y divide-slate-200">
+                    {frameworkMatrix.map((row) => (
+                      <tr key={row.framework}>
+                        <td className="px-6 py-6 font-bold text-slate-900">
+                          {row.framework}
+                        </td>
+
+                        <td className="px-6 py-6 text-sm font-semibold text-[#8b2448]">
+                          {row.role}
+                        </td>
+
+                        <td className="px-6 py-6 text-sm leading-6 text-slate-600">
+                          {row.focus}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
         </section>
 
         {/* INITIATIVES */}
-        <section className="bg-paper">
-          <div className="container-wide py-16 md:py-20">
-            <div className="max-w-3xl">
-              <p className="text-sm font-bold uppercase tracking-[0.18em] text-maroon">
-                From Framework to Action
-              </p>
+        <section className="mx-auto max-w-7xl px-6 py-20 sm:px-8 lg:px-12 lg:py-24">
+          <div className="max-w-3xl">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#8b2448]">
+              Framework in Practice
+            </p>
 
-              <h2 className="mt-3 text-3xl font-extrabold tracking-tight md:text-4xl">
-                Turning development frameworks into community work.
-              </h2>
+            <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">
+              Turning frameworks into community action
+            </h2>
 
-              <p className="mt-5 text-base leading-7 text-ink/65">
-                The frameworks matter because they help us identify the
-                problems, opportunities, and forms of participation that can
-                translate into concrete action.
-              </p>
-            </div>
+            <p className="mt-5 text-lg leading-8 text-slate-600">
+              The framework is not simply a set of references. It helps shape
+              the areas in which Subang develops programs, builds partnerships,
+              and creates opportunities for young people and volunteers to
+              contribute.
+            </p>
+          </div>
 
-            <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-              {initiatives.map((item) => (
-                <div
-                  key={item.title}
-                  className="border border-black/10 bg-white p-6"
-                >
-                  <h3 className="text-xl font-extrabold">{item.title}</h3>
+          <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+            {initiatives.map((initiative) => (
+              <div
+                key={initiative.title}
+                className="rounded-2xl border border-slate-200 bg-white p-7 shadow-sm"
+              >
+                <h3 className="text-xl font-bold text-slate-900">
+                  {initiative.title}
+                </h3>
 
-                  <p className="mt-3 text-sm leading-6 text-ink/60">
-                    {item.text}
-                  </p>
-
-                  <div className="mt-5 border-t border-black/10 pt-4">
-                    <p className="text-xs font-bold uppercase tracking-wide text-maroon">
-                      {item.sdgs}
-                    </p>
-
-                    <p className="mt-2 text-xs font-semibold text-ink/50">
-                      {item.centers}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
+                <p className="mt-3 leading-7 text-slate-600">
+                  {initiative.description}
+                </p>
+              </div>
+            ))}
           </div>
         </section>
 
-        {/* CLOSING */}
-        <section className="bg-maroon text-white">
-          <div className="container-wide py-16 text-center md:py-20">
-            <p className="text-sm font-bold uppercase tracking-[0.18em] text-gold">
+        {/* CLOSING CTA */}
+        <section className="bg-[#5b1734]">
+          <div className="mx-auto max-w-5xl px-6 py-20 text-center sm:px-8 lg:py-24">
+            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#d4af37]">
               Live. Create. Inspire.
             </p>
 
-            <h2 className="mx-auto mt-3 max-w-3xl text-3xl font-extrabold tracking-tight md:text-5xl">
-              Development becomes meaningful when people turn vision into
-              action.
+            <h2 className="mt-4 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+              Development begins when people choose to participate.
             </h2>
 
-            <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-white/70">
-              Subang Philippines brings young people and volunteers together
-              to create practical, inclusive, and sustainable solutions in
-              their communities.
+            <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-white/75">
+              Subang brings together young people, volunteers, communities,
+              institutions, and partners to transform shared aspirations into
+              meaningful action.
             </p>
           </div>
         </section>
