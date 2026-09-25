@@ -15,9 +15,25 @@ const categories = [
 
 const years = ["All", "2026", "2025", "2024"];
 
+const programAreas = [
+  "All",
+  "Environmental Sustainability",
+  "Food Security & Sustainable Agriculture",
+  "Waste Management & Circularity",
+  "Coastal & Marine Action",
+  "Youth Leadership & Participation",
+  "Education & Capacity Building",
+  "Partnerships & Community Mobilization",
+  "Climate & Disaster Resilience",
+  "Social Inclusion & Equity",
+  "Volunteerism",
+  "Recognition",
+];
+
 export default function Stories() {
   const [category, setCategory] = useState("All");
   const [year, setYear] = useState("All");
+  const [programArea, setProgramArea] = useState("All");
   const [search, setSearch] = useState("");
 
   const filteredStories = useMemo(() => {
@@ -34,6 +50,10 @@ export default function Stories() {
       const matchesYear =
         year === "All" || storyYear.toString() === year;
 
+      const matchesProgramArea =
+        programArea === "All" ||
+        story.category === programArea;
+
       const matchesSearch =
         !query ||
         story.title.toLowerCase().includes(query) ||
@@ -41,11 +61,23 @@ export default function Stories() {
         story.category.toLowerCase().includes(query) ||
         story.partner?.toLowerCase().includes(query);
 
-      return matchesCategory && matchesYear && matchesSearch;
+      return (
+        matchesCategory &&
+        matchesYear &&
+        matchesProgramArea &&
+        matchesSearch
+      );
     });
-  }, [category, year, search]);
+  }, [category, year, programArea, search]);
 
   const featuredStory = sortedStories[0];
+
+  const clearFilters = () => {
+    setCategory("All");
+    setYear("All");
+    setProgramArea("All");
+    setSearch("");
+  };
 
   return (
     <main>
@@ -64,7 +96,7 @@ export default function Stories() {
             href={`/stories/${featuredStory.slug}`}
             className="group grid overflow-hidden border border-maroon/10 bg-maroon md:grid-cols-[1.25fr_1fr]"
           >
-            <div className="aspect-[16/10] bg-cream md:aspect-auto">
+            <div className="aspect-[16/10] overflow-hidden bg-cream md:aspect-auto">
               <img
                 src={featuredStory.image}
                 alt={featuredStory.title}
@@ -97,8 +129,12 @@ export default function Stories() {
       {/* Archive */}
       <section className="container-wide py-16 md:py-24">
         <div className="border-y border-maroon/10 py-6">
-          <div className="flex flex-col gap-5 lg:flex-row lg:items-center lg:justify-between">
-            {/* Categories */}
+          {/* Story Type */}
+          <div>
+            <p className="eyebrow mb-3 text-green">
+              Story type
+            </p>
+
             <div className="flex flex-wrap gap-2">
               {categories.map((item) => (
                 <button
@@ -121,15 +157,45 @@ export default function Stories() {
                 </button>
               ))}
             </div>
+          </div>
 
-            {/* Year */}
+          {/* Program Area */}
+          <div className="mt-7">
+            <p className="eyebrow mb-3 text-green">
+              Program area
+            </p>
+
             <div className="flex flex-wrap gap-2">
+              {programAreas.map((item) => (
+                <button
+                  key={item}
+                  type="button"
+                  onClick={() => setProgramArea(item)}
+                  className={`border px-4 py-2 text-sm font-extrabold transition ${
+                    programArea === item
+                      ? "border-blue bg-blue text-white"
+                      : "border-maroon/15 bg-white text-ink hover:border-blue/40"
+                  }`}
+                >
+                  {item}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          {/* Year */}
+          <div className="mt-7">
+            <p className="eyebrow mb-3 text-green">
+              Year
+            </p>
+
+            <div className="flex flex-wrap gap-4">
               {years.map((item) => (
                 <button
                   key={item}
                   type="button"
                   onClick={() => setYear(item)}
-                  className={`px-3 py-2 text-sm font-extrabold transition ${
+                  className={`text-sm font-extrabold transition ${
                     year === item
                       ? "text-blue"
                       : "text-ink/45 hover:text-ink"
@@ -142,7 +208,7 @@ export default function Stories() {
           </div>
 
           {/* Search */}
-          <div className="relative mt-6 max-w-xl">
+          <div className="relative mt-7 max-w-xl">
             <Search
               size={18}
               className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-ink/35"
@@ -159,10 +225,13 @@ export default function Stories() {
           </div>
         </div>
 
-        {/* Results heading */}
+        {/* Archive Heading */}
         <div className="flex items-end justify-between gap-6 py-10">
           <div>
-            <p className="eyebrow text-green">Archive</p>
+            <p className="eyebrow text-green">
+              Archive
+            </p>
+
             <h2 className="display mt-2 text-3xl text-maroon md:text-4xl">
               Stories from the field.
             </h2>
@@ -170,9 +239,55 @@ export default function Stories() {
 
           <p className="hidden text-sm font-bold text-ink/45 sm:block">
             {filteredStories.length}{" "}
-            {filteredStories.length === 1 ? "story" : "stories"}
+            {filteredStories.length === 1
+              ? "story"
+              : "stories"}
           </p>
         </div>
+
+        {/* Active Filters */}
+        {(category !== "All" ||
+          year !== "All" ||
+          programArea !== "All" ||
+          search) && (
+          <div className="mb-8 flex flex-wrap items-center gap-3">
+            <p className="text-sm font-bold text-ink/45">
+              Showing:
+            </p>
+
+            {category !== "All" && (
+              <span className="border border-maroon/10 bg-cream px-3 py-2 text-xs font-extrabold text-maroon">
+                {category}
+              </span>
+            )}
+
+            {programArea !== "All" && (
+              <span className="border border-blue/10 bg-blue/5 px-3 py-2 text-xs font-extrabold text-blue">
+                {programArea}
+              </span>
+            )}
+
+            {year !== "All" && (
+              <span className="border border-maroon/10 bg-cream px-3 py-2 text-xs font-extrabold text-maroon">
+                {year}
+              </span>
+            )}
+
+            {search && (
+              <span className="border border-maroon/10 bg-cream px-3 py-2 text-xs font-extrabold text-maroon">
+                “{search}”
+              </span>
+            )}
+
+            <button
+              type="button"
+              onClick={clearFilters}
+              className="ml-1 text-sm font-extrabold text-blue hover:underline"
+            >
+              Clear all
+            </button>
+          </div>
+        )}
 
         {/* Story Grid */}
         {filteredStories.length > 0 ? (
@@ -198,7 +313,9 @@ export default function Stories() {
                       {story.type}
                     </p>
 
-                    <span className="text-xs text-ink/30">•</span>
+                    <span className="text-xs text-ink/30">
+                      •
+                    </span>
 
                     <p className="eyebrow text-ink/45">
                       {story.date}
@@ -213,40 +330,41 @@ export default function Stories() {
                     {story.excerpt}
                   </p>
 
-                  <div className="mt-6 flex items-center justify-between gap-4">
+                  <div className="mt-6">
                     <p className="text-sm font-bold text-ink/45">
                       {story.category}
                     </p>
-
-                    <Link
-                      href={`/stories/${story.slug}`}
-                      className="inline-flex shrink-0 items-center gap-2 font-extrabold text-blue"
-                    >
-                      Read more
-                      <ArrowUpRight size={16} />
-                    </Link>
                   </div>
+
+                  <Link
+                    href={`/stories/${story.slug}`}
+                    className="mt-5 inline-flex items-center gap-2 font-extrabold text-blue"
+                  >
+                    Read more
+                    <ArrowUpRight size={16} />
+                  </Link>
                 </div>
               </article>
             ))}
           </div>
         ) : (
           <div className="border border-maroon/10 bg-cream px-6 py-16 text-center">
-            <p className="eyebrow text-green">No stories found</p>
+            <p className="eyebrow text-green">
+              No stories found
+            </p>
+
             <h3 className="display mt-3 text-3xl text-maroon">
-              Nothing matches your search.
+              Nothing matches your filters.
             </h3>
+
             <p className="mx-auto mt-4 max-w-lg leading-7 text-ink/60">
-              Try another keyword or clear one of the archive filters.
+              Try another keyword or clear one of the
+              archive filters.
             </p>
 
             <button
               type="button"
-              onClick={() => {
-                setCategory("All");
-                setYear("All");
-                setSearch("");
-              }}
+              onClick={clearFilters}
               className="mt-6 font-extrabold text-blue"
             >
               Clear all filters
