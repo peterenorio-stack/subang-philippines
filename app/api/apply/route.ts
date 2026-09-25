@@ -1,5 +1,8 @@
 import { NextResponse } from "next/server";
+import { Resend } from "resend";
 import { generateApplicationPdf } from "@/lib/generateApplicationPdf";
+
+export const runtime = "nodejs";
 
 export async function POST(request: Request) {
   try {
@@ -80,6 +83,8 @@ export async function POST(request: Request) {
       );
     }
 
+    const resend = new Resend(process.env.RESEND_API_KEY);
+
     const now = new Date();
 
     const applicationReference = `SUBANG-${now.getFullYear()}-${Math.random()
@@ -106,27 +111,62 @@ export async function POST(request: Request) {
     // Generate the PDF.
     const pdfBytes = await generateApplicationPdf(applicationData);
 
-    console.log("Application PDF generated:", {
-      applicationReference,
-      pages: "generated",
-      applicant: body.fullName,
+    const safeName = String(body.fullName)
+      .replace(/[^a-zA-Z0-9\s_-]/g, "")
+      .trim()
+      .replace(/\s+/g, "-")
+      .substring(0, 80);
+
+    const filename = `SUBANG-Membership-Application-${safeName || "Applicant"}.pdf`;
+
+    // Send the application to Subang Human Resources.
+    const { data, error } = await resend.emails.send({
+      from: "Subang Philippines <onboarding@resend.dev>",
+      to: [process.env.SUBANG_HR_EMAIL],
+      subject: `New Membership Application | ${applicationReference}`,
+      text: [
+        "A new Subang Philippines membership application has been submitted.",
+        "",
+        `Application Reference: ${applicationReference}`,
+        `Applicant: ${body.fullName}`,
+        `Applicant Email: ${body.emailAddress}`,
+        `Submission Date: ${submissionDate}`,
+        "",
+        "The completed membership application form is attached as a PDF.",
+      ].join("\n"),
+      attachments: [
+        {
+          filename,
+          content: Buffer.from(pdfBytes),
+        },
+      ],
     });
 
-    /*
-     * Email delivery will be connected in the next step.
-     *
-     * For now, the API successfully:
-     * 1. Receives the application
-     * 2. Validates required fields
-     * 3. Generates the application PDF
-     */
+    if (error) {
+      console.error("Resend email error:", error);
+
+      return NextResponse.json(
+        {
+          error:
+            "The application was processed, but the email could not be sent. Please try again later.",
+        },
+        { status: 502 }
+      );
+    }
+
+    console.log("Application emailed successfully:", {
+      applicationReference,
+      emailId: data?.id,
+      applicant: body.fullName,
+    });
 
     return NextResponse.json({
       success: true,
       applicationReference,
       submissionDate,
       pdfGenerated: true,
-      message: "Application processed successfully.",
+      emailSent: true,
+      message: "Application submitted successfully.",
     });
   } catch (error) {
     console.error("Application submission error:", error);
