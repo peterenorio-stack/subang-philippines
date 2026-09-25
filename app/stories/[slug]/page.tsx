@@ -247,8 +247,9 @@ export default async function StoryPage({
 
                     return (
                       <Link
-                        key={sdg}
-                        href="/framework"
+                       <Link
+  key={sdg}
+  href={`/framework#sdg-${String(sdg).padStart(2, "0")}`}
                         className="group flex items-center gap-3 border border-maroon/10 bg-white p-2 transition hover:border-maroon/30"
                       >
                         <img
@@ -272,8 +273,9 @@ export default async function StoryPage({
                 </div>
 
                 <Link
-                  href="/framework"
-                  className="mt-4 inline-flex items-center gap-2 text-sm font-extrabold text-blue"
+                  <Link
+  href="/framework"
+  className="mt-4 inline-flex items-center gap-2 text-sm font-extrabold text-blue"
                 >
                   Explore the framework
                   <ArrowUpRight size={15} />
