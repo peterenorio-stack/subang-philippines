@@ -112,7 +112,111 @@ export const stories: Story[] = [
       "These stories will document the people behind projects, from youth leaders and student volunteers to community partners and local champions.",
       "The purpose is simple: to show that meaningful development can begin with people who choose to give their time."
     ]
-  }
+  },
+  {
+  slug: "adopt-a-hectare-launch-2024",
+  type: "Project Story",
+  title: "Adopt-A-Hectare: Building a Greener CTU-Barili Campus",
+  date: "September 14, 2024",
+  excerpt:
+    "Subang Cebu Technological University launched the first Saturday session of its Adopt-A-Hectare Project, planting more than 100 fruit-bearing and native trees and propagating bamboo at CTU-Barili Campus.",
+  category: "Environmental Sustainability",
+  image: "/assets/stories/adopt-a-hectare-launch-2024.jpg",
+  partner: "Cebu Technological University – Barili Campus",
+  body: [
+    "The first Saturday session of the Adopt-A-Hectare Project for Academic Year 2024–2025 marked another step in Subang Philippines' continuing work toward a greener and more sustainable community.",
+    "Spearheaded by the Environmental Affairs Department of the Subang Cebu Technological University Chapter, the September 14 activity brought together volunteers and members of the CTU-Barili community for a day of tree planting and bamboo propagation.",
+    "More than 100 fruit-bearing and native trees were planted within the CTU-Barili Campus, including soursop (Annona muricata), jackfruit (Artocarpus heterophyllus), marang (Artocarpus odoratissimus), and kamagong (Diospyros blancoi).",
+    "The activity also featured bamboo propagation in celebration of Philippine Bamboo Month, connecting campus-based environmental action with the promotion of bamboo as an important and versatile natural resource.",
+    "The initiative was carried out in collaboration with NSTP trainees, CWTS staff, and ROTC officers of CTU-Barili Campus. Their collective effort demonstrated how environmental stewardship can become a shared responsibility across students, volunteers, and academic communities.",
+    "For Subang, the Adopt-A-Hectare Project was more than a tree-planting activity. It was an opportunity to cultivate long-term environmental responsibility by putting young people's time, energy, and collective action into restoring and caring for the spaces around them.",
+    "The first Saturday was only the beginning. The project would continue through succeeding sessions of planting, propagation, maintenance, and volunteer engagement.",
+  ],
+},
+
+{
+  slug: "adopt-a-hectare-maintenance-2024",
+  type: "Project Story",
+  title: "Nurturing What Was Planted",
+  date: "September 21, 2024",
+  excerpt:
+    "One week after the launch of Adopt-A-Hectare, Subang Cebu Technological University volunteers returned to CTU-Barili to propagate additional kamagong and bamboo while maintaining trees planted during the first session.",
+  category: "Environmental Sustainability",
+  image: "/assets/stories/adopt-a-hectare-maintenance-2024.jpg",
+  partner: "Cebu Technological University – Barili Campus",
+  body: [
+    "One week after the launch of the Adopt-A-Hectare Project for Academic Year 2024–2025, Subang Cebu Technological University Chapter volunteers returned to the CTU-Barili Campus for another day of environmental action.",
+    "Spearheaded by the chapter's Environmental Affairs Department, the September 21 session focused on both propagation and maintenance. NSTP trainees worked alongside Subang volunteers and CTU personnel to propagate additional kamagong (Diospyros blancoi) and bamboo, further expanding the project's growing collection of plants.",
+    "The volunteers also revisited the fruit-bearing and native trees planted during the previous session. Maintaining newly planted trees is an essential part of environmental restoration, requiring continued attention beyond the initial planting activity.",
+    "The session brought together ROTC officers, CWTS/LTS staff, and NSTP trainees, creating another opportunity for students to participate directly in environmental stewardship.",
+    "Through the Adopt-A-Hectare Project, Subang sought to build a culture where environmental action does not end when a seedling is planted. Propagation, maintenance, monitoring, and continued volunteer participation are equally important in giving young trees a chance to grow and become part of a healthier campus environment.",
+    "The second Saturday therefore became a continuation of the same commitment: not simply to plant, but to nurture what had been planted.",
+  ],
+},
+
+{
+  slug: "on-to-the-next-youth-force-2024",
+  type: "Project Story",
+  title: "On to the Next: Youth Volunteers Across Visayas and Mindanao",
+  date: "October 6, 2024",
+  excerpt:
+    "Twenty-four young volunteers from across Visayas and Mindanao gathered virtually for a conversation on youth volunteerism and sustainable development during the Global Week to #Act4SDGs.",
+  category: "Youth Leadership & Participation",
+  image: "/assets/stories/on-to-the-next-youth-force-2024.jpg",
+  partner: "2030 Youth Force in the Philippines",
+  body: [
+    "Twenty-four young volunteers from across the Visayas and Mindanao came together virtually on October 6, 2024, for a conversation on the role of young people in advancing sustainable development.",
+    "Organized by the 2030 Youth Force in the Philippines in support of the Global Week to #Act4SDGs, the gathering was entitled On to the Next: A Showcase of the Youth's Force. The session brought together young people with experiences across different sectors, including intergovernmental organizations, science and technology, social enterprise, healthcare, and the private sector.",
+    "The discussion highlighted the diverse ways young people can contribute to sustainable development. Rather than limiting youth participation to a single field or type of volunteer work, the gathering recognized the range of skills, perspectives, and experiences that young people can bring to development efforts.",
+    "Subang Cebu Technological University was represented by four volunteers: President Peter John C. Enorio, Executive Vice-President Krista Marie Frances C. Bicada, Environmental Affairs Vice-President Rodney Joseph B. Sundo, and Volunteer Intern Shaina Faith D. Visorro.",
+    "Their participation reflected Subang's early efforts to connect campus-based volunteer action with wider youth networks and development conversations beyond the organization itself.",
+    "The gathering also reinforced an important principle that continues to shape Subang's work: meaningful change begins when young people move beyond discussing the challenges around them and begin contributing their skills, ideas, and time toward practical solutions.",
+    "From local environmental initiatives to conversations on the Sustainable Development Goals, Subang's volunteers were already finding ways to connect community action with a wider movement of young people working for sustainable development.",
+  ],
+},
+
+{
+  slug: "cagay-river-cleanup-2024",
+  type: "Project Story",
+  title: "Cleaning Cagay: A River Cleanup Led by Young Volunteers",
+  date: "October 6, 2024",
+  excerpt:
+    "Subang volunteers conducted a river cleanup in Cagay, Barili, Cebu, removing plastic waste and glass bottles as part of the organization's continuing environmental action.",
+  category: "Environmental Sustainability",
+  image: "/assets/stories/cagay-river-cleanup-2024.jpg",
+  partner: "Subang Cebu Technological University Chapter",
+  body: [
+    "A group of Subang volunteers took their environmental commitment beyond the campus on October 5, 2024, conducting a river cleanup in Cagay, Barili, Cebu.",
+    "Spearheaded by Subang Philippines Environmental Affairs Vice-President Rodney Joseph B. Sundo, the activity brought together volunteers from the Subang Cebu Technological University Chapter, including Subang Philippines President Peter John C. Enorio.",
+    "The volunteers collected plastic waste and glass bottles along portions of the river, removing materials that could otherwise contribute to pollution and threaten surrounding ecosystems.",
+    "Although simple in scale, the activity reflected a practical approach to environmental stewardship: identifying an immediate community concern and responding through collective volunteer action.",
+    "The cleanup also connected Subang's local environmental work with the Sustainable Development Goals, particularly SDG 13 on Climate Action and SDG 14 on Life Below Water. While a river cleanup is a localized intervention, protecting waterways contributes to the broader effort to maintain healthy ecosystems and reduce the impacts of pollution on communities and the environment.",
+    "For the volunteers, the activity was another opportunity to demonstrate that environmental action does not always require large-scale programs. Sometimes, meaningful work begins with people showing up, taking responsibility for a shared space, and doing what they can to leave it better than they found it.",
+    "The Cagay river cleanup became part of the growing body of environmental volunteer work being undertaken by Subang Cebu Technological University in its early years.",
+  ],
+},
+
+{
+  slug: "subang-first-volunteer-work-exposure-2024",
+  type: "Project Story",
+  title: "Learning by Doing: Subang's First Volunteer Work Exposure",
+  date: "October 12, 2024",
+  excerpt:
+    "Subang Cebu Technological University's volunteer interns took part in their first fieldwork experience, combining orientation, environmental work, project immersion, and reflection.",
+  category: "Volunteerism",
+  image: "/assets/stories/subang-first-volunteer-work-exposure-2024.jpg",
+  partner: "Subang Cebu Technological University Chapter",
+  body: [
+    "On October 12, 2024, Subang Cebu Technological University volunteers took another step in developing a culture of hands-on volunteerism as its volunteer interns participated in their first fieldwork experience.",
+    "The activity began with an orientation led by Subang President Peter John C. Enorio, who provided the volunteers with an overview of the organization, its work, and the role of volunteers in turning community initiatives into sustained action.",
+    "Subang Environmental Affairs Vice-President Rodney Joseph B. Sundo then introduced the Adopt-A-Hectare Project, providing the interns with a closer look at the environmental initiative and the work being carried out at the project site.",
+    "The interns participated in maintaining trees planted through the project and were introduced to the propagation of kamagong (Diospyros blancoi), a native Philippine tree species. They also helped propagate additional kamagong seedlings, gaining practical experience in an activity that connects biodiversity conservation with community volunteerism.",
+    "The fieldwork continued with a tour of the Adopt-A-Hectare project area, allowing the interns to see the initiative beyond its documentation and understand the continuing work required to maintain a growing environmental project.",
+    "The day concluded with a reflection session, giving the interns an opportunity to process their first hands-on volunteer experience and consider the responsibilities that come with participating in community-based work.",
+    "For Subang, the activity represented an important part of volunteer development. Volunteerism is not only about completing tasks. It is also about learning through experience, understanding community needs, developing practical skills, and becoming more prepared to contribute meaningfully.",
+    "The first fieldwork experience established a simple principle that would continue to shape Subang's approach to volunteer development: learning becomes more meaningful when it is put into action.",
+  ],
+},
 ];
 
 export const programPillars = [
