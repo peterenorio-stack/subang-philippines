@@ -3,6 +3,7 @@ export type Story = {
   type: "Press Release" | "Project Story" | "Volunteer Story";
   title: string;
   date: string;
+  dateValue?: string;
   excerpt: string;
   body: string[];
   image: string;
