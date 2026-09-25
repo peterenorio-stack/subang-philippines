@@ -52,7 +52,7 @@ export default async function StoryPage({
       <Header />
 
       <article>
-        {/* Article Header */}
+        {/* Story Header */}
         <div className="container-wide py-16 md:py-24">
           <Link
             href="/stories"
@@ -96,7 +96,7 @@ export default async function StoryPage({
           />
         </div>
 
-        {/* Article Body */}
+        {/* Story Body + Details */}
         <div className="container-wide grid gap-12 py-16 md:grid-cols-[1fr_300px] md:py-24">
           <div className="max-w-3xl space-y-6 text-lg leading-8 text-ink/75">
             {s.body.map((paragraph) => (
@@ -104,7 +104,6 @@ export default async function StoryPage({
             ))}
           </div>
 
-          {/* Story Information */}
           <aside className="h-fit bg-cream p-7 md:sticky md:top-8">
             <p className="eyebrow text-green">
               Story details
@@ -115,7 +114,7 @@ export default async function StoryPage({
                 Category
               </p>
 
-              <p className="mt-2 font-extrabold text-maroon">
+              <p className="mt-2 font-extrabold leading-6 text-maroon">
                 {s.category}
               </p>
             </div>
@@ -144,7 +143,7 @@ export default async function StoryPage({
           </aside>
         </div>
 
-        {/* Previous / Next */}
+        {/* Previous / Next Stories */}
         <div className="container-wide border-y border-maroon/10">
           <div className="grid md:grid-cols-2">
             {previousStory ? (
