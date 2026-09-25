@@ -9,6 +9,7 @@ const navigation = [
   { label: "Programs", href: "/programs" },
   { label: "Framework", href: "/framework" },
   { label: "Impact", href: "/impact" },
+  { label: "Volunteer", href: "/volunteer" },
   { label: "Leadership", href: "/leadership" },
   { label: "Founder’s Corner", href: "/founder" },
   { label: "Stories & Press", href: "/stories" },
