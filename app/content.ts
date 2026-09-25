@@ -12,6 +12,292 @@ export type Story = {
 };
 
 export const stories: Story[] = [
+    {
+    slug: "bamboo-propagation-aquaculture-preparation-2024",
+    type: "Project Story",
+    title: "Building Sustainability: Bamboo Propagation and Aquaculture Preparation",
+    date: "Dec 7, 2024",
+    dateValue: "2024-12-07",
+    excerpt:
+      "Subang - Cebu Technological University Chapter continued its bamboo propagation work while preparing a site for a planned aquaculture initiative.",
+    body: [
+      "On December 7, 2024, Subang - Cebu Technological University Chapter conducted another bamboo propagation session in collaboration with CWTS and LTS trainees of Cebu Technological University - Barili Campus.",
+      "The activity focused on the propagation of Black Bamboo (Gigantochloa atroviolacea) while also preparing a site for a planned aquaculture project. The combined activity reflected the chapter's approach to linking environmental restoration with sustainable and innovative agricultural initiatives.",
+      "Through hands-on work in propagation and site preparation, volunteers and students contributed to the continuing development of sustainability initiatives at the CTU-Barili campus.",
+    ],
+    image: "/assets/stories/bamboo-propagation-aquaculture-preparation-2024.jpg",
+    category: "Environmental Sustainability",
+    partner: "Cebu Technological University - Barili Campus",
+  },
+
+  {
+    slug: "azolla-harvest-livestock-feed-2024",
+    type: "Project Story",
+    title: "Harvesting Azolla for Sustainable Livestock Feed Development",
+    date: "Dec 13, 2024",
+    dateValue: "2024-12-13",
+    excerpt:
+      "Subang - Cebu Technological University harvested Azolla as part of its continuing exploration of sustainable livestock feed production.",
+    body: [
+      "On December 13, 2024, Subang - Cebu Technological University Chapter harvested Azolla pinnata as part of its ongoing work exploring sustainable livestock feed production.",
+      "The activity was led by Azolla Project Leader and Human Resource Director Dennis B. Bendulo, with volunteer interns Benzi Asher C. Obcial, Leanne Danielle T. Trasporte, and Kennie Jun A. Enecio participating in the harvest.",
+      "The activity forms part of Subang - CTU's broader efforts to explore practical agricultural applications of Azolla while providing volunteers with hands-on experience in sustainable food and agricultural systems.",
+    ],
+    image: "/assets/stories/azolla-harvest-livestock-feed-2024.jpg",
+    category: "Food Security & Sustainable Agriculture",
+    partner: "Cebu Technological University - Barili Campus",
+  },
+
+  {
+    slug: "subang-echo-third-episode-2024",
+    type: "Project Story",
+    title: "Subang ECHO Episode 3 Explores Education, Technology, and Environmental Awareness",
+    date: "Dec 14, 2024",
+    dateValue: "2024-12-14",
+    excerpt:
+      "The third Subang ECHO episode brought educators and practitioners together to discuss educational innovation, technology, and environmental awareness.",
+    body: [
+      "The third episode of Subang ECHO: Shaping Tomorrow Today was held on December 14, 2024, bringing together educators and education practitioners for discussions on educational innovation, technology integration, and environmental awareness.",
+      "The episode was hosted by Subang President Peter John C. Enorio and Shaina Faith D. Visorro of Subang - Cebu Technological University Chapter. Featured speakers were Jun Mar S. Sibala, Engr. Edwin Jo M. Jardin, Felmarie D. Libato, Marilyn V. Aristas, Jocelyn L. Osmil, and Marilou S. Costuna.",
+      "The program aired on DYNE Radyo Kahimsug 97.5 from 8:30 AM to 12:00 noon, followed by a Facebook livestream at 6:00 PM. Volunteer interns Jarryll Jay D. Fat and Dhemae D. Libusana supported the program as part of the technical staff.",
+      "Through Subang ECHO, Subang created a platform for practitioners and community members to exchange knowledge and discuss issues connected to education, technology, sustainability, and community development.",
+    ],
+    image: "/assets/stories/subang-echo-third-episode-2024.jpg",
+    category: "Education & Capacity Building",
+    partner: "DYNE Radyo Kahimsug 97.5",
+  },
+
+  {
+    slug: "microbial-composting-training-moa-2024",
+    type: "Project Story",
+    title: "Advancing Community Composting Through Training and Partnership",
+    date: "Dec 16, 2024",
+    dateValue: "2024-12-16",
+    excerpt:
+      "CTU-Barili, Barangay Kalubihan, and Subang volunteers strengthened community composting through technical training and a formal partnership.",
+    body: [
+      "On December 16, 2024, Cebu Technological University - Barili Campus and the Barangay Council of Kalubihan conducted a Microbial Composting Training and Memorandum of Agreement signing at the CTU-Barili campus, with volunteers from Subang - Cebu Technological University Chapter participating in the activity.",
+      "The initiative was spearheaded by the CTU-Barili Resource Generation Office under Dr. Danny E. Carabio and Subang - Cebu Technological University Chapter. CTU-Barili Campus Director Dr. Romeo C. Lepiten opened the program, while Subang President Peter John C. Enorio delivered the statement of purpose.",
+      "Participants received technical sessions on the operation and maintenance of rotary composters and biomass shredders, followed by training on microbial composting and home-based composting techniques. The sessions included demonstrations at the Materials Recovery and Microbial Composting Facility.",
+      "A Pledge of Commitment was administered by Punong Barangay Hon. Rebecca S. Barbac, followed by the ceremonial signing of the commitment. The program concluded with the signing of a MOA between CTU-Barili Campus and the Barangay Council of Kalubihan to advance microbial composting initiatives in the community.",
+      "Participants also received seed compost as a starter agent for home-based microbial composting. The activity strengthened collaboration among the university, barangay, and Subang volunteers in promoting practical approaches to waste recovery and sustainable agriculture.",
+    ],
+    image: "/assets/stories/microbial-composting-training-moa-2024.jpg",
+    category: "Waste Management & Circularity",
+    partner:
+      "Cebu Technological University - Barili Campus and Barangay Kalubihan",
+  },
+
+  {
+    slug: "penning-the-future-campus-journalism-workshop-2024",
+    type: "Project Story",
+    title: "Penning the Future: A Campus Journalism Workshop",
+    date: "Dec 18, 2024",
+    dateValue: "2024-12-18",
+    excerpt:
+      "Subang - Cebu Technological University Chapter conducted a hands-on campus journalism workshop for budding student journalists from Cagay National High School.",
+    body: [
+      "On December 17, 2024, Subang - Cebu Technological University Chapter conducted Penning the Future: A Campus Journalism Workshop at the Multimedia Room of the New CAFBC Building at CTU-Barili Campus.",
+      "The workshop, themed \"Empowering Tomorrow's Storytellers: Mastering the Basics of Campus Journalism,\" was designed to strengthen the journalism skills of budding campus journalists from Cagay National High School.",
+      "The program included sessions on copyreading and headline writing by Krista Marie Frances C. Bicada, science and technology writing by Shaina Faith D. Visorro, news and column writing by Peter John C. Enorio, feature, sports, and editorial writing by Ruth C. Enorio, and editorial cartooning by Raf B. Jimenez.",
+      "Participants were grouped according to their selected journalism categories and engaged in discussions, practical exercises, and mentoring. The afternoon hands-on activity allowed participants to produce articles, headlines, editorials, and editorial cartoons, followed by an open forum and personalized feedback.",
+      "The workshop concluded with the distribution of certificates and closing remarks from Cagay National High School Principal Marilou S. Costuna, who emphasized honesty and integrity in journalism. The activity provided students with practical communication skills while strengthening the role of youth storytelling in education and community engagement.",
+    ],
+    image: "/assets/stories/penning-the-future-campus-journalism-workshop-2024.jpg",
+    category: "Education & Capacity Building",
+    partner: "Cagay National High School",
+  },
+
+  {
+    slug: "subang-christmas-special-badian-2024",
+    type: "Project Story",
+    title: "Subang Christmas Special at Badian Central School",
+    date: "Dec 20, 2024",
+    dateValue: "2024-12-20",
+    excerpt:
+      "Subang volunteers joined Badian Central School's Christmas celebration through games, fellowship, and activities for children and families.",
+    body: [
+      "On December 20, 2024, Subang joined Badian Central School's PTA Christmas Party and Family Fun Day through Subang: A Christmas Special, a community activity centered on games, fellowship, and giving.",
+      "The program was led by Cedrick B. Parojinog, Subang - Cebu Technological University Education Vice President. Shaina Faith D. Visorro delivered the statement of purpose, while Peter John C. Enorio and Dennis B. Bendulo hosted the main program with support from Subang volunteers.",
+      "The volunteers facilitated interactive games and activities for the children, including a dance presentation, while students received gifts intended to make learning and the holiday celebration more enjoyable.",
+      "The activity provided an opportunity for Subang volunteers to engage with children and families through community-based service, combining recreation, volunteerism, and support for children's learning and well-being.",
+    ],
+    image: "/assets/stories/subang-christmas-special-badian-2024.jpg",
+    category: "Youth Leadership & Participation",
+    partner: "Badian Central School",
+  },
+
+  {
+    slug: "pond-preparation-ctu-barili-2025",
+    type: "Project Story",
+    title: "Preparing the Ground: Pond Development at CTU-Barili",
+    date: "Jan 4, 2025",
+    dateValue: "2025-01-04",
+    excerpt:
+      "Subang - Cebu Technological University began preparing a pond site for a planned aquaculture initiative at CTU-Barili Campus.",
+    body: [
+      "On January 4, 2025, Subang - Cebu Technological University Chapter conducted a pond preparation activity at Cebu Technological University - Barili Campus in collaboration with CWTS and LTS trainees.",
+      "The activity involved clearing operations and digging as part of preparations for the chapter's planned aquaculture initiative. The effort was led by Subang - CTU President Peter John C. Enorio, with support from CWTS and LTS staff Jan Emmanuel Lausa and Feil Hurvey Avenido.",
+      "Subang - CTU volunteer interns Judinel B. Batusbatusan, Pearl Shanea D. Mahinay, and Dhemae D. Libusana facilitated the activity.",
+      "The site preparation marked an early step in developing an agricultural and aquaculture initiative designed to complement the chapter's broader work in food systems and sustainability.",
+    ],
+    image: "/assets/stories/pond-preparation-ctu-barili-2025.jpg",
+    category: "Food Security & Sustainable Agriculture",
+    partner: "Cebu Technological University - Barili Campus",
+  },
+
+  {
+    slug: "paglaum-farm-first-harvest-2025",
+    type: "Project Story",
+    title: "Paglaum Farm Harvests Its First Batch of Crops",
+    date: "Jan 23, 2025",
+    dateValue: "2025-01-23",
+    excerpt:
+      "Paglaum Farm marked its first harvest of tomatoes, okra, and chilis, connecting agricultural learning with food production and community support.",
+    body: [
+      "On January 23, 2025, Cebu Technological University - Barili Campus and Subang - Cebu Technological University Agriculture and Food Systems Department marked the first harvest of the Paglaum Farm Project.",
+      "The harvest included tomatoes, okra, and chilis cultivated by first-year BS Agribusiness and BS Agriculture students under the guidance of Subang Adviser Dr. Pet Roey L. Pascual. The project provides students with hands-on agricultural experience while supporting food production within the university and surrounding community.",
+      "Subang volunteer interns Kesiah C. Montesuso, Mary Rose D. Razo, and Leanne Danielle T. Trasporte joined Subang - CTU officers Peter John C. Enorio, Krista Marie Frances C. Bicada, Rodney Joseph B. Sundo, and Augustin P. Tapinit during the harvest.",
+      "The produce was distributed among students, volunteers, and members of the local community in Barili. The first harvest demonstrated how campus-based food production can connect agricultural education with practical support for food accessibility.",
+    ],
+    image: "/assets/stories/paglaum-farm-first-harvest-2025.jpg",
+    category: "Food Security & Sustainable Agriculture",
+    partner: "Cebu Technological University - Barili Campus",
+  },
+
+  {
+    slug: "permaculture-training-pagtambayayong-2025",
+    type: "Project Story",
+    title: "Learning Permaculture: Subang - CTU and Pagtambayayong Training",
+    date: "Jan 27, 2025",
+    dateValue: "2025-01-27",
+    excerpt:
+      "Subang - Cebu Technological University and Pagtambayayong conducted practical training on permaculture, water management, and soil conservation.",
+    body: [
+      "On January 27, 2025, Subang - Cebu Technological University Chapter and Pagtambayayong - A Foundation for Mutual Aid, Inc. conducted a Permaculture Training in Cagay, Barili, Cebu.",
+      "The training covered permaculture layouting, theoretical principles, and site application, giving participants practical exposure to regenerative approaches to agriculture. One of the key components was the use of the swale method for water management and soil conservation.",
+      "The training was led by Roberto L. Bajenting, formerly of the Department of Agrarian Reform - Province of Cebu, with assistance from Arturo Villanueva and his family.",
+      "Participants from Subang included Peter John C. Enorio, Sean B. Tellidua, Shaina Faith D. Visorro, Dennis B. Bendulo, and volunteer interns Queenelene Faith N. Perpetua, James Adam P. Posas, and Karen L. Defuntorum. The activity was supervised by Subang Adviser Dr. Pet Roey L. Pascual.",
+      "The collaboration provided volunteers and participants with practical knowledge on permaculture and agroforestry while strengthening shared efforts toward sustainable agriculture and food security.",
+    ],
+    image: "/assets/stories/permaculture-training-pagtambayayong-2025.jpg",
+    category: "Food Security & Sustainable Agriculture",
+    partner: "Pagtambayayong - A Foundation for Mutual Aid, Inc.",
+  },
+
+  {
+    slug: "paglaum-farm-harvest-january-29-2025",
+    type: "Project Story",
+    title: "Paglaum Farm Harvests Another Batch of Fresh Produce",
+    date: "Jan 29, 2025",
+    dateValue: "2025-01-29",
+    excerpt:
+      "Another Paglaum Farm harvest supplied fresh tomatoes, okra, and chilis to selected CTU-Barili students while providing hands-on agricultural learning.",
+    body: [
+      "On January 29, 2025, Cebu Technological University and Subang - Cebu Technological University harvested another batch of fresh produce from the Paglaum Farm Project at CTU-Barili Campus.",
+      "The harvest included tomatoes, okra, and chilis cultivated by first-year BS Agribusiness and BS Agriculture students under the guidance of Subang Adviser Dr. Pet Roey L. Pascual.",
+      "The activity continued the project's dual role of providing students with hands-on agricultural learning while producing fresh food for the university community. Following the harvest, the produce was distributed to selected CTU-Barili students.",
+      "The continuing harvests demonstrated the practical application of campus-based agriculture in supporting food accessibility, student learning, and sustainable food production.",
+    ],
+    image: "/assets/stories/paglaum-farm-harvest-january-29-2025.jpg",
+    category: "Food Security & Sustainable Agriculture",
+    partner: "Cebu Technological University - Barili Campus",
+  },
+
+  {
+    slug: "paglaum-farm-harvest-february-1-2025",
+    type: "Project Story",
+    title: "Paglaum Farm Continues Its Harvests for Students and Communities",
+    date: "Feb 1, 2025",
+    dateValue: "2025-02-01",
+    excerpt:
+      "Paglaum Farm continued its cycle of cultivation, harvest, and distribution, providing fresh produce to students and community members in Barili.",
+    body: [
+      "On February 1, 2025, Cebu Technological University and Subang - Cebu Technological University conducted another harvest from the Paglaum Farm Project at CTU-Barili Campus.",
+      "The harvest included tomatoes, okra, and chilis, which were distributed to students and local community members in Barili. The activity was facilitated by Subang Executive President Peter John C. Enorio, Resource Generation Director Ron Janbert P. Ofquila, and volunteers Ciara Mari M. Brigoli, Mary Danielle T. Descallar, and Iyz Phoebemae Del Socorro.",
+      "Led jointly by CTU and Subang - CTU's Agriculture and Food Systems Department, Paglaum Farm continues to provide students with practical agricultural experience while producing fresh food for the university and surrounding community.",
+      "The activity represents the continuing cycle of cultivation, harvest, and distribution that forms the foundation of the project's contribution to food security and student welfare.",
+    ],
+    image: "/assets/stories/paglaum-farm-harvest-february-1-2025.jpg",
+    category: "Food Security & Sustainable Agriculture",
+    partner: "Cebu Technological University - Barili Campus",
+  },
+
+  {
+    slug: "black-bamboo-propagation-cwts-february-1-2025",
+    type: "Project Story",
+    title: "Propagating Black Bamboo with CWTS Trainees",
+    date: "Feb 1, 2025",
+    dateValue: "2025-02-01",
+    excerpt:
+      "More than 100 black bamboo plants were propagated with CWTS trainees, combining hands-on learning with continuing environmental work at CTU-Barili.",
+    body: [
+      "On February 1, 2025, Cebu Technological University and Subang - Cebu Technological University conducted another Black Bamboo (Phyllostachys nigra) propagation session in collaboration with CWTS trainees at CTU-Barili Campus.",
+      "More than 100 black bamboo plants were propagated during the activity, providing CWTS trainees with hands-on experience in plant propagation and environmental stewardship.",
+      "The session was led by Subang Executive President Peter John C. Enorio, with Subang - Province of Cebu Acting Provincial Director Krista Marie Frances C. Bicada, Subang - CTU Science and Technology Vice President Shaina Faith D. Visorro, CTU-Barili CWTS Student Staff Dave M. Baran, and Subang - CTU Volunteer Intern Dhemae D. Libusana participating in the activity.",
+      "The propagation session formed part of the continuing environmental work of CTU-Barili and Subang - CTU, connecting volunteer participation, experiential learning, and campus-based ecological initiatives.",
+    ],
+    image: "/assets/stories/black-bamboo-propagation-cwts-february-1-2025.jpg",
+    category: "Environmental Sustainability",
+    partner: "Cebu Technological University - Barili Campus",
+  },
+
+  {
+    slug: "paglaum-farm-harvest-february-3-2025",
+    type: "Project Story",
+    title: "Paglaum Farm Harvest Supports Students and Local Communities",
+    date: "Feb 3, 2025",
+    dateValue: "2025-02-03",
+    excerpt:
+      "Another Paglaum Farm harvest provided fresh tomatoes, okra, and chilis while giving students and volunteers continued experience in campus-based agriculture.",
+    body: [
+      "On February 3, 2025, Cebu Technological University and Subang - Cebu Technological University conducted another harvest from the Paglaum Farm Project at CTU-Barili Campus.",
+      "Tomatoes, okra, and chilis were harvested and distributed to students and local community members in Barili. The activity was facilitated by Subang Executive President Peter John C. Enorio, Administration and Finance Director Andrewkyle E. Oroc, and volunteers Ciara Mari M. Brigoli, Mary Danielle T. Descallar, and Iyz Phoebemae Del Socorro.",
+      "The project, led by CTU and Subang - CTU's Agriculture and Food Systems Department, continues to provide students with practical agricultural experience while producing fresh food for the university and surrounding community.",
+      "The February 3 harvest formed part of the project's continuing cycle of cultivation and distribution, demonstrating how campus agriculture can support experiential learning and local food accessibility.",
+    ],
+    image: "/assets/stories/paglaum-farm-harvest-february-3-2025.jpg",
+    category: "Food Security & Sustainable Agriculture",
+    partner: "Cebu Technological University - Barili Campus",
+  },
+
+  {
+    slug: "paglaum-farm-harvest-february-5-2025",
+    type: "Project Story",
+    title: "Paglaum Farm Continues Its Food Security Efforts",
+    date: "Feb 5, 2025",
+    dateValue: "2025-02-05",
+    excerpt:
+      "Paglaum Farm continued producing and distributing fresh vegetables while connecting agricultural education, volunteerism, and food support.",
+    body: [
+      "On February 5, 2025, Cebu Technological University and Subang - Cebu Technological University conducted another harvest from the Paglaum Farm Project at CTU-Barili Campus.",
+      "The harvest yielded tomatoes, okra, and chilis, which were distributed to students and local community members. The activity was led by Subang Executive President Peter John C. Enorio, Resource Generation Director Ron Janbert P. Ofquila, Administration and Finance Director Andrewkyle E. Oroc, and volunteers Ciara Mari M. Brigoli and Mary Danielle T. Descallar.",
+      "The Paglaum Farm Project provides students with practical agricultural experience while contributing fresh produce to the university and surrounding community. The continuing harvests demonstrate the project's ongoing integration of agricultural education, volunteerism, and food production.",
+      "Through sustained collaboration between CTU and Subang - CTU, the project continues to develop a practical campus-based model for sustainable agriculture and community food support.",
+    ],
+    image: "/assets/stories/paglaum-farm-harvest-february-5-2025.jpg",
+    category: "Food Security & Sustainable Agriculture",
+    partner: "Cebu Technological University - Barili Campus",
+  },
+
+  {
+    slug: "paglaum-farm-harvest-february-10-2025",
+    type: "Project Story",
+    title: "Paglaum Farm Harvests Continue to Support Students and Communities",
+    date: "Feb 10, 2025",
+    dateValue: "2025-02-10",
+    excerpt:
+      "Students and volunteers joined another Paglaum Farm harvest, continuing the project's role in agricultural learning, food production, and community engagement.",
+    body: [
+      "On February 10, 2025, Cebu Technological University and Subang - Cebu Technological University conducted another harvest from the Paglaum Farm Project at CTU-Barili Campus.",
+      "Fresh tomatoes, okra, and chilis were gathered and distributed to CTU-Barili students and members of the local community. Subang - CTU volunteers Andrewkyle E. Oroc, Ron Janbert P. Ofquila, Ciara Mari M. Brigoli, and Mary Danielle T. Descallar facilitated the harvest, joined by Doctor of Veterinary Medicine students Johanna Beatriz T. Adlawan, Julia Mae M. Amparo, Diane P. Artiaga, Iyz Phoebemae C. Del Socorro, and Christine Karyl D. Momongan.",
+      "The activity continued Paglaum Farm's role as both a learning space for students and a source of fresh produce for the university and surrounding community.",
+      "The continuing participation of students and volunteers demonstrates the collaborative nature of the project and its connection to food security, agricultural learning, and community engagement.",
+    ],
+    image: "/assets/stories/paglaum-farm-harvest-february-10-2025.jpg",
+    category: "Food Security & Sustainable Agriculture",
+    partner: "Cebu Technological University - Barili Campus",
+  },
   {
   slug: "subang-echo-second-episode-education-2024",
   type: "Project Story",
