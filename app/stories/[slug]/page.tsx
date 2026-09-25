@@ -246,12 +246,11 @@ export default async function StoryPage({
                     const detail = sdgDetails[sdg];
 
                     return (
-                      <Link
-                       <Link
-  key={sdg}
-  href={`/framework#sdg-${String(sdg).padStart(2, "0")}`}
-                        className="group flex items-center gap-3 border border-maroon/10 bg-white p-2 transition hover:border-maroon/30"
-                      >
+  <Link
+    key={sdg}
+    href={`/framework#sdg-${String(sdg).padStart(2, "0")}`}
+    className="group flex items-center gap-3 border border-maroon/10 bg-white p-2 transition hover:border-maroon/30"
+  >
                         <img
                           src={detail.image}
                           alt={`SDG ${sdg}: ${detail.title}`}
