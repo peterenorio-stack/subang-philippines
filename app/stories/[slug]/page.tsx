@@ -95,8 +95,8 @@ const categorySdgs: Record<string, number[]> = {
   "Partnerships & Community Mobilization": [16, 17],
   "Climate & Disaster Resilience": [11, 13, 17],
   "Social Inclusion & Equity": [5, 10, 16],
-  "Volunteerism": [4, 11, 17],
-  "Recognition": [16, 17],
+  Volunteerism: [4, 11, 17],
+  Recognition: [16, 17],
 };
 
 export function generateStaticParams() {
@@ -246,11 +246,11 @@ export default async function StoryPage({
                     const detail = sdgDetails[sdg];
 
                     return (
-  <Link
-    key={sdg}
-    href={`/framework#sdg-${String(sdg).padStart(2, "0")}`}
-    className="group flex items-center gap-3 border border-maroon/10 bg-white p-2 transition hover:border-maroon/30"
-  >
+                      <Link
+                        key={sdg}
+                        href={`/framework#sdg-${String(sdg).padStart(2, "0")}`}
+                        className="group flex items-center gap-3 border border-maroon/10 bg-white p-2 transition hover:border-maroon/30"
+                      >
                         <img
                           src={detail.image}
                           alt={`SDG ${sdg}: ${detail.title}`}
@@ -272,9 +272,8 @@ export default async function StoryPage({
                 </div>
 
                 <Link
-                  <Link
-  href="/framework"
-  className="mt-4 inline-flex items-center gap-2 text-sm font-extrabold text-blue"
+                  href="/framework"
+                  className="mt-4 inline-flex items-center gap-2 text-sm font-extrabold text-blue"
                 >
                   Explore the framework
                   <ArrowUpRight size={15} />
