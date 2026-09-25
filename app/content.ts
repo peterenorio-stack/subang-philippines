@@ -16,6 +16,7 @@ export const stories: Story[] = [
   type: "Project Story",
   title: "Kamera at Kwento: A Basic Filmmaking Workshop for Larena Youth",
   date: "August 26, 2026",
+    dateValue: "2026-08-26",
   excerpt:
     "Larena youth explored storytelling, cinematography, directing, audio, and editing through a hands-on filmmaking workshop led by Subang Philippines National Executive President Peter John C. Enorio.",
   category: "Youth Leadership & Participation",
@@ -35,6 +36,7 @@ export const stories: Story[] = [
   type: "Project Story",
   title: "Subang Philippines Strengthens Disaster Resilience Through AGRIDAM Training",
   date: "July 21–23, 2026",
+    dateValue: "2026-07-21",
   excerpt:
     "Subang Philippines National Executive President Peter John C. Enorio participated in AGRIDAM 2026, strengthening his knowledge and skills in community-based disaster risk reduction and management.",
   category: "Climate & Disaster Resilience",
@@ -54,6 +56,7 @@ export const stories: Story[] = [
   type: "Press Release",
   title: "Subang - Province of Siquijor Chapter Honored at Negros Young Heroes 2026",
   date: "July 25, 2026",
+    dateValue: "2026-07-25",
   excerpt:
     "Subang Philippines - Province of Siquijor Chapter was recognized under the Samahan Category during Negros Young Heroes 2026: Gawad Parangal sa Kabataan in Dumaguete City.",
   category: "Recognition",
@@ -75,6 +78,7 @@ export const stories: Story[] = [
     type: "Project Story",
     title: "Growing Resilience, One Bamboo at a Time",
     date: "January 25, 2026",
+    dateValue: "2026-01-25",
     excerpt: "A community-based bamboo propagation initiative demonstrates how youth volunteerism can support environmental restoration and climate resilience.",
     category: "Environmental Sustainability",
     image: "/assets/press/black-bamboo-propagation.jpg",
@@ -90,6 +94,7 @@ export const stories: Story[] = [
     type: "Press Release",
     title: "Subang Environmental Initiatives Recognized at Philippine Resilience Awards 2025",
     date: "November 24, 2025",
+    dateValue: "2025-11-24",
     excerpt: "The Subang Environmental Initiatives were recognized through the Philippine Resilience Awards 2025.",
     category: "Recognition",
     image: "/assets/press/resilience-awards.jpg",
@@ -104,6 +109,7 @@ export const stories: Story[] = [
     type: "Volunteer Story",
     title: "The People Who Choose to Show Up",
     date: "2026",
+    dateValue: "2026-01-01",
     excerpt: "A growing collection of stories about the young people and volunteers who give their time, skills, creativity, and energy to community work.",
     category: "Volunteerism",
     image: "/assets/stories/volunteer-story.jpg",
@@ -118,6 +124,7 @@ export const stories: Story[] = [
   type: "Project Story",
   title: "Adopt-A-Hectare: Building a Greener CTU-Barili Campus",
   date: "September 14, 2024",
+    dateValue: "2024-09-14",
   excerpt:
     "Subang Cebu Technological University launched the first Saturday session of its Adopt-A-Hectare Project, planting more than 100 fruit-bearing and native trees and propagating bamboo at CTU-Barili Campus.",
   category: "Environmental Sustainability",
@@ -139,6 +146,7 @@ export const stories: Story[] = [
   type: "Project Story",
   title: "Nurturing What Was Planted",
   date: "September 21, 2024",
+  dateValue: "2024-09-21",
   excerpt:
     "One week after the launch of Adopt-A-Hectare, Subang Cebu Technological University volunteers returned to CTU-Barili to propagate additional kamagong and bamboo while maintaining trees planted during the first session.",
   category: "Environmental Sustainability",
@@ -159,6 +167,7 @@ export const stories: Story[] = [
   type: "Project Story",
   title: "On to the Next: Youth Volunteers Across Visayas and Mindanao",
   date: "October 6, 2024",
+  dateValue: "2024-10-06",
   excerpt:
     "Twenty-four young volunteers from across Visayas and Mindanao gathered virtually for a conversation on youth volunteerism and sustainable development during the Global Week to #Act4SDGs.",
   category: "Youth Leadership & Participation",
@@ -180,6 +189,7 @@ export const stories: Story[] = [
   type: "Project Story",
   title: "Cleaning Cagay: A River Cleanup Led by Young Volunteers",
   date: "October 6, 2024",
+  dateValue: "2024-10-06",
   excerpt:
     "Subang volunteers conducted a river cleanup in Cagay, Barili, Cebu, removing plastic waste and glass bottles as part of the organization's continuing environmental action.",
   category: "Environmental Sustainability",
@@ -201,6 +211,7 @@ export const stories: Story[] = [
   type: "Project Story",
   title: "Learning by Doing: Subang's First Volunteer Work Exposure",
   date: "October 12, 2024",
+  dateValue: "2024-10-12",
   excerpt:
     "Subang Cebu Technological University's volunteer interns took part in their first fieldwork experience, combining orientation, environmental work, project immersion, and reflection.",
   category: "Volunteerism",
