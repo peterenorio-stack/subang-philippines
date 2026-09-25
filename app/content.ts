@@ -13,6 +13,193 @@ export type Story = {
 
 export const stories: Story[] = [
   {
+  slug: "subang-echo-second-episode-education-2024",
+  type: "Project Story",
+  title: "Subang ECHO Continues with Conversations on Educational Innovation",
+  date: "December 6, 2024",
+  dateValue: "2024-12-06",
+  excerpt:
+    "The second episode of Subang ECHO explored educational research and classroom innovation, bringing educators and researchers into a public conversation on improving learning.",
+  body: [
+    "On December 6, 2024, Subang ECHO: Shaping Tomorrow Today aired its second episode, continuing the talk show's focus on knowledge sharing, education, innovation, and sustainable development.",
+    "The episode was hosted by Subang President Peter John C. Enorio and Subang - Cebu Technological University Human Resource Director Dennis B. Bendulo. It was broadcast live on DYNE Radyo Kahimsog 97.5 from 1:00 PM to 4:00 PM, followed by a livestream session beginning at 6:00 PM.",
+    "Three educators and researchers served as resource speakers. Xela Efrena V. Sator, MAEd, Head Teacher I at Lunas Elementary School and an EDD-EMD student, presented research on internal stakeholders' perceptions of positive discipline implementation and collaborative evaluation mechanisms.",
+    "Lyndon G. Frejoles, MAEd, Teacher III and an education supervisor, discussed the use of multisensory instructional materials to improve Grade 1 learner engagement. Joselito V. Dinela, MAEd, Teacher III and Master of Arts in Education graduate, discussed the relationship between teacher competence and pupil academic performance in the implementation of the MATATAG Curriculum.",
+    "The episode created a platform for educators to share research and practical perspectives with a broader audience. By bringing academic and professional knowledge into a public discussion, Subang ECHO continued its aim of connecting learning, innovation, and community development.",
+    "The episode was supported by the DYNE Radyo Kahimsog team, Mr. Germie Carpentero, and Subang - CTU Associate Director Laurence Glenn B. Parojinog."
+  ],
+  image: "/assets/stories/subang-echo-second-episode-2024.jpg",
+  category: "Education & Capacity Building",
+  partner: "DYNE Radyo Kahimsog 97.5",
+},
+  {
+  slug: "substance-abuse-awareness-vaw-campaign-ctu-barili-2024",
+  type: "Project Story",
+  title: "CTU-Barili and Subang Promote Substance Abuse Awareness During the 2024 VAW Campaign",
+  date: "December 3, 2024",
+  dateValue: "2024-12-03",
+  excerpt:
+    "Cebu Technological University - Barili Campus and Subang brought students and community members together for a substance abuse awareness forum held in line with the 2024 18-Day Campaign to End Violence Against Women.",
+  body: [
+    "On December 3, 2024, Cebu Technological University - Barili Campus, through its Gender and Development Office and Subang, conducted \"Breaking the Habit: Understanding the Dangers of Substance Abuse in Our Community\" at the New CAFBC Building.",
+    "Held in line with the 2024 18-Day Campaign to End Violence Against Women, the activity brought together more than 60 participants, including students from different academic programs and habal-habal drivers from Barangays Cagay and Kalubihan.",
+    "The program featured discussions on substance abuse and community-based approaches to recovery. Psychiatric nurse Ryan J. Hernan discussed the effects of substance abuse, while Ronnie G. Delos Santos, CEO of Safe Haven Recovery Village, discussed community approaches to recovery. Roberto \"Berta\" A. Plando Jr. also shared a personal account of recovery and transformation.",
+    "The activity concluded with a gift-giving component, during which participants received rice and spaghetti packs. Subang President Peter John C. Enorio delivered the closing remarks and emphasized the role of community collaboration in addressing substance abuse and violence.",
+    "The activity brought together education, community dialogue, and direct engagement around a social concern affecting communities. It also reflected the shared efforts of the university and Subang to support safer and more inclusive community spaces."
+  ],
+  image: "/assets/stories/substance-abuse-awareness-vaw-campaign-2024.jpg",
+  category: "Social Inclusion & Equity",
+  partner: "Cebu Technological University - Barili Campus Gender and Development Office",
+},
+  {
+  slug: "bamboo-propagation-subang-ctu-november-30-2024",
+  type: "Project Story",
+  title: "Continuing the Work: Bamboo Propagation at CTU-Barili",
+  date: "November 30, 2024",
+  dateValue: "2024-11-30",
+  excerpt:
+    "Subang - Cebu Technological University Chapter continued its Bamboo Propagation Project through another hands-on propagation activity led by volunteers and volunteer interns.",
+  body: [
+    "On November 30, 2024, Subang - Cebu Technological University Chapter continued its Bamboo Propagation Project at the CTU-Barili Campus.",
+    "Under the leadership of Subang - CTU Environmental Affairs Vice-President Rodney Joseph B. Sundo, volunteers and volunteer interns propagated black bamboo (Phyllostachys nigra) as part of the chapter's continuing environmental activities.",
+    "The activity contributed to the ongoing production and care of bamboo planting materials, building on earlier propagation, maintenance, and transplantation activities conducted throughout the campus.",
+    "The continued work demonstrates the cumulative nature of volunteer-led environmental initiatives. Each propagation session adds to the planting materials available for future establishment while giving volunteers practical experience in environmental stewardship."
+  ],
+  image: "/assets/stories/bamboo-propagation-subang-ctu-november-30-2024.jpg",
+  category: "Environmental Sustainability",
+  partner: "Cebu Technological University - Barili Campus",
+},
+  {
+  slug: "subang-echo-pilot-episode-pbels-2024",
+  type: "Project Story",
+  title: "Subang ECHO Launches with a Conversation on Food Security",
+  date: "November 29, 2024",
+  dateValue: "2024-11-29",
+  excerpt:
+    "Subang - Cebu Technological University Chapter launched Subang ECHO: Shaping Tomorrow Today with a pilot episode exploring Plant Box with Extended Lighting System as a potential approach to urban food production.",
+  body: [
+    "On November 29, 2024, Subang - Cebu Technological University Chapter launched Subang ECHO: Shaping Tomorrow Today, a talk show series designed to bring conversations on sustainability, volunteerism, innovation, and community development to a wider audience.",
+    "The pilot episode, titled \"Plant Box with Extended Lighting System (PBELS),\" aired live on DYNE Radyo Kahimsog 97.5 from the CTU-Barili Campus. The episode explored the potential of PBELS as a practical approach to growing food in spaces where conventional agricultural production may be limited.",
+    "The episode was hosted by Subang President Peter John C. Enorio and Subang - CTU Human Resource Director Dennis B. Bendulo. Dr. Pet Roey L. Pascual, a crop scientist and Subang adviser, served as the resource speaker and discussed the agricultural applications and potential of the system.",
+    "The discussion centered on how compact growing systems and appropriate lighting technologies could provide additional options for food production, particularly in urban or space-constrained settings. The episode connected the topic with broader conversations on food security, sustainable agriculture, and community self-reliance.",
+    "Subang - CTU Communications Associate Director Laurence Glenn B. Parojinog and Mr. Germie Carpentero of DYNE Radyo Kahimsog supported the broadcast, while the station's management and staff provided the platform for the program.",
+    "Subang ECHO established a new communication platform for sharing technical knowledge and community-oriented ideas. Through conversations with practitioners and resource persons, the series sought to make development issues more accessible while encouraging audiences to connect knowledge with practical action."
+  ],
+  image: "/assets/stories/subang-echo-pilot-pbels-2024.jpg",
+  category: "Food Security & Sustainable Agriculture",
+  partner: "DYNE Radyo Kahimsog 97.5",
+},
+  {
+  slug: "black-bamboo-orientation-beed-students-2024",
+  type: "Volunteer Story",
+  title: "Learning Through Propagation: Black Bamboo Orientation for BEEd Students",
+  date: "November 29, 2024",
+  dateValue: "2024-11-29",
+  excerpt:
+    "Subang - Cebu Technological University Chapter introduced Bachelor of Elementary Education students to black bamboo propagation through an orientation, demonstration, and hands-on activity.",
+  body: [
+    "On November 29, 2024, Subang - Cebu Technological University Chapter conducted an orientation, demonstration, and propagation activity focused on black bamboo (Phyllostachys nigra) at the CTU-Barili Campus.",
+    "Subang President Peter John C. Enorio and Human Resource Director Dennis B. Bendulo facilitated the session, which was attended by Bachelor of Elementary Education students Genevieve Mae Dumagpe and Jonit Dingal.",
+    "The activity introduced participants to the practical process of bamboo propagation and provided an opportunity to learn through direct participation. By combining discussion with demonstration and hands-on work, the session connected environmental concepts with skills that participants could apply in future community or educational settings.",
+    "The activity formed part of Subang - CTU's continuing effort to integrate environmental stewardship with volunteer learning and skills development."
+  ],
+  image: "/assets/stories/black-bamboo-orientation-beed-students-2024.jpg",
+  category: "Education & Capacity Building",
+  partner: "Cebu Technological University - Barili Campus",
+},
+  {
+  slug: "black-bamboo-propagation-100-2024",
+  type: "Project Story",
+  title: "Propagating 100 Black Bamboos for a Greener Future",
+  date: "November 29, 2024",
+  dateValue: "2024-11-29",
+  excerpt:
+    "Subang - Cebu Technological University Chapter propagated 100 black bamboo planting materials as part of its continuing Bamboo Propagation Project.",
+  body: [
+    "On November 29, 2024, Subang - Cebu Technological University Chapter propagated 100 black bamboo (Phyllostachys nigra) planting materials at the CTU-Barili Campus as part of its continuing Bamboo Propagation Project.",
+    "The activity was led by Subang President Peter John C. Enorio, Human Resource Director Dennis B. Bendulo, and Presidential Staff Shaina Faith D. Visorro.",
+    "The propagation activity contributed to the chapter's growing collection of bamboo planting materials and supported its broader environmental work involving bamboo establishment, site maintenance, and ecological education.",
+    "The activity also reinforced Subang - CTU's emphasis on practical volunteer participation, where environmental action is carried out through repeated, hands-on work rather than one-time activities."
+  ],
+  image: "/assets/stories/black-bamboo-propagation-100-2024.jpg",
+  category: "Environmental Sustainability",
+  partner: "Cebu Technological University - Barili Campus",
+},
+  {
+  slug: "black-bamboo-propagation-site-maintenance-2024",
+  type: "Project Story",
+  title: "Preparing for the Next 1,000: Black Bamboo Propagation and Site Maintenance",
+  date: "November 23, 2024",
+  dateValue: "2024-11-23",
+  excerpt:
+    "Subang - Cebu Technological University Chapter prepared 1,000 polybags for additional black bamboo propagation while continuing tree maintenance and developing a recovery chamber at the Adopt-A-Hectare site.",
+  body: [
+    "On November 23, 2024, Subang - Cebu Technological University Chapter continued its Bamboo Propagation Project by preparing 1,000 polybags for the propagation of an additional 1,000 black bamboo plants at the CTU-Barili Campus.",
+    "The activity involved CWTS and LTS trainees with the support of their respective staff. Preparing planting containers at this scale established the materials needed for the next phase of bamboo propagation and demonstrated the importance of preparation in sustaining a growing environmental initiative.",
+    "The day's activities also included maintenance work at the Adopt-A-Hectare Project. Trainees watered established trees as part of their continuing care, while another team worked on a recovery chamber for propagated bamboo. The chamber provides a designated space for nurturing planting materials before transplantation.",
+    "Together, these activities reflected a broader approach to environmental restoration that extends beyond planting itself. Propagation, maintenance, recovery, and eventual transplantation are treated as interconnected stages of sustained environmental action."
+  ],
+  image: "/assets/stories/black-bamboo-propagation-site-maintenance-2024.jpg",
+  category: "Environmental Sustainability",
+  partner: "Cebu Technological University - Barili Campus",
+},
+  {
+  slug: "da-bswm-composting-equipment-turnover-ctu-barili-2024",
+  type: "Press Release",
+  title: "DA-BSWM Turns Over Composters and Biomass Shredders to CTU-Barili and Barangay Kalubihan",
+  date: "November 20, 2024",
+  dateValue: "2024-11-20",
+  excerpt:
+    "The Department of Agriculture - Bureau of Soils and Water Management turned over rotary composters and biomass shredders to Cebu Technological University - Barili Campus and Barangay Kalubihan to support sustainable waste management and compost production.",
+  body: [
+    "On November 20, 2024, the Department of Agriculture - Bureau of Soils and Water Management (DA-BSWM) facilitated the inspection, turnover, and signing of a Memorandum of Agreement for two rotary composters and two biomass shredders in Barili, Cebu.",
+    "The equipment turnover formed part of DA-BSWM's efforts to promote sustainable agriculture through improved waste management and microbial compost production. The equipment was intended to support the recovery and processing of organic materials for agricultural use.",
+    "Mc Reith C. Rodriquez, Project Assistant under the Compost Production Implementation Team of the DA-BSWM Central Office, conducted the inspection of the equipment. The formal turnover was facilitated by DA-BSWM Central Visayas in collaboration with the Local Government Unit of Barili.",
+    "Cebu Technological University - Barili Campus received its equipment under the DA-BSWM High-Value Crops Development Program, while Barangay Kalubihan received its units under the National Rice Program. Dr. Danny E. Carabio, Director of Resource Generation at CTU-Barili Campus, formally received the university's equipment. Barangay Kalubihan was represented by Punong Barangay Hon. Rebecca S. Barbac.",
+    "The Memorandum of Agreement was subsequently signed by Dr. Carabio and Hon. Barbac as representatives of CTU-Barili Campus and Barangay Kalubihan, respectively. Peter John C. Enorio, President of Subang, signed as a witness, reflecting Subang's support for the Resource Generation Office and the university's sustainability-related initiatives.",
+    "The equipment provides additional infrastructure for organic waste recovery, biomass processing, and microbial compost production. Its deployment creates opportunities for stronger connections between waste management, agricultural production, and circular resource use within the campus and surrounding community."
+  ],
+  image: "/assets/press/da-bswm-composting-equipment-turnover-2024.jpg",
+  category: "Waste Management & Circularity",
+  partner: "Department of Agriculture - Bureau of Soils and Water Management",
+},
+  {
+  slug: "azolla-ponds-subang-ctu-2024",
+  type: "Project Story",
+  title: "Activating Azolla Ponds for Sustainable Agriculture and Learning",
+  date: "November 16, 2024",
+  dateValue: "2024-11-16",
+  excerpt:
+    "Subang - Cebu Technological University Chapter activated new Azolla ponds at the CTU-Barili Campus, creating additional space for agricultural learning, research, and sustainable production practices.",
+  body: [
+    "On November 16, 2024, Subang - Cebu Technological University Chapter activated new Azolla ponds at the CTU-Barili Campus to support the cultivation and study of Azolla pinnata, a fast-growing aquatic fern with applications in sustainable agriculture.",
+    "The initiative was made possible through the reuse of ponds previously used by fourth-year Bachelor of Science in Agriculture major in Horticulture students. Their support allowed the existing facilities to be repurposed for continued agricultural learning and experimentation.",
+    "Azolla is commonly studied for its association with nitrogen-fixing cyanobacteria and its potential applications as a biological fertilizer and supplemental feed resource. Its cultivation can therefore provide opportunities for exploring lower-cost and resource-efficient agricultural practices.",
+    "Beyond cultivation, the newly activated ponds provide a potential platform for research, education, and practical agricultural training within the campus. The initiative reflects Subang - CTU's interest in connecting environmental stewardship, agricultural innovation, and accessible community-based solutions."
+  ],
+  image: "/assets/stories/azolla-ponds-subang-ctu-2024.jpg",
+  category: "Food Security & Sustainable Agriculture",
+  partner: "Cebu Technological University - Barili Campus",
+},
+  {
+  slug: "bamboo-kamagong-transplanting-ctu-barili-2024",
+  type: "Project Story",
+  title: "Advancing Reforestation Through Bamboo and Kamagong Transplanting",
+  date: "November 16, 2024",
+  dateValue: "2024-11-16",
+  excerpt:
+    "Subang - Cebu Technological University Chapter engaged CWTS and LTS trainees in a hands-on bamboo and kamagong transplanting activity focused on reforestation and biodiversity conservation.",
+  body: [
+    "On November 16, 2024, Subang - Cebu Technological University Chapter conducted a bamboo and kamagong transplanting activity at the CTU-Barili Campus in collaboration with Civic Welfare Training Service (CWTS) and Literacy Training Service (LTS) trainees.",
+    "The activity involved the transplantation of propagated bamboo and kamagong (Diospyros blancoi), a native Philippine tree species. By bringing students into the practical work of establishing and caring for planting materials, the activity connected environmental education with hands-on ecological stewardship.",
+    "The afternoon activity was supported by Subang - CTU Environmental Affairs Deputy Director Augustin P. Tapinit, Associate Director Laurence Reinz S. Tolentino, Human Resource Director Dennis B. Bendulo, Senior Environmental Advocate Gissa Mae C. Castino, and interns James P. Posas, Shaina Faith D. Visorro, and Kesiah C. Montesuso, with assistance from CWTS staff members Jan Emmanuel Lausa and Dave Baran.",
+    "The transplanting activity formed part of Subang - CTU's continuing environmental initiatives, which combine propagation, site maintenance, and volunteer participation to support longer-term restoration efforts."
+  ],
+  image: "/assets/stories/bamboo-kamagong-transplanting-ctu-barili-2024.jpg",
+  category: "Environmental Sustainability",
+  partner: "Cebu Technological University - Barili Campus",
+},
+  {
   slug: "black-bamboo-propagation-cwts-lts-2024",
   type: "Project Story",
   title: "Growing Black Bamboo Through Youth Participation",
