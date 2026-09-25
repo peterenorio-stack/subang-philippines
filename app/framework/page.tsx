@@ -193,12 +193,14 @@ const frameworkMatrix = [
   {
     framework: "Sustainable Development Goals",
     role: "Global development direction",
-    focus: "17 interconnected goals for people, planet, prosperity, peace, and partnerships.",
+    focus:
+      "17 interconnected goals for people, planet, prosperity, peace, and partnerships.",
   },
   {
     framework: "Ambisyon Natin 2040",
     role: "National aspiration",
-    focus: "A long-term Filipino vision of a Matatag, Maginhawa at Panatag na Buhay.",
+    focus:
+      "A long-term Filipino vision of a Matatag, Maginhawa at Panatag na Buhay.",
   },
   {
     framework: "10 Centers of Youth Participation",
@@ -517,7 +519,8 @@ export default function Framework() {
               {sdgs.map((sdg) => (
                 <div
                   key={sdg.number}
-                  className="group overflow-hidden rounded-xl bg-white shadow-sm ring-1 ring-slate-200 transition hover:-translate-y-1 hover:shadow-md"
+                  id={`sdg-${String(sdg.number).padStart(2, "0")}`}
+                  className="scroll-mt-24 overflow-hidden rounded-xl bg-white shadow-sm ring-1 ring-slate-200 transition hover:-translate-y-1 hover:shadow-md"
                 >
                   <div className="aspect-square bg-slate-50">
                     <img
