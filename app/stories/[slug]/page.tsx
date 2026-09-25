@@ -8,6 +8,97 @@ import {
 import { Header, Footer } from "../../components";
 import { stories, sortedStories } from "../../content";
 
+const sdgDetails: Record<
+  number,
+  {
+    title: string;
+    image: string;
+  }
+> = {
+  1: {
+    title: "No Poverty",
+    image: "/assets/framework/sdgs/sdg-01.jpg",
+  },
+  2: {
+    title: "Zero Hunger",
+    image: "/assets/framework/sdgs/sdg-02.jpg",
+  },
+  3: {
+    title: "Good Health and Well-Being",
+    image: "/assets/framework/sdgs/sdg-03.jpg",
+  },
+  4: {
+    title: "Quality Education",
+    image: "/assets/framework/sdgs/sdg-04.jpg",
+  },
+  5: {
+    title: "Gender Equality",
+    image: "/assets/framework/sdgs/sdg-05.jpg",
+  },
+  6: {
+    title: "Clean Water and Sanitation",
+    image: "/assets/framework/sdgs/sdg-06.jpg",
+  },
+  7: {
+    title: "Affordable and Clean Energy",
+    image: "/assets/framework/sdgs/sdg-07.jpg",
+  },
+  8: {
+    title: "Decent Work and Economic Growth",
+    image: "/assets/framework/sdgs/sdg-08.jpg",
+  },
+  9: {
+    title: "Industry, Innovation and Infrastructure",
+    image: "/assets/framework/sdgs/sdg-09.jpg",
+  },
+  10: {
+    title: "Reduced Inequalities",
+    image: "/assets/framework/sdgs/sdg-10.jpg",
+  },
+  11: {
+    title: "Sustainable Cities and Communities",
+    image: "/assets/framework/sdgs/sdg-11.jpg",
+  },
+  12: {
+    title: "Responsible Consumption and Production",
+    image: "/assets/framework/sdgs/sdg-12.jpg",
+  },
+  13: {
+    title: "Climate Action",
+    image: "/assets/framework/sdgs/sdg-13.jpg",
+  },
+  14: {
+    title: "Life Below Water",
+    image: "/assets/framework/sdgs/sdg-14.jpg",
+  },
+  15: {
+    title: "Life on Land",
+    image: "/assets/framework/sdgs/sdg-15.jpg",
+  },
+  16: {
+    title: "Peace, Justice and Strong Institutions",
+    image: "/assets/framework/sdgs/sdg-16.jpg",
+  },
+  17: {
+    title: "Partnerships for the Goals",
+    image: "/assets/framework/sdgs/sdg-17.jpg",
+  },
+};
+
+const categorySdgs: Record<string, number[]> = {
+  "Environmental Sustainability": [13, 15],
+  "Food Security & Sustainable Agriculture": [2, 4, 12],
+  "Waste Management & Circularity": [11, 12],
+  "Coastal & Marine Action": [13, 14, 15],
+  "Youth Leadership & Participation": [4, 16, 17],
+  "Education & Capacity Building": [4, 16, 17],
+  "Partnerships & Community Mobilization": [16, 17],
+  "Climate & Disaster Resilience": [11, 13, 17],
+  "Social Inclusion & Equity": [5, 10, 16],
+  "Volunteerism": [4, 11, 17],
+  "Recognition": [16, 17],
+};
+
 export function generateStaticParams() {
   return stories.map((s) => ({
     slug: s.slug,
@@ -46,6 +137,8 @@ export default async function StoryPage({
         story.category === s.category
     )
     .slice(0, 3);
+
+  const sdgs = categorySdgs[s.category] || [];
 
   return (
     <main>
@@ -140,6 +233,53 @@ export default async function StoryPage({
                 {s.date}
               </p>
             </div>
+
+            {/* SDG Connections */}
+            {sdgs.length > 0 && (
+              <div className="mt-6 border-t border-maroon/10 pt-6">
+                <p className="eyebrow text-green">
+                  SDG connections
+                </p>
+
+                <div className="mt-4 space-y-3">
+                  {sdgs.map((sdg) => {
+                    const detail = sdgDetails[sdg];
+
+                    return (
+                      <Link
+                        key={sdg}
+                        href="/framework"
+                        className="group flex items-center gap-3 border border-maroon/10 bg-white p-2 transition hover:border-maroon/30"
+                      >
+                        <img
+                          src={detail.image}
+                          alt={`SDG ${sdg}: ${detail.title}`}
+                          className="h-12 w-12 shrink-0 object-cover"
+                        />
+
+                        <div className="min-w-0">
+                          <p className="text-xs font-extrabold uppercase tracking-[0.12em] text-ink/40">
+                            SDG {sdg}
+                          </p>
+
+                          <p className="mt-0.5 text-sm font-extrabold leading-5 text-maroon transition group-hover:text-blue">
+                            {detail.title}
+                          </p>
+                        </div>
+                      </Link>
+                    );
+                  })}
+                </div>
+
+                <Link
+                  href="/framework"
+                  className="mt-4 inline-flex items-center gap-2 text-sm font-extrabold text-blue"
+                >
+                  Explore the framework
+                  <ArrowUpRight size={15} />
+                </Link>
+              </div>
+            )}
           </aside>
         </div>
 
