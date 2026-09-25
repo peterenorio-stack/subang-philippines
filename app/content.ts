@@ -13,6 +13,132 @@ export type Story = {
 
 export const stories: Story[] = [
   {
+  slug: "black-bamboo-propagation-cwts-lts-2024",
+  type: "Project Story",
+  title: "Growing Black Bamboo Through Youth Participation",
+  date: "November 16, 2024",
+  dateValue: "2024-11-16",
+  excerpt:
+    "Subang - CTU Chapter led a black bamboo propagation activity with CWTS and LTS trainees, resulting in the planting of 100 black bamboo specimens at the CTU-Barili Campus.",
+  body: [
+    "On November 16, 2024, Subang - Cebu Technological University Chapter conducted a Black Bamboo Propagation activity at the CTU-Barili Campus in collaboration with Civic Welfare Training Service (CWTS) and Literacy Training Service (LTS) trainees.",
+    "A total of 100 black bamboo specimens were planted during the activity, adding another component to the chapter's continuing environmental restoration and sustainable landscape efforts.",
+    "The activity was co-facilitated by CWTS and LTS staff with assistance from Subang - CTU volunteers. Human Resource Director Dennis B. Bendulo, Senior Environmental Advocate Gissa Mae C. Castino, and interns Shaina Faith D. Visorro and Kesiah C. Montesuso supported the implementation, alongside CWTS staff members Jan Emmanuel Lausa and Dave Baran.",
+    "By involving students and trainees in hands-on environmental activities, the initiative connected volunteerism, practical learning, and ecological stewardship. The activity also demonstrated how institutional partnerships can expand the reach of community-based environmental action."
+  ],
+  image: "/assets/stories/black-bamboo-propagation-cwts-lts-2024.jpg",
+  category: "Environmental Sustainability",
+  partner: "Cebu Technological University - Barili Campus",
+},
+  {
+  slug: "batch-diospyros-blancoi-volunteer-interns-2024",
+  type: "Volunteer Story",
+  title: "Welcoming Batch Diospyros blancoi: Growing the Volunteer Network",
+  date: "November 15, 2024",
+  dateValue: "2024-11-15",
+  excerpt:
+    "Subang - CTU Chapter welcomed a new batch of volunteer interns through an orientation and oath-taking ceremony at Cebu Technological University - Barili Campus.",
+  body: [
+    "On November 15, 2024, Subang - Cebu Technological University Chapter held an orientation and oath-taking ceremony for its newest Volunteer Interns, Batch Diospyros blancoi, at the CTU-Barili Campus.",
+    "The activity was led by Subang - CTU Executive Vice-President Krista Marie Frances C. Bicada and Human Resource Director Dennis B. Bendulo, with support from the chapter's Vice-Presidents and volunteers representing its advocacy departments.",
+    "The orientation introduced the incoming interns to Subang's work and provided guidance on their roles as volunteers. National Executive President Peter John C. Enorio also addressed the new batch, emphasizing the contribution of volunteers to the organization's mission and vision.",
+    "Batch Diospyros blancoi was set to participate in initiatives related to environmental conservation, education, and sustainable development. Their induction marked another step in building a volunteer network where young people can develop practical skills while contributing their time and effort to community initiatives."
+  ],
+  image: "/assets/stories/batch-diospyros-blancoi-volunteer-interns-2024.jpg",
+  category: "Volunteerism",
+  partner: "Cebu Technological University - Barili Campus",
+},
+  {
+  slug: "roadside-cleanup-kalubihan-barili-2024",
+  type: "Project Story",
+  title: "Caring for Our Communities, One Cleanup at a Time",
+  date: "November 13, 2024",
+  dateValue: "2024-11-13",
+  excerpt:
+    "Subang - CTU volunteers and interns collected more than eight sacks of waste during a roadside cleanup in Barangay Kalubihan, Barili, Cebu.",
+  body: [
+    "On November 13, 2024, volunteers and interns of Subang - Cebu Technological University Chapter conducted a roadside cleanup in Barangay Kalubihan, Barili, Cebu.",
+    "The activity collected more than eight sacks of waste, including glass bottles, plastic bottles, sachets, and other discarded plastic materials. The cleanup provided volunteers with a direct opportunity to address visible waste in a community space while promoting responsible waste disposal.",
+    "The initiative was spearheaded by the Environmental Affairs Department under the leadership of Subang - CTU SEAD Vice-President Rodney Joseph B. Sundo.",
+    "Beyond the cleanup itself, the activity reinforced a simple principle of community environmental action: maintaining clean and safe public spaces requires shared responsibility. Through volunteer-led activities, Subang continues to encourage practical participation in environmental stewardship."
+  ],
+  image: "/assets/stories/roadside-cleanup-kalubihan-2024.jpg",
+  category: "Waste Management & Circularity",
+  partner: "Subang - Cebu Technological University Chapter",
+},
+  {
+  slug: "subang-ctu-the-aun-virtual-events-2024",
+  type: "Project Story",
+  title: "Connecting Youth Leadership with Global Higher Education",
+  date: "November 13, 2024",
+  dateValue: "2024-11-13",
+  excerpt:
+    "Subang - CTU Chapter participated in virtual events organized by Times Higher Education and the ASEAN University Network, exploring university rankings, internationalization, and data-driven institutional development.",
+  body: [
+    "Subang - Cebu Technological University Chapter President Peter John C. Enorio participated in two virtual events organized by Times Higher Education (THE) and the ASEAN University Network (AUN), held on October 17 and November 13, 2024.",
+    "The sessions, titled \"Integrating THE Impact and World University Rankings for Global Excellence, Internationalization, and Reputation\" and \"THE Introduction to THE World University Rankings: Enhancing Performance and Data Submission,\" featured speakers from Times Higher Education, including Mei Mei Lim, Director of Consultancy, and Todd Hornal, Regional Director for APAC.",
+    "The discussions explored how THE Impact Rankings and THE World University Rankings are used by higher education institutions to examine institutional performance, societal contributions, internationalization, and data-driven strategies.",
+    "For Subang - CTU Chapter, the engagements provided additional perspective on how student and youth participation can intersect with institutional development and the Sustainable Development Goals. The chapter continues to explore ways that youth-led initiatives can contribute to broader university and community development efforts."
+  ],
+  image: "/assets/stories/the-aun-virtual-events-2024.jpg",
+  category: "Youth Leadership & Participation",
+  partner: "Times Higher Education and ASEAN University Network",
+},
+  {
+  slug: "adopt-a-hectare-visitation-maintenance-2024",
+  type: "Project Story",
+  title: "Nurturing What Was Planted: Adopt-A-Hectare Maintenance",
+  date: "November 9, 2024",
+  dateValue: "2024-11-09",
+  excerpt:
+    "Subang - CTU volunteers and interns continued the Adopt-A-Hectare Project through a site visitation and maintenance activity focused on caring for growing trees and sustaining long-term environmental action.",
+  body: [
+    "On November 9, 2024, Subang - Cebu Technological University Chapter continued its Adopt-A-Hectare Project through a visitation and maintenance activity at the CTU-Barili Campus.",
+    "The Adopt-A-Hectare Project is a long-term tree propagation and growing initiative that emphasizes continued care alongside the establishment of new plantings. During the activity, Subang - CTU Volunteer Interns conducted site maintenance under the supervision of the Environmental Affairs Department.",
+    "The activity provided an opportunity for volunteers to revisit the growing site, monitor previously established plantings, and reinforce the importance of consistent environmental stewardship.",
+    "Rather than treating tree planting as a one-time activity, the initiative reflects Subang's approach of sustaining environmental action through regular maintenance, volunteer participation, and long-term care."
+  ],
+  image: "/assets/stories/adopt-a-hectare-maintenance-2024-02.jpg",
+  category: "Environmental Sustainability",
+  partner: "Cebu Technological University - Barili Campus",
+},
+  {
+  slug: "bamboo-propagation-orientation-ctu-barili-2024",
+  type: "Project Story",
+  title: "Strengthening Sustainability Through Bamboo Propagation",
+  date: "November 9, 2024",
+  dateValue: "2024-11-09",
+  excerpt:
+    "Subang - CTU Chapter introduced NSTP trainees to the environmental, economic, and practical applications of bamboo through an orientation and hands-on propagation demonstration.",
+  body: [
+    "On November 9, 2024, Subang - Cebu Technological University Chapter, in collaboration with NSTP trainees of Cebu Technological University - Barili Campus, conducted a Bamboo Propagation Orientation from 9:00 AM to 11:00 AM.",
+    "The session opened with a discussion led by Subang - CTU President Peter John C. Enorio on the environmental, economic, and infrastructural importance of bamboo. The discussion also introduced participants to practical techniques for propagating bamboo and establishing planting materials.",
+    "The orientation continued with a hands-on demonstration of bamboo propagation, followed by a tour of pre-propagated bamboo specimens. The activity allowed participants to connect the concepts discussed during the session with actual propagation materials and growing practices.",
+    "With the support of CWTS and LTS staff, Subang officers, and volunteers, the activity provided NSTP trainees with practical knowledge that can contribute to environmental stewardship and sustainable resource use."
+  ],
+  image: "/assets/stories/bamboo-propagation-orientation-2024.jpg",
+  category: "Environmental Sustainability",
+  partner: "Cebu Technological University - Barili Campus",
+},
+  {
+  slug: "black-bamboo-propagation-ctu-barili-2024",
+  type: "Project Story",
+  title: "Propagating Black Bamboo for a More Resilient Landscape",
+  date: "October 19, 2024",
+  dateValue: "2024-10-19",
+  excerpt:
+    "Subang volunteers and CTU-Barili partners propagated black bamboo planting materials as part of the chapter's continuing environmental restoration efforts.",
+  body: [
+    "On October 19, 2024, Subang - Cebu Technological University Chapter conducted a black bamboo propagation activity at the CTU-Barili Campus, contributing to the chapter's continuing work in environmental restoration and sustainable land management.",
+    "The activity focused on harvesting and propagating black bamboo (Phyllostachys nigra), a species recognized for its distinctive dark culms and strength. Beyond its ornamental value, bamboo can contribute to soil stabilization and erosion control when appropriately integrated into landscapes and restoration efforts.",
+    "The activity was facilitated by Subang President Peter John C. Enorio, SEAD Deputy Director Augustin P. Tapinit, SEAD Associate Director Dennis B. Bendulo, SCAD Vice-President Joshua Ray P. Calago, and SED Vice-President Cedrick B. Parojinog, with the participation of Volunteer Interns Kesiah C. Montesuso, Shaina Faith D. Visorro, and James Adam P. Posas.",
+    "Together, the volunteers harvested and propagated bamboo planting materials, strengthening the chapter's practical approach to environmental stewardship and demonstrating how sustained volunteer action can contribute to long-term ecological goals."
+  ],
+  image: "/assets/stories/black-bamboo-propagation-ctu-barili-2024.jpg",
+  category: "Environmental Sustainability",
+  partner: "Cebu Technological University - Barili Campus",
+},
+  {
     slug: "kamera-at-kwento-larena-youth-filmmaking-workshop-2026",
     type: "Project Story",
     title: "Kamera at Kwento: A Basic Filmmaking Workshop for Larena Youth",
