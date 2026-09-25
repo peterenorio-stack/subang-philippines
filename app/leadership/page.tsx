@@ -14,25 +14,13 @@ const sections = [
 
 function OfficerCard({
   officer,
-  featured = false,
 }: {
   officer: (typeof officers)[number];
-  featured?: boolean;
 }) {
   return (
-    <article
-      className={`group overflow-hidden bg-white shadow-sm ring-1 ring-maroon/5 transition duration-300 hover:-translate-y-1 hover:shadow-md ${
-        featured ? "md:grid md:grid-cols-[280px_1fr]" : ""
-      }`}
-    >
+    <article className="group overflow-hidden bg-white shadow-sm ring-1 ring-maroon/5 transition duration-300 hover:-translate-y-1 hover:shadow-md">
       {officer.image ? (
-        <div
-          className={`overflow-hidden bg-cream ${
-            featured
-              ? "aspect-[4/3] md:aspect-auto"
-              : "aspect-square"
-          }`}
-        >
+        <div className="aspect-square overflow-hidden bg-cream">
           <img
             src={officer.image}
             alt={officer.name}
@@ -40,11 +28,7 @@ function OfficerCard({
           />
         </div>
       ) : (
-        <div
-          className={`flex items-center justify-center bg-cream p-8 text-center ${
-            featured ? "aspect-[4/3] md:aspect-auto" : "aspect-square"
-          }`}
-        >
+        <div className="flex aspect-square items-center justify-center bg-cream p-8 text-center">
           <span className="eyebrow text-maroon">
             Position
             <br />
@@ -53,26 +37,18 @@ function OfficerCard({
         </div>
       )}
 
-      <div className={featured ? "p-7 md:p-9" : "p-6"}>
+      <div className="p-6">
         {officer.location && (
           <p className="mb-2 text-xs font-bold uppercase tracking-[0.12em] text-green">
             {officer.location}
           </p>
         )}
 
-        <h2
-          className={`font-extrabold text-maroon ${
-            featured ? "text-2xl md:text-3xl" : "text-lg"
-          }`}
-        >
+        <h2 className="text-lg font-extrabold leading-6 text-maroon">
           {officer.name}
         </h2>
 
-        <p
-          className={`mt-2 leading-6 text-ink/60 ${
-            featured ? "text-base" : "text-sm"
-          }`}
-        >
+        <p className="mt-2 text-sm leading-6 text-ink/60">
           {officer.role}
         </p>
 
@@ -173,20 +149,11 @@ export default function Leadership() {
                 </div>
 
                 {/* OFFICERS */}
-                <div
-                  className={
-                    isExecutive
-                      ? "grid gap-8 md:grid-cols-2"
-                      : isAdvisers
-                      ? "grid gap-6 md:grid-cols-2"
-                      : "grid gap-7 sm:grid-cols-2 lg:grid-cols-3"
-                  }
-                >
+                <div className="grid gap-7 sm:grid-cols-2 lg:grid-cols-3">
                   {people.map((officer) => (
                     <OfficerCard
                       key={`${officer.section}-${officer.name}-${officer.location ?? ""}`}
                       officer={officer}
-                      featured={isExecutive}
                     />
                   ))}
                 </div>
