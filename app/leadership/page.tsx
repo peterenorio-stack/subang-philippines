@@ -12,6 +12,80 @@ const sections = [
   "University & College Chapter Executive Presidents",
 ] as const;
 
+function OfficerCard({
+  officer,
+  featured = false,
+}: {
+  officer: (typeof officers)[number];
+  featured?: boolean;
+}) {
+  return (
+    <article
+      className={`group overflow-hidden bg-white shadow-sm ring-1 ring-maroon/5 transition duration-300 hover:-translate-y-1 hover:shadow-md ${
+        featured ? "md:grid md:grid-cols-[280px_1fr]" : ""
+      }`}
+    >
+      {officer.image ? (
+        <div
+          className={`overflow-hidden bg-cream ${
+            featured
+              ? "aspect-[4/3] md:aspect-auto"
+              : "aspect-square"
+          }`}
+        >
+          <img
+            src={officer.image}
+            alt={officer.name}
+            className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.02]"
+          />
+        </div>
+      ) : (
+        <div
+          className={`flex items-center justify-center bg-cream p-8 text-center ${
+            featured ? "aspect-[4/3] md:aspect-auto" : "aspect-square"
+          }`}
+        >
+          <span className="eyebrow text-maroon">
+            Position
+            <br />
+            Vacant
+          </span>
+        </div>
+      )}
+
+      <div className={featured ? "p-7 md:p-9" : "p-6"}>
+        {officer.location && (
+          <p className="mb-2 text-xs font-bold uppercase tracking-[0.12em] text-green">
+            {officer.location}
+          </p>
+        )}
+
+        <h2
+          className={`font-extrabold text-maroon ${
+            featured ? "text-2xl md:text-3xl" : "text-lg"
+          }`}
+        >
+          {officer.name}
+        </h2>
+
+        <p
+          className={`mt-2 leading-6 text-ink/60 ${
+            featured ? "text-base" : "text-sm"
+          }`}
+        >
+          {officer.role}
+        </p>
+
+        {!officer.image && (
+          <p className="mt-4 text-xs leading-5 text-ink/45">
+            This leadership position is currently vacant.
+          </p>
+        )}
+      </div>
+    </article>
+  );
+}
+
 export default function Leadership() {
   return (
     <main>
@@ -69,12 +143,13 @@ export default function Leadership() {
             return (
               <div
                 key={section}
-                className={`${
+                className={
                   sectionIndex !== 0
                     ? "mt-20 border-t border-maroon/10 pt-20 md:mt-28 md:pt-28"
                     : ""
-                }`}
+                }
               >
+                {/* SECTION HEADER */}
                 <div className="mb-10 max-w-3xl">
                   <p className="eyebrow text-green">
                     {section}
@@ -97,6 +172,7 @@ export default function Leadership() {
                   )}
                 </div>
 
+                {/* OFFICERS */}
                 <div
                   className={
                     isExecutive
@@ -107,60 +183,11 @@ export default function Leadership() {
                   }
                 >
                   {people.map((officer) => (
-                    <article
+                    <OfficerCard
                       key={`${officer.section}-${officer.name}-${officer.location ?? ""}`}
-                      className={`group overflow-hidden bg-white shadow-sm ring-1 ring-maroon/5 transition duration-300 hover:-translate-y-1 hover:shadow-md ${
-                        isExecutive
-                          ? "md:flex md:min-h-[420px] md:flex-col"
-                          : ""
-                      }`}
-                    >
-                      {officer.image ? (
-                        <div
-                          className={
-                            isExecutive
-                              ? "aspect-[4/3] overflow-hidden bg-cream md:aspect-[16/9]"
-                              : "aspect-square overflow-hidden bg-cream"
-                          }
-                        >
-                          <img
-                            src={officer.image}
-                            alt={officer.name}
-                            className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.02]"
-                          />
-                        </div>
-                      ) : (
-                        <div className="flex aspect-square items-center justify-center bg-white p-8 text-center">
-                          <span className="eyebrow text-maroon">
-                            Position
-                            <br />
-                            Vacant
-                          </span>
-                        </div>
-                      )}
-
-                      <div className="p-6 md:p-7">
-                        {officer.location && (
-                          <p className="mb-2 text-xs font-bold uppercase tracking-[0.12em] text-green">
-                            {officer.location}
-                          </p>
-                        )}
-
-                        <h2 className="font-extrabold text-maroon">
-                          {officer.name}
-                        </h2>
-
-                        <p className="mt-2 text-sm leading-6 text-ink/60">
-                          {officer.role}
-                        </p>
-
-                        {!officer.image && (
-                          <p className="mt-4 text-xs leading-5 text-ink/45">
-                            This leadership position is currently vacant.
-                          </p>
-                        )}
-                      </div>
-                    </article>
+                      officer={officer}
+                      featured={isExecutive}
+                    />
                   ))}
                 </div>
               </div>
