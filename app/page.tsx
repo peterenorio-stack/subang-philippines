@@ -1,9 +1,9 @@
 import Link from "next/link";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { Header, Footer } from "./components";
-import { stories } from "./content";
+import { sortedStories } from "./content";
 
-const featuredStories = stories.slice(0, 3);
+const featuredStories = sortedStories.slice(0, 3);
 
 const focusAreas = [
   {
