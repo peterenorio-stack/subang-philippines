@@ -1,5 +1,14 @@
 import Link from "next/link";
-import { ArrowRight, ArrowUpRight, Users, Leaf, GraduationCap, Camera, Lightbulb, HeartHandshake } from "lucide-react";
+import {
+  ArrowRight,
+  ArrowUpRight,
+  Users,
+  Leaf,
+  GraduationCap,
+  Camera,
+  Lightbulb,
+  HeartHandshake,
+} from "lucide-react";
 import { Header, Footer, PageIntro } from "../components";
 import { sortedStories } from "../content";
 
@@ -69,6 +78,46 @@ const volunteerSteps = [
   },
 ];
 
+const membershipPathway = [
+  {
+    number: "01",
+    title: "Application Form",
+    description:
+      "Submit the Membership Application Form together with the required consent and application information.",
+  },
+  {
+    number: "02",
+    title: "Preliminary Interview",
+    description:
+      "Participate in an initial interview to discuss your background, interests, motivations, and readiness to volunteer.",
+  },
+  {
+    number: "03",
+    title: "Internship Examination",
+    description:
+      "Complete the Advocacy Assessment as part of the qualification process for the internship phase.",
+  },
+  {
+    number: "04",
+    title: "Internship Proper",
+    description:
+      "Complete 240 hours of combined volunteer service through approved Subang activities and initiatives.",
+    highlight: "240 hours of combined volunteer service",
+  },
+  {
+    number: "05",
+    title: "Membership Interview",
+    description:
+      "Participate in a membership-focused interview following successful completion of the internship requirement.",
+  },
+  {
+    number: "06",
+    title: "Membership Examination",
+    description:
+      "Complete the membership examination as the final qualification stage of the application process.",
+  },
+];
+
 const volunteerStories = sortedStories
   .filter((story) => story.type === "Volunteer Story")
   .slice(0, 3);
@@ -85,6 +134,70 @@ export default function VolunteerPage() {
       />
 
       <main>
+        {/* Membership pathway */}
+        <section className="bg-cream py-20 md:py-28">
+          <div className="container-wide">
+            <div className="max-w-3xl">
+              <p className="mb-4 text-sm font-bold uppercase tracking-[0.18em] text-maroon">
+                From volunteer to member
+              </p>
+
+              <h2 className="text-3xl font-extrabold tracking-tight text-ink md:text-5xl">
+                A pathway built around service, learning, and commitment.
+              </h2>
+
+              <p className="mt-5 text-lg leading-8 text-slate-600">
+                Becoming a Subang member is a structured process. Applicants
+                progress through assessment, volunteer service, and membership
+                qualification before becoming part of the organization.
+              </p>
+            </div>
+
+            <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+              {membershipPathway.map((step) => (
+                <article
+                  key={step.number}
+                  className="relative bg-white p-7 shadow-sm ring-1 ring-slate-200"
+                >
+                  <div className="flex items-start justify-between gap-4">
+                    <span className="text-sm font-extrabold tracking-[0.15em] text-maroon">
+                      {step.number}
+                    </span>
+
+                    {step.number === "04" && (
+                      <span className="bg-gold px-3 py-1 text-xs font-extrabold text-ink">
+                        240 HOURS
+                      </span>
+                    )}
+                  </div>
+
+                  <h3 className="mt-6 text-xl font-extrabold text-ink">
+                    {step.title}
+                  </h3>
+
+                  <p className="mt-3 leading-7 text-slate-600">
+                    {step.description}
+                  </p>
+
+                  {step.highlight && (
+                    <p className="mt-5 border-l-2 border-gold pl-4 text-sm font-bold leading-6 text-maroon">
+                      {step.highlight}
+                    </p>
+                  )}
+                </article>
+              ))}
+            </div>
+
+            <div className="mt-10 border-l-4 border-maroon bg-white px-6 py-5 shadow-sm">
+              <p className="font-bold text-ink">The pathway in brief</p>
+
+              <p className="mt-2 text-slate-600">
+                Apply → Interview → Assess → Serve → Interview → Qualify
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* Why volunteer */}
         <section className="bg-white py-20 md:py-28">
           <div className="container-wide grid gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
@@ -345,7 +458,7 @@ export default function VolunteerPage() {
                     href="/connect"
                     className="inline-flex items-center justify-center gap-2 bg-gold px-6 py-3 font-extrabold text-ink transition hover:opacity-90"
                   >
-                    Become a Subang Volunteer
+                    Start Your Application
                     <ArrowRight size={18} />
                   </Link>
 
