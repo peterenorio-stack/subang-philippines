@@ -1,14 +1,11 @@
 import { NextResponse } from "next/server";
-import { Resend } from "resend";
-
-const resend = new Resend(process.env.RESEND_API_KEY);
+import { generateApplicationPdf } from "@/lib/generateApplicationPdf";
 
 export async function POST(request: Request) {
   try {
     const body = await request.json();
 
     // Basic anti-spam honeypot.
-    // The application form will contain a hidden "website" field.
     if (body.website) {
       return NextResponse.json(
         { error: "Invalid submission." },
@@ -16,7 +13,6 @@ export async function POST(request: Request) {
       );
     }
 
-    // Required fields for the initial submission.
     const requiredFields = [
       "fullName",
       "dateOfBirth",
@@ -49,7 +45,11 @@ export async function POST(request: Request) {
         return value.length === 0;
       }
 
-      return value === undefined || value === null || String(value).trim() === "";
+      return (
+        value === undefined ||
+        value === null ||
+        String(value).trim() === ""
+      );
     });
 
     if (missingFields.length > 0) {
@@ -80,32 +80,62 @@ export async function POST(request: Request) {
       );
     }
 
-    const applicationReference = `SUBANG-${new Date()
-      .getFullYear()}-${Math.random().toString(36).substring(2, 8).toUpperCase()}`;
+    const now = new Date();
+
+    const applicationReference = `SUBANG-${now.getFullYear()}-${Math.random()
+      .toString(36)
+      .substring(2, 8)
+      .toUpperCase()}`;
+
+    const submissionDate = now.toLocaleDateString("en-PH", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    });
+
+    const applicationData = {
+      ...body,
+      applicationReference,
+      submissionDate,
+      electronicSignature: body.electronicSignature || body.fullName,
+      signatureDate: body.signatureDate || submissionDate,
+      issuingAuthority:
+        body.issuingAuthority || body.issuingCountryAuthority || "",
+    };
+
+    // Generate the PDF.
+    const pdfBytes = await generateApplicationPdf(applicationData);
+
+    console.log("Application PDF generated:", {
+      applicationReference,
+      pages: "generated",
+      applicant: body.fullName,
+    });
 
     /*
-     * Stage 2A:
-     * The API endpoint is now functional and validates the submission.
+     * Email delivery will be connected in the next step.
      *
-     * PDF generation and the final email attachment will be added next.
+     * For now, the API successfully:
+     * 1. Receives the application
+     * 2. Validates required fields
+     * 3. Generates the application PDF
      */
-
-    console.log("Application received:", {
-      applicationReference,
-      fullName: body.fullName,
-      emailAddress: body.emailAddress,
-    });
 
     return NextResponse.json({
       success: true,
       applicationReference,
-      message: "Application received successfully.",
+      submissionDate,
+      pdfGenerated: true,
+      message: "Application processed successfully.",
     });
   } catch (error) {
     console.error("Application submission error:", error);
 
     return NextResponse.json(
-      { error: "Unable to process the application at this time." },
+      {
+        error:
+          "Unable to process the application at this time. Please try again later.",
+      },
       { status: 500 }
     );
   }
