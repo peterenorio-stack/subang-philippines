@@ -452,8 +452,8 @@ export default function Home() {
               </Link>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* NETWORK */}
       <section className="bg-cream py-24">
