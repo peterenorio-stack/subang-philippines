@@ -12,6 +12,306 @@ export type Story = {
 };
 
 export const stories: Story[] = [
+  {
+  slug: "subang-ctu-welcomes-second-batch-volunteer-interns-2025",
+  type: "Volunteer Story",
+  title: "Subang - CTU Welcomes Second Batch of Volunteer Interns",
+  date: "February 10, 2025",
+  dateValue: "2025-02-10",
+  excerpt:
+    "Subang - CTU Chapter welcomed its second batch of volunteer interns through an orientation and oath-taking activity at CTU-Barili.",
+  body: [
+    "Subang - Cebu Technological University Chapter welcomed its second batch of volunteer interns on February 10, 2025, marking another step in the chapter's continuing effort to provide young people with meaningful opportunities for volunteer service and community development.",
+    "The orientation and oath-taking activity was led by Dennis B. Bendulo, Director for Human Resources, with support from the chapter's vice presidents and other volunteers. Shaina Faith D. Visorro formally welcomed the new interns, while Sean B. Tellidua delivered the Statement of Purpose.",
+    "The new volunteers were introduced to five working areas within the chapter: Education Affairs, Community Affairs, Environmental Affairs, Agriculture and Food Systems, and Science and Technology. These areas provide interns with opportunities to contribute their skills while gaining practical experience in community-based initiatives.",
+    "Founder and National Executive President Peter John C. Enorio also addressed the new volunteers, emphasizing the value of service, participation, and responsibility in contributing to Subang's work.",
+    "The activity concluded with the oath-taking ceremony, formally welcoming the second batch of volunteer interns into the Subang - CTU Chapter and its continuing work with communities and partner institutions."
+  ],
+  image:
+    "/assets/stories/subang-ctu-welcomes-second-batch-volunteer-interns-2025.jpg",
+  category: "Volunteerism",
+  partner: "CTU-Barili"
+},
+
+{
+  slug: "paglaum-farm-harvest-february-12-2025",
+  type: "Project Story",
+  title: "CTU and Subang - CTU Continue Paglaum Farm Harvests, Bringing Fresh Produce to the Community",
+  date: "February 12, 2025",
+  dateValue: "2025-02-12",
+  excerpt:
+    "Another Paglaum Farm harvest at CTU-Barili brought fresh tomatoes, okra, and chilis to students, staff, and members of the local community.",
+  body: [
+    "Paglaum Farm at Cebu Technological University - Barili Campus continued its regular harvests on February 12, 2025, as CTU and Subang - CTU volunteers gathered fresh produce for distribution to members of the campus and surrounding community.",
+    "The harvest included tomatoes, okra, and chilis cultivated through the farm's continuing food production activities. The produce was distributed to CTU-Barili students, staff, and members of the local community.",
+    "The activity was led by Sean B. Tellidua, Mary Danielle T. Descallar, and volunteer interns Mary Rose D. Razo and Maria Kristina M. Pacaldo.",
+    "The continuing harvests form part of Paglaum Farm's broader effort to connect sustainable food production with student welfare, agricultural learning, and community support. The initiative contributes to the broader goal of advancing food security and supports Sustainable Development Goal 2, Zero Hunger."
+  ],
+  image: "/assets/stories/paglaum-farm-harvest-february-12-2025.jpg",
+  category: "Food Security & Sustainable Agriculture",
+  partner: "CTU-Barili"
+},
+
+{
+  slug: "paglaum-farm-harvest-february-15-2025",
+  type: "Project Story",
+  title: "Subang - CTU Leads Another Successful Harvesting Session for Paglaum Farm Project",
+  date: "February 15, 2025",
+  dateValue: "2025-02-15",
+  excerpt:
+    "Subang - CTU volunteers led another Paglaum Farm harvesting session, bringing fresh produce from the farm to students and members of the community.",
+  body: [
+    "Subang - CTU volunteers continued the Paglaum Farm project with another harvesting session on February 15, 2025, contributing to the farm's ongoing production and distribution of fresh vegetables.",
+    "The activity involved the harvesting and preparation of produce for distribution to members of the CTU-Barili community. The session was led by Peter John C. Enorio together with volunteer interns Pearl Marie F. Caballero, Benzi Asher C. Obcial, and Leanne Danielle T. Trasporte.",
+    "The activity reflects Paglaum Farm's continuing approach of combining sustainable food production with student support and community participation. Regular harvesting also provides volunteers and interns with opportunities to take part in practical agricultural work.",
+    "Through these continuing activities, Subang - CTU contributes to campus-based food security efforts while promoting sustainable agriculture and volunteer participation."
+  ],
+  image: "/assets/stories/paglaum-farm-harvest-february-15-2025.jpg",
+  category: "Food Security & Sustainable Agriculture",
+  partner: "CTU-Barili"
+},
+
+{
+  slug: "bamboo-propagation-site-maintenance-february-15-2025",
+  type: "Project Story",
+  title: "Bamboo Propagation and Site Maintenance Strengthen Environmental Efforts at CTU-Barili",
+  date: "February 15, 2025",
+  dateValue: "2025-02-15",
+  excerpt:
+    "Subang - CTU volunteers and CWTS trainees continued bamboo propagation and Adopt-A-Hectare site maintenance at CTU-Barili.",
+  body: [
+    "Environmental activities at Cebu Technological University - Barili Campus continued on February 15, 2025, with a combined session focused on bamboo propagation and the maintenance of areas developed through the Adopt-A-Hectare initiative.",
+    "CWTS trainees participated in the propagation of black bamboo, while volunteers and trainees also carried out maintenance activities within the Adopt-A-Hectare site, including work around established kamagong areas.",
+    "The activities were led by Peter John C. Enorio, Shaina Faith D. Visorro, and Cedrick B. Parojinog, with support from CWTS staff Dave M. Baran and Jan Emmanuel Lausa. CTU-Barili SSG Senator Xyrah P. Cuizon also supported the activity.",
+    "The combined work allowed participants to contribute both to the expansion of planting materials and to the continued care of previously established areas. Regular site maintenance remains an important part of ensuring that environmental projects are sustained beyond their initial planting activities."
+  ],
+  image:
+    "/assets/stories/bamboo-propagation-site-maintenance-february-15-2025.jpg",
+  category: "Environmental Sustainability",
+  partner: "CTU-Barili"
+},
+
+{
+  slug: "black-bamboo-riparian-maintenance-february-15-2025",
+  type: "Project Story",
+  title: "Subang Leads Black Bamboo Propagation and Riparian Project Maintenance at CTU-Barili",
+  date: "February 15, 2025",
+  dateValue: "2025-02-15",
+  excerpt:
+    "Subang - CTU volunteers and NSTP participants continued black bamboo propagation while conducting site assessment and maintenance within the campus riparian project.",
+  body: [
+    "Subang - CTU continued its environmental work at Cebu Technological University - Barili Campus on February 15, 2025, through a combined activity involving black bamboo propagation and maintenance of the campus riparian project.",
+    "NSTP-CWTS trainees and staff participated in site activities that included assessing existing areas, carrying out maintenance work, and preparing additional black bamboo planting materials. The session provided participants with practical experience in supporting an ongoing environmental restoration effort.",
+    "The activity also included visitation and maintenance within the riparian project area, allowing volunteers and participants to monitor previously established work while identifying areas requiring continued attention.",
+    "By combining propagation with site maintenance, the activity supported both the expansion and long-term care of the campus environmental initiative."
+  ],
+  image:
+    "/assets/stories/black-bamboo-riparian-maintenance-february-15-2025.jpg",
+  category: "Environmental Sustainability",
+  partner: "CTU-Barili"
+},
+
+{
+  slug: "paglaum-farm-harvest-february-23-2025",
+  type: "Project Story",
+  title: "Subang - CTU Conducts Another Harvesting Session for Paglaum Farm Project",
+  date: "February 23, 2025",
+  dateValue: "2025-02-23",
+  excerpt:
+    "Subang - CTU volunteers and interns continued Paglaum Farm's regular harvesting and distribution activities at CTU-Barili.",
+  body: [
+    "Paglaum Farm continued its regular harvesting activities on February 23, 2025, with Subang - CTU volunteers and interns taking part in the collection and preparation of fresh produce.",
+    "The session was led by Peter John C. Enorio, together with volunteers Ron Janbert P. Ofquila, Ciara Mari M. Brigoli, and Mary Danielle T. Descallar, and interns John Niño Pielago, Benzi Asher C. Obcial, and Iyz Phoebemae Del Socorro.",
+    "The harvested produce was prepared for distribution as part of Paglaum Farm's continuing effort to make fresh agricultural products available to students and members of the local community.",
+    "The activity reflects the project's continuing connection between sustainable food production, volunteer participation, and community support."
+  ],
+  image: "/assets/stories/paglaum-farm-harvest-february-23-2025.jpg",
+  category: "Food Security & Sustainable Agriculture",
+  partner: "CTU-Barili"
+},
+
+{
+  slug: "subang-ctu-welcomes-third-batch-volunteer-interns-2025",
+  type: "Volunteer Story",
+  title: "Subang - CTU Welcomes 3rd Batch of Volunteer Interns",
+  date: "March 10, 2025",
+  dateValue: "2025-03-10",
+  excerpt:
+    "Subang - CTU Chapter welcomed its third batch of volunteer interns through an orientation and oath-taking activity at the chapter office in Barili.",
+  body: [
+    "Subang - Cebu Technological University Chapter welcomed its third batch of volunteer interns on March 10, 2025, through an orientation and oath-taking activity held at the Subang Office in Barili.",
+    "The activity opened with Dennis B. Bendulo, followed by a Statement of Purpose from John Gielai O. Sedentario. Chapter officers, including Shaina Faith D. Visorro and Cedrick B. Parojinog, together with other vice presidents and Executive Vice President Joshua Ray P. Calago, provided the new interns with an overview of the organization's work and volunteer structure.",
+    "Founder and National Executive President Peter John C. Enorio also delivered a message to the new volunteers, highlighting the importance of participation and service in community development.",
+    "The orientation concluded with the formal oath-taking of the third batch of volunteer interns, marking their entry into the continuing volunteer work of Subang - CTU Chapter."
+  ],
+  image:
+    "/assets/stories/subang-ctu-welcomes-third-batch-volunteer-interns-2025.jpg",
+  category: "Volunteerism",
+  partner: "CTU-Barili"
+},
+
+{
+  slug: "lakbay-agham-women-science-technology-2025",
+  type: "Project Story",
+  title: "CTU-Barili Celebrates Women in Science and Technology with 'Lakbay Agham'",
+  date: "March 21, 2025",
+  dateValue: "2025-03-21",
+  excerpt:
+    "Subang - CTU Chapter and the CTU-Barili GAD Office marked National Women's Month 2025 through Lakbay Agham, a learning activity highlighting women's participation in science and technology.",
+  body: [
+    "Subang - CTU Chapter and the CTU-Barili Gender and Development Office marked National Women's Month 2025 through 'Lakbay Agham: Kababaihan sa Siyensa at Teknolohiya,' an activity held at the campus Smart Room.",
+    "Shaina Faith D. Visorro opened the activity and shared the purpose of creating a space for learning and discussion on women's participation in science and technology. Peter John C. Enorio also discussed Republic Act No. 9262, or the Anti-Violence Against Women and Their Children Act.",
+    "The activity featured a presentation by Shaina Faith D. Visorro on women in science and technology, followed by a contribution from Dr. Daisy L. Obiso through the #JuanaSays campaign. Mary Grace Flores, GAD Director, also took part in the activity.",
+    "John Gielai O. Sedentario delivered the closing remarks, bringing the session to a close with a continued emphasis on awareness, participation, and opportunities for women in science and technology."
+  ],
+  image:
+    "/assets/stories/lakbay-agham-women-science-technology-2025.jpg",
+  category: "Social Inclusion & Equity",
+  partner: "CTU-Barili GAD Office"
+},
+
+{
+  slug: "academic-writing-workshop-series-launch-2025",
+  type: "Project Story",
+  title: "Subang - CTU Chapter and R&D Office Launch Academic Writing Workshop Series",
+  date: "March 25, 2025",
+  dateValue: "2025-03-25",
+  excerpt:
+    "Subang - CTU Chapter, the R&D Office, and the Institute of Agricultural and Biosystems Engineering launched a workshop series designed to strengthen students' academic writing and research skills.",
+  body: [
+    "Subang - Cebu Technological University Chapter, the CTU-Barili Research and Development Office, and the Institute of Agricultural and Biosystems Engineering launched an Academic Writing Workshop Series on March 25, 2025.",
+    "Dr. Jeremy P. Mondejar opened the activity, while Shaina Faith D. Visorro shared a statement on the purpose of the workshop series and the importance of strengthening students' research and academic writing capabilities.",
+    "Dr. Mondejar facilitated the workshop, covering key areas of academic research and writing including research objectives, literature review, methodology, citation practices, and the responsible use of AI tools. The session also provided participants with an opportunity to raise questions and discuss research-related concerns during the open forum.",
+    "Peter John C. Enorio delivered the closing remarks, concluding the first session of the workshop series and setting the stage for succeeding learning activities."
+  ],
+  image:
+    "/assets/stories/academic-writing-workshop-series-launch-2025.jpg",
+  category: "Education & Capacity Building",
+  partner: "CTU-Barili R&D Office"
+},
+
+{
+  slug: "academic-writing-workshop-second-session-2025",
+  type: "Project Story",
+  title: "Subang - CTU Chapter, R&D Office, and College of Education Hold 2nd Academic Writing Workshop",
+  date: "March 27, 2025",
+  dateValue: "2025-03-27",
+  excerpt:
+    "The second session of the Academic Writing Workshop Series continued with practical discussions on research design, literature reviews, methodologies, and academic writing.",
+  body: [
+    "The Academic Writing Workshop Series continued on March 27, 2025, with its second session organized by Subang - CTU Chapter, the CTU-Barili Research and Development Office, and the College of Education.",
+    "Dr. Margarito B. Callao opened the session, followed by a Statement of Purpose from Peter John C. Enorio. Audie L. Cherry, a PhD candidate at Clemson University, facilitated the main learning session.",
+    "The discussion covered research objectives, literature reviews, methodologies, citation practices, and the use of AI tools in academic work. Participants were also introduced to conceptual and theoretical frameworks and given opportunities to work through research proposals and research questions.",
+    "The session included an open forum addressing research procedures, question formulation, sampling, and research ethics. Students from the College of Education and TLE participated in the workshop.",
+    "Ciara Mari M. Brigoli led the closing portion of the activity and the distribution of awards and recognition to participants."
+  ],
+  image:
+    "/assets/stories/academic-writing-workshop-second-session-2025.jpg",
+  category: "Education & Capacity Building",
+  partner: "CTU-Barili R&D Office"
+},
+
+{
+  slug: "academic-writing-workshop-third-session-2025",
+  type: "Project Story",
+  title: "Subang - CTU Chapter, R&D Office, and CAFBC Continue Academic Writing Workshop Series in Its 3rd Run",
+  date: "April 11, 2025",
+  dateValue: "2025-04-11",
+  excerpt:
+    "The third session of the Academic Writing Workshop Series brought together research discussions on academic writing, research design, quantitative methods, and data analysis.",
+  body: [
+    "The Academic Writing Workshop Series continued with its third session on April 11, 2025, bringing the activity to the new CAFBC Multimedia Room at CTU-Barili.",
+    "Valerie U. Pascual opened the session, which continued the series' focus on strengthening research and academic writing skills among participants.",
+    "Audie L. Cherry led the morning session, revisiting research objectives, literature reviews, methodology, citation practices, and the responsible use of AI tools. The discussion also covered conceptual and theoretical frameworks as important components of research development.",
+    "The afternoon session focused on quantitative research, data gathering, statistical treatment, and analysis. It was facilitated by Julius C. Medellin, MSc., PFT, OIC Chair of BS Food Technology.",
+    "Janica Jay P. Pahayahay delivered the closing portion of the activity, concluding the third run of the workshop series."
+  ],
+  image:
+    "/assets/stories/academic-writing-workshop-third-session-2025.jpg",
+  category: "Education & Capacity Building",
+  partner: "CTU-Barili R&D Office"
+},
+
+{
+  slug: "adopt-a-hectare-maintenance-april-26-2025",
+  type: "Project Story",
+  title: "CTU-Barili Strengthens Environmental Stewardship Through 'Adopt a Hectare' Project",
+  date: "April 26, 2025",
+  dateValue: "2025-04-26",
+  excerpt:
+    "CWTS trainees and Subang - CTU volunteers continued the Adopt a Hectare project through site maintenance and care for growing trees at CTU-Barili.",
+  body: [
+    "Environmental stewardship efforts at Cebu Technological University - Barili Campus continued on April 26, 2025, through another maintenance activity under the Adopt a Hectare project.",
+    "CWTS trainees and volunteers worked together to maintain the project area and care for growing trees, including soursop, berries, Java apple, and jackfruit.",
+    "The activity was led by Shaina Faith D. Visorro, John Gielai O. Sedentario, and Gissa Mae C. Castino, with support from CWTS staff Dave M. Baran, Jan Emmanuel Lausa, Eden F. Nemeño, and Feil Hurvey C. Avenido.",
+    "Regular maintenance allows participants to continue caring for trees beyond their initial planting and supports the long-term development of the Adopt a Hectare project as a campus-based environmental initiative."
+  ],
+  image:
+    "/assets/stories/adopt-a-hectare-maintenance-april-26-2025.jpg",
+  category: "Environmental Sustainability",
+  partner: "CTU-Barili"
+},
+
+{
+  slug: "kamagong-propagation-tree-growing-june-14-2025",
+  type: "Project Story",
+  title: "Subang - CTU Leads Kamagong Propagation and Tree-Growing Activity at CTU-Barili",
+  date: "June 14, 2025",
+  dateValue: "2025-06-14",
+  excerpt:
+    "Subang - CTU volunteers continued campus environmental work through kamagong propagation and tree-growing activities at CTU-Barili.",
+  body: [
+    "Subang - Cebu Technological University Chapter continued its environmental activities at CTU-Barili on June 14, 2025, through a kamagong propagation and tree-growing activity.",
+    "Kamagong, scientifically known as Diospyros blancoi, was among the trees propagated and planted as part of the continuing effort to develop and care for the campus landscape.",
+    "The activity was led by Peter John C. Enorio, with support from Ron Janbert P. Ofquila, Ciara Mari M. Brigoli, and Miles Wilven Ayuban.",
+    "The activity provided volunteers with hands-on experience in tree propagation and planting while contributing to the continuing environmental work of Subang - CTU at the campus."
+  ],
+  image:
+    "/assets/stories/kamagong-propagation-tree-growing-june-14-2025.jpg",
+  category: "Environmental Sustainability",
+  partner: "CTU-Barili"
+},
+
+{
+  slug: "ctu-barili-nafte-2025",
+  type: "Project Story",
+  title: "CTU-Barili Participates in 3rd National Agriculture and Fisheries Technology Exhibition",
+  date: "June 19, 2025",
+  dateValue: "2025-06-19",
+  excerpt:
+    "CTU-Barili student leaders and representatives participated in the 3rd National Agriculture and Fisheries Technology Exhibition in Mandaue City to explore emerging technologies in agriculture and fisheries.",
+  body: [
+    "Representatives from Cebu Technological University - Barili Campus participated in the 3rd National Agriculture and Fisheries Technology Exhibition held at the Mandaue City Sports and Cultural Complex on June 19, 2025.",
+    "Among the participants were Peter John C. Enorio, Peter Gabriel Suico, and Miles Wilven Ayuban, a Subang volunteer intern, together with Dr. Pet Roey L. Pascual. The group also engaged with the UrbanGrow Plant Box team, co-headed by Dr. Jerome B. Aguilar.",
+    "During the exhibition, the participants explored agricultural and fisheries technologies and interacted with officials from the Department of Agriculture Regional Field Office 7, including Dr. Angel C. Enriquez, Dr. Wilberto Castillo, and Dr. Fabio Enriquez.",
+    "The participation provided an opportunity for CTU-Barili representatives to learn about technologies and innovations relevant to agriculture and fisheries while connecting with practitioners and institutions working in the sector."
+  ],
+  image: "/assets/stories/ctu-barili-nafte-2025.jpg",
+  category: "Food Security & Sustainable Agriculture",
+  partner: "Department of Agriculture Regional Field Office 7"
+},
+
+{
+  slug: "dennis-bendulo-gawad-subang-volunteer-story-2025",
+  type: "Volunteer Story",
+  title: "It's Not About What You Give, But Why You Give",
+  date: "July 13, 2025",
+  dateValue: "2025-07-13",
+  excerpt:
+    "For Dennis B. Bendulo, volunteerism grew from a life shaped by perseverance, agriculture, community, and the decision to show up where he was needed.",
+  body: [
+    "Dennis B. Bendulo, a BS Agriculture student specializing in Agronomy, became the sole recipient of the Gawad Subang award, a recognition that reflects not only his work as a volunteer but also the experiences that shaped his commitment to service.",
+    "His journey began long before he became involved in Subang. As a young student, Dennis found ways to support himself and his education, selling Frutos candies in elementary school and bibingka in high school. By Grade 9, he was already a working student. After senior high school, uncertainty about whether he could continue to college was eased when a cousin and teacher offered him an opportunity to study while working.",
+    "His parents and grandmother remained important sources of inspiration as he pursued agriculture. College brought its own challenges, including periods when friends helped him with food and other needs. Along the way, mentors such as Dr. Clea Anne V. Corsiga, whom he admired for her work in Soil Science, and Dr. Danny E. Carabio helped nurture his potential.",
+    "Dennis initially had little interest in joining a student organization. That changed when he was invited by Kuya Rodney Sundo, then Subang Environmental Affairs Vice President. He eventually joined because of the organization's culture of volunteerism and its emphasis on contributing to communities without expecting something in return.",
+    "His experience in agriculture also shaped his perspective on service. He often returns to the idea that people should look at what is most needed and respond accordingly. For agriculture students, he encourages them to recognize the importance of their field and the role agriculturists play in sustaining food production.",
+    "Dennis' story offers a simple reflection on volunteerism: service is not always measured by the amount of resources a person can give. Sometimes, what matters most is the willingness to show up, take responsibility, and contribute where one is called to serve."
+  ],
+  image:
+    "/assets/stories/dennis-bendulo-gawad-subang-volunteer-story-2025.jpg",
+  category: "Volunteerism",
+  partner: "Subang - CTU Chapter"
+},
     {
     slug: "bamboo-propagation-aquaculture-preparation-2024",
     type: "Project Story",
