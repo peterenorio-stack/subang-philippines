@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowUpRight, Mail, Phone, Facebook, Instagram } from "lucide-react";
+import { ArrowRight, ArrowUpRight, Mail, Phone, Facebook, Instagram } from "lucide-react";
 import { Header, Footer } from "../components";
 
 export default function Connect() {
@@ -57,18 +57,24 @@ export default function Connect() {
                 </h3>
 
                 <p className="mt-3 leading-6 text-ink/70">
-                  Interested in becoming part of Subang Philippines? Our Human
-                  Resource team handles membership inquiries and the process for
-                  those who want to join the organization.
+                  Interested in becoming part of Subang Philippines? Start your
+                  journey by completing the official membership application.
+                  Applications are reviewed through Subang’s established
+                  membership process.
                 </p>
 
-                <a
-                  href="mailto:subangph.humanresource@gmail.com"
-                  className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-maroon"
+                <Link
+                  href="/apply"
+                  className="mt-5 inline-flex items-center gap-2 bg-maroon px-5 py-3 text-sm font-extrabold text-white transition hover:bg-maroon/90"
                 >
-                  Contact Human Resource
-                  <ArrowUpRight size={16} />
-                </a>
+                  Start Your Application
+                  <ArrowRight size={16} />
+                </Link>
+
+                <p className="mt-3 text-sm leading-5 text-ink/55">
+                  Have a question about membership or your application?
+                  Contact Human Resource below.
+                </p>
               </div>
 
               {/* Partnership */}
@@ -151,9 +157,9 @@ export default function Connect() {
                 </h2>
 
                 <p className="mt-4 max-w-xl leading-6 text-ink/70">
-                  For partnerships, general inquiries, invitations, and other
-                  organizational concerns, you can reach Subang Philippines
-                  through the channels below.
+                  For partnerships, general inquiries, invitations,
+                  membership concerns, and other organizational matters, you
+                  can reach Subang Philippines through the channels below.
                 </p>
               </div>
 
@@ -202,8 +208,8 @@ export default function Connect() {
                     </p>
 
                     <p className="mt-1 text-sm leading-5 text-ink/60">
-                      For membership applications, inquiries, and expressions
-                      of interest in becoming part of Subang Philippines.
+                      For membership inquiries, application-related concerns,
+                      and questions about the membership process.
                     </p>
                   </div>
 
@@ -333,9 +339,24 @@ export default function Connect() {
 
                 <p className="mt-4 leading-6 text-white/70">
                   Tell us what you have in mind. Whether it is a partnership,
-                  community initiative, volunteer opportunity, or simply a
+                  community initiative, volunteer inquiry, or simply a
                   question about Subang Philippines, we are ready to listen.
                 </p>
+
+                <div className="mt-7 border-l-2 border-gold/70 pl-4">
+                  <p className="text-sm leading-6 text-white/70">
+                    If you are ready to formally apply for membership, please
+                    use the official application form instead.
+                  </p>
+
+                  <Link
+                    href="/apply"
+                    className="mt-3 inline-flex items-center gap-2 text-sm font-extrabold text-gold transition hover:text-white"
+                  >
+                    Go to Membership Application
+                    <ArrowRight size={16} />
+                  </Link>
+                </div>
               </div>
 
               <form className="space-y-4">
@@ -409,7 +430,9 @@ export default function Connect() {
                     <option value="" disabled>
                       Select an option
                     </option>
-                    <option value="volunteer">Become a volunteer</option>
+                    <option value="volunteer">
+                      Ask about volunteering
+                    </option>
                     <option value="partnership">
                       Explore a partnership
                     </option>
