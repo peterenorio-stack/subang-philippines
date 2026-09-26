@@ -13,6 +13,189 @@ export type Story = {
 
 export const stories: Story[] = [
   {
+  slug: "subang-siquijor-zero-waste-coastal-cleanup-waste-assessment-2024",
+  type: "Project Story",
+  title: "Subang Supports Coastal Cleanup and Waste Assessment in Siquijor",
+  date: "December 27, 2024",
+  dateValue: "2024-12-27",
+  excerpt: "Subang leaders and volunteers joined Zero Waste Youth Siquijor and Mother Earth Foundation Philippines for a coastal cleanup, waste assessment, and brand audit in Caticugan, Siquijor.",
+  body: [
+    "Subang leaders and volunteers joined Zero Waste Youth Siquijor and Mother Earth Foundation Philippines for a coastal cleanup, waste assessment, and brand audit at La Isla Bonita in Caticugan, Siquijor, on December 27, 2024.",
+    "The activity was led by Zero Waste Youth Siquijor President Justin Anton Aguisanda, together with Mother Earth Foundation Siquijor Assistant Project Officer Beleeth L. Bernardo and Community Organizer Sylma Fern T. Guibone.",
+    "The waste assessment and brand audit were designed to generate information that could help communities and decision-makers better understand waste management challenges and inform local policy discussions related to Republic Act No. 9003, the Ecological Solid Waste Management Act of 2000.",
+    "Subang National Executive President Peter John C. Enorio delivered a message during the activity emphasizing the value of relevant community data in supporting local policy development. Subang representatives included Raf B. Jimenez of Subang - University of San Carlos, Jerecho Jose P. Sumalpong of Subang - Visayas State University, and former Subang - Siquijor Human Resource Director Jehan Joane M. Jumalon.",
+    "The activity also involved the Sangguniang Kabataan Barangay Council of Taloot in Argao, Cebu, Leaders and Advocates for Greater Siquijor, Siquijor Advocates for Adolescent Health and Development, the Office of Board Member Brylle Deeiah D. Tumarong, and the Provincial Youth Development Council.",
+    "Subang's participation connected its youth and volunteer network with a broader community effort to address waste management through environmental action, data gathering, and local collaboration."
+  ],
+  image: "/assets/stories/subang-siquijor-zero-waste-coastal-cleanup-waste-assessment-2024.jpg",
+  category: "Waste Management & Circularity",
+  partner: "Zero Waste Youth Siquijor and Mother Earth Foundation Philippines"
+},
+  {
+  slug: "subang-alegria-mangrove-growing-coastal-cleanup-2024",
+  type: "Project Story",
+  title: "Subang Leads Mangrove Growing and Coastal Cleanup in Alegria",
+  date: "December 21, 2024",
+  dateValue: "2024-12-21",
+  excerpt: "Subang volunteers conducted mangrove growing and coastal cleanup activities in Santa Filomena, Alegria, combining coastal restoration with shoreline waste removal.",
+  body: [
+    "Subang volunteers conducted a mangrove growing and coastal cleanup activity in Barangay Santa Filomena, Alegria, Cebu, on December 21, 2024, continuing the organization's work in coastal restoration and environmental stewardship.",
+    "The activity was led by National Executive President Peter John C. Enorio, together with CTU chapter leaders and volunteers including Krista Marie Frances C. Bicada, Dennis B. Bendulo, Cedrick B. Parojinog, Rodney Joseph B. Sundo, Laurence Glenn B. Parojinog, and volunteer interns Shaina Faith D. Visorro and Queenelene Faith N. Perpetua.",
+    "The mangrove growing component involved Rhizophora species and followed natural zonation and tidal elevation considerations in determining planting locations.",
+    "Volunteers also conducted a coastal cleanup to remove trash and debris from the shoreline, addressing waste that could contribute to coastal and marine pollution.",
+    "By combining mangrove restoration with coastal cleanup, the activity brought together two complementary forms of environmental action: restoring coastal vegetation and reducing waste along the shoreline."
+  ],
+  image: "/assets/stories/subang-alegria-mangrove-growing-coastal-cleanup-2024.jpg",
+  category: "Coastal & Marine Action",
+  partner: "Subang - CTU-Barili"
+},
+  {
+  slug: "subang-siquijor-environmental-awareness-month-2024",
+  type: "Project Story",
+  title: "Subang - Siquijor Deepens Environmental Learning Through Expert Sessions",
+  date: "November 30, 2024",
+  dateValue: "2024-11-30",
+  excerpt: "Subang - Siquijor marked Environmental Awareness Month with sessions on environmental leadership and marine conservation at Lazi National Agricultural School.",
+  body: [
+    "Subang - Siquijor marked Environmental Awareness Month on November 30, 2024, by bringing environmental practitioners into a learning session for its members at Lazi National Agricultural School.",
+    "The program opened with a session by Nancy Mae B. Omandam on environmental leadership. Participants worked through a SWOT analysis to examine organizational strengths, weaknesses, opportunities, and threats in relation to environmental initiatives.",
+    "Sue Ong, Shark Coordinator of the Wildlife Conservation Society Philippines, followed with a discussion on marine conservation. The session covered the ecological role of sharks, marine species life cycles, and threats including overfishing, habitat destruction, and climate change.",
+    "The discussions provided Subang - Siquijor members with additional perspectives that could inform the chapter's environmental planning and future conservation activities.",
+    "The activity was supported by Lazi National Agricultural School, led by Principal I Ana Rose M. Cabasag, reinforcing the role of partnerships and knowledge-sharing in environmental education."
+  ],
+  image: "/assets/stories/subang-siquijor-environmental-awareness-month-2024.jpg",
+  category: "Environmental Sustainability",
+  partner: "Lazi National Agricultural School"
+},
+  {
+  slug: "subang-siquijor-batang-malaya-campaign-2024",
+  type: "Project Story",
+  title: "Subang - Siquijor Supports Batang Malaya Campaign in Maria",
+  date: "November 26, 2024",
+  dateValue: "2024-11-26",
+  excerpt: "Subang - Siquijor supported the Batang Malaya campaign in Maria, Siquijor through children's activities and volunteer engagement during an inter-agency effort to address child labor.",
+  body: [
+    "Subang - Siquijor joined government agencies, local offices, and community partners in supporting the Batang Malaya campaign in Maria, Siquijor, on November 26, 2024.",
+    "The activity was led by the Department of Labor and Employment - Siquijor and brought together partners including the National Council Against Child Labor Philippines, Department of Social Welfare and Development, Provincial Government of Siquijor, and Technical Education and Skills Development Authority - Lazi Technical Institute.",
+    "Local partners included the Provincial Social Welfare and Development Office, Local Government Unit of Maria, Public Employment Service Office, Sangguniang Kabataan of Maria, and the Office of Board Member Brylle Deeiah Tumarong-Quio.",
+    "Subang - Siquijor contributed through children's games and volunteer engagement, supporting the campaign's broader effort to promote children's rights and address child labor.",
+    "TESDA also provided parents with technical skills training, including cooking, as part of efforts to strengthen livelihood opportunities.",
+    "Subang's participation reflected its continuing involvement in youth and community initiatives that connect volunteerism with social responsibility and community support."
+  ],
+  image: "/assets/stories/subang-siquijor-batang-malaya-campaign-2024.jpg",
+  category: "Community Development",
+  partner: "Department of Labor and Employment - Siquijor"
+},
+  {
+  slug: "subang-siquijor-diploma-at-diskarte-project-2024",
+  type: "Project Story",
+  title: "Subang - Siquijor Equips More Than 200 Students with Career Skills",
+  date: "October 30, 2024",
+  dateValue: "2024-10-30",
+  excerpt: "The Diploma at Diskarte Project provided more than 200 fourth-year students in Siquijor with practical training in CV writing and interview skills.",
+  body: [
+    "Subang - Siquijor launched the Diploma at Diskarte Project in October 2024, providing career preparation training to more than 200 fourth-year students at Siquijor State College.",
+    "The two-day program focused on CV writing and interview skills, addressing practical competencies students can use as they prepare to enter professional opportunities after graduation.",
+    "The workshop was conducted in partnership with Hon. Brylle Deeiah Tumarong-Quio, the Provincial Government of Siquijor under Governor Jake Vincent S. Villa, and Siquijor State College under SUC President II Dr. Steven J. Sumaylo.",
+    "HR professional Maika Marcene C. Solomon led the training, providing guidance on resume development and interview techniques.",
+    "Through the Diploma at Diskarte Project, Subang - Siquijor combined youth development and education with practical career preparation, giving students tools they can carry into their transition from university to employment and professional life."
+  ],
+  image: "/assets/stories/subang-siquijor-diploma-at-diskarte-project-2024.jpg",
+  category: "Education & Capacity Building",
+  partner: "Siquijor State College"
+},
+  {
+  slug: "subang-siquijor-alagad-volunteer-summit-2024",
+  type: "Project Story",
+  title: "Subang Leaders Share Volunteerism and Leadership Lessons at Alagad Siquijor Summit",
+  date: "August 26, 2024",
+  dateValue: "2024-08-26",
+  excerpt: "The Alagad Siquijor Volunteer Summit 2024 brought youth leaders together in Lazi for discussions, leadership activities, and conversations on meaningful volunteerism.",
+  body: [
+    "Youth leaders from across Siquijor gathered in Lazi on August 26, 2024, for Alagad Siquijor: Volunteer Summit 2024, a day focused on volunteerism, leadership, communication, and community service.",
+    "Subang leaders played several roles throughout the program. SPS Education Department Director Nikki Lois O. Villas opened the program with reflections on four values drawn from her volunteer experience: passion, dedication, teamwork, and purpose.",
+    "Subang National Executive President Peter John C. Enorio delivered a plenary talk on volunteerism in the Philippines, encouraging participants to recognize the role of volunteer action in community development and to direct their efforts toward meaningful service.",
+    "SPS Provincial Director Dyn Michael M. Lozana followed with a discussion on communication and leadership, while SPS Community Affairs Department Director Jan Blair More J. Omandam shared reflections from his own volunteer journey.",
+    "The afternoon featured \"In the Heart of Volunteers,\" where youth leaders from Padayon Youth Empowered Leader, Zero Waste Youth Siquijor, and the Supreme Secondary Learner Government of Lazi National Agricultural School shared their organizations' experiences.",
+    "Team-building activities, leadership challenges, and a Youth Jam completed the program, giving participants opportunities to strengthen relationships and reflect on leadership through service.",
+    "The summit brought together different youth organizations and volunteers around a common conversation on how young people can contribute to their communities through sustained and purposeful volunteerism."
+  ],
+  image: "/assets/stories/subang-siquijor-alagad-volunteer-summit-2024.jpg",
+  category: "Youth Leadership & Participation",
+  partner: "Alagad Siquijor"
+},
+  {
+  slug: "subang-siquijor-himamat-peace-camp-2024",
+  type: "Project Story",
+  title: "Subang - Province of Siquijor Supports Himamat Peace Camp 3.0",
+  date: "July 29-31, 2024",
+  dateValue: "2024-07-29",
+  excerpt: "Subang - Province of Siquijor contributed to Himamat Peace Camp 3.0 through sessions on media literacy and project proposal development for young leaders.",
+  body: [
+    "Subang - Province of Siquijor supported Himamat Peace Camp 3.0, held from July 29 to 31, 2024, at the Siquijor Police Provincial Headquarters in Caipilan, Siquijor.",
+    "The camp carried the theme \"Be Empowered to Lead and Protect the Siquijodnon Youth\" and brought together young leaders for sessions focused on leadership, communication, and youth development.",
+    "Subang National Executive President Peter John C. Enorio facilitated a session on media literacy, discussing responsible social media use and the importance of truthfulness in communication.",
+    "Subang - Province of Siquijor Provincial Director Dyn Michael M. Lozana also facilitated a session on project proposal drafting for Sangguniang Kabataan Chairpersons, focusing on developing proposals with clear direction and leadership objectives.",
+    "The activity provided Subang with an opportunity to contribute its experience in communications and youth development to a broader leadership and peace-building initiative in Siquijor."
+  ],
+  image: "/assets/stories/subang-siquijor-himamat-peace-camp-2024.jpg",
+  category: "Youth Leadership & Participation",
+  partner: "Himamat Peace Camp 3.0"
+},
+  {
+  slug: "subang-ctu-barili-arts-science-festival-2024",
+  type: "Project Story",
+  title: "Subang Joins CTU-Barili's 76th Anniversary Arts and Science Festival",
+  date: "May 30-31, 2024",
+  dateValue: "2024-05-30",
+  excerpt: "Subang joined CTU-Barili's 76th anniversary celebration through an Arts and Science Festival showcasing student research, visual arts, and photography.",
+  body: [
+    "Cebu Technological University - Barili Campus marked its 76th founding anniversary on May 30 and 31, 2024, with an Arts and Science Festival that brought together scientific inquiry, creative expression, and student participation.",
+    "The festival was organized through a collaboration among the Research and Development Office, Graduate School Office, Culture and the Arts Office, and Subang, represented by National Executive President Peter John C. Enorio.",
+    "Three major components formed the festival: the Student Research Congress, Art Gallery and Competition, and Photo Contest. The Student Research Congress featured 13 student studies presented through oral presentations and research posters.",
+    "The research presentations covered a range of topics, including technological and environmental concerns, while the art gallery and competition provided students from different colleges with a platform to showcase their creative work.",
+    "The Photo Contest invited students to document the campus anniversary celebration through photography, creating a visual record of the event and its community atmosphere.",
+    "The festival concluded with a ceremony recognizing the participants and winners. Beyond the anniversary celebration, the event provided students with opportunities to communicate research, express creativity, and engage with different areas of campus life."
+  ],
+  image: "/assets/stories/subang-ctu-barili-arts-science-festival-2024.jpg",
+  category: "Education & Capacity Building",
+  partner: "Cebu Technological University - Barili Campus"
+},
+  {
+  slug: "subang-siquijor-nia-dam-world-environment-day-cleanup-2024",
+  type: "Project Story",
+  title: "Subang - Province of Siquijor Leads NIA Dam River Cleanup",
+  date: "June 5, 2024",
+  dateValue: "2024-06-05",
+  excerpt: "Subang - Province of Siquijor conducted a river cleanup at the NIA Dam in Tagmanocan, Lazi, as part of its World Environment Day activities.",
+  body: [
+    "Subang - Province of Siquijor marked World Environment Day on June 5, 2024, through a river cleanup at the NIA Dam in Tagmanocan, Lazi, Siquijor.",
+    "The activity was organized by the Subang - Province of Siquijor Environmental Affairs Department, bringing volunteers together to remove debris and address waste along the river area.",
+    "The cleanup was led by Environmental Affairs Director Jaynard Cruz and Deputy Director Jarrale Jaralve and was aligned with the 2024 World Environment Day theme, \"Our Land. Our Future.\"",
+    "The activity demonstrated the chapter's continuing focus on environmental stewardship through direct community-based action and care for local waterways."
+  ],
+  image: "/assets/stories/subang-siquijor-nia-dam-world-environment-day-cleanup-2024.jpg",
+  category: "Environmental Sustainability",
+  partner: "Subang - Province of Siquijor"
+},
+  {
+  slug: "subang-ctu-barili-world-environment-day-river-cleanup-2024",
+  type: "Project Story",
+  title: "Subang Leads World Environment Day River Cleanup at CTU-Barili",
+  date: "June 5, 2024",
+  dateValue: "2024-06-05",
+  excerpt: "Subang's Environmental Affairs Department led a river cleanup at CTU-Barili Campus for World Environment Day, bringing volunteers together to remove litter and debris from the campus river.",
+  body: [
+    "Subang's Environmental Affairs Department marked World Environment Day on June 5, 2024, with a river cleanup at Cebu Technological University - Barili Campus.",
+    "Led by SEAD Vice-President Rodney Joseph B. Sundo and SEAD Deputy Director Augustin P. Tapinit, the activity brought volunteers together to remove litter and debris from the campus river.",
+    "The cleanup was conducted under the 2024 World Environment Day theme, \"Our Land. Our Future,\" and focused on direct action to address pollution in the campus environment.",
+    "The activity added another chapter to Subang's continuing environmental work at CTU-Barili, where river restoration, bamboo propagation, native tree conservation, and other environmental initiatives have formed part of the organization's campus-based efforts."
+  ],
+  image: "/assets/stories/subang-ctu-barili-world-environment-day-river-cleanup-2024.jpg",
+  category: "Environmental Sustainability",
+  partner: "Cebu Technological University - Barili Campus"
+},
+  {
   slug: "subang-siquijor-pydc-membership-2nd-quarter-meeting-2024",
   type: "Project Story",
   title: "Subang - Province of Siquijor Joins Provincial Youth Development Council",
