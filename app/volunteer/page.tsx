@@ -137,20 +137,30 @@ export default function VolunteerPage() {
         {/* Membership pathway */}
         <section className="bg-cream py-20 md:py-28">
           <div className="container-wide">
-            <div className="max-w-3xl">
-              <p className="mb-4 text-sm font-bold uppercase tracking-[0.18em] text-maroon">
-                From volunteer to member
-              </p>
+            <div className="grid gap-10 lg:grid-cols-[1fr_auto] lg:items-end">
+              <div className="max-w-3xl">
+                <p className="mb-4 text-sm font-bold uppercase tracking-[0.18em] text-maroon">
+                  From volunteer to member
+                </p>
 
-              <h2 className="text-3xl font-extrabold tracking-tight text-ink md:text-5xl">
-                A pathway built around service, learning, and commitment.
-              </h2>
+                <h2 className="text-3xl font-extrabold tracking-tight text-ink md:text-5xl">
+                  A pathway built around service, learning, and commitment.
+                </h2>
 
-              <p className="mt-5 text-lg leading-8 text-slate-600">
-                Becoming a Subang member is a structured process. Applicants
-                progress through assessment, volunteer service, and membership
-                qualification before becoming part of the organization.
-              </p>
+                <p className="mt-5 text-lg leading-8 text-slate-600">
+                  Becoming a Subang member is a structured process. Applicants
+                  progress through assessment, volunteer service, and membership
+                  qualification before becoming part of the organization.
+                </p>
+              </div>
+
+              <Link
+                href="/apply"
+                className="inline-flex w-fit items-center gap-2 bg-maroon px-6 py-4 font-extrabold text-white transition hover:bg-maroon/90"
+              >
+                Start Your Application
+                <ArrowRight size={18} />
+              </Link>
             </div>
 
             <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
@@ -455,7 +465,7 @@ export default function VolunteerPage() {
 
                 <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                   <Link
-                    href="/connect"
+                    href="/apply"
                     className="inline-flex items-center justify-center gap-2 bg-gold px-6 py-3 font-extrabold text-ink transition hover:opacity-90"
                   >
                     Start Your Application
