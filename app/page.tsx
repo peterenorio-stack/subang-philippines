@@ -518,11 +518,19 @@ export default function Home() {
 
           <div className="mt-10 flex flex-wrap gap-3">
             <Link
-              href="/connect"
+              href="/apply"
               className="inline-flex items-center gap-2 bg-maroon px-6 py-4 font-extrabold text-white transition hover:bg-maroon/90"
             >
-              Join the work
+              Start Your Application
               <ArrowRight size={18} />
+            </Link>
+
+            <Link
+              href="/connect"
+              className="inline-flex items-center gap-2 border border-maroon/15 px-6 py-4 font-extrabold text-maroon transition hover:bg-cream"
+            >
+              Join the work
+              <ArrowUpRight size={17} />
             </Link>
 
             <Link
@@ -556,13 +564,23 @@ export default function Home() {
               meaningful collaboration.
             </p>
 
-            <Link
-              href="/connect"
-              className="mt-8 inline-flex items-center gap-3 bg-gold px-6 py-4 font-extrabold text-maroon transition hover:bg-white"
-            >
-              Connect with Subang
-              <ArrowUpRight size={18} />
-            </Link>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <Link
+                href="/apply"
+                className="inline-flex items-center gap-3 bg-gold px-6 py-4 font-extrabold text-maroon transition hover:bg-white"
+              >
+                Start Your Application
+                <ArrowRight size={18} />
+              </Link>
+
+              <Link
+                href="/connect"
+                className="inline-flex items-center gap-3 border border-white/30 px-6 py-4 font-extrabold text-white transition hover:border-white hover:bg-white/10"
+              >
+                Connect with Subang
+                <ArrowUpRight size={18} />
+              </Link>
+            </div>
           </div>
         </div>
       </section>
