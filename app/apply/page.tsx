@@ -91,8 +91,7 @@ const educationalAttainment = [
 const inputClass =
   "mt-2 w-full border border-slate-300 bg-white px-4 py-3 text-sm text-ink outline-none transition focus:border-maroon focus:ring-2 focus:ring-maroon/10";
 
-const labelClass =
-  "text-sm font-bold text-ink";
+const labelClass = "text-sm font-bold text-ink";
 
 function SectionHeading({
   number,
@@ -109,10 +108,12 @@ function SectionHeading({
         <span className="flex h-9 w-9 shrink-0 items-center justify-center bg-maroon text-sm font-extrabold text-white">
           {number}
         </span>
+
         <div>
           <h2 className="text-2xl font-extrabold tracking-tight text-ink md:text-3xl">
             {title}
           </h2>
+
           {text && (
             <p className="mt-2 max-w-3xl leading-7 text-slate-600">
               {text}
@@ -130,24 +131,28 @@ function Field({
   type = "text",
   required = false,
   placeholder,
+  autoComplete,
 }: {
   label: string;
   name: string;
   type?: string;
   required?: boolean;
   placeholder?: string;
+  autoComplete?: string;
 }) {
   return (
     <div>
       <label htmlFor={name} className={labelClass}>
         {label} {required && <span className="text-maroon">*</span>}
       </label>
+
       <input
         id={name}
         name={name}
         type={type}
         required={required}
         placeholder={placeholder}
+        autoComplete={autoComplete}
         className={inputClass}
       />
     </div>
@@ -159,48 +164,48 @@ export default function ApplyPage() {
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState("");
 
- async function handleSubmit(event: FormEvent<HTMLFormElement>) {
-  event.preventDefault();
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
 
-  setError("");
-  setSubmitting(true);
+    setError("");
+    setSubmitting(true);
 
-  try {
-    const form = event.currentTarget;
-    const formData = new FormData(form);
-    const data = Object.fromEntries(formData.entries());
+    try {
+      const form = event.currentTarget;
+      const formData = new FormData(form);
+      const data = Object.fromEntries(formData.entries());
 
-    const response = await fetch("/api/apply", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
-    });
+      const response = await fetch("/api/apply", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
 
-    const result = await response.json();
+      const result = await response.json();
 
-    if (!response.ok) {
-      setError(
-        result?.error ||
-          "Unable to submit your application. Please review your information and try again."
-      );
+      if (!response.ok) {
+        setError(
+          result?.error ||
+            "Unable to submit your application. Please review your information and try again."
+        );
+        setSubmitting(false);
+        return;
+      }
+
       setSubmitting(false);
-      return;
+      setSubmitted(true);
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } catch (submissionError) {
+      console.error("Application submission error:", submissionError);
+
+      setSubmitting(false);
+      setError(
+        "We could not connect to the application service. Please try again later."
+      );
     }
-
-    setSubmitting(false);
-    setSubmitted(true);
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  } catch (submissionError) {
-    console.error("Application submission error:", submissionError);
-
-    setSubmitting(false);
-    setError(
-      "We could not connect to the application service. Please try again later."
-    );
   }
-}
 
   if (submitted) {
     return (
@@ -349,8 +354,9 @@ export default function ApplyPage() {
                   </p>
 
                   <p className="mt-3 text-sm text-slate-500">
-                    Fields marked with <span className="font-bold text-maroon">*</span>{" "}
-                    are required.
+                    Fields marked with{" "}
+                    <span className="font-bold text-maroon">*</span> are
+                    required.
                   </p>
                 </div>
               </div>
@@ -360,18 +366,50 @@ export default function ApplyPage() {
 
         <form onSubmit={handleSubmit}>
           <div
-  aria-hidden="true"
-  className="absolute -left-[9999px] h-px w-px overflow-hidden"
->
-  <label htmlFor="website">Website</label>
-  <input
-    id="website"
-    name="website"
-    type="text"
-    tabIndex={-1}
-    autoComplete="off"
-  />
-</div>
+            aria-hidden="true"
+            className="absolute -left-[9999px] h-px w-px overflow-hidden"
+          >
+            <label htmlFor="website">Website</label>
+            <input
+              id="website"
+              name="website"
+              type="text"
+              tabIndex={-1}
+              autoComplete="off"
+            />
+          </div>
+
+          <section className="bg-white py-10 md:py-14">
+            <div className="container-wide max-w-5xl">
+              <div className="grid gap-3 sm:grid-cols-4">
+                {[
+                  ["01", "Personal"],
+                  ["02", "Background"],
+                  ["03", "Assessment"],
+                  ["04", "Consent"],
+                ].map(([number, label]) => (
+                  <div
+                    key={number}
+                    className="flex items-center gap-3 border-t-2 border-maroon pt-3"
+                  >
+                    <span className="text-xs font-extrabold tracking-[0.14em] text-maroon">
+                      {number}
+                    </span>
+
+                    <span className="text-xs font-bold uppercase tracking-[0.1em] text-slate-500">
+                      {label}
+                    </span>
+                  </div>
+                ))}
+              </div>
+
+              <p className="mt-5 text-sm leading-6 text-slate-500">
+                Please complete all required fields. You may review your
+                information before submitting the application.
+              </p>
+            </div>
+          </section>
+
           <section className="bg-white py-16 md:py-24">
             <div className="container-wide max-w-5xl">
               <SectionHeading
@@ -386,6 +424,7 @@ export default function ApplyPage() {
                     name="fullName"
                     required
                     placeholder="Enter your full name"
+                    autoComplete="name"
                   />
                 </div>
 
@@ -394,6 +433,7 @@ export default function ApplyPage() {
                   name="dateOfBirth"
                   type="date"
                   required
+                  autoComplete="bday"
                 />
 
                 <Field
@@ -406,6 +446,7 @@ export default function ApplyPage() {
                   label="Nationality"
                   name="nationality"
                   required
+                  autoComplete="country-name"
                 />
 
                 <Field
@@ -422,15 +463,16 @@ export default function ApplyPage() {
                     {civilStatuses.map((status) => (
                       <label
                         key={status}
-                        className="flex items-center gap-3 border border-slate-200 px-4 py-3 text-sm text-slate-700"
+                        className="flex min-h-12 cursor-pointer items-center gap-3 border border-slate-200 px-4 py-3 text-sm text-slate-700 transition hover:border-maroon/30"
                       >
                         <input
                           type="radio"
                           name="civilStatus"
                           value={status}
                           required
+                          className="h-4 w-4 shrink-0"
                         />
-                        {status}
+                        <span>{status}</span>
                       </label>
                     ))}
                   </div>
@@ -445,15 +487,16 @@ export default function ApplyPage() {
                     {genders.map((gender) => (
                       <label
                         key={gender}
-                        className="flex items-center gap-3 border border-slate-200 px-4 py-3 text-sm text-slate-700"
+                        className="flex min-h-12 cursor-pointer items-center gap-3 border border-slate-200 px-4 py-3 text-sm text-slate-700 transition hover:border-maroon/30"
                       >
                         <input
                           type="radio"
                           name="gender"
                           value={gender}
                           required
+                          className="h-4 w-4 shrink-0"
                         />
-                        {gender}
+                        <span>{gender}</span>
                       </label>
                     ))}
                   </div>
@@ -477,8 +520,12 @@ export default function ApplyPage() {
 
               <div className="grid gap-6 md:grid-cols-2">
                 <div className="md:col-span-2">
-                  <label htmlFor="residentialAddress" className={labelClass}>
-                    Residential Address <span className="text-maroon">*</span>
+                  <label
+                    htmlFor="residentialAddress"
+                    className={labelClass}
+                  >
+                    Residential Address{" "}
+                    <span className="text-maroon">*</span>
                   </label>
 
                   <textarea
@@ -486,13 +533,18 @@ export default function ApplyPage() {
                     name="residentialAddress"
                     rows={3}
                     required
+                    autoComplete="street-address"
                     className={inputClass}
                   />
                 </div>
 
                 <div className="md:col-span-2">
-                  <label htmlFor="permanentAddress" className={labelClass}>
-                    Permanent Address <span className="text-maroon">*</span>
+                  <label
+                    htmlFor="permanentAddress"
+                    className={labelClass}
+                  >
+                    Permanent Address{" "}
+                    <span className="text-maroon">*</span>
                   </label>
 
                   <textarea
@@ -504,21 +556,40 @@ export default function ApplyPage() {
                   />
                 </div>
 
-                <Field label="Barangay" name="barangay" required />
+                <Field
+                  label="Barangay"
+                  name="barangay"
+                  required
+                />
+
                 <Field
                   label="City/Municipality"
                   name="cityMunicipality"
                   required
+                  autoComplete="address-level2"
                 />
 
-                <Field label="Postal Code" name="postalCode" required />
-                <Field label="Province" name="province" required />
+                <Field
+                  label="Postal Code"
+                  name="postalCode"
+                  required
+                  autoComplete="postal-code"
+                />
+
+                <Field
+                  label="Province"
+                  name="province"
+                  required
+                  autoComplete="address-level1"
+                />
 
                 <Field
                   label="Phone Number"
                   name="phoneNumber"
                   type="tel"
                   required
+                  autoComplete="tel"
+                  placeholder="09XXXXXXXXX"
                 />
 
                 <Field
@@ -526,6 +597,8 @@ export default function ApplyPage() {
                   name="emailAddress"
                   type="email"
                   required
+                  autoComplete="email"
+                  placeholder="you@example.com"
                 />
 
                 <Field
@@ -539,6 +612,7 @@ export default function ApplyPage() {
                   name="emergencyContactPhone"
                   type="tel"
                   required
+                  placeholder="09XXXXXXXXX"
                 />
 
                 <Field
@@ -568,27 +642,26 @@ export default function ApplyPage() {
                     {identificationTypes.map((type) => (
                       <label
                         key={type}
-                        className="flex items-center gap-3 border border-slate-200 px-4 py-3 text-sm text-slate-700"
+                        className="flex min-h-12 cursor-pointer items-center gap-3 border border-slate-200 px-4 py-3 text-sm text-slate-700 transition hover:border-maroon/30"
                       >
                         <input
                           type="radio"
                           name="idType"
                           value={type}
                           required
+                          className="h-4 w-4 shrink-0"
                         />
-                        {type}
+                        <span>{type}</span>
                       </label>
                     ))}
                   </div>
                 </div>
 
-                <div>
-                  <Field
-                    label="Other Identification Document"
-                    name="otherIdentification"
-                    placeholder="Specify if applicable"
-                  />
-                </div>
+                <Field
+                  label="Other Identification Document"
+                  name="otherIdentification"
+                  placeholder="Specify if applicable"
+                />
 
                 <Field
                   label="ID Number"
@@ -631,6 +704,7 @@ export default function ApplyPage() {
                   label="Current Occupation"
                   name="currentOccupation"
                   required
+                  autoComplete="organization-title"
                 />
 
                 <div>
@@ -643,15 +717,16 @@ export default function ApplyPage() {
                     {educationalAttainment.map((level) => (
                       <label
                         key={level}
-                        className="flex items-center gap-3 border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700"
+                        className="flex min-h-12 cursor-pointer items-center gap-3 border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700 transition hover:border-maroon/30"
                       >
                         <input
                           type="radio"
                           name="highestEducationalAttainment"
                           value={level}
                           required
+                          className="h-4 w-4 shrink-0"
                         />
-                        {level}
+                        <span>{level}</span>
                       </label>
                     ))}
                   </div>
@@ -717,9 +792,15 @@ export default function ApplyPage() {
                   name="reasonForJoining"
                   rows={10}
                   required
+                  minLength={50}
                   className={`${inputClass} mt-4`}
                   placeholder="Explain why you want to join Subang and how you hope to contribute."
                 />
+
+                <p className="mt-2 text-xs leading-5 text-slate-500">
+                  Please provide at least 50 characters so the membership
+                  committee can meaningfully understand your motivation.
+                </p>
               </div>
             </div>
           </section>
@@ -763,6 +844,7 @@ export default function ApplyPage() {
                   name="declarationSignature"
                   required
                   placeholder="Type your full name as your electronic signature"
+                  autoComplete="name"
                 />
 
                 <Field
@@ -773,12 +855,12 @@ export default function ApplyPage() {
                 />
               </div>
 
-              <label className="mt-8 flex items-start gap-3 border border-slate-200 bg-slate-50 p-5">
+              <label className="mt-8 flex cursor-pointer items-start gap-3 border border-slate-200 bg-slate-50 p-5">
                 <input
                   type="checkbox"
                   name="declarationAgreement"
                   required
-                  className="mt-1 h-4 w-4"
+                  className="mt-1 h-4 w-4 shrink-0"
                 />
 
                 <span className="text-sm leading-6 text-slate-700">
@@ -805,8 +887,9 @@ export default function ApplyPage() {
                     information by Subang in accordance with the provisions of
                     the Data Privacy Act of 2012 of the Philippines (Republic
                     Act No. 10173). I understand that the information provided
-                    by me will be used solely for the purpose of processing my
-                    membership application.
+                    by me will be used for purposes related to processing,
+                    evaluating, verifying, and administering my membership
+                    application and qualification for membership in Subang.
                   </p>
                 </div>
 
@@ -907,6 +990,7 @@ export default function ApplyPage() {
                   name="consentSignature"
                   required
                   placeholder="Type your full name as your electronic signature"
+                  autoComplete="name"
                 />
 
                 <Field
@@ -917,12 +1001,12 @@ export default function ApplyPage() {
                 />
               </div>
 
-              <label className="mt-8 flex items-start gap-3 border border-maroon/20 bg-white p-5">
+              <label className="mt-8 flex cursor-pointer items-start gap-3 border border-maroon/20 bg-white p-5">
                 <input
                   type="checkbox"
                   name="privacyConsent"
                   required
-                  className="mt-1 h-4 w-4"
+                  className="mt-1 h-4 w-4 shrink-0"
                 />
 
                 <span className="text-sm leading-6 text-slate-700">
@@ -953,26 +1037,43 @@ export default function ApplyPage() {
               </div>
 
               {error && (
-                <div className="mt-8 border border-red-200 bg-white p-5 text-sm text-red-700">
+                <div
+                  role="alert"
+                  aria-live="assertive"
+                  className="mt-8 border-l-4 border-red-600 bg-white px-5 py-4 text-sm font-semibold text-red-700"
+                >
                   {error}
                 </div>
               )}
 
-              <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
-                <button
-                  type="submit"
-                  disabled={submitting}
-                  className="inline-flex items-center justify-center gap-2 bg-gold px-7 py-4 font-extrabold text-ink transition hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-60"
-                >
-                  {submitting ? "Submitting..." : "Submit Membership Application"}
-                  {!submitting && <ArrowRight size={18} />}
-                </button>
-
-                <p className="text-sm leading-6 text-white/65">
-                  By submitting, you confirm that the information provided is
-                  accurate and that you have read the declaration and consent
-                  provisions.
+              <div className="mt-8">
+                <p className="mb-5 text-sm leading-6 text-white/65">
+                  Please review your personal information, declaration, and
+                  consent before submitting. Your application will be processed
+                  for Subang's membership application and qualification
+                  process.
                 </p>
+
+                <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
+                  <button
+                    type="submit"
+                    disabled={submitting}
+                    aria-busy={submitting}
+                    className="inline-flex items-center justify-center gap-2 bg-gold px-7 py-4 font-extrabold text-ink transition hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-60"
+                  >
+                    {submitting
+                      ? "Submitting..."
+                      : "Submit Membership Application"}
+
+                    {!submitting && <ArrowRight size={18} />}
+                  </button>
+
+                  <p className="text-sm leading-6 text-white/65">
+                    By submitting, you confirm that the information provided
+                    is accurate and that you have read the declaration and
+                    consent provisions.
+                  </p>
+                </div>
               </div>
             </div>
           </section>
