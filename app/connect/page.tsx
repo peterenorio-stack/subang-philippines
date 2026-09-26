@@ -1,5 +1,12 @@
 import Link from "next/link";
-import { ArrowRight, ArrowUpRight, Mail, Phone, Facebook, Instagram } from "lucide-react";
+import {
+  ArrowRight,
+  ArrowUpRight,
+  Mail,
+  Phone,
+  Facebook,
+  Instagram,
+} from "lucide-react";
 import { Header, Footer } from "../components";
 
 export default function Connect() {
@@ -10,9 +17,9 @@ export default function Connect() {
       <main className="bg-white">
         {/* Hero */}
         <section className="bg-maroon text-white">
-          <div className="container-wide py-16 md:py-22">
+          <div className="container-wide py-16 md:py-24">
             <div className="max-w-3xl">
-              <p className="mb-3 text-sm font-bold uppercase tracking-[0.18em] text-gold">
+              <p className="mb-4 text-sm font-bold uppercase tracking-[0.18em] text-gold">
                 Connect With Us
               </p>
 
@@ -20,14 +27,14 @@ export default function Connect() {
                 Let’s Create Change Together
               </h1>
 
-              <p className="mt-5 max-w-2xl text-lg leading-7 text-white/80 md:text-xl">
+              <p className="mt-6 max-w-2xl text-lg leading-8 text-white/80 md:text-xl">
                 Subang Philippines welcomes young people, volunteers,
                 communities, schools, local governments, organizations, and
                 institutions who want to contribute to meaningful community
                 action.
               </p>
 
-              <p className="mt-4 max-w-2xl text-base leading-6 text-white/70">
+              <p className="mt-4 max-w-2xl text-base leading-7 text-white/65">
                 Whether you want to volunteer, explore a partnership, invite
                 Subang Philippines to an activity, or simply learn more about
                 our work, we would be glad to hear from you.
@@ -47,16 +54,27 @@ export default function Connect() {
               <h2 className="mt-2 text-3xl font-extrabold tracking-tight text-ink md:text-4xl">
                 There is a place for you in the movement.
               </h2>
+
+              <p className="mt-4 leading-7 text-ink/65">
+                Choose how you would like to engage with Subang Philippines.
+                Whether you want to volunteer, collaborate, invite our team,
+                or support community action, every connection can begin with a
+                conversation.
+              </p>
             </div>
 
-            <div className="mt-8 grid gap-5 md:grid-cols-2">
+            <div className="mt-10 grid gap-x-12 gap-y-10 md:grid-cols-2">
               {/* Volunteer */}
-              <div className="border border-black/10 bg-sand p-6">
-                <h3 className="text-xl font-extrabold text-ink">
+              <div className="border-t-2 border-maroon pt-5">
+                <p className="text-xs font-extrabold uppercase tracking-[0.14em] text-maroon">
+                  01
+                </p>
+
+                <h3 className="mt-3 text-xl font-extrabold text-ink">
                   Become a Volunteer
                 </h3>
 
-                <p className="mt-3 leading-6 text-ink/70">
+                <p className="mt-3 max-w-xl leading-7 text-ink/65">
                   Interested in becoming part of Subang Philippines? Start your
                   journey by completing the official membership application.
                   Applications are reviewed through Subang’s established
@@ -71,19 +89,23 @@ export default function Connect() {
                   <ArrowRight size={16} />
                 </Link>
 
-                <p className="mt-3 text-sm leading-5 text-ink/55">
-                  Have a question about membership or your application?
-                  Contact Human Resource below.
+                <p className="mt-3 max-w-md text-sm leading-6 text-ink/50">
+                  For questions about membership or an existing application,
+                  contact Human Resource.
                 </p>
               </div>
 
               {/* Partnership */}
-              <div className="border border-black/10 bg-sand p-6">
-                <h3 className="text-xl font-extrabold text-ink">
+              <div className="border-t-2 border-maroon pt-5">
+                <p className="text-xs font-extrabold uppercase tracking-[0.14em] text-maroon">
+                  02
+                </p>
+
+                <h3 className="mt-3 text-xl font-extrabold text-ink">
                   Partner With Us
                 </h3>
 
-                <p className="mt-3 leading-6 text-ink/70">
+                <p className="mt-3 max-w-xl leading-7 text-ink/65">
                   We welcome partnerships with schools, communities, government
                   offices, civil society organizations, and other institutions
                   working toward sustainable and resilient communities.
@@ -91,7 +113,7 @@ export default function Connect() {
 
                 <a
                   href="mailto:subangphilippines@gmail.com"
-                  className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-maroon"
+                  className="mt-5 inline-flex items-center gap-2 text-sm font-extrabold text-maroon transition hover:text-ink"
                 >
                   Explore a Partnership
                   <ArrowUpRight size={16} />
@@ -99,12 +121,16 @@ export default function Connect() {
               </div>
 
               {/* Invite */}
-              <div className="border border-black/10 bg-sand p-6">
-                <h3 className="text-xl font-extrabold text-ink">
+              <div className="border-t-2 border-maroon pt-5">
+                <p className="text-xs font-extrabold uppercase tracking-[0.14em] text-maroon">
+                  03
+                </p>
+
+                <h3 className="mt-3 text-xl font-extrabold text-ink">
                   Invite Subang Philippines
                 </h3>
 
-                <p className="mt-3 leading-6 text-ink/70">
+                <p className="mt-3 max-w-xl leading-7 text-ink/65">
                   Have an upcoming program, training, community initiative, or
                   youth activity where our team can contribute? Get in touch
                   with us and tell us how we can collaborate.
@@ -112,7 +138,7 @@ export default function Connect() {
 
                 <a
                   href="mailto:subangphilippines@gmail.com"
-                  className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-maroon"
+                  className="mt-5 inline-flex items-center gap-2 text-sm font-extrabold text-maroon transition hover:text-ink"
                 >
                   Send an Invitation
                   <ArrowUpRight size={16} />
@@ -120,12 +146,16 @@ export default function Connect() {
               </div>
 
               {/* Support */}
-              <div className="border border-black/10 bg-sand p-6">
-                <h3 className="text-xl font-extrabold text-ink">
+              <div className="border-t-2 border-maroon pt-5">
+                <p className="text-xs font-extrabold uppercase tracking-[0.14em] text-maroon">
+                  04
+                </p>
+
+                <h3 className="mt-3 text-xl font-extrabold text-ink">
                   Support Community Action
                 </h3>
 
-                <p className="mt-3 leading-6 text-ink/70">
+                <p className="mt-3 max-w-xl leading-7 text-ink/65">
                   Contribute through expertise, resources, networks,
                   collaboration, or other forms of support that help strengthen
                   community-driven initiatives.
@@ -133,7 +163,7 @@ export default function Connect() {
 
                 <a
                   href="mailto:subangphilippines@gmail.com"
-                  className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-maroon"
+                  className="mt-5 inline-flex items-center gap-2 text-sm font-extrabold text-maroon transition hover:text-ink"
                 >
                   Start a Conversation
                   <ArrowUpRight size={16} />
@@ -146,8 +176,8 @@ export default function Connect() {
         {/* Contact Information */}
         <section className="bg-sand section-pad">
           <div className="container-wide">
-            <div className="grid items-start gap-10 lg:grid-cols-2">
-              <div>
+            <div className="grid items-start gap-12 lg:grid-cols-[0.85fr_1.15fr]">
+              <div className="max-w-xl">
                 <p className="text-sm font-bold uppercase tracking-[0.18em] text-maroon">
                   Contact Us
                 </p>
@@ -156,35 +186,35 @@ export default function Connect() {
                   Let’s start a conversation.
                 </h2>
 
-                <p className="mt-4 max-w-xl leading-6 text-ink/70">
-                  For partnerships, general inquiries, invitations,
-                  membership concerns, and other organizational matters, you
-                  can reach Subang Philippines through the channels below.
+                <p className="mt-5 leading-7 text-ink/65">
+                  For partnerships, general inquiries, invitations, membership
+                  concerns, and other organizational matters, you can reach
+                  Subang Philippines through the channels below.
                 </p>
               </div>
 
-              <div className="space-y-3">
+              <div className="divide-y divide-black/10 border-y border-black/10">
                 {/* General Email */}
                 <a
                   href="mailto:subangphilippines@gmail.com"
-                  className="group flex items-start gap-4 border border-black/10 bg-white p-5 transition hover:border-maroon"
+                  className="group flex items-start gap-4 py-6 transition"
                 >
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center bg-maroon text-white">
                     <Mail size={18} />
                   </div>
 
                   <div className="min-w-0">
-                    <p className="text-xs font-bold uppercase tracking-wide text-ink/50">
+                    <p className="text-xs font-bold uppercase tracking-wide text-ink/45">
                       General Inquiries & Partnerships
                     </p>
 
-                    <p className="mt-1 break-all font-bold text-maroon">
+                    <p className="mt-1 break-all font-extrabold text-maroon">
                       subangphilippines@gmail.com
                     </p>
                   </div>
 
                   <ArrowUpRight
-                    className="ml-auto mt-1 shrink-0 text-ink/30 transition group-hover:text-maroon"
+                    className="ml-auto mt-1 shrink-0 text-ink/25 transition group-hover:text-maroon"
                     size={17}
                   />
                 </a>
@@ -192,29 +222,29 @@ export default function Connect() {
                 {/* HR Email */}
                 <a
                   href="mailto:subangph.humanresource@gmail.com"
-                  className="group flex items-start gap-4 border border-black/10 bg-white p-5 transition hover:border-maroon"
+                  className="group flex items-start gap-4 py-6 transition"
                 >
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center bg-maroon text-white">
                     <Mail size={18} />
                   </div>
 
                   <div className="min-w-0">
-                    <p className="text-xs font-bold uppercase tracking-wide text-ink/50">
+                    <p className="text-xs font-bold uppercase tracking-wide text-ink/45">
                       Membership & Human Resource
                     </p>
 
-                    <p className="mt-1 break-all font-bold text-maroon">
+                    <p className="mt-1 break-all font-extrabold text-maroon">
                       subangph.humanresource@gmail.com
                     </p>
 
-                    <p className="mt-1 text-sm leading-5 text-ink/60">
+                    <p className="mt-2 max-w-lg text-sm leading-6 text-ink/55">
                       For membership inquiries, application-related concerns,
                       and questions about the membership process.
                     </p>
                   </div>
 
                   <ArrowUpRight
-                    className="ml-auto mt-1 shrink-0 text-ink/30 transition group-hover:text-maroon"
+                    className="ml-auto mt-1 shrink-0 text-ink/25 transition group-hover:text-maroon"
                     size={17}
                   />
                 </a>
@@ -222,24 +252,24 @@ export default function Connect() {
                 {/* Phone */}
                 <a
                   href="tel:+639205487676"
-                  className="group flex items-start gap-4 border border-black/10 bg-white p-5 transition hover:border-maroon"
+                  className="group flex items-start gap-4 py-6 transition"
                 >
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center bg-maroon text-white">
                     <Phone size={18} />
                   </div>
 
                   <div>
-                    <p className="text-xs font-bold uppercase tracking-wide text-ink/50">
+                    <p className="text-xs font-bold uppercase tracking-wide text-ink/45">
                       Contact Number
                     </p>
 
-                    <p className="mt-1 font-bold text-maroon">
+                    <p className="mt-1 font-extrabold text-maroon">
                       +63 920 548 7676
                     </p>
                   </div>
 
                   <ArrowUpRight
-                    className="ml-auto mt-1 shrink-0 text-ink/30 transition group-hover:text-maroon"
+                    className="ml-auto mt-1 shrink-0 text-ink/25 transition group-hover:text-maroon"
                     size={17}
                   />
                 </a>
@@ -251,7 +281,7 @@ export default function Connect() {
         {/* Social Media */}
         <section className="section-pad">
           <div className="container-wide">
-            <div className="mx-auto max-w-3xl text-center">
+            <div className="max-w-3xl">
               <p className="text-sm font-bold uppercase tracking-[0.18em] text-maroon">
                 Follow Our Work
               </p>
@@ -260,26 +290,26 @@ export default function Connect() {
                 Stay connected with Subang Philippines.
               </h2>
 
-              <p className="mx-auto mt-4 max-w-2xl leading-6 text-ink/70">
+              <p className="mt-4 max-w-2xl leading-7 text-ink/65">
                 Follow our social media channels for community stories,
                 volunteer opportunities, program updates, and announcements.
               </p>
             </div>
 
-            <div className="mx-auto mt-8 grid max-w-2xl gap-4 sm:grid-cols-2">
+            <div className="mt-8 grid max-w-3xl gap-4 sm:grid-cols-2">
               {/* Facebook */}
               <a
                 href="https://www.facebook.com/subangphilippines"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex items-center gap-4 border border-black/10 p-5 transition hover:border-maroon hover:bg-sand"
+                className="group flex items-center gap-4 border-t-2 border-maroon py-5 transition"
               >
                 <div className="flex h-11 w-11 shrink-0 items-center justify-center bg-maroon text-white">
                   <Facebook size={20} />
                 </div>
 
                 <div>
-                  <p className="text-xs font-bold uppercase tracking-wide text-ink/50">
+                  <p className="text-xs font-bold uppercase tracking-wide text-ink/45">
                     Facebook
                   </p>
 
@@ -289,7 +319,7 @@ export default function Connect() {
                 </div>
 
                 <ArrowUpRight
-                  className="ml-auto text-ink/30 transition group-hover:text-maroon"
+                  className="ml-auto text-ink/25 transition group-hover:text-maroon"
                   size={18}
                 />
               </a>
@@ -299,14 +329,14 @@ export default function Connect() {
                 href="https://www.instagram.com/subangphilippines/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex items-center gap-4 border border-black/10 p-5 transition hover:border-maroon hover:bg-sand"
+                className="group flex items-center gap-4 border-t-2 border-maroon py-5 transition"
               >
                 <div className="flex h-11 w-11 shrink-0 items-center justify-center bg-maroon text-white">
                   <Instagram size={20} />
                 </div>
 
                 <div>
-                  <p className="text-xs font-bold uppercase tracking-wide text-ink/50">
+                  <p className="text-xs font-bold uppercase tracking-wide text-ink/45">
                     Instagram
                   </p>
 
@@ -316,7 +346,7 @@ export default function Connect() {
                 </div>
 
                 <ArrowUpRight
-                  className="ml-auto text-ink/30 transition group-hover:text-maroon"
+                  className="ml-auto text-ink/25 transition group-hover:text-maroon"
                   size={18}
                 />
               </a>
@@ -327,8 +357,8 @@ export default function Connect() {
         {/* Contact Form */}
         <section className="bg-maroon text-white section-pad">
           <div className="container-wide">
-            <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
-              <div>
+            <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
+              <div className="max-w-xl">
                 <p className="text-sm font-bold uppercase tracking-[0.18em] text-gold">
                   Start a Conversation
                 </p>
@@ -337,14 +367,14 @@ export default function Connect() {
                   Have an idea, question, or opportunity?
                 </h2>
 
-                <p className="mt-4 leading-6 text-white/70">
+                <p className="mt-5 leading-7 text-white/70">
                   Tell us what you have in mind. Whether it is a partnership,
                   community initiative, volunteer inquiry, or simply a
                   question about Subang Philippines, we are ready to listen.
                 </p>
 
-                <div className="mt-7 border-l-2 border-gold/70 pl-4">
-                  <p className="text-sm leading-6 text-white/70">
+                <div className="mt-8 border-l-2 border-gold/70 pl-5">
+                  <p className="text-sm leading-6 text-white/65">
                     If you are ready to formally apply for membership, please
                     use the official application form instead.
                   </p>
@@ -359,12 +389,12 @@ export default function Connect() {
                 </div>
               </div>
 
-              <form className="space-y-4">
-                <div className="grid gap-4 sm:grid-cols-2">
+              <form className="space-y-5">
+                <div className="grid gap-5 sm:grid-cols-2">
                   <div>
                     <label
                       htmlFor="name"
-                      className="mb-1.5 block text-sm font-bold"
+                      className="mb-2 block text-sm font-bold"
                     >
                       Full Name
                     </label>
@@ -381,7 +411,7 @@ export default function Connect() {
                   <div>
                     <label
                       htmlFor="email"
-                      className="mb-1.5 block text-sm font-bold"
+                      className="mb-2 block text-sm font-bold"
                     >
                       Email Address
                     </label>
@@ -399,7 +429,7 @@ export default function Connect() {
                 <div>
                   <label
                     htmlFor="organization"
-                    className="mb-1.5 block text-sm font-bold"
+                    className="mb-2 block text-sm font-bold"
                   >
                     Organization / Institution
                   </label>
@@ -416,7 +446,7 @@ export default function Connect() {
                 <div>
                   <label
                     htmlFor="interest"
-                    className="mb-1.5 block text-sm font-bold"
+                    className="mb-2 block text-sm font-bold"
                   >
                     I want to...
                   </label>
@@ -447,7 +477,7 @@ export default function Connect() {
                 <div>
                   <label
                     htmlFor="message"
-                    className="mb-1.5 block text-sm font-bold"
+                    className="mb-2 block text-sm font-bold"
                   >
                     Your Message
                   </label>
