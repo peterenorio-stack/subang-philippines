@@ -13,6 +13,44 @@ export type Story = {
 
 export const stories: Story[] = [
   {
+  slug: "subang-president-notre-dame-university-leadership-seminar-2026",
+  type: "Project Story",
+  title: "Subang President Serves as Resource Speaker at Notre Dame University Leadership Seminar",
+  date: "August 23, 2026",
+  dateValue: "2026-08-23",
+  excerpt:
+    "Subang Philippines National Executive President Peter John C. Enorio served as a resource speaker at a three-hour leadership training seminar for student leaders at Notre Dame University in Cotabato City.",
+  body: [
+    "On August 23, 2026, Subang Philippines National Executive President Peter John C. Enorio served as a resource speaker during the Leadership Training Seminar for Student Leaders at Notre Dame University in Cotabato City.",
+    "The three-hour, activity-based session brought together student leaders from the Supreme Secondary Learner Government (SSLG), Barkada Kontra Droga (BKD), and Youth for Environment in Schools Organization (YES-O) for an interactive discussion on leadership, meaningful youth participation, and nation-building.",
+    "Anchored on AmBisyon Natin 2040, the United Nations Sustainable Development Goals (SDGs), and the Ten Centers of Youth Participation, the session encouraged participants to look beyond organizational positions and activities toward purposeful action, measurable impact, meaningful partnerships, and sustainable leadership.",
+    "The engagement also introduced participants to the United Nations system and opportunities for youth organizations to engage in international development initiatives, connecting local youth leadership with broader national and global development agendas.",
+    "The session reflected Subang Philippines' continuing work in youth leadership and capacity building, creating spaces where young people can connect leadership practice with community development and wider development priorities."
+  ],
+  image: "/assets/stories/subang-president-notre-dame-university-leadership-seminar-2026.jpg",
+  category: "Youth Leadership & Participation",
+  partner: "Notre Dame University"
+},
+  {
+  slug: "subang-himamat-peace-camp-5-0-2026",
+  type: "Project Story",
+  title: "Subang Philippines Participates in HIMAMAT Peace Camp 5.0",
+  date: "July 24–26, 2026",
+  dateValue: "2026-07-24",
+  excerpt:
+    "Subang Philippines joined HIMAMAT Peace Camp 5.0 in Siquijor, contributing facilitators, participants, and a panelist to discussions on youth leadership, volunteerism, peacebuilding, and nation-building.",
+  body: [
+    "Subang Philippines took part in HIMAMAT Peace Camp 5.0, held from July 24 to 26, 2026 at the Siquijor Police Provincial Office in Siquijor and Capilay Spring Park in San Juan. The engagement brought Subang volunteers and leaders into a youth-centered space focused on leadership, peacebuilding, and service.",
+    "Serving as camp facilitators were Subang Philippines Vice President for Community Affairs Jan Blair More J. Omandam, Subang - Province of Siquijor Chapter Environmental Affairs Deputy Director Jarrale Jaralve, and Subang - Lazi Chapter volunteer AJ Garsula. Xeian Daug Austerio and Roxiel Jean Domat-ol represented the Subang - Province of Siquijor Chapter as participants.",
+    "Subang Philippines National Executive President Peter John C. Enorio also served as a panelist during the Young Leaders Forum, where he shared perspectives on leadership, volunteerism, peacebuilding, and nation-building.",
+    "HIMAMAT Peace Camp 5.0 was spearheaded by the Provincial Government of Siquijor through the Office of Board Member Brylle Deeiah T. Quio and the Provincial Disaster Risk Reduction and Management Office of Siquijor, in partnership with the Siquijor Police Provincial Office, KKDAT Siquijor, and other government, youth, and education stakeholders.",
+    "Through its participation in the camp, Subang Philippines contributed to a broader conversation on developing young people as active participants in community service, peacebuilding, and nation-building."
+  ],
+  image: "/assets/stories/subang-himamat-peace-camp-5-0-2026.jpg",
+  category: "Youth Leadership & Participation",
+  partner: "Provincial Government of Siquijor"
+},
+  {
   slug: "subang-siquijor-zero-waste-coastal-cleanup-waste-assessment-2024",
   type: "Project Story",
   title: "Subang Supports Coastal Cleanup and Waste Assessment in Siquijor",
