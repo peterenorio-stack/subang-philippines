@@ -1280,24 +1280,6 @@ export const stories: Story[] = [
   },
 
   {
-    slug: "black-bamboo-propagation-initiative-2026",
-    type: "Project Story",
-    title: "Growing Resilience, One Bamboo at a Time",
-    date: "January 25, 2026",
-    dateValue: "2026-01-25",
-    excerpt:
-      "A community-based bamboo propagation initiative demonstrates how youth volunteerism can support environmental restoration and climate resilience.",
-    category: "Environmental Sustainability",
-    image: "/assets/press/black-bamboo-propagation.jpg",
-    partner: "Cebu Technological University",
-    body: [
-      "Subang Philippines continues to develop practical, volunteer-led approaches to environmental restoration through bamboo propagation and community participation.",
-      "The 2026 Black Bamboo Propagation Initiative at CTU Barili brought together youth volunteers and institutional partners around a shared goal: turn environmental concern into hands-on action.",
-      "The initiative forms part of a wider approach that connects biodiversity, climate resilience, education, and meaningful youth participation."
-    ]
-  },
-
-  {
     slug: "philippine-resilience-awards-2025",
     type: "Press Release",
     title: "Subang Environmental Initiatives Recognized at Philippine Resilience Awards 2025",
