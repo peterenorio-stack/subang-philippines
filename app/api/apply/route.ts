@@ -41,11 +41,25 @@ By signing below, I confirm that I have read and understood the terms of this co
 `.trim();
 
 export async function POST(request: Request) {
+  const diagnosticId = `APP-${Date.now()}`;
+
   try {
+    console.log(`[${diagnosticId}] Application submission started.`);
+
     const body = await request.json();
+
+    console.log(`[${diagnosticId}] Request body received.`, {
+      hasFullName: Boolean(body.fullName),
+      hasEmailAddress: Boolean(body.emailAddress),
+      hasPrivacyConsent: Boolean(body.privacyConsent),
+      hasDeclarationAgreement: Boolean(body.declarationAgreement),
+      hasHoneypotValue: Boolean(body.website),
+    });
 
     // Basic anti-spam honeypot.
     if (body.website) {
+      console.warn(`[${diagnosticId}] Honeypot triggered.`);
+
       return NextResponse.json(
         { error: "Invalid submission." },
         { status: 400 }
@@ -101,29 +115,52 @@ export async function POST(request: Request) {
     });
 
     if (missingFields.length > 0) {
+      console.warn(`[${diagnosticId}] Required fields missing:`, missingFields);
+
       return NextResponse.json(
         {
           error: "Please complete all required fields.",
           fields: missingFields,
+          diagnosticId,
         },
         { status: 400 }
       );
     }
 
-    if (!process.env.RESEND_API_KEY) {
-      console.error("RESEND_API_KEY is not configured.");
+    console.log(`[${diagnosticId}] Required field validation passed.`);
+
+    // Check environment configuration without exposing secrets.
+    const hasResendApiKey = Boolean(process.env.RESEND_API_KEY);
+    const hrEmail = process.env.SUBANG_HR_EMAIL;
+
+    console.log(`[${diagnosticId}] Environment check:`, {
+      hasResendApiKey,
+      hasHrEmail: Boolean(hrEmail),
+      hrEmailDomain: hrEmail
+        ? hrEmail.split("@")[1] || "invalid"
+        : null,
+    });
+
+    if (!hasResendApiKey) {
+      console.error(`[${diagnosticId}] RESEND_API_KEY is missing.`);
 
       return NextResponse.json(
-        { error: "Email service is not configured." },
+        {
+          error: "Email service is not configured.",
+          diagnosticId,
+        },
         { status: 500 }
       );
     }
 
-    if (!process.env.SUBANG_HR_EMAIL) {
-      console.error("SUBANG_HR_EMAIL is not configured.");
+    if (!hrEmail) {
+      console.error(`[${diagnosticId}] SUBANG_HR_EMAIL is missing.`);
 
       return NextResponse.json(
-        { error: "HR email is not configured." },
+        {
+          error: "HR email is not configured.",
+          diagnosticId,
+        },
         { status: 500 }
       );
     }
@@ -143,6 +180,11 @@ export async function POST(request: Request) {
       day: "numeric",
     });
 
+    console.log(`[${diagnosticId}] Application reference created:`, {
+      applicationReference,
+      submissionDate,
+    });
+
     const applicationData = {
       ...body,
       applicationReference,
@@ -150,15 +192,41 @@ export async function POST(request: Request) {
       declaration: DECLARATION_TEXT,
       privacyConsent: PRIVACY_CONSENT_TEXT,
       electronicSignature:
-        body.consentSignature || body.declarationSignature || body.fullName,
+        body.consentSignature ||
+        body.declarationSignature ||
+        body.fullName,
       signatureDate:
-        body.consentDate || body.declarationDate || submissionDate,
+        body.consentDate ||
+        body.declarationDate ||
+        submissionDate,
       issuingAuthority:
-        body.issuingAuthority || body.issuingCountryAuthority || "",
+        body.issuingAuthority ||
+        body.issuingCountryAuthority ||
+        "",
     };
 
-    // Generate the PDF.
-    const pdfBytes = await generateApplicationPdf(applicationData);
+    console.log(`[${diagnosticId}] Starting PDF generation.`);
+
+    let pdfBytes: Uint8Array;
+
+    try {
+      pdfBytes = await generateApplicationPdf(applicationData);
+
+      console.log(`[${diagnosticId}] PDF generated successfully.`, {
+        pdfSizeBytes: pdfBytes.length,
+      });
+    } catch (pdfError) {
+      console.error(`[${diagnosticId}] PDF generation failed:`, pdfError);
+
+      return NextResponse.json(
+        {
+          error:
+            "The application was received, but the PDF could not be generated.",
+          diagnosticId,
+        },
+        { status: 500 }
+      );
+    }
 
     const safeName = String(body.fullName)
       .replace(/[^a-zA-Z0-9\s_-]/g, "")
@@ -170,44 +238,89 @@ export async function POST(request: Request) {
       safeName || "Applicant"
     }.pdf`;
 
-    // Send the completed application to Subang Human Resources.
-    const { data, error } = await resend.emails.send({
-      from: "Subang Philippines <onboarding@resend.dev>",
-      to: [process.env.SUBANG_HR_EMAIL],
+    console.log(`[${diagnosticId}] Preparing Resend email.`, {
+      from: "onboarding@resend.dev",
+      toDomain: hrEmail.split("@")[1] || "invalid",
       subject: `New Membership Application | ${applicationReference}`,
-      text: [
-        "A new Subang Philippines membership application has been submitted.",
-        "",
-        `Application Reference: ${applicationReference}`,
-        `Applicant: ${body.fullName}`,
-        `Applicant Email: ${body.emailAddress}`,
-        `Submission Date: ${submissionDate}`,
-        "",
-        "The completed membership application form is attached as a PDF.",
-      ].join("\n"),
-      attachments: [
-        {
-          filename,
-          content: Buffer.from(pdfBytes),
-        },
-      ],
+      attachmentFilename: filename,
+      attachmentSizeBytes: pdfBytes.length,
     });
 
-    if (error) {
-      console.error("Resend email error:", error);
+    let resendData;
+    let resendError;
+
+    try {
+      const result = await resend.emails.send({
+        from: "Subang Philippines <onboarding@resend.dev>",
+        to: [hrEmail],
+        subject: `New Membership Application | ${applicationReference}`,
+        text: [
+          "A new Subang Philippines membership application has been submitted.",
+          "",
+          `Application Reference: ${applicationReference}`,
+          `Applicant: ${body.fullName}`,
+          `Applicant Email: ${body.emailAddress}`,
+          `Submission Date: ${submissionDate}`,
+          "",
+          "The completed membership application form is attached as a PDF.",
+        ].join("\n"),
+        attachments: [
+          {
+            filename,
+            content: Buffer.from(pdfBytes),
+          },
+        ],
+      });
+
+      resendData = result.data;
+      resendError = result.error;
+
+      console.log(`[${diagnosticId}] Resend response received:`, {
+        data: resendData,
+        error: resendError,
+      });
+    } catch (resendException) {
+      console.error(
+        `[${diagnosticId}] Resend SDK threw an exception:`,
+        resendException
+      );
 
       return NextResponse.json(
         {
           error:
-            "The application was processed, but the email could not be sent. Please try again later.",
+            "The application was processed, but the email service could not be reached.",
+          diagnosticId,
         },
         { status: 502 }
       );
     }
 
-    console.log("Application emailed successfully:", {
+    if (resendError) {
+      console.error(`[${diagnosticId}] Resend rejected the email:`, {
+        name: resendError.name,
+        message: resendError.message,
+        statusCode: resendError.statusCode,
+        error: resendError,
+      });
+
+      return NextResponse.json(
+        {
+          error:
+            "The application was processed, but the email service rejected the message.",
+          diagnosticId,
+          resendError: {
+            name: resendError.name,
+            message: resendError.message,
+            statusCode: resendError.statusCode,
+          },
+        },
+        { status: 502 }
+      );
+    }
+
+    console.log(`[${diagnosticId}] EMAIL SENT SUCCESSFULLY.`, {
       applicationReference,
-      emailId: data?.id,
+      resendEmailId: resendData?.id,
     });
 
     return NextResponse.json({
@@ -216,15 +329,18 @@ export async function POST(request: Request) {
       submissionDate,
       pdfGenerated: true,
       emailSent: true,
+      resendEmailId: resendData?.id || null,
+      diagnosticId,
       message: "Application submitted successfully.",
     });
   } catch (error) {
-    console.error("Application submission error:", error);
+    console.error(`[${diagnosticId}] Application submission failed:`, error);
 
     return NextResponse.json(
       {
         error:
           "Unable to process the application at this time. Please try again later.",
+        diagnosticId,
       },
       { status: 500 }
     );
