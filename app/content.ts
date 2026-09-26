@@ -13,6 +13,309 @@ export type Story = {
 
 export const stories: Story[] = [
   {
+  slug: "ctu-dumanjug-research-management-design-thinking-workshop-2025",
+  type: "Project Story",
+  title: "CTU-Dumanjug Faculty Engage in Workshop on Research Management and Design Thinking",
+  date: "July 24, 2025",
+  dateValue: "2025-07-24",
+  excerpt:
+    "CTU-Dumanjug faculty members participated in a workshop on research management and design thinking as part of the campus's strategic planning activities.",
+  body: [
+    "Cebu Technological University - Dumanjug Extension Campus conducted a workshop on adapting research management and design thinking on July 24, 2025, as part of its three-day strategic planning activity held in Argao, Cebu.",
+    "The session focused on strengthening the university's Research, Innovation, Development, and Extension agenda. Dr. Pet Roey L. Pascual, CTU Vice President for Research and Development and Adviser of Subang, led the workshop and introduced participants to the application of the Design Thinking and Innovation Framework in research conceptualization and target setting.",
+    "Subang Philippines President and CTU-Barili Campus SSG President Peter John C. Enorio facilitated the Design Thinking segment, with support from Subang - CTU Chapter Volunteer Intern Miles Wilven Ayuban.",
+    "Faculty members of the CTU-Dumanjug Extension Campus participated in the workshop, which aimed to strengthen research capabilities and encourage innovation as part of institutional planning."
+  ],
+  image:
+    "/assets/stories/ctu-dumanjug-research-management-design-thinking-workshop-2025.jpg",
+  category: "Education & Capacity Building",
+  partner: "CTU-Dumanjug Extension Campus"
+},
+
+{
+  slug: "subang-president-moderates-pagtanaw-2050-forum-2025",
+  type: "Project Story",
+  title: "Subang President Moderates Key Forum at Visayas Seminar on PAGTANAW 2050",
+  date: "July 29, 2025",
+  dateValue: "2025-07-29",
+  excerpt:
+    "Subang Philippines President Peter John C. Enorio moderated the open forum and couch session during the Visayas Island Seminar on PAGTANAW 2050 at CTU Main Campus.",
+  body: [
+    "Subang Philippines President Peter John C. Enorio served as moderator during the Visayas Island Seminar on PAGTANAW 2050 held on July 29, 2025, at the Cebu Technological University Main Campus Gymnasium.",
+    "Organized by the Department of Science and Technology Region VII, the Philippine Association for the Advancement of Science and Technology, and Cebu Technological University, the seminar brought together experts, policymakers, and regional stakeholders under the theme 'Infrastructure, Energy, and Water Security Outlook: Moving Forward to PAGTANAW 2050.'",
+    "The program opened with welcome remarks from Dr. Pet Roey L. Pascual, CTU Vice President for Research and Development and Subang Adviser, delivered on behalf of CTU President Dr. Joseph C. Pepito. DOST-VII OIC-Regional Director Dr. Tristan L. Abando followed with opening remarks emphasizing the importance of localizing the PAGTANAW 2050 foresight framework. Prof. Fortunato T. de la Peña, President of PhilAAST and former DOST Secretary, formally opened the technical discussions.",
+    "Enorio moderated the open forum and couch session, facilitating exchanges between speakers, discussants, and participants on energy, infrastructure, urban transport, and housing. The discussion also highlighted the importance of connecting science-based foresight with community realities and long-term resilience.",
+    "The technical sessions featured Dr. Danilo Jaque of Hydronet Consultants, Inc. on the energy-water nexus; Engr. Augusto 'Jay-Ar' Reynes of the Clean Energy Advocates Association of the Philippines, Inc. on energy security; Architect Joseph Michael Espina, former Head of the Cebu City Planning and Development Office, on infrastructure outlook; and Dr. Jonathan C. Maglasang and Engr. Hana Astrid Canseco-Tunacao of CTU Main Campus College of Engineering on urban and maritime transport and housing.",
+    "Dr. Diana L. Ignacio, Assistant Secretary for Administrative and Legal Affairs of the Department of Science and Technology, delivered the synthesis and closing message, encouraging continued collaboration between science and society.",
+    "Also in attendance were Subang - CTU Chapter President Shaina Faith D. Visorro, Subang - CTU Chapter Volunteer Intern Miles Wilven Ayuban, and CTU students Brylle Bryan Lauglaug and Baby Seth E. Villatima."
+  ],
+  image:
+    "/assets/stories/subang-president-moderates-pagtanaw-2050-forum-2025.jpg",
+  category: "Youth Leadership & Participation",
+  partner: "DOST Region VII, PhilAAST, and CTU"
+},
+
+{
+  slug: "primo-villegas-first-agro-fair-2025",
+  type: "Project Story",
+  title: "Primo Villegas Elementary School Holds First Agro Fair",
+  date: "July 30, 2025",
+  dateValue: "2025-07-30",
+  excerpt:
+    "Primo Villegas Elementary School held its first Agro Fair in Cagay, Barili, bringing together families, educators, and partners to promote food and nutrition security.",
+  body: [
+    "Primo Villegas Elementary School in Cagay, Barili, Cebu held its First Agro Fair 2025 on June 30, 2025, as part of the school's celebration of Nutrition Month and its theme, 'Food and Nutrition Security maging Priority! Sapat na Pagkain, Karapatan Natin!'",
+    "The activity brought together parents, educators, school leaders, and community partners in a showcase of agricultural products and sustainable food practices. The fair was spearheaded by School Principal Mercedita B. Marinay in collaboration with School Parents and Teachers Association President Ma. Jumilie B. Carreon, the School Governance Council, and SPTA officials.",
+    "Peter John C. Enorio, Subang Philippines President, and Shaina Faith D. Visorro, Subang - CTU Chapter President, served as members of the judging panel. They were joined by volunteers Dennis B. Bendulo and Crestine Lendio and Volunteer Intern Miles Wilven Ayuban.",
+    "The Agro Fair featured fruits, vegetables, herbs, root crops, and homemade products prepared by parents of enrolled learners. The activity highlighted the connection between agriculture, education, nutrition, and community participation.",
+    "During the activity, Enorio discussed the relationship between adequate nutrition, food security, and the holistic development of learners, including their health, cognitive development, and academic performance.",
+    "The fair provided a community-based platform for promoting agricultural awareness and nutritious food choices while celebrating the agricultural roots and local participation of the school community."
+  ],
+  image: "/assets/stories/primo-villegas-first-agro-fair-2025.jpg",
+  category: "Food Security & Sustainable Agriculture",
+  partner: "Primo Villegas Elementary School"
+},
+
+{
+  slug: "subang-president-the-aun-transforming-asean-universities-2025",
+  type: "Project Story",
+  title: "Subang President Joins Training on Transforming ASEAN Universities",
+  date: "September 17, 2025",
+  dateValue: "2025-09-17",
+  excerpt:
+    "Subang Philippines President Peter John C. Enorio joined the THE-AUN Webinar Series 2025 session on data, rankings, and strategic growth in ASEAN universities.",
+  body: [
+    "Subang Philippines President Peter John C. Enorio joined the THE-AUN Webinar Series 2025 on September 17, 2025, participating in a session focused on the transformation and strategic development of ASEAN universities.",
+    "The session, titled 'Transforming ASEAN Universities - Introduction to Data, Rankings, and Strategic Growth,' featured Julie Wilkens McMahon, Vice President for APAC of Times Higher Education.",
+    "The webinar explored World University Rankings, Impact Rankings, practices from universities participating in global rankings, and the methodology for the 2026 rankings.",
+    "Enorio's participation provided an opportunity to engage with discussions on higher education development, institutional data, global academic benchmarking, and strategic growth.",
+    "The engagement forms part of Subang's continuing interest in knowledge exchange and youth participation in academic and institutional development discussions."
+  ],
+  image:
+    "/assets/stories/subang-president-the-aun-transforming-asean-universities-2025.jpg",
+  category: "Education & Capacity Building",
+  partner: "Times Higher Education and ASEAN University Network"
+},
+
+{
+  slug: "subang-regional-volunteerism-exhibit-2025",
+  type: "Project Story",
+  title: "Subang Featured as Official Exhibitor at the 2nd Regional Volunteerism Exhibit 2025",
+  date: "September 30, 2025",
+  dateValue: "2025-09-30",
+  excerpt:
+    "Subang Philippines participated as an official exhibitor at the 2nd Regional Volunteerism Exhibit 2025 in Cebu City, showcasing youth-led volunteer initiatives and community work.",
+  body: [
+    "Subang Philippines participated as one of the featured exhibitors at the 2nd Regional Volunteerism Exhibit 2025 held on September 30, 2025, at the Atrium of Robinsons Galleria Cebu.",
+    "Hosted by the Department of Economy, Planning, and Development Region VII under the theme 'Atong Garbo, SugBolunterismo!', the exhibit brought together volunteer organizations and community groups to highlight volunteerism across Central Visayas.",
+    "Representing Subang were Peter John C. Enorio, Shaina Faith D. Visorro, Volunteer Interns Dan Mishael D. Abines and Miles Wilven Ayuban, and Subang Adviser Dr. Pet Roey L. Pascual.",
+    "Subang presented its volunteer initiatives, environmental projects, and youth-driven programs during the exhibit, providing an opportunity to share experiences and connect with organizations working in volunteerism and community development.",
+    "The event also featured organizational exhibits, cultural performances, and discussions focused on strengthening partnerships for development. Subang's participation highlighted the role of volunteer organizations and young people in contributing to community-based development."
+  ],
+  image: "/assets/stories/subang-regional-volunteerism-exhibit-2025.jpg",
+  category: "Volunteerism",
+  partner: "DEPDev Region VII"
+},
+
+{
+  slug: "subang-world-food-forum-fireside-reflections-2025",
+  type: "Project Story",
+  title: "Subang Joins World Food Forum Fireside Reflections with Past Flagship Participants",
+  date: "October 7, 2025",
+  dateValue: "2025-10-07",
+  excerpt:
+    "Subang Philippines participated in a World Food Forum Philippines Chapter session preparing participants for the 2025 WFF Flagship Event in Rome.",
+  body: [
+    "Subang Philippines joined the Fireside Reflections with Past Flagship Participants hosted by the World Food Forum Philippines Chapter on October 7, 2025, as part of preparations for the 2025 WFF Flagship Event in Rome, Italy.",
+    "The organization was represented by Subang Executive President Peter John C. Enorio, Agriculture and Food Systems Volunteer Dennis B. Bendulo, and Volunteer Intern Dan Mishael D. Abines.",
+    "The session provided participants with an opportunity to hear reflections and experiences from previous World Food Forum delegates and to learn more about the international food systems platform.",
+    "The engagement complemented Subang's continuing work in sustainable agriculture, food security, and youth participation, while providing its representatives with an opportunity to connect with broader discussions on sustainable food systems."
+  ],
+  image:
+    "/assets/stories/subang-world-food-forum-fireside-reflections-2025.jpg",
+  category: "Food Security & Sustainable Agriculture",
+  partner: "World Food Forum Philippines Chapter"
+},
+
+{
+  slug: "subang-echo-season-two-relaunch-2026",
+  type: "Press Release",
+  title: "Subang Relaunches 'Subang ECHO: Shaping Tomorrow Today' for Season Two",
+  date: "January 24, 2026",
+  dateValue: "2026-01-24",
+  excerpt:
+    "Subang - CTU Chapter relaunched Subang ECHO: Shaping Tomorrow Today for its second season, opening a new series of conversations on youth participation and community development.",
+  body: [
+    "Subang - CTU Chapter relaunched its talk show series, 'Subang ECHO: Shaping Tomorrow Today,' with the premiere of its second season on January 24, 2026.",
+    "The opening episode focused on the 10 Centers of Youth Participation and was broadcast through DYNE Radyo Kahimsog 97.5 at Cebu Technological University - Barili Campus and through Facebook Live.",
+    "The second season builds on Subang ECHO's role as a platform for conversations on community engagement and social development, with greater emphasis on youth empowerment, nation-building, sustainability, volunteerism, innovation, and meaningful participation.",
+    "The premiere episode was hosted by newly welcomed Subang - CTU volunteer interns Beryl Gem A. Figueroa and Janice D. Remobatac. Iana Babe D. Bueno, also a newly welcomed volunteer intern, served as the resource speaker and shared her experiences and advocacies during the program.",
+    "The relaunch marked the beginning of an expanded series intended to provide regular conversations on issues relevant to young people and communities. Subsequent episodes were scheduled for Saturdays through the continuing partnership with DYNE Radyo Kahimsog 97.5."
+  ],
+  image: "/assets/press/subang-echo-season-two-relaunch-2026.jpg",
+  category: "Youth Leadership & Participation",
+  partner: "DYNE Radyo Kahimsog 97.5"
+},
+
+{
+  slug: "first-bamboo-propagation-activity-2026",
+  type: "Project Story",
+  title: "Subang - CTU Conducts First Bamboo Propagation Activity of 2026",
+  date: "January 25, 2026",
+  dateValue: "2026-01-25",
+  excerpt:
+    "Subang - CTU Chapter opened its 2026 environmental activities with another bamboo propagation session at CTU-Barili Campus.",
+  body: [
+    "Subang - CTU Chapter conducted its first bamboo propagation activity of 2026 on January 25, continuing the chapter's environmental sustainability and ecological restoration efforts at Cebu Technological University - Barili Campus.",
+    "The activity was spearheaded by Subang Philippines President Peter John C. Enorio and co-facilitated by Subang - CTU Volunteer Miles Wilven Ayuban.",
+    "Subang - CTU officers Ron Janbert P. Ofquila, Ciara Mari M. Brigoli, and Andrewkyle E. Oroc supported the activity, with CTU-Barili BSAB-1 student Yogi Christ P. Agan also participating.",
+    "The activity provided volunteers and students with practical experience in bamboo propagation while continuing the chapter's broader environmental work at the campus."
+  ],
+  image: "/assets/stories/first-bamboo-propagation-activity-2026.jpg",
+  category: "Environmental Sustainability",
+  partner: "CTU-Barili"
+},
+
+{
+  slug: "subang-echo-episode-two-ambisyon-natin-2040-2026",
+  type: "Press Release",
+  title: "Subang ECHO Episode Two Explores Ambisyon Natin 2040",
+  date: "January 31, 2026",
+  dateValue: "2026-01-31",
+  excerpt:
+    "Subang ECHO Episode Two continued the second season with a discussion on Ambisyon Natin 2040 featuring guest Jannah T. Sobiono.",
+  body: [
+    "Subang ECHO: Shaping Tomorrow Today continued its second season with Episode Two on January 31, 2026, featuring a discussion on Ambisyon Natin 2040 with guest Jannah T. Sobiono.",
+    "The episode was broadcast through DYNE Radyo Kahimsog 97.5 and Facebook Live as part of the continuing Subang ECHO series.",
+    "The episode contributed to the program's broader objective of creating accessible conversations on youth participation, national development, and inclusive community development.",
+    "Through its continuing broadcasts, Subang ECHO provides a platform where young people and community participants can engage with development issues and connect national aspirations with local realities."
+  ],
+  image: "/assets/press/subang-echo-episode-two-ambisyon-natin-2040-2026.jpg",
+  category: "Youth Leadership & Participation",
+  partner: "DYNE Radyo Kahimsog 97.5"
+},
+
+{
+  slug: "fsg-subang-black-bamboo-propagation-2026",
+  type: "Project Story",
+  title: "FSG Officers Conduct Black Bamboo Propagation Activity at CTU-Barili",
+  date: "January 31, 2026",
+  dateValue: "2026-01-31",
+  excerpt:
+    "FSG-CTU officers and Subang - CTU volunteers worked together on black bamboo propagation at CTU-Barili as part of their continuing environmental initiatives.",
+  body: [
+    "The Federation of Student Governments - Cebu Technological University, Inc. and Subang - CTU Chapter conducted a Black Bamboo propagation activity at Cebu Technological University - Barili Campus on January 31, 2026.",
+    "The activity was spearheaded by Peter John C. Enorio, President of Subang Philippines, and Shaina Faith D. Visorro, President of the Subang - CTU Chapter, with coordination from Dennis B. Bendulo, Miles Wilven Ayuban, and Rod Santiago Lebumfacil Jr.",
+    "The session began with an orientation and demonstration on black bamboo propagation, followed by a hands-on planting activity. Participants gained practical experience in propagation while learning about the potential role of bamboo in environmental restoration and sustainability.",
+    "FSG-CTU officers and Subang - CTU volunteers participated throughout the activity, strengthening collaboration between student leaders and volunteer groups.",
+    "The initiative contributed to the continuing environmental work of Subang - CTU while providing an action-based learning opportunity for student leaders."
+  ],
+  image: "/assets/stories/fsg-subang-black-bamboo-propagation-2026.jpg",
+  category: "Environmental Sustainability",
+  partner: "FSG-CTU, Inc."
+},
+
+{
+  slug: "fsg-subang-adopt-a-hectare-maintenance-transplanting-2026",
+  type: "Project Story",
+  title: "FSG Officers and Subang - CTU Continue Adopt-a-Hectare Site Maintenance and Tree Transplanting",
+  date: "January 31, 2026",
+  dateValue: "2026-01-31",
+  excerpt:
+    "FSG-CTU officers and Subang - CTU volunteers continued the Adopt-a-Hectare project through site maintenance and tree transplanting at CTU-Barili.",
+  body: [
+    "The Federation of Student Governments - Cebu Technological University, Inc. and Subang - CTU Chapter conducted an Adopt-a-Hectare Project site maintenance and tree transplanting activity at Cebu Technological University - Barili Campus on January 31, 2026.",
+    "The activity was led by Subang Volunteer Miles Wilven Ayuban, with support from Peter John C. Enorio, Shaina Faith D. Visorro, Dennis B. Bendulo, and Volunteer Intern Rod Santiago Lebumfacil Jr.",
+    "Participants began with an orientation on the objectives of the Adopt-a-Hectare Project before carrying out hands-on site maintenance. Areas planted with kamagong were cleaned and maintained, while participants also transplanted pajo mango as part of the continuing development of the site.",
+    "The activity provided participants with practical experience in tree maintenance and transplanting while reinforcing the importance of continued care for established environmental projects.",
+    "The joint activity strengthened collaboration among student leaders from different CTU campuses and contributed to the continuing environmental stewardship work of the Adopt-a-Hectare Project."
+  ],
+  image:
+    "/assets/stories/fsg-subang-adopt-a-hectare-maintenance-transplanting-2026.jpg",
+  category: "Environmental Sustainability",
+  partner: "FSG-CTU, Inc."
+},
+
+{
+  slug: "fsg-subang-breadfruit-marcotting-2026",
+  type: "Project Story",
+  title: "FSG Officers Lead Breadfruit Propagation Through Marcotting at CTU-Barili",
+  date: "January 31, 2026",
+  dateValue: "2026-01-31",
+  excerpt:
+    "FSG-CTU officers and Subang - CTU volunteers conducted breadfruit propagation through marcotting, combining practical agricultural learning with sustainable food production.",
+  body: [
+    "The Federation of Student Governments - Cebu Technological University, Inc. and Subang - CTU Chapter conducted a breadfruit propagation activity through marcotting at Cebu Technological University - Barili Campus on January 31, 2026.",
+    "The activity was led by Dennis B. Bendulo, Subang Human Resources Officer, with support from Peter John C. Enorio, Shaina Faith D. Visorro, Miles Wilven Ayuban, and Volunteer Intern Rod Santiago Lebumfacil Jr.",
+    "Participants were introduced to marcotting as a vegetative propagation technique that can produce new plants from a parent tree while retaining desirable characteristics. The hands-on activity allowed participants to apply the technique directly to breadfruit propagation.",
+    "The activity connected agricultural knowledge with practical food production and environmental stewardship while providing student leaders with an opportunity to learn a propagation method that can support future planting and production.",
+    "The joint initiative also strengthened collaboration between FSG-CTU and Subang - CTU in promoting sustainable agriculture and action-based learning."
+  ],
+  image: "/assets/stories/fsg-subang-breadfruit-marcotting-2026.jpg",
+  category: "Food Security & Sustainable Agriculture",
+  partner: "FSG-CTU, Inc."
+},
+
+{
+  slug: "fsg-subang-river-cleanup-ctu-barili-2026",
+  type: "Project Story",
+  title: "FSG Officers and Subang - CTU Volunteers Join River Cleanup at CTU-Barili",
+  date: "January 31, 2026",
+  dateValue: "2026-01-31",
+  excerpt:
+    "FSG-CTU officers and Subang - CTU volunteers worked together in a river cleanup activity at CTU-Barili, promoting environmental responsibility and youth participation.",
+  body: [
+    "The Federation of Student Governments - Cebu Technological University, Inc. and Subang - CTU Chapter conducted a River Clean-up Drive at Cebu Technological University - Barili Campus on January 31, 2026.",
+    "The activity was led by Peter John C. Enorio, President of Subang Philippines, with support from Dennis B. Bendulo, Shaina Faith D. Visorro, Miles Wilven Ayuban, and Volunteer Intern Rod Santiago Lebumfacil Jr.",
+    "FSG-CTU officers and Subang - CTU volunteers worked together along the river area, removing waste materials from the riverbanks and helping maintain the surrounding environment.",
+    "Beyond the cleanup itself, the activity served as a practical learning experience on waste management, collective responsibility, and environmental stewardship.",
+    "The joint initiative demonstrated how student organizations and volunteer groups can collaborate on practical environmental action within the campus community."
+  ],
+  image: "/assets/stories/fsg-subang-river-cleanup-ctu-barili-2026.jpg",
+  category: "Waste Management & Circularity",
+  partner: "FSG-CTU, Inc."
+},
+
+{
+  slug: "subang-echo-episode-three-sdgs-2026",
+  type: "Press Release",
+  title: "Subang ECHO Episode Three Focuses on the Sustainable Development Goals",
+  date: "February 7, 2026",
+  dateValue: "2026-02-07",
+  excerpt:
+    "Subang ECHO continued its second season with Episode Three, featuring a discussion on the United Nations Sustainable Development Goals with Karis Philomine R. Palomar.",
+  body: [
+    "Subang ECHO: Shaping Tomorrow Today continued its second season with Episode Three on February 7, 2026, featuring a discussion on the United Nations Sustainable Development Goals.",
+    "The episode featured Karis Philomine R. Palomar as guest, providing an opportunity to discuss the Sustainable Development Goals and their relevance to youth participation and community action.",
+    "The episode formed part of Subang ECHO's continuing series of conversations on development, sustainability, volunteerism, and youth engagement.",
+    "Through the program, Subang continues to provide a platform for young people and communities to exchange perspectives and connect broader development goals with local action."
+  ],
+  image: "/assets/press/subang-echo-episode-three-sdgs-2026.jpg",
+  category: "Youth Leadership & Participation",
+  partner: "DYNE Radyo Kahimsog 97.5"
+},
+
+{
+  slug: "subang-ctu-bamboo-propagation-march-14-2026",
+  type: "Project Story",
+  title: "Subang - CTU Conducts Another Bamboo Propagation Activity at CTU-Barili",
+  date: "March 14, 2026",
+  dateValue: "2026-03-14",
+  excerpt:
+    "Subang - CTU volunteers and interns continued bamboo propagation at CTU-Barili as part of the chapter's ongoing environmental sustainability work.",
+  body: [
+    "Subang - CTU Chapter conducted another bamboo propagation activity at Cebu Technological University - Barili Campus on March 14, 2026, continuing its environmental sustainability and ecological restoration efforts.",
+    "The activity was spearheaded by Subang Philippines President Peter John C. Enorio, together with Subang - CTU Chapter Volunteer Miles Wilven Ayuban and Volunteer Interns Yogi Christ P. Agan, Jannah T. Sobiono, Karis Philomine R. Palomar, and Janice D. Remobatac.",
+    "The activity provided volunteers and interns with hands-on experience in bamboo propagation and continued the chapter's efforts to engage students in practical environmental action.",
+    "Bamboo propagation forms part of the broader environmental work of Subang Philippines and its campus chapters, including initiatives related to ecosystem restoration, climate resilience, and youth participation.",
+    "Through continued field activities, Subang - CTU provides young volunteers with opportunities to contribute directly to environmental initiatives while developing practical skills in sustainability."
+  ],
+  image:
+    "/assets/stories/subang-ctu-bamboo-propagation-march-14-2026.jpg",
+  category: "Environmental Sustainability",
+  partner: "CTU-Barili"
+},
+  {
   slug: "subang-ctu-welcomes-second-batch-volunteer-interns-2025",
   type: "Volunteer Story",
   title: "Subang - CTU Welcomes Second Batch of Volunteer Interns",
