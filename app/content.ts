@@ -13,6 +13,187 @@ export type Story = {
 
 export const stories: Story[] = [
   {
+  slug: "subang-siquijor-pydc-membership-2nd-quarter-meeting-2024",
+  type: "Project Story",
+  title: "Subang - Province of Siquijor Joins Provincial Youth Development Council",
+  date: "June 27, 2024",
+  dateValue: "2024-06-27",
+  excerpt: "Subang - Province of Siquijor was formally inducted as a member of the Provincial Youth Development Council during its second-quarter meeting in Siquijor.",
+  body: [
+    "The Provincial Youth Development Council of Siquijor concluded its second-quarter meeting on June 27, 2024, at the New Capitol Building in Polangyuta, bringing together recognized youth organizations and provincial stakeholders to review accomplishments and plan activities for the succeeding quarter.",
+    "The meeting was presided over by Wilkie T. Bragas, Vice-President of the Sangguniang Kabataan Provincial Federation of Siquijor and Sangguniang Kabataan Municipal Federated President of Maria. First District Board Member Dr. Brylle Deeiah Tumarong-Quio and Provincial Youth Development Officer Dex Magtahas were also present.",
+    "The council reviewed its accomplishments, conducted the election and oath-taking of new PYDC officers, and discussed proposed activities for the next quarter.",
+    "A key development during the meeting was the formal induction of Subang - Province of Siquijor as a member of the Provincial Youth Development Council. The membership established a formal avenue for Subang's provincial chapter to participate in discussions and coordination related to youth development in Siquijor.",
+    "Atty. Dale Tudtud, Chief of Staff of the Governor's Office, also attended the meeting and provided support and insights from the provincial administration.",
+    "Subang's inclusion in the PYDC marked another step in strengthening its participation in organized youth development efforts and creating opportunities for collaboration with other youth organizations and provincial stakeholders."
+  ],
+  image: "/assets/stories/subang-siquijor-pydc-membership-2nd-quarter-meeting-2024.jpg",
+  category: "Youth Leadership & Participation",
+  partner: "Provincial Youth Development Council of Siquijor"
+},
+  {
+  slug: "subang-siquijor-coastal-cleanup-community-outreach-lazi-2024",
+  type: "Project Story",
+  title: "Subang - Province of Siquijor Conducts Coastal Cleanup and Community Outreach in Lazi",
+  date: "June 23, 2024",
+  dateValue: "2024-06-23",
+  excerpt: "Subang - Province of Siquijor conducted a coastal cleanup and community food distribution in Lazi ahead of the St. John's Day celebration.",
+  body: [
+    "Subang - Province of Siquijor brought together its Environmental Affairs and Community Affairs departments for a coastal cleanup and community outreach activity in Lazi on June 23, 2024, ahead of the St. John's Day celebration.",
+    "The coastal cleanup covered the shores of Barangays Tigbawan and Catamboan and was led by the SPS Environmental Affairs Department under Director Jaynard Cruz. Volunteers worked to remove litter and debris from the shoreline as part of the chapter's environmental stewardship efforts.",
+    "Alongside the cleanup, the SPS Community Affairs Department, led by Director John Blair More J. Omandam, organized food distribution for residents near the Lazi Baywalk.",
+    "Subang Executive President Peter John C. Enorio and SPS Provincial Director Dyn Michael M. Lozana were also present during the activities, joining volunteers and chapter leaders in the community effort.",
+    "The combined environmental and community activities reflected Subang - Province of Siquijor's efforts to connect environmental responsibility with direct community engagement."
+  ],
+  image: "/assets/stories/subang-siquijor-coastal-cleanup-community-outreach-lazi-2024.jpg",
+  category: "Coastal & Marine Action",
+  partner: "Subang - Province of Siquijor"
+},
+  {
+  slug: "subang-siquijor-tignao-outreach-program-2024",
+  type: "Project Story",
+  title: "Subang - Province of Siquijor Brings Feeding and Environmental Education to Tignao",
+  date: "June 22, 2024",
+  dateValue: "2024-06-22",
+  excerpt: "Subang - Province of Siquijor and the SK of Tignao conducted feeding and educational activities for children and residents in Tignao, Lazi.",
+  body: [
+    "Subang - Province of Siquijor and the Sangguniang Kabataan of Tignao, Lazi, conducted a community outreach program on June 22, 2024, combining food assistance, children's activities, and environmental and health education.",
+    "The morning activity, \"Health in the Heat: Summer Feeding Program,\" was held in Sitio Estrillia and was led by SPS Community Affairs Department Deputy Director Niño Sierras. Children received nutritious meals and participated in games, while Mylene Grace Sumagang facilitated a discussion on staying safe and healthy during periods of high heat.",
+    "In the afternoon, the program moved to Sitio Bunacan for \"Feeding Hope for Tomorrow: One Meal at a Time,\" led by SPS Environmental Affairs Department Deputy Director Jarrale G. Jaralve. The activity paired meal distribution with a discussion on environmental stewardship.",
+    "The outreach also extended to remote areas within Barangay Tignao, where volunteers distributed food to local residents.",
+    "Subang Executive President Peter John C. Enorio and SPS Provincial Director Dyn Michael M. Lozana were among the Subang leaders present during the activities. The initiative demonstrated the chapter's approach of combining direct community support with practical learning and youth participation."
+  ],
+  image: "/assets/stories/subang-siquijor-tignao-outreach-program-2024.jpg",
+  category: "Community Development",
+  partner: "Sangguniang Kabataan of Barangay Tignao"
+},
+  {
+  slug: "subang-siquijor-joint-maritime-patrol-participation-2024",
+  type: "Project Story",
+  title: "Subang Participates in Joint Maritime Patrol Operations in Siquijor",
+  date: "June 18, 2024",
+  dateValue: "2024-06-18",
+  excerpt: "Subang representatives joined government agencies and provincial stakeholders during joint maritime patrol operations in Siquijor focused on coastal safety and maritime preparedness.",
+  body: [
+    "Subang representatives joined government agencies and provincial stakeholders during joint maritime patrol operations in Siquijor on June 18, 2024, supporting a coordinated effort focused on maritime safety and the protection of coastal communities.",
+    "The operations were led by the Philippine Coast Guard, with the patrol vessel BRP Cape San Agustin (MRRV-4408) operating under the command of CG Captain George P. Maganto. The Philippine Coast Guard Station in Siquijor coordinated the activity with personnel from the Philippine National Police and Armed Forces of the Philippines.",
+    "Provincial partners included the Provincial Disaster and Risk Reduction Management Office and the Provincial Youth Development Office. Their participation reflected the broader role of coordination and preparedness in responding to risks affecting coastal communities.",
+    "Representing Subang were Executive President Peter John C. Enorio and Subang - Province of Siquijor Education Director Nikki Lois O. Villas. Their participation provided a youth and community development presence in the multi-agency activity.",
+    "The joint patrol demonstrated the importance of coordination among government agencies, provincial offices, and community stakeholders in promoting maritime safety and preparedness in Siquijor."
+  ],
+  image: "/assets/stories/subang-siquijor-joint-maritime-patrol-participation-2024.jpg",
+  category: "Coastal & Marine Action",
+  partner: "Philippine Coast Guard Station Siquijor"
+},
+  {
+  slug: "subang-microplastic-extraction-training-ctu-barili-2024",
+  type: "Project Story",
+  title: "Subang Supports Microplastic Extraction Training and Seminar at CTU-Barili",
+  date: "May 27-29, 2024",
+  dateValue: "2024-05-27",
+  excerpt: "A three-day microplastic extraction and isolation training at CTU-Barili brought together faculty and students for hands-on learning in environmental research and microplastic analysis.",
+  body: [
+    "Cebu Technological University - Barili Campus hosted a three-day Microplastic Extraction and Isolation Training and Seminar from May 27 to 29, 2024, bringing together faculty members and students for practical learning in environmental research.",
+    "The activity was organized in collaboration with Mindanao State University - Naawan, the Center for Studies in Biotechnology, the Center for Microplastics Research and Innovation, the Research on Environment and Nanotechnology Laboratory, and Subang.",
+    "Faculty members and graduate and undergraduate students from CTU-Barili participated in sessions covering microplastic extraction, density preparation, picking, characterization, and research paper discussions. Resource persons Marybeth Hope Banda, Charmjill Y. Bacsarpa, and Justine Benitez provided technical guidance throughout the training.",
+    "The initiative was spearheaded by Dr. Pet Roey L. Pascual, Director of CTU-Barili DOST STRAND-N, together with BIOTECH Center Director Kristy Amor A. Garcia and Subang President Peter John C. Enorio.",
+    "Held as part of CTU-Barili Campus' 76th Founding Anniversary activities, the training provided participants with practical exposure to methods relevant to the study of microplastic pollution while strengthening collaboration between academic and community partners."
+  ],
+  image: "/assets/stories/subang-microplastic-extraction-training-ctu-barili-2024.jpg",
+  category: "Environmental Sustainability",
+  partner: "Cebu Technological University - Barili Campus"
+},
+  {
+  slug: "subang-barili-food-expo-kalutong-pilipino-2024",
+  type: "Project Story",
+  title: "Subang and Young Hoteliers Club Celebrate Filipino Food Month Through Barili Food Expo",
+  date: "April 30, 2024",
+  dateValue: "2024-04-30",
+  excerpt: "The Barili Food Expo brought more than 100 students together at CTU-Barili to celebrate Filipino culinary heritage and showcase local food products and creations.",
+  body: [
+    "Filipino culinary heritage took center stage at Cebu Technological University - Barili Campus on April 30, 2024, as students gathered for the Barili Food Expo: \"Kalutong Pilipino, Lakas ng Kabataang Makabago.\"",
+    "Held from 1:00 PM to 5:00 PM, the event was organized by the Subang Community Affairs Department and the Young Hoteliers Club as part of Filipino Food Month celebrations. More than 100 students participated in the expo.",
+    "The event featured a range of Filipino food products and creations, including bibingka from Barangay Mantalongon, goat milk ice cream, and tilapia fillet. The displays provided students with an opportunity to explore local ingredients and culinary traditions.",
+    "The activity was supported by Dhodz Pizza, Tolit's D'lights, C&G Printing Services, JRA Livestock Buyer and Supplier, and Chip-In. Dr. Josephine Taleon also provided assistance with booth setup.",
+    "Through the Food Expo, organizers created a space where students could appreciate Filipino food traditions while highlighting the role of young people in keeping local culinary heritage visible and relevant."
+  ],
+  image: "/assets/stories/subang-barili-food-expo-kalutong-pilipino-2024.jpg",
+  category: "Food Security & Sustainable Agriculture",
+  partner: "Young Hoteliers Club"
+},
+  {
+  slug: "subang-content-writing-workshop-ctu-barili-2024",
+  type: "Project Story",
+  title: "Subang Holds Content Writing Workshop at CTU-Barili",
+  date: "April 30, 2024",
+  dateValue: "2024-04-30",
+  excerpt: "Subang's Human Resource Office conducted a content writing workshop at CTU-Barili, equipping students with practical skills in news writing, social media management, and content creation.",
+  body: [
+    "Students at Cebu Technological University - Barili Campus explored the craft of storytelling and digital communication during a Content Writing Workshop held on April 30, 2024.",
+    "Organized by the Subang Human Resource Office under the leadership of SHRO Director Nikki Fe F. Moral, the workshop was themed \"Write and Inspire\" and focused on three areas: news writing, social media management, and content creation.",
+    "Subang President Peter John C. Enorio served as the resource speaker, leading sessions on effective content creation and communication across different platforms. The discussions combined practical guidance with exercises designed to help participants develop their writing and digital communication skills.",
+    "Participants worked through activities involving news writing, social media content, and content development. The workshop also included pep talks and an immersion activity that allowed participants to apply the lessons in practical scenarios.",
+    "The activity reflected Subang's commitment to education and capacity building, particularly in developing young communicators who can use writing and digital media to share stories and information effectively."
+  ],
+  image: "/assets/stories/subang-content-writing-workshop-ctu-barili-2024.jpg",
+  category: "Education & Capacity Building",
+  partner: "Cebu Technological University - Barili Campus"
+},
+  {
+  slug: "subang-hilasgasan-coastal-cleanup-mangrove-growing-2024",
+  type: "Project Story",
+  title: "Subang Leads Coastal Cleanup and Mangrove Growing Activity in Hilasgasan",
+  date: "April 20, 2024",
+  dateValue: "2024-04-20",
+  excerpt: "Subang's Environmental Affairs Department brought together government offices, community leaders, and volunteers for a coastal cleanup and mangrove growing activity in Hilasgasan, Barili.",
+  body: [
+    "Subang's Environmental Affairs Department led a coastal cleanup and mangrove growing activity in Barangay Hilasgasan, Barili, Cebu, on April 20, 2024, bringing together government offices, community leaders, and volunteers around a shared environmental effort.",
+    "The activity was led by SEAD President Peter John C. Enorio in coordination with the Municipal Environment and Natural Resources Office of Barili. Participating offices included the Municipal Agriculturist Office, Bantay Dagat-Barili, the Barili Municipal Fire Station, and the Barili Municipal Police Station, with support from PNP force multipliers from the COMPACT Team.",
+    "Barangay Hilasgasan Chairperson Evelyn Rubia also supported the activity, strengthening community participation in the effort to care for the area's coastal environment.",
+    "Volunteers and personnel from the participating organizations worked together on the day's cleanup and mangrove-growing activities. Subang Co-adviser Dr. Danny E. Carabio was also present to provide guidance and support.",
+    "The activity combined direct environmental action with community engagement, reinforcing the importance of collective responsibility in maintaining coastal ecosystems and supporting long-term environmental sustainability in Barili."
+  ],
+  image: "/assets/stories/subang-hilasgasan-coastal-cleanup-mangrove-growing-2024.jpg",
+  category: "Coastal & Marine Action",
+  partner: "Municipal Environment and Natural Resources Office of Barili"
+},
+  {
+  slug: "subang-negros-oriental-siquijor-leadership-workshop-planning-2024",
+  type: "Project Story",
+  title: "Subang - Negros Oriental and Siquijor Leaders Convene for Youth Leadership and Activity Planning",
+  date: "April 20, 2024",
+  dateValue: "2024-04-20",
+  excerpt: "Subang leaders and local youth stakeholders gathered in Lazi, Siquijor for a leadership workshop and activity planning session focused on youth participation and community initiatives.",
+  body: [
+    "Subang - Negros Oriental and local youth leaders in Siquijor convened in Lazi on April 20, 2024, for a leadership workshop and activity planning session designed to strengthen youth leadership and develop initiatives responsive to local needs.",
+    "The activity was spearheaded by Provincial Director Dyn Michael M. Lozana and brought together youth leaders, educators, and community stakeholders. Among the participants was Georgehene Tabuyok, Sangguniang Kabataan Chairperson of Barangay Tignao, Lazi, Siquijor.",
+    "The workshop featured discussions and activities focused on leadership, civic engagement, teamwork, creativity, and critical thinking. Participants also worked through activity-planning exercises to identify possible youth-centered initiatives for Siquijor.",
+    "Proposed activities included environmental conservation projects and skills development workshops, reflecting the participants' interest in creating opportunities for young people to contribute to their communities.",
+    "The session strengthened coordination between Subang leaders and local stakeholders while providing a space for youth to contribute ideas to future activities in Siquijor."
+  ],
+  image: "/assets/stories/subang-negros-oriental-siquijor-leadership-workshop-planning-2024.jpg",
+  category: "Youth Leadership & Participation",
+  partner: "Local youth leaders and stakeholders in Siquijor"
+},
+  {
+  slug: "subang-negros-oriental-siquijor-strategic-planning-2024",
+  type: "Project Story",
+  title: "Subang - Negros Oriental and Siquijor Chapter Sets Direction Through Strategic Planning",
+  date: "April 6, 2024",
+  dateValue: "2024-04-06",
+  excerpt: "Subang - Negros Oriental and Subang - Province of Siquijor convened for strategic planning and orientation, outlining community-based initiatives and educational activities for the year.",
+  body: [
+    "Subang - Negros Oriental and Subang - Province of Siquijor came together on April 6, 2024, in Siquijor for a strategic planning and orientation session focused on strengthening chapter coordination and shaping upcoming initiatives.",
+    "The session was led by Subang - Negros Oriental Provincial Director Dyn Michael M. Lozana, together with Subang - Province of Siquijor Provincial Director Jehan Joane Jumalon. Discussions centered on the chapters' direction, leadership, and opportunities to expand community-based work and educational activities.",
+    "A key part of the planning was the identification of four community-based initiatives targeted for implementation during the second and third quarters of 2024. The session also outlined plans for a school-to-school workshop series intended to support learning and collaboration among schools in Siquijor.",
+    "Beyond setting project priorities, the gathering provided space for participants to exchange ideas, develop plans, and strengthen coordination between the two provincial chapters. The discussions emphasized collaboration, strategic planning, and meaningful youth participation.",
+    "The session marked an important planning point for Subang's work in Negros Oriental and Siquijor, establishing a shared direction for initiatives to be developed throughout the year."
+  ],
+  image: "/assets/stories/subang-negros-oriental-siquijor-strategic-planning-2024.jpg",
+  category: "Youth Leadership & Participation",
+  partner: "Subang - Negros Oriental and Subang - Province of Siquijor"
+},
+  {
   slug: "subang-international-zero-waste-day-coastal-cleanup-lazi-2024",
   type: "Project Story",
   title: "Subang Volunteers Lead Coastal Cleanup for International Zero Waste Day in Lazi",
