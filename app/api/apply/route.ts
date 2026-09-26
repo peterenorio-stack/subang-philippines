@@ -4,6 +4,42 @@ import { generateApplicationPdf } from "@/lib/generateApplicationPdf";
 
 export const runtime = "nodejs";
 
+const DECLARATION_TEXT = `
+I hereby declare that all information provided in this application form is true, accurate, and complete to the best of my knowledge. I understand that any false, misleading, or incomplete information may result in the rejection of my membership application or termination of membership if discovered at a later date.
+
+I consent to Subang verifying the information provided in this application form through appropriate means, including but not limited to contacting references, employers, educational institutions, and government authorities.
+
+I understand and agree that submission of this application does not guarantee membership in Subang, and membership acceptance is subject to review and approval by Subang's membership committee.
+`.trim();
+
+const PRIVACY_CONSENT_TEXT = `
+I, ________________________________, hereby consent to the collection, processing, and storage of my personal information by Subang in accordance with the provisions of the Data Privacy Act of 2012 of the Philippines (Republic Act No. 10173). I understand that the information provided by me will be used solely for the purpose of processing my membership application.
+
+I. Collection of Personal Information and Purpose of Collection
+
+I understand that the personal information collected may include but is not limited to full name, date of birth, contact information (address, email, phone number), identification documents (e.g., ID card, passport), employment or educational background, and other relevant information necessary for the membership application process.
+
+The personal information provided will be used for the following purposes: verifying identity and eligibility for membership, contacting applicants regarding their application status, internal record keeping, and complying with legal obligations and regulatory requirements.
+
+II. Confidentiality and Security
+
+I acknowledge that Subang is committed to ensuring the confidentiality, integrity, and security of my personal information. Appropriate technical and organizational measures will be implemented to prevent unauthorized access, use, or disclosure of my personal information.
+
+III. Data Retention
+
+I understand that my personal information will be retained only for as long as necessary to fulfill the purposes outlined in this consent form or as required by law. Upon the completion of the membership application process, my personal information will be securely disposed of in accordance with Subang's data retention policies.
+
+IV. Consent Withdrawal
+
+I understand that I have the right to withdraw my consent at any time by notifying Subang in writing. However, I acknowledge that withdrawing my consent may affect the processing of my membership application.
+
+V. Rights of Data Subjects
+
+I acknowledge that as a data subject, I have the following rights under the Data Privacy Act of 2012: the right to be informed, the right to access, the right to object, and the right to erasure or blocking.
+
+By signing below, I confirm that I have read and understood the terms of this consent form and voluntarily agree to the collection, processing, and storage of my personal information by Subang in accordance with the Data Privacy Act of 2012.
+`.trim();
+
 export async function POST(request: Request) {
   try {
     const body = await request.json();
@@ -24,8 +60,10 @@ export async function POST(request: Request) {
       "civilStatus",
       "gender",
       "residentialAddress",
+      "permanentAddress",
       "barangay",
       "cityMunicipality",
+      "postalCode",
       "province",
       "phoneNumber",
       "emailAddress",
@@ -34,10 +72,17 @@ export async function POST(request: Request) {
       "emergencyContactRelationship",
       "idType",
       "idNumber",
+      "issuingAuthority",
+      "dateIssued",
+      "dateOfExpiry",
       "currentOccupation",
       "highestEducationalAttainment",
       "reasonForJoining",
-      "declaration",
+      "declarationSignature",
+      "declarationDate",
+      "declarationAgreement",
+      "consentSignature",
+      "consentDate",
       "privacyConsent",
     ];
 
@@ -102,8 +147,12 @@ export async function POST(request: Request) {
       ...body,
       applicationReference,
       submissionDate,
-      electronicSignature: body.electronicSignature || body.fullName,
-      signatureDate: body.signatureDate || submissionDate,
+      declaration: DECLARATION_TEXT,
+      privacyConsent: PRIVACY_CONSENT_TEXT,
+      electronicSignature:
+        body.consentSignature || body.declarationSignature || body.fullName,
+      signatureDate:
+        body.consentDate || body.declarationDate || submissionDate,
       issuingAuthority:
         body.issuingAuthority || body.issuingCountryAuthority || "",
     };
@@ -117,9 +166,11 @@ export async function POST(request: Request) {
       .replace(/\s+/g, "-")
       .substring(0, 80);
 
-    const filename = `SUBANG-Membership-Application-${safeName || "Applicant"}.pdf`;
+    const filename = `SUBANG-Membership-Application-${
+      safeName || "Applicant"
+    }.pdf`;
 
-    // Send the application to Subang Human Resources.
+    // Send the completed application to Subang Human Resources.
     const { data, error } = await resend.emails.send({
       from: "Subang Philippines <onboarding@resend.dev>",
       to: [process.env.SUBANG_HR_EMAIL],
@@ -157,7 +208,6 @@ export async function POST(request: Request) {
     console.log("Application emailed successfully:", {
       applicationReference,
       emailId: data?.id,
-      applicant: body.fullName,
     });
 
     return NextResponse.json({
