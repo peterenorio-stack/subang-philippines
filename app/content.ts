@@ -13,6 +13,191 @@ export type Story = {
 
 export const stories: Story[] = [
   {
+  slug: "subang-international-zero-waste-day-coastal-cleanup-lazi-2024",
+  type: "Project Story",
+  title: "Subang Volunteers Lead Coastal Cleanup for International Zero Waste Day in Lazi",
+  date: "March 30, 2024",
+  dateValue: "2024-03-30",
+  excerpt: "Subang volunteers conducted a coastal cleanup in Simacolong and Minalulan, Lazi, Siquijor in observance of International Zero Waste Day.",
+  body: [
+    "Subang volunteers conducted a coastal cleanup along the shores of Barangays Simacolong and Minalulan in Lazi, Siquijor on March 30, 2024 in observance of International Zero Waste Day.",
+    "The activity was led by Subang President Peter John C. Enorio, together with Subang Community Affairs Department Deputy Director Jerecho Jose P. Sumalpong and Subang - Negros Oriental Provincial Director Dyn Michael M. Lozano.",
+    "Volunteers collected various forms of waste that had accumulated along the shoreline, including plastic bottles, cans, cellophane plastics, and cigarette packaging. The activity focused on removing litter from the coastal environment while drawing attention to the importance of responsible waste management.",
+    "International Zero Waste Day provides an opportunity for communities to reflect on waste generation, consumption, and the need for more sustainable approaches to managing resources. The coastal cleanup translated that broader message into direct action at the local level.",
+    "For Subang volunteers, the activity was also an opportunity to strengthen community-based environmental stewardship in Siquijor. By working directly along the shoreline, participants contributed to the immediate improvement of the coastal environment while promoting greater awareness of the effects of unmanaged waste.",
+    "The cleanup formed part of Subang's continuing environmental work across communities, demonstrating how volunteer action can support cleaner public spaces and encourage more responsible relationships with local ecosystems."
+  ],
+  image: "/assets/stories/subang-international-zero-waste-day-coastal-cleanup-lazi-2024.jpg",
+  category: "Waste Management & Circularity",
+  partner: "Subang - Siquijor and Subang - Negros Oriental"
+},
+  {
+  slug: "subang-world-water-day-cleanup-ctu-barili-2024",
+  type: "Project Story",
+  title: "Subang Environmental Affairs Department Leads World Water Day Cleanup at CTU-Barili",
+  date: "March 22, 2024",
+  dateValue: "2024-03-22",
+  excerpt: "Subang's Environmental Affairs Department led a cleanup and restoration activity at CTU-Barili's well and spring in observance of World Water Day 2024.",
+  body: [
+    "In observance of World Water Day on March 22, 2024, Subang's Environmental Affairs Department led a cleanup and restoration activity at a well and spring at Cebu Technological University - Barili Campus.",
+    "The initiative was led by SEAD Vice-President Rodney Joseph B. Sundo and brought together volunteers and representatives from different Subang departments, including President Peter John C. Enorio, Executive Vice-President Krista Bicada, Community Affairs Vice-President Joshua Ray Calago, Community Development Vice-President Mahlah Cuizon, Community Affairs Deputy Director Jerecho Sumalpong, SEAD Deputy Director Augustin Tapinit, SEAD Junior Environmental Advocate Crestine Lendio, SMFD Marketing Officer Danicah Coca, SED Junior A+ Advocate Jedi Guillano, SCAD Junior Mission Volunteer Sopia Baritua, and SCD Junior Staff Maekaila Ozon.",
+    "Participants worked to clear accumulated waste and restore the surrounding area of the campus's water sources. The activity provided a practical response to concerns around water-source protection while engaging volunteers in direct environmental stewardship.",
+    "The cleanup complemented Subang's broader environmental work at CTU-Barili, including riparian restoration, bamboo propagation, and biodiversity documentation. Together, these activities reflected an approach that treats water sources and surrounding ecosystems as interconnected parts of campus environmental management.",
+    "The World Water Day activity reinforced the importance of protecting local water sources through regular maintenance, responsible waste management, and sustained community participation."
+  ],
+  image: "/assets/stories/subang-world-water-day-cleanup-ctu-barili-2024.jpg",
+  category: "Coastal & Marine Action",
+  partner: "Cebu Technological University - Barili Campus"
+},
+  {
+  slug: "subang-women-breast-cancer-awareness-microbial-composting-2024",
+  type: "Project Story",
+  title: "Subang and CTU-Barili Empower Women Through Breast Cancer Awareness and Microbial Composting",
+  date: "March 20, 2024",
+  dateValue: "2024-03-20",
+  excerpt: "Subang's Community Affairs Department and CTU-Barili combined breast cancer awareness with microbial composting and livelihood training for women from the Dakit Tubod Farmers Association.",
+  body: [
+    "Subang Community Affairs Department, in collaboration with Cebu Technological University - Barili Campus, conducted a breast cancer awareness and livelihood initiative on March 20, 2024 as part of the Women's Month celebration.",
+    "The activity brought together women from the Dakit Tubod Farmers Association in Barili, Cebu for a Breast Cancer Awareness Symposium followed by practical training in microbial composting.",
+    "The awareness session was delivered by Ruby Ann Munalem, a Junior Mission Volunteer of the Subang Community Affairs Department. The discussion focused on breast cancer awareness and the importance of early detection and prevention, providing participants with information they could bring back to their families and communities.",
+    "The second component of the activity introduced microbial composting as a practical livelihood and environmental management skill. Under the guidance of Subang Co-Adviser Dr. Danny E. Carabio, participants learned how organic waste can be processed through microbial composting to produce fertilizer.",
+    "The training connected environmental sustainability with livelihood development by demonstrating a practical approach to waste recovery that can produce a useful agricultural input. Starter kits were also provided to beneficiaries to support their continued application of the knowledge gained during the activity.",
+    "The initiative was supported by CTU-Barili Extension Office Director Dr. Clea Ann V. Corsiga, Gender and Development Office Director Mary Grace Flores, and CTU-Barili Campus Director Dr. Romeo C. Lepiten. Subang Community Affairs Department Vice-President Joshua Ray P. Calago and Deputy Director Jerecho Jose P. Sumalpong led the Subang team, with support from volunteers from other departments.",
+    "By bringing together health awareness, environmental education, and practical livelihood skills, the activity demonstrated a community development approach centered on knowledge, participation, and opportunities for women to apply new skills within their communities."
+  ],
+  image: "/assets/stories/subang-women-breast-cancer-awareness-microbial-composting-2024.jpg",
+  category: "Education & Capacity Building",
+  partner: "Cebu Technological University - Barili Campus"
+},
+  {
+  slug: "subang-rabies-awareness-vaccination-drive-2024",
+  type: "Project Story",
+  title: "Subang Community Affairs Department Supports Rabies Awareness and Free Vaccination Drive",
+  date: "March 19-20, 2024",
+  dateValue: "2024-03-19",
+  excerpt: "Subang's Community Affairs Department joined partner organizations in a two-day rabies awareness symposium and free anti-rabies vaccination drive for pet owners in Barili, Cebu.",
+  body: [
+    "Subang Community Affairs Department joined partner organizations in conducting a Rabies Awareness Symposium and Free Anti-Rabies Vaccination Drive at Cebu Technological University - Barili Campus on March 19 and 20, 2024.",
+    "The initiative was co-presented by the Future Science and Technology Leaders of the Philippines CTU-Barili, Society for the Advancement of Veterinary Education and Research CTU Chapter, Veterinary Students Society, Veterinary Medicine Clinicians Club, Carcar City Veterinary Office, and the Office of the Municipal Agriculturist of the Local Government Unit of Barili.",
+    "Held under the theme \"Rabies-free na Pusa't Aso, Kaligtasan ng Pamilyang Pilipino,\" the activity brought together students, pet owners, and residents from Barangay Cagay and Barangay Kalubihan in Barili.",
+    "The symposium provided participants with information about rabies, its transmission, prevention, and the importance of timely vaccination. Veterinary professionals and student organizations contributed to the educational component of the activity, helping pet owners better understand their role in preventing the spread of the disease.",
+    "The vaccination component provided free anti-rabies vaccination for eligible pets, connecting public awareness with a practical preventive measure.",
+    "Through the initiative, Subang's Community Affairs Department contributed to a collaborative effort linking education, animal welfare, and community health. The activity demonstrated how partnerships among student organizations, veterinary groups, government offices, and community stakeholders can address issues that affect both people and animals."
+  ],
+  image: "/assets/stories/subang-rabies-awareness-vaccination-drive-2024.jpg",
+  category: "Community Development",
+  partner: "FSTLP CTU-Barili, SAVER CTU Chapter, VETSS, VMCC, Carcar City Veterinary Office, and LGU Barili"
+},
+  {
+  slug: "subang-bamboo-propagation-project-ctu-barili-2024",
+  type: "Project Story",
+  title: "Subang Bamboo Propagation Project Advances Environmental Restoration at CTU-Barili",
+  date: "March 2, 2024",
+  dateValue: "2024-03-02",
+  excerpt: "Subang's Environmental Affairs Department continued its bamboo propagation work at CTU-Barili, supporting campus greening and long-term environmental restoration.",
+  body: [
+    "Subang's Environmental Affairs Department continued its bamboo propagation work at Cebu Technological University - Barili Campus on March 2, 2024, building on the organization's growing environmental restoration efforts within the university.",
+    "The initiative was led by SEAD Vice-President Rodney Joseph B. Sundo and SEAD Deputy Director Augustin P. Tapinit, with the participation of Subang President Peter John C. Enorio, Community Affairs Deputy Director Jerecho Jose P. Sumalpong, Community Affairs Associate Director Roland Joshua C. Carbero, SEAD Junior Environmental Advocate Reinz Laurence S. Tolentino, and SED Junior A+ Advocate Cedrick B. Parojinog.",
+    "The bamboo propagation project supported the development of planting materials for continued environmental work at the campus. Bamboo was identified as a practical component of the organization's broader efforts in campus greening, restoration, and environmental stewardship.",
+    "The activity also provided volunteers with direct experience in environmental work, strengthening their participation in a project that connects propagation, planting, and long-term care of vegetation.",
+    "The March activity formed part of Subang's continuing environmental work at CTU-Barili, following the organization's first riparian project launched in December 2023 and subsequent efforts to document and protect the campus ecosystem."
+  ],
+  image: "/assets/stories/subang-bamboo-propagation-project-ctu-barili-2024.jpg",
+  category: "Environmental Sustainability",
+  partner: "Cebu Technological University - Barili Campus"
+},
+  {
+  slug: "subang-geo-tagging-native-trees-ctu-barili-2024",
+  type: "Project Story",
+  title: "Subang Eco-Pioneers Map Native Trees Through Geo-Tagging at CTU-Barili",
+  date: "February 14, 2024",
+  dateValue: "2024-02-14",
+  excerpt: "Subang conducted a two-day geo-tagging initiative at CTU-Barili to document native trees and build a more detailed inventory of the campus's natural resources.",
+  body: [
+    "Subang Philippines conducted a two-day geo-tagging initiative at Cebu Technological University - Barili Campus beginning February 14, 2024, focusing on documenting native trees and strengthening the organization's understanding of the campus ecosystem.",
+    "The project was led by Subang Co-Adviser Dr. Danny E. Carabio, with participation from Subang President Peter John C. Enorio, Environmental Affairs Vice-President Rodney Joseph Sundo, Community Affairs Deputy Director Jerecho Jose Sumalpong, Associate Director Roland Joshua Carbero, Human Resource Officer II Nikki Fe Moral, Junior Environmental Advocates Cheryl Rama and Gissa Mae Castino, and other participating volunteers.",
+    "The team focused on identifying and geo-tagging native trees within the campus, including Kamagong or Mabolo (Diospyros blancoi) and Breadfruit (Artocarpus altilis). The activity sought to create a more accurate record of trees within the campus and strengthen awareness of its natural resources.",
+    "The collected information was intended for submission to the Department of Environment and Natural Resources, providing a potential reference for broader environmental documentation and conservation efforts.",
+    "The geo-tagging activity complemented Subang's ongoing environmental work at CTU-Barili, including its riparian restoration and bamboo propagation initiatives. By combining field-based environmental action with documentation, the project demonstrated the value of understanding and recording local biodiversity as part of long-term stewardship."
+  ],
+  image: "/assets/stories/subang-geo-tagging-native-trees-ctu-barili-2024.jpg",
+  category: "Environmental Sustainability",
+  partner: "Cebu Technological University - Barili Campus"
+},
+  {
+  slug: "subang-succor-lapu-lapu-relief-turnover-2023",
+  type: "Press Release",
+  title: "Subang Succor Lapu-Lapu Completes Turnover of Relief Goods and More Than PHP1 Million in Donations",
+  date: "December 24, 2023",
+  dateValue: "2023-12-24",
+  excerpt: "Subang Succor Lapu-Lapu completed the turnover of relief goods and a monetary donation exceeding PHP1 million for families affected by the December 12, 2023 fire in Barangay Pusok.",
+  body: [
+    "Subang Philippines, through its Community Affairs Department, completed the official turnover of relief goods and monetary donations gathered through Subang Succor Lapu-Lapu on December 24, 2023 for families affected by a fire in Barangay Pusok, Lapu-Lapu City on December 12.",
+    "The donation drive brought together six participating Sangguniang Kabataan Federations from Dumanjug, Barili, Aloguinsan, Pinamungajan, the City of Toledo, and Balamban, together with the Guild of Enthusiastic Agriculturists of Cebu Technological University - Barili Campus.",
+    "The in-kind donations turned over to affected families included 14 assorted grocery boxes, eight boxes of mineral water, three sacks of rice, three bags of towels, and one bag and sack of hygiene kits, along with other essential items gathered during the campaign.",
+    "Separately from the donated goods, the City of Toledo contributed a monetary donation amounting to more than PHP1 million. The financial assistance provided additional support that could be directed toward the immediate needs of affected families.",
+    "The turnover marked the culmination of the donation drive and demonstrated how youth organizations, student groups, and community partners can mobilize resources in response to communities affected by emergencies.",
+    "Subang Succor Lapu-Lapu reflected Subang Philippines' commitment to community service and volunteer-led action, bringing together different organizations to provide practical assistance during a difficult period for affected families."
+  ],
+  image: "/assets/press/subang-succor-lapu-lapu-relief-turnover-2023.jpg",
+  category: "Community Development",
+  partner: "Participating SK Federations and Guild of Enthusiastic Agriculturists"
+},
+  {
+  slug: "subang-first-riparian-project-ctu-barili-2023",
+  type: "Project Story",
+  title: "Subang Launches Its First Riparian Project at CTU-Barili",
+  date: "December 2, 2023",
+  dateValue: "2023-12-02",
+  excerpt: "Subang launched its first riparian project at the Cebu Technological University - Barili Campus River, using bamboo planting to support riverbank restoration and environmental sustainability.",
+  body: [
+    "Subang Philippines launched its first riparian project on December 2, 2023 at the river of Cebu Technological University - Barili Campus, beginning a focused effort to strengthen the ecological condition of the riverbank through bamboo planting.",
+    "Led by the Subang Environmental Affairs Department, the initiative centered on establishing bamboo along the riparian zone of the campus river. The project was designed to contribute to the restoration and protection of the river edge while creating a living landscape that supports the broader environmental condition of the campus.",
+    "Riparian areas form an important transition between land and waterways. Maintaining vegetation along these areas can help protect riverbanks and strengthen the ecological functions of waterways. For Subang, the project provided an opportunity to translate environmental advocacy into a long-term, hands-on restoration effort.",
+    "The initiative also established an early foundation for Subang's subsequent environmental activities at CTU-Barili, including bamboo propagation, tree growing, site maintenance, geo-tagging, and water-source conservation.",
+    "As Subang's first riparian project, the initiative marked an important step in the organization's environmental sustainability work. What began along the CTU-Barili river would continue through succeeding activities focused on restoring vegetation, engaging students, and encouraging practical environmental stewardship within the university community."
+  ],
+  image: "/assets/stories/subang-first-riparian-project-ctu-barili-2023.jpg",
+  category: "Environmental Sustainability",
+  partner: "Cebu Technological University - Barili Campus"
+},
+  {
+  slug: "subang-siquijor-film-camp-2023",
+  type: "Project Story",
+  title: "Subang Joins Siquijor Film Camp 2023",
+  date: "July 3-7, 2023",
+  dateValue: "2023-07-03",
+  excerpt: "Subang representatives participated in the Siquijor Film Camp 2023, gaining exposure to filmmaking through workshops led by established practitioners from the Philippine film industry.",
+  body: [
+    "Subang Communications Department representatives participated in the Siquijor Film Camp 2023 organized by the Department of Trade and Industry in Siquijor from July 3 to 7, 2023.",
+    "The film camp brought together aspiring filmmakers for a series of learning opportunities led by practitioners with experience across Philippine film and television. Among the featured industry personalities were Director Avel Sunpongco, known for his work on Darna; Director Earl Bontuyan, associated with Sa Ilalim ng Tulay; cinematographer Neil Daza, a recipient of the Gawad Urian Award for Cinematography; and Fausto Barnedo Jr., known for his involvement with Survivor Philippines 2008.",
+    "Subang President Peter John C. Enorio and Siquijor and Negros Oriental Provincial Director Dyn Michael M. Lozana represented the organization during the activity.",
+    "Participation in the film camp provided Subang's communications representatives with an opportunity to learn from established practitioners and further develop their understanding of filmmaking, storytelling, and visual communication.",
+    "The experience also contributed to Subang's continuing use of media and communications as tools for documenting community work, amplifying youth voices, and telling stories of local action."
+  ],
+  image: "/assets/stories/subang-siquijor-film-camp-2023.jpg",
+  category: "Education & Capacity Building",
+  partner: "Department of Trade and Industry - Siquijor"
+},
+  {
+  slug: "subang-when-we-care-water-coastal-action-hilasgasan-2023",
+  type: "Project Story",
+  title: "Subang Joins When We Care Movement's Water and Coastal Action in Hilasgasan",
+  date: "June 2, 2023",
+  dateValue: "2023-06-02",
+  excerpt: "Subang joined the When We Care Movement's Da VetMed's 1n Action H2O campaign in Hilasgasan, Barili, Cebu, combining water education, coastal cleanup, and mangrove planting.",
+  body: [
+    "Subang joined the When We Care Movement's Da VetMed's 1n Action H2O campaign on June 2, 2023 in Barangay Hilasgasan, Barili, Cebu, bringing together student volunteers and community members for activities focused on water awareness and environmental protection.",
+    "The program, hosted by Vein Jodaina Licayan together with Alexis Kimberly Carreon and Lourfamay Dologan, opened with a briefing for participating students and an orientation on the day's activities. The organizers also recognized the partnership between Subang and the When We Care Movement by inviting Subang President Peter John C. Enorio and Vice President for Environmental Affairs Landyrl Turtoga to take part in the program.",
+    "Enorio emphasized the importance of protecting and preserving water sources and marine ecosystems, reinforcing the connection between water security and environmental responsibility.",
+    "Following the program, student volunteers participated in a beach cleanup, working in teams assigned to different portions of the coastline. The activity was followed by mangrove planting in the afternoon once the designated planting site reached the conditions required for cultivation.",
+    "The initiative demonstrated how environmental education can be paired with direct community action. Through its partnership with the When We Care Movement and the support of the Barangay Hilasgasan leadership under Barangay Captain Evelyn Rubia, Subang contributed to a community-based effort to promote responsible stewardship of water and coastal resources."
+  ],
+  image: "/assets/stories/subang-when-we-care-water-coastal-action-hilasgasan-2023.jpg",
+  category: "Coastal & Marine Action",
+  partner: "When We Care Movement"
+},
+  {
   slug: "subang-youth-perspective-in-action-resilient-communities-2026",
   type: "Press Release",
   title: "Subang Philippines Holds Youth Perspective in Action Conversation on Resilient, Safe, and Sustainable Communities",
