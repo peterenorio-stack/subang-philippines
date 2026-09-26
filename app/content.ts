@@ -13,6 +13,97 @@ export type Story = {
 
 export const stories: Story[] = [
   {
+  slug: "subang-youth-perspective-in-action-resilient-communities-2026",
+  type: "Press Release",
+  title: "Subang Philippines Holds Youth Perspective in Action Conversation on Resilient, Safe, and Sustainable Communities",
+  date: "August 7, 2026",
+  dateValue: "2026-08-07",
+  excerpt: "Subang Philippines brought together three young leaders for a conversation on disaster preparedness, lifesaving, and sustainable community design through Youth Perspective in Action.",
+  body: [
+    "Subang Philippines brought together three young leaders for Youth Perspective in Action, a conversation focused on building resilient, safe, and sustainable communities through youth participation and practical knowledge.",
+    "The session explored three complementary perspectives on community resilience, covering community-based disaster risk reduction and management, lifesaving, and sustainable community design.",
+    "Subang Philippines Founder & National Executive President Peter John C. Enorio shared perspectives on empowering communities through community-based disaster risk reduction and management. A Philippine Climate and Disaster Resilience Champion in 2025, Enorio discussed the role of young people in strengthening community preparedness and resilience.",
+    "Yogi Christ P. Agan, a Philippine Life Saving responder, brought the perspective of youth involvement in lifesaving and emergency response. His participation highlighted the importance of practical skills and readiness in efforts to protect lives during emergencies.",
+    "Raf B. Jimenez, a Bachelor of Landscape Architecture student at the University of San Carlos, contributed perspectives on sustainable and resilient community design, connecting the role of young professionals and students with the way communities are planned and shaped.",
+    "The conversation was moderated by Jellian Macadildig and brought together different areas of youth expertise around a shared focus on community resilience.",
+    "Youth Perspective in Action reflects Subang Philippines' approach to youth participation: creating spaces where young people can share practical knowledge, learn from one another, and connect their fields of interest with real community needs."
+  ],
+  image: "/assets/press/subang-youth-perspective-in-action-resilient-communities-2026.jpg",
+  category: "Youth Leadership & Participation"
+}
+  {
+  slug: "subang-coastal-cleanup-mabuhay-beach-siquijor-2026",
+  type: "Project Story",
+  title: "Subang Philippines Conducts Coastal Cleanup at Mabuhay Beach in Siquijor",
+  date: "August 6, 2026",
+  dateValue: "2026-08-06",
+  excerpt: "Subang Philippines volunteers conducted a coastal cleanup at Mabuhay Beach in Barangay Canal, Siquijor, supporting marine environmental protection through community action.",
+  body: [
+    "Subang Philippines conducted a coastal cleanup at Mabuhay Beach in Barangay Canal, Siquijor, Siquijor on August 6, 2026, bringing volunteers together for a hands-on effort to address marine litter along the shoreline.",
+    "The activity was spearheaded by Subang Philippines National Executive President Peter John C. Enorio, together with Subang - CTU Vice President for Community Affairs Yogi Christ P. Agan, Subang - USC President Raf B. Jimenez, and volunteer Jellian Macadildig.",
+    "The team collected marine litter along the shoreline and ensured that the gathered waste was properly disposed of, contributing to a cleaner coastal environment.",
+    "The activity demonstrates how volunteer-led environmental action can create opportunities for young people to participate directly in protecting local ecosystems. It also strengthens Subang Philippines' continuing work in coastal and marine action, environmental responsibility, and community volunteerism.",
+    "Through activities in local communities, Subang Philippines continues to encourage young people to translate environmental awareness into practical action."
+  ],
+  image: "/assets/stories/subang-coastal-cleanup-mabuhay-beach-siquijor-2026.jpg",
+  category: "Coastal & Marine Action",
+  partner: "Subang - Siquijor"
+}
+  {
+  slug: "subang-president-dost-7-regional-science-technology-innovation-week-2026",
+  type: "Project Story",
+  title: "Subang President Participates in DOST-7 Regional Science, Technology, and Innovation Week 2026",
+  date: "July 13-15, 2026",
+  dateValue: "2026-07-13",
+  excerpt: "Subang Philippines National Executive President Peter John C. Enorio participated in the 2026 Regional Science, Technology, and Innovation Week of DOST Central Visayas in Cebu City.",
+  body: [
+    "Subang Philippines National Executive President Peter John C. Enorio participated in the 2026 Regional Science, Technology, and Innovation Week of the Department of Science and Technology Central Visayas, held from July 13 to 15, 2026 in Cebu City.",
+    "The three-day regional celebration brought together researchers, innovators, government agencies, industry leaders, academic institutions, and youth advocates around discussions and activities related to science, technology, and innovation for regional development.",
+    "During the event, Enorio participated in key activities including the Regional Science and Technology Summit, Research and Development Conference, Innovation and Startup Forum, technology exhibits, and innovation showcases. Discussions also covered emerging technologies, climate resilience, disaster risk reduction, and sustainable development.",
+    "Participation in the regional event provided an opportunity to engage with developments in science, technology, and innovation and to connect these areas with Subang Philippines' continuing work in sustainability, resilience, youth participation, and community development.",
+    "The organization continues to promote opportunities for young people to engage with science, innovation, and collaborative action as part of efforts to contribute to resilient and future-ready communities."
+  ],
+  image: "/assets/stories/subang-president-dost-7-regional-science-technology-innovation-week-2026.jpg",
+  category: "Education & Capacity Building",
+  partner: "DOST Central Visayas"
+}
+  {
+  slug: "subang-founder-top-50-bagani-sibol-fellows-2026",
+  type: "Press Release",
+  title: "Subang Founder Selected Among Top 50 BAGANI Fellows Nationwide",
+  date: "May 2, 2026",
+  dateValue: "2026-05-02",
+  excerpt: "Subang Philippines Founder & National Executive President Peter John C. Enorio has been selected as one of the Top 50 fellows nationwide for the BAGANI Fellowship SIBOL Cohort under the Development Academy of the Philippines.",
+  body: [
+    "Subang Philippines announces that its Founder & National Executive President, Peter John C. Enorio, has been selected as one of the Top 50 fellows nationwide for the BAGANI Fellowship SIBOL Cohort under the Development Academy of the Philippines.",
+    "The BAGANI Fellowship, also known as the Rising Leaders Development Program, is a fully funded, one-month intensive program that brings together young leaders from across the Philippines. The program focuses on strengthening competencies in governance, ethical leadership, systems thinking, and public service through structured mentorship, peer collaboration, and innovation project development.",
+    "Enorio was selected through a competitive national process. The fellowship provides an opportunity for participants to further develop their leadership and public service competencies while working alongside other emerging leaders from across the country.",
+    "As Founder & National Executive President of Subang Philippines, Enorio has led initiatives focused on environmental restoration, climate education, food security, youth participation, and community development across Central Visayas and the Negros Island Region.",
+    "For Subang Philippines, the fellowship represents an opportunity to further connect community-based volunteer action with broader approaches to governance, sustainability, and public service. The organization looks forward to drawing on the learning and experiences gained through the program to strengthen its continuing work with young people, communities, and partners.",
+    "The selection also highlights Subang Philippines' continuing emphasis on developing young leaders who engage in practical community action and contribute to sustainable and resilient communities."
+  ],
+  image: "/assets/press/subang-founder-top-50-bagani-sibol-fellows-2026.jpg",
+  category: "Youth Leadership & Participation",
+  partner: "Development Academy of the Philippines"
+}
+  {
+  slug: "subang-ctu-bamboo-propagation-graduating-council-2026",
+  type: "Project Story",
+  title: "Subang - CTU Conducts Bamboo Propagation Activity with the CTU-Barili Graduating Council",
+  date: "April 10, 2026",
+  dateValue: "2026-04-10",
+  excerpt: "Subang - CTU and the CTU-Barili Graduating Council joined a hands-on bamboo propagation activity supporting campus environmental sustainability and ecosystem restoration.",
+  body: [
+    "Subang - CTU Chapter volunteers and the officers of the CTU-Barili Graduating Council for Batch 2025-2026 carried out a bamboo propagation activity at Cebu Technological University - Barili Campus, continuing collaborative efforts to strengthen environmental sustainability within the university.",
+    "The activity was led by Subang Philippines Founder & National Executive President Peter John C. Enorio, who also served as President of the Graduating Council, alongside Subang - CTU Chapter volunteer interns Yogi Christ P. Agan, Jannah T. Sobiono, Karis Philomine R. Palomar, Shyrra Divine H. Legaspino, and Rod Santiago Lebumfacil Jr.",
+    "Through hands-on participation, the activity engaged student leaders in practical environmental action while supporting ongoing bamboo propagation and ecosystem restoration efforts on campus.",
+    "The activity reflects the value of institutional collaboration in creating opportunities for students to participate directly in sustainability initiatives and contribute to environmental action within their university community."
+  ],
+  image: "/assets/stories/subang-ctu-bamboo-propagation-graduating-council-2026.jpg",
+  category: "Environmental Sustainability",
+  partner: "CTU-Barili Graduating Council"
+}
+  {
   slug: "ctu-dumanjug-research-management-design-thinking-workshop-2025",
   type: "Project Story",
   title: "CTU-Dumanjug Faculty Engage in Workshop on Research Management and Design Thinking",
