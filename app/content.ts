@@ -30,7 +30,7 @@ export const stories: Story[] = [
   ],
   image: "/assets/press/subang-youth-perspective-in-action-resilient-communities-2026.jpg",
   category: "Youth Leadership & Participation"
-}
+},
   {
   slug: "subang-coastal-cleanup-mabuhay-beach-siquijor-2026",
   type: "Project Story",
@@ -48,7 +48,7 @@ export const stories: Story[] = [
   image: "/assets/stories/subang-coastal-cleanup-mabuhay-beach-siquijor-2026.jpg",
   category: "Coastal & Marine Action",
   partner: "Subang - Siquijor"
-}
+},
   {
   slug: "subang-president-dost-7-regional-science-technology-innovation-week-2026",
   type: "Project Story",
@@ -66,7 +66,7 @@ export const stories: Story[] = [
   image: "/assets/stories/subang-president-dost-7-regional-science-technology-innovation-week-2026.jpg",
   category: "Education & Capacity Building",
   partner: "DOST Central Visayas"
-}
+},
   {
   slug: "subang-founder-top-50-bagani-sibol-fellows-2026",
   type: "Press Release",
@@ -85,7 +85,7 @@ export const stories: Story[] = [
   image: "/assets/press/subang-founder-top-50-bagani-sibol-fellows-2026.jpg",
   category: "Youth Leadership & Participation",
   partner: "Development Academy of the Philippines"
-}
+},
   {
   slug: "subang-ctu-bamboo-propagation-graduating-council-2026",
   type: "Project Story",
@@ -102,7 +102,7 @@ export const stories: Story[] = [
   image: "/assets/stories/subang-ctu-bamboo-propagation-graduating-council-2026.jpg",
   category: "Environmental Sustainability",
   partner: "CTU-Barili Graduating Council"
-}
+},
   {
   slug: "ctu-dumanjug-research-management-design-thinking-workshop-2025",
   type: "Project Story",
