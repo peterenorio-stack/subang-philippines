@@ -159,23 +159,48 @@ export default function ApplyPage() {
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState("");
 
-  function handleSubmit(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
+ async function handleSubmit(event: FormEvent<HTMLFormElement>) {
+  event.preventDefault();
 
-    setError("");
-    setSubmitting(true);
+  setError("");
+  setSubmitting(true);
 
-    /*
-     * Stage 1 only:
-     * The actual server-side submission endpoint, PDF generation,
-     * and email delivery will be connected in the next stage.
-     */
-    window.setTimeout(() => {
+  try {
+    const form = event.currentTarget;
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
+
+    const response = await fetch("/api/apply", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    });
+
+    const result = await response.json();
+
+    if (!response.ok) {
+      setError(
+        result?.error ||
+          "Unable to submit your application. Please review your information and try again."
+      );
       setSubmitting(false);
-      setSubmitted(true);
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    }, 700);
+      return;
+    }
+
+    setSubmitting(false);
+    setSubmitted(true);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  } catch (submissionError) {
+    console.error("Application submission error:", submissionError);
+
+    setSubmitting(false);
+    setError(
+      "We could not connect to the application service. Please try again later."
+    );
   }
+}
 
   if (submitted) {
     return (
@@ -334,6 +359,19 @@ export default function ApplyPage() {
         </section>
 
         <form onSubmit={handleSubmit}>
+          <div
+  aria-hidden="true"
+  className="absolute -left-[9999px] h-px w-px overflow-hidden"
+>
+  <label htmlFor="website">Website</label>
+  <input
+    id="website"
+    name="website"
+    type="text"
+    tabIndex={-1}
+    autoComplete="off"
+  />
+</div>
           <section className="bg-white py-16 md:py-24">
             <div className="container-wide max-w-5xl">
               <SectionHeading
@@ -534,7 +572,7 @@ export default function ApplyPage() {
                       >
                         <input
                           type="radio"
-                          name="identificationType"
+                          name="idType"
                           value={type}
                           required
                         />
@@ -573,7 +611,7 @@ export default function ApplyPage() {
 
                 <Field
                   label="Date of Expiry"
-                  name="dateExpiry"
+                  name="dateOfExpiry"
                   type="date"
                   required
                 />
@@ -609,7 +647,7 @@ export default function ApplyPage() {
                       >
                         <input
                           type="radio"
-                          name="educationalAttainment"
+                          name="highestEducationalAttainment"
                           value={level}
                           required
                         />
