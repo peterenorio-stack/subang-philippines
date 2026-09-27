@@ -1,1 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+>
+  <url>
+    <loc>https://subangphilippines.org/</loc>
+  </url>
 
+  <url>
+    <loc>https://subangphilippines.org/about</loc>
+  </url>
+
+  <url>
+    <loc>https://subangphilippines.org/programs</loc>
+  </url>
+
+  <url>
+    <loc>https://subangphilippines.org/framework</loc>
+  </url>
+
+  <url>
+    <loc>https://subangphilippines.org/impact</loc>
+  </url>
+
+  <url>
+    <loc>https://subangphilippines.org/volunteer</loc>
+  </url>
+
+  <url>
+    <loc>https://subangphilippines.org/leadership</loc>
+  </url>
+
+  <url>
+    <loc>https://subangphilippines.org/founder</loc>
+  </url>
+
+  <url>
+    <loc>https://subangphilippines.org/stories</loc>
+  </url>
+
+  <url>
+    <loc>https://subangphilippines.org/connect</loc>
+  </url>
+
+  <url>
+    <loc>https://subangphilippines.org/apply</loc>
+  </url>
+</urlset>
