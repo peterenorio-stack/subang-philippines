@@ -1,7 +1,25 @@
+```tsx
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { Header, Footer } from "./components";
 import { sortedStories } from "./content";
+
+export const metadata: Metadata = {
+  title: "Youth Volunteer Organization in the Philippines",
+  description:
+    "Subang Philippines is a youth-led volunteer organization advancing environmental sustainability, food security, youth leadership, education, climate resilience, and community action across the Philippines.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Subang Philippines | Youth Volunteer Organization",
+    description:
+      "A youth-led volunteer organization advancing environmental sustainability, food security, youth leadership, education, climate resilience, and community action across the Philippines.",
+    url: "/",
+    type: "website",
+  },
+};
 
 const featuredStories = sortedStories.slice(0, 3);
 
@@ -589,3 +607,4 @@ export default function Home() {
     </main>
   );
 }
+```
