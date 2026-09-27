@@ -1,4 +1,21 @@
+import type { Metadata } from "next";
 import { Header, Footer } from "../components";
+
+export const metadata: Metadata = {
+  title: "Our Development Framework",
+  description:
+    "Explore the Subang Philippines development framework connecting the Sustainable Development Goals, Ambisyon Natin 2040, and the 10 Centers of Youth Participation.",
+  alternates: {
+    canonical: "/framework",
+  },
+  openGraph: {
+    title: "Our Development Framework | Subang Philippines",
+    description:
+      "Explore how Subang Philippines connects global development goals, national aspirations, and meaningful youth participation into one framework for community action.",
+    url: "/framework",
+    type: "website",
+  },
+};
 
 const sdgs = [
   {
