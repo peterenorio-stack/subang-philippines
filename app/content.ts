@@ -13,6 +13,30 @@ export type Story = {
 
 export const stories: Story[] = [
   {
+  slug: "subang-youth-discussion-linggo-ng-kabataan-pangi-2026",
+  type: "Project Story",
+  title: "Subang Philippines Brings Youth of Barangay Pangi Together for Linggo ng Kabataan 2026",
+  date: "September 13, 2026",
+  dateValue: "2026-09-13",
+  excerpt:
+    "Subang Philippines partnered with the Sangguniang Kabataan Council of Barangay Pangi for a youth discussion on sustainable development, shared aspirations, and meaningful youth participation during Linggo ng Kabataan 2026.",
+  body: [
+    "Subang Philippines, in partnership with the Sangguniang Kabataan (SK) Council of Barangay Pangi, brought young people together for a youth discussion on September 13, 2026, as part of the community's Linggo ng Kabataan 2026 activities.",
+    "Led by SK Chairperson Christian Ian B. Cariño and the SK Council of Barangay Pangi, the activity provided a space for young people to discuss sustainable development, shared aspirations, and meaningful youth participation.",
+    "Guided by the official Linggo ng Kabataan 2026 theme, “Different Contexts, Common Aspirations,” the session encouraged participants to reflect on their different circumstances, exchange perspectives, and explore how young people can contribute to their communities despite differences in context.",
+    "The discussion centered on three areas: the United Nations Sustainable Development Goals (UN SDGs), AmBisyon Natin 2040, and the Ten Centers of Youth Participation. Through interactive activities and open discussions, participants connected these broader development and youth participation frameworks with their own experiences and community realities.",
+    "Subang - Province of Siquijor (SPS) Volunteer Jellian Macadildig facilitated the discussion on the United Nations Sustainable Development Goals, introducing the 17 goals and their relevance to everyday community concerns. Participants were given different scenarios and asked to identify which SDGs were reflected in each situation, helping them connect the global goals with real-life experiences.",
+    "SPS Volunteer Venice Dawn D. Girasol led the discussion on AmBisyon Natin 2040, introducing the country's long-term vision of a matatag, maginhawa, at panatag na buhay. Participants were assigned different personas and asked to consider a proposed barangay policy based on their characters' circumstances before discussing whether they agreed or disagreed with it. The activity encouraged participants to recognize how different circumstances can shape perspectives while still allowing communities to work toward common aspirations.",
+    "Subang Philippines National Executive President Peter John C. Enorio facilitated the discussion on the Ten Centers of Youth Participation, highlighting different ways young people can participate in their communities and contribute to decision-making and development. The discussion emphasized that youth participation goes beyond being present in activities and includes taking meaningful roles in addressing community concerns and shaping local development.",
+    "Subang - CTU Volunteer Ruth C. Enorio facilitated the synopsis, helping participants draw together the key ideas and reflections from the three sessions. SPS Volunteer Angel Dela Peña also served as one of the facilitators during the activity, supporting the discussions and activities throughout the session.",
+    "Across the discussions, participants returned to a common idea: young people may come from different circumstances, but they can still share aspirations for safer, more inclusive, sustainable, and resilient communities.",
+    "Through activities such as this, Subang Philippines continues to create spaces where young people can gain practical knowledge, exchange perspectives, and connect broader development goals with the realities and aspirations of their communities. In partnership with local youth leaders and community institutions, these spaces provide opportunities for young people to participate meaningfully in community development."
+  ],
+  image: "/assets/stories/subang-youth-discussion-linggo-ng-kabataan-pangi-2026.jpg",
+  category: "Youth Leadership & Participation",
+  partner: "Sangguniang Kabataan Council of Barangay Pangi"
+},
+  {
   slug: "subang-president-notre-dame-university-leadership-seminar-2026",
   type: "Project Story",
   title: "Subang President Serves as Resource Speaker at Notre Dame University Leadership Seminar",
