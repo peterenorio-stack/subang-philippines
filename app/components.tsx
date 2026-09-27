@@ -25,10 +25,10 @@ export function Header() {
   return (
     <header className="bg-maroon text-white">
       <div className="container-wide flex items-center justify-between py-5">
-        {/* Logo */}
+        {/* Logo + Brand */}
         <Link
           href="/"
-          className="flex items-center gap-3"
+          className="flex items-center gap-3 rounded-xl bg-cream px-3 py-2"
           onClick={closeMenu}
         >
           <img
@@ -37,7 +37,7 @@ export function Header() {
             className="h-12 w-auto object-contain"
           />
 
-          <span className="text-xl font-extrabold tracking-tight text-white">
+          <span className="text-xl font-extrabold tracking-tight text-maroon">
             Subang <span className="text-gold">Philippines</span>
           </span>
         </Link>
