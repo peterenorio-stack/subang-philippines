@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import {
   ArrowRight,
@@ -8,6 +9,22 @@ import {
   Instagram,
 } from "lucide-react";
 import { Header, Footer } from "../components";
+
+export const metadata: Metadata = {
+  title: "Connect With Us | Partnerships, Volunteers & Community Action",
+  description:
+    "Connect with Subang Philippines for volunteer opportunities, partnerships, invitations, community initiatives, membership concerns, and other organizational inquiries.",
+  alternates: {
+    canonical: "/connect",
+  },
+  openGraph: {
+    title: "Connect With Us | Subang Philippines",
+    description:
+      "Connect with Subang Philippines for volunteer opportunities, partnerships, invitations, community initiatives, membership concerns, and other organizational inquiries.",
+    url: "/connect",
+    type: "website",
+  },
+};
 
 export default function Connect() {
   return (
