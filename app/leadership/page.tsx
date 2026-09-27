@@ -1,7 +1,24 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { Header, Footer, PageIntro } from "../components";
 import { officers } from "../content";
+
+export const metadata: Metadata = {
+  title: "Leadership & Network | National and Chapter Leaders",
+  description:
+    "Meet the national leaders, advisers, chapter leaders, and developing volunteer network of Subang Philippines across universities, provinces, and communities.",
+  alternates: {
+    canonical: "/leadership",
+  },
+  openGraph: {
+    title: "Leadership & Network | Subang Philippines",
+    description:
+      "Meet the national leaders, advisers, chapter leaders, and developing volunteer network of Subang Philippines across universities, provinces, and communities.",
+    url: "/leadership",
+    type: "website",
+  },
+};
 
 const sections = [
   "Executive Leadership",
@@ -48,9 +65,7 @@ function OfficerCard({
           {officer.name}
         </h2>
 
-        <p className="mt-2 text-sm leading-6 text-ink/60">
-          {officer.role}
-        </p>
+        <p className="mt-2 text-sm leading-6 text-ink/60">{officer.role}</p>
 
         {!officer.image && (
           <p className="mt-4 text-xs leading-5 text-ink/45">
@@ -77,9 +92,7 @@ export default function Leadership() {
       <section className="container-wide py-16 md:py-24">
         <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
           <div>
-            <p className="eyebrow text-green">
-              Leadership & Service
-            </p>
+            <p className="eyebrow text-green">Leadership & Service</p>
 
             <h2 className="display mt-4 text-4xl text-maroon md:text-5xl">
               Leadership is a responsibility to the mission.
@@ -127,9 +140,7 @@ export default function Leadership() {
               >
                 {/* SECTION HEADER */}
                 <div className="mb-10 max-w-3xl">
-                  <p className="eyebrow text-green">
-                    {section}
-                  </p>
+                  <p className="eyebrow text-green">{section}</p>
 
                   {isExecutive && (
                     <p className="mt-5 text-lg leading-8 text-ink/65">
@@ -167,9 +178,7 @@ export default function Leadership() {
       <section className="container-wide py-20 md:py-28">
         <div className="grid gap-12 lg:grid-cols-[0.75fr_1.25fr] lg:items-center">
           <div>
-            <p className="eyebrow text-green">
-              Organizational Model
-            </p>
+            <p className="eyebrow text-green">Organizational Model</p>
 
             <h2 className="display mt-4 text-4xl text-maroon md:text-5xl">
               One mission, different levels of action.
@@ -199,9 +208,7 @@ export default function Leadership() {
                   0{index + 1}
                 </p>
 
-                <p className="mt-3 font-extrabold text-maroon">
-                  {item}
-                </p>
+                <p className="mt-3 font-extrabold text-maroon">{item}</p>
               </div>
             ))}
           </div>
@@ -213,9 +220,7 @@ export default function Leadership() {
         <div className="container-wide py-20 md:py-28">
           <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:items-end">
             <div>
-              <p className="eyebrow text-gold">
-                Developing Network
-              </p>
+              <p className="eyebrow text-gold">Developing Network</p>
 
               <h2 className="display mt-4 text-4xl md:text-5xl">
                 A growing presence across universities, provinces, and
@@ -254,9 +259,7 @@ export default function Leadership() {
       {/* TRANSPARENCY */}
       <section className="container-wide py-16 md:py-20">
         <div className="border border-dashed border-maroon/15 bg-cream p-7 md:p-9">
-          <p className="eyebrow text-green">
-            Organizational Transparency
-          </p>
+          <p className="eyebrow text-green">Organizational Transparency</p>
 
           <h2 className="display mt-4 text-3xl text-maroon md:text-4xl">
             A leadership network that continues to grow.
@@ -276,9 +279,7 @@ export default function Leadership() {
         <div className="container-wide py-20 md:py-24">
           <div className="flex flex-col gap-8 border-t border-maroon/15 pt-12 md:flex-row md:items-end md:justify-between">
             <div className="max-w-3xl">
-              <p className="eyebrow text-green">
-                Get Involved
-              </p>
+              <p className="eyebrow text-green">Get Involved</p>
 
               <h2 className="display mt-4 text-4xl text-maroon md:text-5xl">
                 Leadership starts with showing up.
