@@ -1,4 +1,21 @@
+import type { Metadata } from "next";
 import { Header, Footer, PageIntro } from "../components";
+
+export const metadata: Metadata = {
+  title: "Founder’s Corner | Peter John C. Enorio",
+  description:
+    "Learn about Peter John C. Enorio, founder and National Executive President of Subang Philippines, and the experiences, values, and community work that shaped the organization.",
+  alternates: {
+    canonical: "/founder",
+  },
+  openGraph: {
+    title: "Founder’s Corner | Peter John C. Enorio",
+    description:
+      "Learn about Peter John C. Enorio, founder and National Executive President of Subang Philippines, and the experiences, values, and community work that shaped the organization.",
+    url: "/founder",
+    type: "website",
+  },
+};
 
 export default function Founder() {
   return (
