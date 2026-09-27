@@ -1,6 +1,23 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { Header, Footer, PageIntro } from "../components";
+
+export const metadata: Metadata = {
+  title: "Our Impact | Community Action, Volunteerism & Development",
+  description:
+    "Explore Subang Philippines' documented impact across environmental action, food security, youth participation, education, community resilience, and partnerships.",
+  alternates: {
+    canonical: "/impact",
+  },
+  openGraph: {
+    title: "Our Impact | Subang Philippines",
+    description:
+      "Explore Subang Philippines' documented impact across environmental action, food security, youth participation, education, community resilience, and partnerships.",
+    url: "/impact",
+    type: "website",
+  },
+};
 
 const impactFigures = [
   {
@@ -134,9 +151,7 @@ export default function Impact() {
       <section className="container-wide py-16 md:py-24">
         <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
           <div>
-            <p className="eyebrow text-green">
-              Understanding Impact
-            </p>
+            <p className="eyebrow text-green">Understanding Impact</p>
 
             <h2 className="display mt-4 text-4xl text-maroon md:text-5xl">
               More than 60,000 people reached through direct and indirect
@@ -167,9 +182,7 @@ export default function Impact() {
       <section className="bg-cream py-20 md:py-28">
         <div className="container-wide">
           <div className="max-w-3xl">
-            <p className="eyebrow text-green">
-              Where Change Happens
-            </p>
+            <p className="eyebrow text-green">Where Change Happens</p>
 
             <h2 className="display mt-4 text-4xl text-maroon md:text-5xl">
               From volunteer action to community outcomes.
@@ -197,9 +210,7 @@ export default function Impact() {
                   {area.title}
                 </h3>
 
-                <p className="mt-4 leading-7 text-ink/65">
-                  {area.text}
-                </p>
+                <p className="mt-4 leading-7 text-ink/65">{area.text}</p>
               </article>
             ))}
           </div>
@@ -210,9 +221,7 @@ export default function Impact() {
       <section className="container-wide py-20 md:py-28">
         <div className="grid gap-12 lg:grid-cols-[0.75fr_1.25fr]">
           <div>
-            <p className="eyebrow text-green">
-              Documented Milestones
-            </p>
+            <p className="eyebrow text-green">Documented Milestones</p>
 
             <h2 className="display mt-4 text-4xl text-maroon md:text-5xl">
               A growing body of work.
@@ -257,9 +266,7 @@ export default function Impact() {
         <div className="container-wide py-20 md:py-28">
           <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:items-end">
             <div>
-              <p className="eyebrow text-gold">
-                Developing Network
-              </p>
+              <p className="eyebrow text-gold">Developing Network</p>
 
               <h2 className="display mt-4 text-4xl md:text-5xl">
                 From local action to a growing network.
@@ -292,9 +299,7 @@ export default function Impact() {
       <section className="container-wide py-20 md:py-28">
         <div className="grid gap-10 lg:grid-cols-[1fr_1fr]">
           <div>
-            <p className="eyebrow text-green">
-              Evidence Through Stories
-            </p>
+            <p className="eyebrow text-green">Evidence Through Stories</p>
 
             <h2 className="display mt-4 text-4xl text-maroon md:text-5xl">
               The archive is part of the impact record.
@@ -317,9 +322,7 @@ export default function Impact() {
           </div>
 
           <div className="bg-cream p-8 md:p-10">
-            <p className="eyebrow text-green">
-              Documentation Note
-            </p>
+            <p className="eyebrow text-green">Documentation Note</p>
 
             <h3 className="display mt-4 text-3xl text-maroon">
               Transparency matters.
@@ -349,9 +352,7 @@ export default function Impact() {
         <div className="container-wide py-20 md:py-24">
           <div className="flex flex-col gap-8 border-t border-maroon/15 pt-12 md:flex-row md:items-end md:justify-between">
             <div className="max-w-3xl">
-              <p className="eyebrow text-green">
-                Impact + Framework
-              </p>
+              <p className="eyebrow text-green">Impact + Framework</p>
 
               <h2 className="display mt-4 text-4xl text-maroon md:text-5xl">
                 See how Subang's work connects to global and national
