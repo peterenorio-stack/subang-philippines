@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import {
   ArrowRight,
@@ -11,6 +12,22 @@ import {
 } from "lucide-react";
 import { Header, Footer, PageIntro } from "../components";
 import { sortedStories } from "../content";
+
+export const metadata: Metadata = {
+  title: "Volunteer with Subang | Join Community Action",
+  description:
+    "Join Subang Philippines as a volunteer and contribute to community action through environmental work, food security, education, media, science, technology, and youth leadership.",
+  alternates: {
+    canonical: "/volunteer",
+  },
+  openGraph: {
+    title: "Volunteer with Subang | Subang Philippines",
+    description:
+      "Join Subang Philippines as a volunteer and contribute to meaningful community action across environmental sustainability, food security, education, media, science, and youth participation.",
+    url: "/volunteer",
+    type: "website",
+  },
+};
 
 const volunteerAreas = [
   {
