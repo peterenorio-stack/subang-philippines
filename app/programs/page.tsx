@@ -1,49 +1,22 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { Header, Footer, PageIntro } from "../components";
 import { programPillars } from "../content";
 
-const pillarConnections: Record<
-  string,
-  {
-    focus: string;
-    sdgs: string[];
-  }
-> = {
-  "Environmental Sustainability": {
-    focus:
-      "Restoring ecosystems, protecting biodiversity, and helping communities respond to environmental change.",
-    sdgs: ["SDG 13", "SDG 14", "SDG 15"],
+export const metadata: Metadata = {
+  title: "Programs & Community Action",
+  description:
+    "Explore Subang Philippines' programs in environmental sustainability, food security, sustainable agriculture, waste management, youth leadership, education, coastal action, and community mobilization.",
+  alternates: {
+    canonical: "/programs",
   },
-  "Food Security & Sustainable Agriculture": {
-    focus:
-      "Building practical food systems that connect sustainable production, agricultural learning, and community food security.",
-    sdgs: ["SDG 2", "SDG 4", "SDG 12"],
-  },
-  "Waste Management & Circularity": {
-    focus:
-      "Turning waste into resources through composting, recovery, responsible consumption, and community-based circular practices.",
-    sdgs: ["SDG 11", "SDG 12", "SDG 13"],
-  },
-  "Coastal & Marine Action": {
-    focus:
-      "Supporting healthier coastal ecosystems through cleanup activities, conservation, restoration, and environmental education.",
-    sdgs: ["SDG 13", "SDG 14", "SDG 15"],
-  },
-  "Youth Leadership & Participation": {
-    focus:
-      "Creating meaningful opportunities for young people to lead projects, contribute ideas, develop skills, and participate in community life.",
-    sdgs: ["SDG 4", "SDG 16", "SDG 17"],
-  },
-  "Education & Capacity Building": {
-    focus:
-      "Sharing knowledge and building practical skills through workshops, training, mentoring, awareness activities, and learning experiences.",
-    sdgs: ["SDG 4", "SDG 10", "SDG 17"],
-  },
-  "Partnerships & Community Mobilization": {
-    focus:
-      "Bringing together institutions, communities, government, civil society, schools, and volunteers around shared development goals.",
-    sdgs: ["SDG 16", "SDG 17"],
+  openGraph: {
+    title: "Programs & Community Action | Subang Philippines",
+    description:
+      "Explore Subang Philippines' programs in environmental sustainability, food security, sustainable agriculture, waste management, youth leadership, education, coastal action, and community mobilization.",
+    url: "/programs",
+    type: "website",
   },
 };
 
@@ -190,9 +163,7 @@ export default function Programs() {
                 01
               </p>
 
-              <h3 className="display mt-4 text-2xl">
-                Identify
-              </h3>
+              <h3 className="display mt-4 text-2xl">Identify</h3>
 
               <p className="mt-3 leading-7 text-white/65">
                 Understand community needs, local conditions, available
@@ -205,9 +176,7 @@ export default function Programs() {
                 02
               </p>
 
-              <h3 className="display mt-4 text-2xl">
-                Mobilize
-              </h3>
+              <h3 className="display mt-4 text-2xl">Mobilize</h3>
 
               <p className="mt-3 leading-7 text-white/65">
                 Bring together young people, volunteers, institutions,
@@ -220,9 +189,7 @@ export default function Programs() {
                 03
               </p>
 
-              <h3 className="display mt-4 text-2xl">
-                Act
-              </h3>
+              <h3 className="display mt-4 text-2xl">Act</h3>
 
               <p className="mt-3 leading-7 text-white/65">
                 Turn knowledge, skills, resources, and collective effort into
@@ -300,9 +267,7 @@ export default function Programs() {
       <section className="container-wide py-20 md:py-28">
         <div className="grid gap-8 border-t border-maroon/15 pt-12 md:grid-cols-[1fr_auto] md:items-end">
           <div className="max-w-3xl">
-            <p className="eyebrow text-green">
-              Programs + Framework
-            </p>
+            <p className="eyebrow text-green">Programs + Framework</p>
 
             <h2 className="display mt-4 text-4xl text-maroon md:text-5xl">
               See how Subang's programs connect to the SDGs and youth
