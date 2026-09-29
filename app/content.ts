@@ -13,6 +13,26 @@ export type Story = {
 
 export const stories: Story[] = [
   {
+  slug: "subang-gender-responsive-water-security-discussion-2026",
+  type: "Project Story",
+  title: "Subang Philippines Participates in Discussion on Gender-Responsive Approaches to Water Security",
+  date: "July 27, 2026",
+  dateValue: "2026-07-27",
+  excerpt:
+    "Subang Philippines joined a regional discussion on gender-responsive approaches to water security, exploring the connections between water access, gender equality, human rights, and sustainable development.",
+  body: [
+    "Subang Philippines, represented by National Executive President Peter John C. Enorio, participated in a discussion on gender-responsive approaches to water security on July 27, 2026. The session examined the connections between water access, gender equality, human rights, and sustainable development.",
+    "Moderated by Christine Hayo of the Asian Development Bank, the discussion highlighted Sustainable Development Goal 5 (Gender Equality), SDG 6 (Clean Water and Sanitation), and SDG 17 (Partnerships for the Goals) as interconnected areas in addressing water security.",
+    "Dr. Ebru Jagansukumu highlighted the scale of gender disparities in access to water, noting that approximately 1.1 billion women lack access to safely managed drinking water, while around 1.8 billion women do not have water available on their premises.",
+    "Attorney Chrissy Shafina Twyla Rubin discussed the gender dimensions of the human right to water, noting that approximately 380 million women and girls experience high or critical water stress.",
+    "The discussion emphasized the importance of incorporating gender considerations into water policies and investments, particularly in ensuring that responses account for the different circumstances and needs of communities affected by water insecurity.",
+    "For Subang Philippines, the session provided a learning opportunity to deepen its understanding of gender-responsive approaches to water security and their relevance to community development. The insights from the discussion can inform the organization's continuing efforts to consider inclusive and equitable approaches in its programs, partnerships, and community-based initiatives.",
+    "Through participation in regional learning spaces, Subang Philippines continues to build organizational knowledge and connect relevant insights with its work in environmental sustainability, community development, youth participation, and resilience."
+  ],
+  image: "/assets/stories/subang-gender-responsive-water-security-discussion-2026.jpg",
+  category: "Environmental Sustainability"
+},
+  {
   slug: "subang-aun-generative-ai-higher-education-webinar-2026",
   type: "Project Story",
   title: "Subang Philippines Engages in AUN Discussion on Generative AI in Higher Education",
