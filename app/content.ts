@@ -36,7 +36,7 @@ export const stories: Story[] = [
     "For Subang Philippines, the discussion provided an opportunity to examine emerging questions surrounding GenAI through the lenses of governance, education, accountability, and human development. As AI continues to influence how young people learn, create, communicate, and participate in society, understanding both its opportunities and the safeguards surrounding its use becomes increasingly relevant to youth and education work.",
     "Through continued participation in learning opportunities and regional discussions, Subang Philippines engages with emerging developments in education, science and technology, and youth participation while connecting these conversations with broader questions of responsible community development."
   ],
-  image: "/assets/stories/subang-aun-generative-ai-higher-education-webinar-2026.jpg",
+  image: "/assets/stories/subang-aun-generative-ai-higher-education-webinar-2026.jpeg",
   category: "Education & Capacity Building",
   partner: "ASEAN University Network"
 },
