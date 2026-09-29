@@ -13,6 +13,34 @@ export type Story = {
 
 export const stories: Story[] = [
   {
+  slug: "subang-aun-generative-ai-higher-education-webinar-2026",
+  type: "Project Story",
+  title: "Subang Philippines Engages in AUN Discussion on Generative AI in Higher Education",
+  date: "September 28, 2026",
+  dateValue: "2026-09-28",
+  excerpt:
+    "Subang Philippines joined an ASEAN University Network discussion on generative artificial intelligence in higher education, examining AI governance, faculty competencies, academic integrity, and the gap between institutional policy and classroom practice.",
+  body: [
+    "Subang Philippines participated in a regional discussion on the responsible use of generative artificial intelligence (GenAI) in higher education, bringing together perspectives on institutional governance, faculty capacity-building, and classroom practice across ASEAN.",
+    "Representing Subang Philippines, Peter John C. Enorio joined the webinar organized within the ASEAN University Network (AUN) ecosystem. The discussion examined how higher education institutions can respond to the growing use of GenAI while addressing academic integrity, data privacy, educational quality, and meaningful human participation.",
+    "The discussion highlighted the growing use of GenAI among students and faculty across the region. A presentation on the AUN Digital Transformation (AUN DX) AI governance and ethics framework, led by Chidchanok, cited survey findings from 906 respondents across six ASEAN countries and 10 universities. The findings indicated substantial daily use of GenAI among both students and faculty, while also pointing to gaps in awareness of institutional policies governing its use.",
+    "The AUN DX framework presented a structured approach to AI governance based on principles including security, safety, robustness, transparency, explainability, privacy, data protection, and accountability. It also outlined four levels of AI risk, recognizing that different applications require different forms of institutional oversight.",
+    "Under the framework, critical or life-altering systems would require university leadership oversight and external auditing, while high-risk applications such as admissions and grading would require committee review and data protection impact assessments. Medium-risk learning applications would be supervised by a designated dean or system owner, while lower-risk applications such as information bots and sandboxes could operate with greater autonomy.",
+    "The discussion also featured PSU Paiun, a platform of Prince of Songkla University (PSU) that demonstrated an institutional approach to deploying an on-premises AI model while maintaining control over university data. The example illustrated one possible approach for institutions seeking to develop AI capabilities while managing sensitive campus information.",
+    "The webinar also examined the competencies educators may need in an AI-enabled learning environment. Lim introduced a GenAI Responsive Competency Framework that shifts attention from teacher-centered technology use toward approaches that allow students to take greater ownership of learning and engage in creative co-construction with AI tools.",
+    "The framework covers four competency dimensions from educator and student perspectives: curriculum design and development, teaching and learning processes, assessment strategies, and AI literacy. Lim also presented a 96-item self-assessment tool designed to help lecturers assess their competencies across basic, intermediate, and advanced levels. The approach emphasized professional learning within academic disciplines and teacher-driven development alongside institutional support.",
+    "Miguel discussed the role of AUN AIE in helping institutions translate these frameworks into practice through regional collaboration and faculty development initiatives. The discussion considered the potential of technologies such as natural language processing to support more personalized learning pathways, while emphasizing the continued importance of human oversight in maintaining educational quality and addressing potential bias, particularly in assessment.",
+    "Participants also examined the gap that can emerge between institutional AI policies and classroom practice. One challenge discussed was the implementation gap that occurs when AI policies are communicated informally but are not clearly incorporated into course syllabi and other academic guidelines.",
+    "Another concern was the trust gap between institutions and students. While disclosure of AI use is increasingly recognized as an important practice, students may hesitate to disclose their use of AI tools because of concerns about potential consequences.",
+    "These discussions pointed to a broader challenge for higher education institutions: translating high-level principles for ethical AI into clear, practical guidance that reflects the realities of teaching and learning.",
+    "For Subang Philippines, the discussion provided an opportunity to examine emerging questions surrounding GenAI through the lenses of governance, education, accountability, and human development. As AI continues to influence how young people learn, create, communicate, and participate in society, understanding both its opportunities and the safeguards surrounding its use becomes increasingly relevant to youth and education work.",
+    "Through continued participation in learning opportunities and regional discussions, Subang Philippines engages with emerging developments in education, science and technology, and youth participation while connecting these conversations with broader questions of responsible community development."
+  ],
+  image: "/assets/stories/subang-aun-generative-ai-higher-education-webinar-2026.jpg",
+  category: "Education & Capacity Building",
+  partner: "ASEAN University Network"
+},
+  {
   slug: "subang-youth-discussion-linggo-ng-kabataan-pangi-2026",
   type: "Project Story",
   title: "Subang Philippines Brings Youth of Barangay Pangi Together for Linggo ng Kabataan 2026",
