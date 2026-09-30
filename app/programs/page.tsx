@@ -4,47 +4,97 @@ import { ArrowUpRight } from "lucide-react";
 import { Header, Footer, PageIntro } from "../components";
 import { programPillars } from "../content";
 
-const pillarConnections: Record<
-  string,
-  {
-    focus: string;
-    sdgs: string[];
-  }
-> = {
+type Department = {
+  name: string;
+  image: string;
+};
+
+type PillarConnection = {
+  focus: string;
+  sdgs: string[];
+  departments: Department[];
+};
+
+const departments: Record<string, Department> = {
+  "Community Affairs": {
+    name: "Community Affairs",
+    image: "/assets/logo/department-community-affairs.png",
+  },
+  "Environmental Affairs": {
+    name: "Environmental Affairs",
+    image: "/assets/logo/department-environmental-affairs.png",
+  },
+  "Science and Technology": {
+    name: "Science and Technology",
+    image: "/assets/logo/department-science-and-technology.png",
+  },
+  "Agriculture and Food Systems": {
+    name: "Agriculture and Food Systems",
+    image: "/assets/logo/department-agriculture-and-food-systems.png",
+  },
+  Education: {
+    name: "Education",
+    image: "/assets/logo/department-education.png",
+  },
+};
+
+const pillarConnections: Record<string, PillarConnection> = {
   "Environmental Sustainability": {
     focus:
       "Restoring ecosystems, protecting biodiversity, and helping communities respond to environmental change.",
     sdgs: ["SDG 13", "SDG 14", "SDG 15"],
+    departments: [departments["Environmental Affairs"]],
   },
+
   "Food Security & Sustainable Agriculture": {
     focus:
       "Building practical food systems that connect sustainable production, agricultural learning, and community food security.",
     sdgs: ["SDG 2", "SDG 4", "SDG 12"],
+    departments: [departments["Agriculture and Food Systems"]],
   },
+
   "Waste Management & Circularity": {
     focus:
       "Turning waste into resources through composting, recovery, responsible consumption, and community-based circular practices.",
     sdgs: ["SDG 11", "SDG 12", "SDG 13"],
+    departments: [
+      departments["Environmental Affairs"],
+      departments["Science and Technology"],
+    ],
   },
+
   "Coastal & Marine Action": {
     focus:
       "Supporting healthier coastal ecosystems through cleanup activities, conservation, restoration, and environmental education.",
     sdgs: ["SDG 13", "SDG 14", "SDG 15"],
+    departments: [
+      departments["Environmental Affairs"],
+      departments["Community Affairs"],
+    ],
   },
+
   "Youth Leadership & Participation": {
     focus:
       "Creating meaningful opportunities for young people to lead projects, contribute ideas, develop skills, and participate in community life.",
     sdgs: ["SDG 4", "SDG 16", "SDG 17"],
+    departments: [departments["Community Affairs"], departments["Education"]],
   },
+
   "Education & Capacity Building": {
     focus:
       "Sharing knowledge and building practical skills through workshops, training, mentoring, awareness activities, and learning experiences.",
     sdgs: ["SDG 4", "SDG 10", "SDG 17"],
+    departments: [
+      departments["Education"],
+      departments["Science and Technology"],
+    ],
   },
+
   "Partnerships & Community Mobilization": {
     focus:
       "Bringing together institutions, communities, government, civil society, schools, and volunteers around shared development goals.",
     sdgs: ["SDG 16", "SDG 17"],
+    departments: [departments["Community Affairs"], departments["Education"]],
   },
 };
 
@@ -137,30 +187,69 @@ export default function Programs() {
                           {connection.focus}
                         </p>
 
-                        <div className="mt-6 flex flex-wrap gap-2">
-                          {connection.sdgs.map((sdg) => {
-                            const number = sdg.replace("SDG ", "");
+                        {/* RELEVANT DEPARTMENTS */}
+                        <div className="mt-7">
+                          <p className="eyebrow text-green">
+                            Relevant Departments
+                          </p>
 
-                            return (
+                          <div className="mt-4 flex flex-wrap gap-3">
+                            {connection.departments.map((department) => (
                               <Link
-                                key={sdg}
-                                href={`/framework#sdg-${number.padStart(2, "0")}`}
-                                className="border border-maroon/10 bg-cream px-3 py-2 text-xs font-extrabold text-maroon transition hover:border-maroon/30 hover:text-blue"
+                                key={department.name}
+                                href="/departments"
+                                className="group/department flex items-center gap-3 border border-maroon/10 bg-cream px-3 py-2 transition hover:border-maroon/25 hover:bg-white"
                               >
-                                {sdg}
+                                <div className="h-10 w-16 shrink-0 overflow-hidden">
+                                  <img
+                                    src={department.image}
+                                    alt={`${department.name} department logo`}
+                                    className="h-full w-full object-contain"
+                                  />
+                                </div>
+
+                                <span className="text-xs font-extrabold leading-5 text-maroon transition group-hover/department:text-blue">
+                                  {department.name}
+                                </span>
+
+                                <ArrowUpRight
+                                  size={14}
+                                  className="shrink-0 text-blue"
+                                />
                               </Link>
-                            );
-                          })}
+                            ))}
+                          </div>
+                        </div>
+
+                        {/* SDGS */}
+                        <div className="mt-7">
+                          <p className="eyebrow text-green">
+                            Framework Connections
+                          </p>
+
+                          <div className="mt-4 flex flex-wrap gap-2">
+                            {connection.sdgs.map((sdg) => {
+                              const number = sdg.replace("SDG ", "");
+
+                              return (
+                                <Link
+                                  key={sdg}
+                                  href={`/framework#sdg-${number.padStart(2, "0")}`}
+                                  className="border border-maroon/10 bg-cream px-3 py-2 text-xs font-extrabold text-maroon transition hover:border-maroon/30 hover:text-blue"
+                                >
+                                  {sdg}
+                                </Link>
+                              );
+                            })}
+                          </div>
                         </div>
                       </>
                     )}
                   </div>
 
-                  {/* ACTIONS */}
+                  {/* AREAS OF WORK */}
                   <div className="border-t border-maroon/10 bg-cream/50 p-7 md:p-9 lg:border-l lg:border-t-0">
-                    <p className="eyebrow text-green">
-                      Areas of Work
-                    </p>
+                    <p className="eyebrow text-green">Areas of Work</p>
 
                     <ul className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-1">
                       {pillar.items.map((item) => (
@@ -207,9 +296,7 @@ export default function Programs() {
                 01
               </p>
 
-              <h3 className="display mt-4 text-2xl">
-                Identify
-              </h3>
+              <h3 className="display mt-4 text-2xl">Identify</h3>
 
               <p className="mt-3 leading-7 text-white/65">
                 Understand community needs, local conditions, available
@@ -222,9 +309,7 @@ export default function Programs() {
                 02
               </p>
 
-              <h3 className="display mt-4 text-2xl">
-                Mobilize
-              </h3>
+              <h3 className="display mt-4 text-2xl">Mobilize</h3>
 
               <p className="mt-3 leading-7 text-white/65">
                 Bring together young people, volunteers, institutions,
@@ -237,9 +322,7 @@ export default function Programs() {
                 03
               </p>
 
-              <h3 className="display mt-4 text-2xl">
-                Act
-              </h3>
+              <h3 className="display mt-4 text-2xl">Act</h3>
 
               <p className="mt-3 leading-7 text-white/65">
                 Turn knowledge, skills, resources, and collective effort into
@@ -304,9 +387,7 @@ export default function Programs() {
                   {group.title}
                 </h3>
 
-                <p className="mt-3 leading-7 text-ink/65">
-                  {group.text}
-                </p>
+                <p className="mt-3 leading-7 text-ink/65">{group.text}</p>
               </div>
             ))}
           </div>
@@ -317,9 +398,7 @@ export default function Programs() {
       <section className="container-wide py-20 md:py-28">
         <div className="grid gap-8 border-t border-maroon/15 pt-12 md:grid-cols-[1fr_auto] md:items-end">
           <div className="max-w-3xl">
-            <p className="eyebrow text-green">
-              Programs + Framework
-            </p>
+            <p className="eyebrow text-green">Programs + Framework</p>
 
             <h2 className="display mt-4 text-4xl text-maroon md:text-5xl">
               See how Subang's programs connect to the SDGs and youth
