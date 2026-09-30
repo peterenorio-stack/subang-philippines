@@ -55,6 +55,34 @@ const focusAreas = [
   },
 ];
 
+const departments = [
+  {
+    name: "Community Affairs",
+    image: "/assets/logo/department-community-affairs.png",
+    text: "Community engagement, partnerships, volunteer mobilization, and local action.",
+  },
+  {
+    name: "Environmental Affairs",
+    image: "/assets/logo/department-environmental-affairs.png",
+    text: "Environmental sustainability, restoration, biodiversity, and climate action.",
+  },
+  {
+    name: "Science and Technology",
+    image: "/assets/logo/department-science-and-technology.png",
+    text: "Science, innovation, technology, research, and practical community solutions.",
+  },
+  {
+    name: "Agriculture and Food Systems",
+    image: "/assets/logo/department-agriculture-and-food-systems.png",
+    text: "Food security, sustainable agriculture, food production, and resilient food systems.",
+  },
+  {
+    name: "Education",
+    image: "/assets/logo/department-education.png",
+    text: "Education, leadership development, training, workshops, and capacity building.",
+  },
+];
+
 const frameworks = [
   {
     number: "01",
@@ -132,9 +160,7 @@ export default function Home() {
               <div className="relative">
                 <div className="flex items-end justify-between border-b border-white/15 pb-5">
                   <div>
-                    <p className="eyebrow text-gold">
-                      Recent Stories
-                    </p>
+                    <p className="eyebrow text-gold">Recent Stories</p>
 
                     <p className="mt-2 text-sm text-white/55">
                       What Subang is doing now
@@ -195,9 +221,7 @@ export default function Home() {
       {/* WHO WE ARE */}
       <section className="container-wide grid gap-12 py-24 md:grid-cols-2 md:py-32">
         <div>
-          <p className="eyebrow text-green">
-            01 / Who we are
-          </p>
+          <p className="eyebrow text-green">01 / Who we are</p>
 
           <h2 className="display mt-5 text-5xl leading-tight text-maroon md:text-6xl">
             People who care enough to show up.
@@ -230,9 +254,7 @@ export default function Home() {
       {/* WHAT WE DO */}
       <section className="bg-white py-24">
         <div className="container-wide">
-          <p className="eyebrow text-green">
-            02 / What we do
-          </p>
+          <p className="eyebrow text-green">02 / What we do</p>
 
           <div className="mt-5 flex flex-col justify-between gap-5 md:flex-row md:items-end">
             <h2 className="display text-5xl text-maroon md:text-6xl">
@@ -256,9 +278,7 @@ export default function Home() {
                 href="/programs"
                 className="group bg-white p-8 transition hover:bg-cream md:p-9"
               >
-                <span className="eyebrow text-green">
-                  {area.number}
-                </span>
+                <span className="eyebrow text-green">{area.number}</span>
 
                 <h3 className="display mt-12 text-2xl text-maroon md:text-3xl">
                   {area.title}
@@ -278,11 +298,74 @@ export default function Home() {
         </div>
       </section>
 
+      {/* DEPARTMENTS */}
+      <section className="bg-cream py-24 md:py-28">
+        <div className="container-wide">
+          <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
+            <div>
+              <p className="eyebrow text-green">03 / Our departments</p>
+
+              <h2 className="display mt-5 max-w-4xl text-5xl text-maroon md:text-6xl">
+                Five departments.
+                <br />
+                One movement.
+              </h2>
+            </div>
+
+            <Link
+              href="/departments"
+              className="shrink-0 font-extrabold text-blue"
+            >
+              Explore our departments ↗
+            </Link>
+          </div>
+
+          <p className="mt-7 max-w-3xl text-lg leading-8 text-ink/65">
+            Subang's work is organized through five departments that bring
+            together different areas of expertise, action, and community
+            engagement toward a shared mission.
+          </p>
+
+          <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {departments.map((department, index) => (
+              <Link
+                key={department.name}
+                href="/departments"
+                className={`group overflow-hidden border border-maroon/10 bg-white p-6 transition hover:border-maroon/20 hover:bg-white md:p-7 ${
+                  index === departments.length - 1
+                    ? "sm:col-span-2 sm:mx-auto sm:w-1/2 lg:col-span-1 lg:mx-0 lg:w-auto"
+                    : ""
+                }`}
+              >
+                <div className="flex min-h-[150px] items-center justify-center overflow-hidden">
+                  <img
+                    src={department.image}
+                    alt={`${department.name} department logo`}
+                    className="h-auto w-full object-contain transition duration-500 group-hover:scale-[1.025]"
+                  />
+                </div>
+
+                <div className="mt-5 border-t border-maroon/10 pt-5">
+                  <p className="text-sm font-bold leading-6 text-ink/65">
+                    {department.text}
+                  </p>
+
+                  <span className="mt-5 inline-flex items-center gap-2 text-sm font-extrabold text-blue">
+                    Explore
+                    <ArrowUpRight size={15} />
+                  </span>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* IMPACT */}
       <section className="bg-gold py-24">
         <div className="container-wide">
           <p className="eyebrow text-maroon/70">
-            03 / Documented impact
+            04 / Documented impact
           </p>
 
           <h2 className="display mt-5 max-w-4xl text-5xl text-maroon md:text-7xl">
@@ -291,39 +374,27 @@ export default function Home() {
 
           <div className="mt-16 grid gap-8 border-t border-maroon/25 pt-8 sm:grid-cols-2 lg:grid-cols-4">
             <div>
-              <p className="display text-5xl text-maroon">
-                2023
-              </p>
-              <p className="mt-2 font-bold">
-                Subang founded
-              </p>
+              <p className="display text-5xl text-maroon">2023</p>
+
+              <p className="mt-2 font-bold">Subang founded</p>
             </div>
 
             <div>
-              <p className="display text-5xl text-maroon">
-                300+
-              </p>
-              <p className="mt-2 font-bold">
-                SDG-aligned initiatives
-              </p>
+              <p className="display text-5xl text-maroon">300+</p>
+
+              <p className="mt-2 font-bold">SDG-aligned initiatives</p>
             </div>
 
             <div>
-              <p className="display text-5xl text-maroon">
-                10,000+
-              </p>
-              <p className="mt-2 font-bold">
-                Direct beneficiaries reached
-              </p>
+              <p className="display text-5xl text-maroon">10,000+</p>
+
+              <p className="mt-2 font-bold">Direct beneficiaries reached</p>
             </div>
 
             <div>
-              <p className="display text-5xl text-maroon">
-                50,000+
-              </p>
-              <p className="mt-2 font-bold">
-                Indirect community reach
-              </p>
+              <p className="display text-5xl text-maroon">50,000+</p>
+
+              <p className="mt-2 font-bold">Indirect community reach</p>
             </div>
           </div>
 
@@ -351,9 +422,7 @@ export default function Home() {
         <div className="container-wide">
           <div className="grid gap-12 lg:grid-cols-[0.75fr_1.25fr] lg:items-end">
             <div>
-              <p className="eyebrow text-gold">
-                04 / Our framework
-              </p>
+              <p className="eyebrow text-gold">05 / Our framework</p>
 
               <h2 className="display mt-5 text-5xl md:text-6xl">
                 Global goals.
@@ -409,9 +478,7 @@ export default function Home() {
         <section className="container-wide py-24 md:py-32">
           <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
             <div>
-              <p className="eyebrow text-green">
-                05 / From the field
-              </p>
+              <p className="eyebrow text-green">06 / From the field</p>
 
               <h2 className="display mt-5 text-5xl text-maroon md:text-6xl">
                 The work behind the work.
@@ -437,7 +504,7 @@ export default function Home() {
               ) : (
                 <div className="flex min-h-[360px] items-center justify-center p-10 text-center">
                   <p className="display max-w-md text-4xl text-white">
-                    Subang Stories & Press
+                    Subang Stories
                   </p>
                 </div>
               )}
@@ -477,9 +544,7 @@ export default function Home() {
         <div className="container-wide">
           <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:items-end">
             <div>
-              <p className="eyebrow text-green">
-                06 / Growing network
-              </p>
+              <p className="eyebrow text-green">07 / Growing network</p>
 
               <h2 className="display mt-5 text-5xl text-maroon md:text-6xl">
                 From local action to a growing network.
@@ -519,9 +584,7 @@ export default function Home() {
       {/* VOLUNTEERISM */}
       <section className="container-wide py-24 md:py-32">
         <div className="max-w-5xl">
-          <p className="eyebrow text-green">
-            07 / Volunteerism
-          </p>
+          <p className="eyebrow text-green">08 / Volunteerism</p>
 
           <h2 className="display mt-5 text-5xl text-maroon md:text-7xl">
             Development does not happen only through institutions.
@@ -565,9 +628,7 @@ export default function Home() {
       <section className="bg-blue py-24 text-white">
         <div className="container-wide grid gap-10 md:grid-cols-2">
           <div>
-            <p className="eyebrow text-gold">
-              08 / Join the movement
-            </p>
+            <p className="eyebrow text-gold">09 / Join the movement</p>
 
             <h2 className="display mt-5 text-5xl md:text-7xl">
               There is work to do. Let's do it together.
@@ -595,7 +656,7 @@ export default function Home() {
                 className="inline-flex items-center gap-3 border border-white/30 px-6 py-4 font-extrabold text-white transition hover:border-white hover:bg-white/10"
               >
                 Connect with Subang
-                <ArrowUpRight size={18} />
+                <ArrowUpRight size={17} />
               </Link>
             </div>
           </div>
