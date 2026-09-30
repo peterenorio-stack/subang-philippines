@@ -52,7 +52,7 @@ export default function Founder() {
 
             <div className="mt-8 space-y-5 text-base leading-8 text-ink/70">
               <p>
-                Peter John C. Enorio is a community development specialist,
+                Peter John C. Enorio is a community development practitioner,
                 award-winning volunteer leader, and youth advocate. He earned
                 his Bachelor of Science in Agricultural and Biosystems
                 Engineering degree from Cebu Technological University – Barili
