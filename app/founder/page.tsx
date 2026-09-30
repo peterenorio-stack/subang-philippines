@@ -46,7 +46,7 @@ export default function Founder() {
             </h2>
 
             <p className="mt-5 text-lg font-semibold text-ink/70">
-              Community Development Specialist • Volunteer Leader • Youth
+              Community Development Practitioner • Volunteer Leader • Youth
               Advocate
             </p>
 
