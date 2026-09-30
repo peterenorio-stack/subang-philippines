@@ -42,7 +42,7 @@ const teamNavigation = [
 
 const directNavigation = [
   { label: "Volunteer", href: "/volunteer" },
-  { label: "Stories & Press", href: "/stories" },
+  { label: "Stories", href: "/stories" },
 ];
 
 export function Header() {
@@ -372,7 +372,7 @@ export function Footer() {
           </Link>
 
           <Link className="block" href="/stories">
-            Stories & Press
+            Stories
           </Link>
         </div>
 
