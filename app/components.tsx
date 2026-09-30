@@ -34,6 +34,11 @@ const teamNavigation = [
     description: "Meet the people serving Subang.",
   },
   {
+    label: "Departments",
+    href: "/departments",
+    description: "Explore the five departments driving Subang's work.",
+  },
+  {
     label: "Founder’s Corner",
     href: "/founder",
     description: "The story and perspective behind Subang.",
@@ -97,6 +102,7 @@ export function Header() {
                   <p className="text-xs font-bold uppercase tracking-[0.18em] text-green">
                     About Subang
                   </p>
+
                   <p className="mt-1 text-sm font-normal leading-6 text-ink/65">
                     Learn about our organization, programs, guiding framework,
                     and community impact.
@@ -112,6 +118,7 @@ export function Header() {
                     >
                       <div className="flex items-center justify-between gap-3">
                         <span className="font-bold">{item.label}</span>
+
                         <ArrowRight
                           size={16}
                           className="text-gold transition-transform group-hover/item:translate-x-1"
@@ -136,24 +143,27 @@ export function Header() {
               aria-haspopup="true"
             >
               Team
+
               <ChevronDown
                 size={15}
                 className="transition-transform duration-200 group-hover:rotate-180"
               />
             </button>
 
-            <div className="pointer-events-none absolute left-1/2 top-full z-50 w-[430px] -translate-x-1/2 translate-y-2 opacity-0 transition-all duration-200 group-hover:pointer-events-auto group-hover:translate-y-0 group-hover:opacity-100">
+            <div className="pointer-events-none absolute left-1/2 top-full z-50 w-[620px] -translate-x-1/2 translate-y-2 opacity-0 transition-all duration-200 group-hover:pointer-events-auto group-hover:translate-y-0 group-hover:opacity-100">
               <div className="overflow-hidden rounded-b-2xl border-t-2 border-gold bg-cream p-6 text-maroon shadow-xl">
                 <div className="mb-4">
                   <p className="text-xs font-bold uppercase tracking-[0.18em] text-green">
                     Our Team
                   </p>
+
                   <p className="mt-1 text-sm font-normal leading-6 text-ink/65">
-                    Meet the people helping lead and grow Subang Philippines.
+                    Meet the people, departments, and leadership helping grow
+                    Subang Philippines.
                   </p>
                 </div>
 
-                <div className="grid grid-cols-2 gap-3">
+                <div className="grid grid-cols-3 gap-3">
                   {teamNavigation.map((item) => (
                     <Link
                       key={item.href}
@@ -162,6 +172,7 @@ export function Header() {
                     >
                       <div className="flex items-center justify-between gap-3">
                         <span className="font-bold">{item.label}</span>
+
                         <ArrowRight
                           size={16}
                           className="text-gold transition-transform group-hover/item:translate-x-1"
@@ -365,6 +376,10 @@ export function Footer() {
 
           <Link className="block" href="/leadership">
             Leadership
+          </Link>
+
+          <Link className="block" href="/departments">
+            Departments
           </Link>
 
           <Link className="block" href="/founder">
