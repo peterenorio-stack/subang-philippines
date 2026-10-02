@@ -19,44 +19,6 @@ export const metadata: Metadata = {
   },
 };
 
-const contributionAreas = [
-  {
-    number: "01",
-    title: "Environmental Sustainability",
-    text: "Support ecosystem restoration, tree and bamboo propagation, biodiversity initiatives, environmental education, and community environmental action.",
-  },
-  {
-    number: "02",
-    title: "Food Security & Sustainable Agriculture",
-    text: "Help strengthen food production, sustainable agriculture, composting, community food systems, and agricultural learning.",
-  },
-  {
-    number: "03",
-    title: "Waste Management & Circularity",
-    text: "Contribute to waste reduction, resource recovery, composting, and practical circular community practices.",
-  },
-  {
-    number: "04",
-    title: "Coastal & Marine Action",
-    text: "Support coastal cleanup, conservation, restoration, environmental education, and community-based marine action.",
-  },
-  {
-    number: "05",
-    title: "Youth Leadership & Participation",
-    text: "Help create opportunities for young people to lead projects, develop skills, mobilize volunteers, and participate meaningfully in their communities.",
-  },
-  {
-    number: "06",
-    title: "Education & Capacity Building",
-    text: "Support workshops, training, mentoring, learning materials, leadership development, and community capacity building.",
-  },
-  {
-    number: "07",
-    title: "Partnerships & Community Mobilization",
-    text: "Help bring together communities, institutions, schools, government, civil society, and volunteers around shared development goals.",
-  },
-];
-
 const donationMethods = [
   {
     name: "GoTyme",
@@ -82,324 +44,319 @@ const donationMethods = [
   },
 ];
 
-export default function Donate() {
+const contributionAreas = [
+  "Environmental sustainability",
+  "Food security and sustainable agriculture",
+  "Waste management and circularity",
+  "Coastal and marine action",
+  "Youth leadership and participation",
+  "Education and capacity building",
+  "Partnerships and community mobilization",
+];
+
+export default function DonatePage() {
   return (
-    <main>
+    <>
       <Header />
 
-      <PageIntro
-        eyebrow="Support Subang"
-        title="Help turn volunteer effort into community action."
-        text="Subang volunteers contribute their time, skills, and initiative. Financial contributions help provide the materials, resources, learning opportunities, and field support that allow community action to happen."
-      />
+      <main>
+        <PageIntro
+          eyebrow="Support Subang"
+          title="Help turn volunteer effort into community action."
+          text="Subang is a youth-led volunteer organization committed to transforming communities into safer, equitable, sustainable, and resilient communities. Volunteers give their time and skills. Contributions help provide the practical resources that allow those efforts to reach communities."
+        />
 
-      {/* WHY SUPPORT SUBANG */}
-      <section className="container-wide py-16 md:py-24">
-        <div className="grid gap-10 lg:grid-cols-[1fr_1.25fr] lg:items-end">
-          <div>
-            <p className="eyebrow text-green">Why Give</p>
-
-            <h2 className="display mt-4 text-4xl text-maroon md:text-5xl">
-              Support the work behind the volunteer work.
-            </h2>
-          </div>
-
-          <div className="max-w-2xl">
-            <p className="text-lg leading-8 text-ink/65">
-              Subang is a youth-led volunteer organization committed to
-              transforming communities into safer, equitable, sustainable, and
-              resilient communities. Volunteers give their time and skills.
-              Contributions help provide the practical resources that allow
-              those efforts to reach communities.
-            </p>
-
-            <p className="mt-5 text-lg leading-8 text-ink/65">
-              Your support can help make community activities, environmental
-              initiatives, agricultural projects, educational programs,
-              leadership development, and other forms of community action
-              possible.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* CONTRIBUTION AREAS */}
-      <section className="bg-cream py-20 md:py-28">
-        <div className="container-wide">
-          <div className="max-w-3xl">
-            <p className="eyebrow text-green">Where Your Support Can Help</p>
-
-            <h2 className="display mt-5 text-4xl text-maroon md:text-6xl">
-              One contribution can help strengthen many kinds of action.
-            </h2>
-
-            <p className="mt-7 max-w-2xl text-lg leading-8 text-ink/65">
-              Subang's work is interconnected. Contributions may help support
-              activities across the organization's program areas, depending on
-              current priorities, project needs, and available resources.
-            </p>
-          </div>
-
-          <div className="mt-14 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {contributionAreas.map((area) => (
-              <article
-                key={area.number}
-                className="border border-maroon/10 bg-white p-7 md:p-8"
-              >
-                <p className="display text-4xl text-maroon">{area.number}</p>
-
-                <h3 className="display mt-5 text-2xl text-maroon">
-                  {area.title}
-                </h3>
-
-                <p className="mt-4 leading-7 text-ink/65">{area.text}</p>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* DONATION METHODS */}
-      <section className="container-wide py-20 md:py-28">
-        <div className="max-w-3xl">
-          <p className="eyebrow text-green">Make a Contribution</p>
-
-          <h2 className="display mt-5 text-4xl text-maroon md:text-6xl">
-            Choose the giving method that works for you.
-          </h2>
-
-          <p className="mt-7 max-w-2xl text-lg leading-8 text-ink/65">
-            You may contribute through GoTyme, GCash, or LandBank. For mobile
-            giving, scan the QR code using your preferred banking or payment
-            application.
-          </p>
-        </div>
-
-        <div className="mt-14 grid gap-6 lg:grid-cols-3">
-          {donationMethods.map((method) => (
-            <article
-              key={method.name}
-              className="overflow-hidden border border-maroon/10 bg-white"
-            >
-              <div className="border-b border-maroon/10 bg-cream p-7">
-                <p className="eyebrow text-green">Give through</p>
-
-                <h3 className="display mt-3 text-3xl text-maroon">
-                  {method.name}
-                </h3>
+        <section className="border-t border-black/10">
+          <div className="mx-auto max-w-6xl px-6 py-20 md:px-8 md:py-28">
+            <div className="grid gap-12 lg:grid-cols-[0.85fr_1.15fr]">
+              <div>
+                <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#470112]">
+                  Why give
+                </p>
+                <h2 className="mt-4 text-3xl font-semibold tracking-tight text-[#470112] md:text-4xl">
+                  Support the work behind the work.
+                </h2>
               </div>
 
-              <div className="p-7 md:p-8">
-                <div className="mx-auto flex aspect-square max-w-[280px] items-center justify-center border border-maroon/10 bg-white p-5">
-                  <img
-                    src={method.image}
-                    alt={`${method.name} donation QR code`}
-                    className="h-full w-full object-contain"
-                  />
-                </div>
-
-                <p className="mt-7 text-center text-sm font-bold text-ink/55">
-                  Scan to contribute
+              <div className="space-y-6 text-base leading-8 text-black/70">
+                <p>
+                  Volunteer action requires more than time and commitment. It
+                  also requires transportation, materials, learning resources,
+                  communication, community coordination, and other practical
+                  support.
                 </p>
 
-                <div className="mt-7 space-y-5 border-t border-maroon/10 pt-6">
-                  <div>
-                    <p className="text-xs font-extrabold uppercase tracking-[0.14em] text-green">
-                      Account Name
-                    </p>
+                <p>
+                  Your contribution can help Subang create the conditions for
+                  volunteers and communities to turn ideas into sustained
+                  action.
+                </p>
 
-                    <p className="mt-2 break-words font-extrabold text-maroon">
-                      {method.accountName}
-                    </p>
-                  </div>
-
-                  <div>
-                    <p className="text-xs font-extrabold uppercase tracking-[0.14em] text-green">
-                      {method.label}
-                    </p>
-
-                    <p className="mt-2 break-all font-extrabold tracking-wide text-maroon">
-                      {method.accountNumber}
-                    </p>
-                  </div>
-
-                  {method.branch && (
-                    <div>
-                      <p className="text-xs font-extrabold uppercase tracking-[0.14em] text-green">
-                        Branch
-                      </p>
-
-                      <p className="mt-2 font-extrabold text-maroon">
-                        {method.branch}
-                      </p>
+                <div className="rounded-2xl bg-[#f7f2e8] p-6">
+                  <div className="flex gap-4">
+                    <div className="mt-1 shrink-0 text-[#470112]">
+                      <Heart size={22} strokeWidth={1.8} />
                     </div>
-                  )}
+                    <p className="text-sm leading-7 text-black/70">
+                      Every contribution is meaningful to a volunteer
+                      organization whose work depends on people giving their
+                      time, skills, resources, and support.
+                    </p>
+                  </div>
                 </div>
               </div>
-            </article>
-          ))}
-        </div>
-      </section>
-
-      {/* BEFORE YOU GIVE */}
-      <section className="bg-maroon text-white">
-        <div className="container-wide py-20 md:py-28">
-          <div className="grid gap-12 lg:grid-cols-[1fr_1fr] lg:items-start">
-            <div>
-              <p className="eyebrow text-gold">Before You Give</p>
-
-              <h2 className="display mt-5 text-4xl md:text-6xl">
-                A few things to keep in mind.
-              </h2>
-            </div>
-
-            <div className="space-y-7">
-              <div className="border-t border-white/15 pt-6">
-                <h3 className="display text-2xl">
-                  Verify the recipient details.
-                </h3>
-
-                <p className="mt-3 leading-7 text-white/65">
-                  Before completing a transfer, carefully check the account
-                  name and account number shown on this page and in your
-                  selected payment application.
-                </p>
-              </div>
-
-              <div className="border-t border-white/15 pt-6">
-                <h3 className="display text-2xl">
-                  Contributions support Subang's work.
-                </h3>
-
-                <p className="mt-3 leading-7 text-white/65">
-                  Contributions may support program activities, materials,
-                  transportation and field logistics, training and learning
-                  activities, communications and documentation, and other
-                  legitimate needs connected to Subang's mission.
-                </p>
-              </div>
-
-              <div className="border-t border-white/15 pt-6">
-                <h3 className="display text-2xl">
-                  Keep your transaction record.
-                </h3>
-
-                <p className="mt-3 leading-7 text-white/65">
-                  Please retain your payment confirmation or transaction
-                  reference for your records.
-                </p>
-              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* STEWARDSHIP */}
-      <section className="bg-cream py-20 md:py-28">
-        <div className="container-wide">
-          <div className="grid gap-10 lg:grid-cols-[1fr_1.25fr]">
-            <div>
-              <p className="eyebrow text-green">Responsible Stewardship</p>
-
-              <h2 className="display mt-5 text-4xl text-maroon md:text-5xl">
-                Contributions should strengthen the work, not define it.
-              </h2>
-            </div>
-
+        <section className="border-t border-black/10 bg-[#f7f2e8]">
+          <div className="mx-auto max-w-6xl px-6 py-20 md:px-8 md:py-28">
             <div className="max-w-3xl">
-              <p className="text-lg leading-8 text-ink/65">
-                Subang's work is rooted in volunteerism, community
-                participation, and partnerships. Financial contributions are
-                one of several ways people can support that work.
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#470112]">
+                Where your support can help
               </p>
-
-              <p className="mt-5 text-lg leading-8 text-ink/65">
-                Subang is committed to responsible stewardship of resources
-                received in support of its mission and to maintaining
-                appropriate organizational records of contributions and their
-                use.
-              </p>
-
-              <p className="mt-5 text-sm leading-7 text-ink/50">
-                Unless specifically stated otherwise, contributions are not
-                represented as restricted to a particular program or activity.
-                Their use may depend on current organizational priorities,
-                project requirements, and available resources.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* AFTER GIVING */}
-      <section className="container-wide py-20 md:py-28">
-        <div className="border-t border-maroon/15 pt-12">
-          <div className="grid gap-8 md:grid-cols-[1fr_auto] md:items-end">
-            <div className="max-w-3xl">
-              <p className="eyebrow text-green">Already Contributed?</p>
-
-              <h2 className="display mt-4 text-4xl text-maroon md:text-5xl">
-                Thank you for supporting community action.
+              <h2 className="mt-4 text-3xl font-semibold tracking-tight text-[#470112] md:text-4xl">
+                Contributions can strengthen different areas of Subang&apos;s
+                work.
               </h2>
-
-              <p className="mt-6 max-w-2xl text-lg leading-8 text-ink/65">
-                If you would like to let Subang know about your contribution,
-                you can get in touch with us. This helps us maintain a clearer
-                record of support received.
+              <p className="mt-5 text-base leading-8 text-black/70">
+                Depending on current organizational priorities and project
+                requirements, resources may support activities across these
+                connected areas of action.
               </p>
             </div>
 
-            <Link
-              href="/connect"
-              className="inline-flex items-center gap-2 font-extrabold text-blue"
-            >
-              Contact Subang
-              <ArrowUpRight size={17} />
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* VOLUNTEER + DONATE */}
-      <section className="bg-maroon text-white">
-        <div className="container-wide py-20 md:py-28">
-          <div className="mx-auto max-w-4xl text-center">
-            <Heart className="mx-auto text-gold" size={28} />
-
-            <p className="eyebrow mt-6 text-gold">Give Time. Give Support.</p>
-
-            <h2 className="display mt-4 text-4xl md:text-6xl">
-              There is more than one way to be part of the movement.
-            </h2>
-
-            <p className="mx-auto mt-7 max-w-2xl text-lg leading-8 text-white/70">
-              Whether you contribute your time, skills, resources, ideas, or
-              partnerships, every meaningful contribution can help strengthen
-              community action.
-            </p>
-
-            <div className="mt-9 flex flex-col justify-center gap-4 sm:flex-row">
-              <Link
-                href="/volunteer"
-                className="inline-flex items-center justify-center gap-2 bg-gold px-6 py-3 font-extrabold text-maroon transition hover:opacity-90"
-              >
-                Become a volunteer
-                <ArrowRight size={17} />
-              </Link>
-
-              <Link
-                href="/connect"
-                className="inline-flex items-center justify-center gap-2 border border-white/20 px-6 py-3 font-extrabold text-white transition hover:border-white/40"
-              >
-                Connect with Subang
-                <ArrowUpRight size={17} />
-              </Link>
+            <div className="mt-12 grid gap-px overflow-hidden rounded-2xl border border-black/10 bg-black/10 md:grid-cols-2">
+              {contributionAreas.map((area, index) => (
+                <div
+                  key={area}
+                  className="bg-white p-6 md:p-7"
+                >
+                  <div className="text-sm font-semibold text-[#470112]">
+                    {String(index + 1).padStart(2, "0")}
+                  </div>
+                  <h3 className="mt-3 text-lg font-semibold text-[#470112]">
+                    {area}
+                  </h3>
+                </div>
+              ))}
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+
+        <section className="border-t border-black/10">
+          <div className="mx-auto max-w-6xl px-6 py-20 md:px-8 md:py-28">
+            <div className="max-w-3xl">
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#470112]">
+                Make a contribution
+              </p>
+              <h2 className="mt-4 text-3xl font-semibold tracking-tight text-[#470112] md:text-4xl">
+                Choose a convenient way to support Subang.
+              </h2>
+              <p className="mt-5 text-base leading-8 text-black/70">
+                You may use any of the payment channels below. Please verify
+                the account details before completing your transaction.
+              </p>
+            </div>
+
+            <div className="mt-12 grid gap-6 lg:grid-cols-3">
+              {donationMethods.map((method) => (
+                <article
+                  key={method.name}
+                  className="overflow-hidden rounded-2xl border border-black/10 bg-white"
+                >
+                  <div className="flex items-center justify-center border-b border-black/10 bg-[#f7f2e8] p-8">
+                    <img
+                      src={method.image}
+                      alt={`${method.name} QR code for supporting Subang Philippines`}
+                      className="h-auto w-full max-w-[260px] object-contain"
+                    />
+                  </div>
+
+                  <div className="p-7">
+                    <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[#470112]">
+                      {method.name}
+                    </p>
+
+                    <h3 className="mt-4 text-xl font-semibold text-[#470112]">
+                      {method.accountName}
+                    </h3>
+
+                    <div className="mt-5 space-y-3 text-sm">
+                      <div>
+                        <p className="text-black/50">{method.label}</p>
+                        <p className="mt-1 font-medium text-black/80">
+                          {method.accountNumber}
+                        </p>
+                      </div>
+
+                      {method.branch && (
+                        <div>
+                          <p className="text-black/50">Branch</p>
+                          <p className="mt-1 font-medium text-black/80">
+                            {method.branch}
+                          </p>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="border-t border-black/10 bg-[#470112] text-white">
+          <div className="mx-auto max-w-6xl px-6 py-20 md:px-8 md:py-24">
+            <div className="grid gap-12 lg:grid-cols-2">
+              <div>
+                <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#ffb401]">
+                  Before you give
+                </p>
+                <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-4xl">
+                  A few simple steps help keep contributions secure.
+                </h2>
+              </div>
+
+              <div className="space-y-6">
+                {[
+                  "Verify the recipient name and account details before sending your contribution.",
+                  "Keep your transaction receipt or reference number for your records.",
+                  "Contributions support Subang's work and may be used according to current organizational priorities and project requirements.",
+                ].map((item, index) => (
+                  <div
+                    key={item}
+                    className="flex gap-5 border-b border-white/15 pb-6 last:border-0"
+                  >
+                    <span className="shrink-0 text-sm font-semibold text-[#ffb401]">
+                      {String(index + 1).padStart(2, "0")}
+                    </span>
+                    <p className="text-sm leading-7 text-white/75">{item}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="border-t border-black/10">
+          <div className="mx-auto max-w-6xl px-6 py-20 md:px-8 md:py-28">
+            <div className="grid gap-12 lg:grid-cols-2">
+              <div>
+                <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#470112]">
+                  Responsible stewardship
+                </p>
+                <h2 className="mt-4 text-3xl font-semibold tracking-tight text-[#470112] md:text-4xl">
+                  Contributions should be handled with accountability.
+                </h2>
+              </div>
+
+              <div className="space-y-6 text-base leading-8 text-black/70">
+                <p>
+                  Subang is committed to responsible stewardship of resources
+                  received in support of its mission and to maintaining
+                  appropriate organizational records of contributions and their
+                  use.
+                </p>
+
+                <p>
+                  Unless specifically stated otherwise, contributions are not
+                  represented as restricted to a particular program or
+                  activity. Their use may depend on current organizational
+                  priorities, project requirements, and available resources.
+                </p>
+
+                <p>
+                  If you have questions about contributing or would like to
+                  discuss a partnership or in-kind support, please get in
+                  touch with the Subang team.
+                </p>
+
+                <Link
+                  href="/connect"
+                  className="inline-flex items-center gap-2 font-semibold text-[#470112] transition-opacity hover:opacity-70"
+                >
+                  Contact Subang
+                  <ArrowUpRight size={17} />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="border-t border-black/10 bg-[#f7f2e8]">
+          <div className="mx-auto max-w-6xl px-6 py-20 md:px-8 md:py-24">
+            <div className="rounded-3xl bg-white p-8 shadow-sm md:p-12">
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#470112]">
+                Already contributed?
+              </p>
+
+              <div className="mt-5 flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
+                <div className="max-w-2xl">
+                  <h2 className="text-2xl font-semibold tracking-tight text-[#470112] md:text-3xl">
+                    We appreciate your support.
+                  </h2>
+                  <p className="mt-4 text-base leading-8 text-black/70">
+                    If you have already made a contribution and would like to
+                    get in touch with the Subang team, we would be glad to hear
+                    from you.
+                  </p>
+                </div>
+
+                <Link
+                  href="/connect"
+                  className="inline-flex shrink-0 items-center gap-2 font-semibold text-[#470112]"
+                >
+                  Get in touch
+                  <ArrowRight size={18} />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="border-t border-black/10">
+          <div className="mx-auto max-w-6xl px-6 py-20 md:px-8 md:py-28">
+            <div className="rounded-3xl bg-[#470112] px-8 py-12 text-white md:px-12 md:py-16">
+              <div className="max-w-3xl">
+                <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#ffb401]">
+                  Give time. Give support.
+                </p>
+
+                <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
+                  There is more than one way to be part of the movement.
+                </h2>
+
+                <p className="mt-6 max-w-2xl text-base leading-8 text-white/75">
+                  Whether through volunteer service, financial support,
+                  partnerships, or shared expertise, every contribution can
+                  help strengthen community action.
+                </p>
+
+                <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+                  <Link
+                    href="/volunteer"
+                    className="inline-flex items-center justify-center gap-2 rounded-full bg-[#ffb401] px-6 py-3 font-semibold text-[#470112] transition-transform hover:-translate-y-0.5"
+                  >
+                    Volunteer
+                    <ArrowRight size={17} />
+                  </Link>
+
+                  <Link
+                    href="/connect"
+                    className="inline-flex items-center justify-center gap-2 rounded-full border border-white/30 px-6 py-3 font-semibold text-white transition-colors hover:bg-white/10"
+                  >
+                    Connect with us
+                    <ArrowUpRight size={17} />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
 
       <Footer />
-    </main>
+    </>
   );
 }
