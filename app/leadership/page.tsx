@@ -5,16 +5,16 @@ import { Header, Footer, PageIntro } from "../components";
 import { officers } from "../content";
 
 export const metadata: Metadata = {
-  title: "Leadership & Network | National and Chapter Leaders",
+  title: "Leadership | National and Chapter Leaders",
   description:
-    "Meet the national leaders, advisers, chapter leaders, and developing volunteer network of Subang Philippines across universities, provinces, and communities.",
+    "Meet the national leaders, advisers, and chapter leaders serving Subang Philippines and helping advance its mission through volunteer leadership and community action.",
   alternates: {
     canonical: "/leadership",
   },
   openGraph: {
-    title: "Leadership & Network | Subang Philippines",
+    title: "Leadership | Subang Philippines",
     description:
-      "Meet the national leaders, advisers, chapter leaders, and developing volunteer network of Subang Philippines across universities, provinces, and communities.",
+      "Meet the national leaders, advisers, and chapter leaders serving Subang Philippines through volunteer leadership and community action.",
     url: "/leadership",
     type: "website",
   },
@@ -83,9 +83,9 @@ export default function Leadership() {
       <Header />
 
       <PageIntro
-        eyebrow="Leadership & Network"
+        eyebrow="Leadership"
         title="People carrying the work forward."
-        text="Subang's developing network brings together national leadership, advisers, chapter leaders, provincial leaders, volunteers, and institutional partners."
+        text="Subang's leadership brings together national officers, advisers, chapter leaders, and volunteers who help translate the organization's mission into community action."
       />
 
       {/* LEADERSHIP PRINCIPLE */}
@@ -108,9 +108,9 @@ export default function Leadership() {
             </p>
 
             <p className="mt-6 text-lg leading-8 text-ink/70">
-              Its developing leadership network connects national direction
-              with regional, provincial, university, and community-level
-              action.
+              Leadership is organized across national and chapter levels, with
+              advisers providing guidance and institutional perspective as the
+              organization continues to grow.
             </p>
           </div>
         </div>
@@ -146,7 +146,7 @@ export default function Leadership() {
                     <p className="mt-5 text-lg leading-8 text-ink/65">
                       The national executive leadership provides organizational
                       direction and helps coordinate Subang's programs,
-                      partnerships, chapters, and volunteer network.
+                      partnerships, chapters, and volunteer initiatives.
                     </p>
                   )}
 
@@ -174,31 +174,32 @@ export default function Leadership() {
         </div>
       </section>
 
-      {/* ORGANIZATIONAL MODEL */}
+      {/* LEADERSHIP MODEL */}
       <section className="container-wide py-20 md:py-28">
         <div className="grid gap-12 lg:grid-cols-[0.75fr_1.25fr] lg:items-center">
           <div>
-            <p className="eyebrow text-green">Organizational Model</p>
+            <p className="eyebrow text-green">Leadership Model</p>
 
             <h2 className="display mt-4 text-4xl text-maroon md:text-5xl">
-              One mission, different levels of action.
+              One mission, different levels of leadership.
             </h2>
 
             <p className="mt-6 leading-7 text-ink/65">
-              Subang connects national leadership with regional coordination,
-              provincial chapters, university and college chapters, volunteers,
-              and partner communities.
+              Subang connects national leadership with chapter-level leaders,
+              volunteers, advisers, and partner institutions. Each level
+              contributes to turning the organization's mission into meaningful
+              local action.
             </p>
           </div>
 
           <div className="grid gap-3 sm:grid-cols-2">
             {[
-              "National Leadership",
-              "Regional Coordination",
-              "Provincial Chapters",
-              "University & College Chapters",
-              "Community Volunteers",
-              "Partner Institutions",
+              "National Executive Leadership",
+              "National Departments",
+              "National Directors",
+              "Provincial Chapter Leadership",
+              "University & College Chapter Leadership",
+              "Volunteers & Community Leaders",
             ].map((item, index) => (
               <div
                 key={item}
@@ -215,42 +216,33 @@ export default function Leadership() {
         </div>
       </section>
 
-      {/* NETWORK */}
+      {/* CHAPTER LEADERSHIP */}
       <section className="bg-maroon text-white">
         <div className="container-wide py-20 md:py-28">
           <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:items-end">
             <div>
-              <p className="eyebrow text-gold">Developing Network</p>
+              <p className="eyebrow text-gold">Chapter Leadership</p>
 
               <h2 className="display mt-4 text-4xl md:text-5xl">
-                A growing presence across universities, provinces, and
-                communities.
+                Leadership rooted in local action.
               </h2>
             </div>
 
             <div>
               <p className="text-lg leading-8 text-white/70">
-                The network includes academic communities and local or
-                provincial chapters across Eastern and Central Visayas, the
-                Negros Island Region, Northern Mindanao, and other partner
-                communities.
+                Chapter leaders help bring Subang's mission closer to
+                communities, schools, universities, and local partners. They
+                support volunteer participation, coordinate activities, and
+                help build relationships within their respective chapters.
               </p>
 
-              <div className="mt-8 grid gap-3 sm:grid-cols-2">
-                {[
-                  "Eastern Visayas",
-                  "Central Visayas",
-                  "Negros Island Region",
-                  "Northern Mindanao",
-                ].map((area) => (
-                  <div
-                    key={area}
-                    className="border border-white/15 bg-white/5 px-5 py-4 font-extrabold"
-                  >
-                    {area}
-                  </div>
-                ))}
-              </div>
+              <Link
+                href="/network"
+                className="mt-8 inline-flex items-center gap-2 font-extrabold text-gold"
+              >
+                Explore Our Network
+                <ArrowUpRight size={17} />
+              </Link>
             </div>
           </div>
         </div>
@@ -262,14 +254,14 @@ export default function Leadership() {
           <p className="eyebrow text-green">Organizational Transparency</p>
 
           <h2 className="display mt-4 text-3xl text-maroon md:text-4xl">
-            A leadership network that continues to grow.
+            A leadership structure that continues to grow.
           </h2>
 
           <p className="mt-5 max-w-3xl leading-7 text-ink/65">
             Subang's leadership structure continues to develop alongside its
-            expanding network of chapters, volunteers, and partners. Vacant
-            positions are intentionally shown where applicable rather than
-            being filled with placeholder names.
+            programs, chapters, volunteers, and partnerships. Vacant positions
+            are intentionally shown where applicable rather than being filled
+            with placeholder names.
           </p>
         </div>
       </section>
