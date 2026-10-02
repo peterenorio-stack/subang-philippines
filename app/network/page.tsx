@@ -163,164 +163,244 @@ export default function NetworkPage() {
     <>
       <Header />
 
-      <main>
+      <main className="bg-[#f7f3ea] text-[#171717]">
         {/* Hero */}
-        <section className="border-b border-black/10 bg-[#f7f3ea]">
-          <div className="mx-auto max-w-7xl px-6 py-20 md:px-10 md:py-28">
-            <div className="max-w-4xl">
-              <p className="mb-5 text-sm font-bold uppercase tracking-[0.2em] text-[#470112]">
-                01 / Our network
-              </p>
+        <section className="relative overflow-hidden bg-[#470112] text-white">
+          <div className="absolute inset-0 opacity-20">
+            <div className="absolute -right-24 -top-24 h-80 w-80 rounded-full border border-[#ffb401]" />
+            <div className="absolute -bottom-32 -left-20 h-96 w-96 rounded-full border border-white/30" />
+          </div>
 
-              <h1 className="text-5xl font-semibold tracking-tight text-[#1d1d1b] md:text-7xl">
-                A network built for local action.
+          <div className="relative mx-auto max-w-7xl px-6 py-24 sm:px-8 lg:px-12 lg:py-32">
+            <p className="mb-5 text-sm font-bold uppercase tracking-[0.25em] text-[#ffb401]">
+              04 / Our network
+            </p>
+
+            <div className="max-w-4xl">
+              <h1 className="text-5xl font-bold leading-[1.05] tracking-tight sm:text-6xl lg:text-7xl">
+                A growing network
+                <br />
+                of local action.
               </h1>
 
-              <p className="mt-8 max-w-2xl text-lg leading-8 text-black/65 md:text-xl">
-                Subang connects volunteers through national, provincial,
-                municipal, city, and university chapters, creating a structure
-                for communities and institutions to turn shared aspirations
-                into meaningful action.
+              <p className="mt-8 max-w-2xl text-lg leading-8 text-white/80 sm:text-xl">
+                Subang connects young people, communities, schools, and local
+                partners through chapters that turn shared values into
+                community action.
               </p>
             </div>
           </div>
         </section>
 
-        {/* Network overview */}
+        {/* Overview */}
         <section className="border-b border-black/10 bg-white">
-          <div className="mx-auto max-w-7xl px-6 py-20 md:px-10 md:py-24">
-            <div className="grid gap-12 md:grid-cols-[0.8fr_1.2fr] md:gap-20">
-              <div>
-                <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#470112]">
-                  02 / How we are organized
-                </p>
-                <h2 className="mt-5 text-3xl font-semibold tracking-tight text-[#1d1d1b] md:text-4xl">
-                  One organization. Multiple points of action.
-                </h2>
-              </div>
+          <div className="mx-auto grid max-w-7xl gap-12 px-6 py-20 sm:px-8 lg:grid-cols-[1fr_1.3fr] lg:px-12 lg:py-24">
+            <div>
+              <p className="text-sm font-bold uppercase tracking-[0.22em] text-[#470112]">
+                The network
+              </p>
+              <h2 className="mt-4 text-4xl font-bold tracking-tight sm:text-5xl">
+                Local chapters.
+                <br />
+                Shared mission.
+              </h2>
+            </div>
 
-              <div className="space-y-6 text-base leading-8 text-black/65 md:text-lg">
-                <p>
-                  The Subang network is designed to bring national coordination
-                  closer to the communities and institutions where volunteer
-                  action happens.
-                </p>
+            <div className="space-y-6 text-lg leading-8 text-black/70">
+              <p>
+                Subang Philippines works through a growing network of chapters
+                across communities and educational institutions in the
+                Philippines.
+              </p>
 
-                <p>
-                  Provincial chapters may have municipal or component city
-                  chapters within their jurisdiction. Highly urbanized cities
-                  and independent component cities may operate as separate city
-                  chapters rather than being placed under a provincial
-                  chapter.
-                </p>
+              <p>
+                Each chapter provides a local space for volunteers to organize,
+                collaborate, and respond to community needs while remaining
+                connected to the organization&apos;s wider mission and
+                framework.
+              </p>
 
-                <p>
-                  University and college chapters form a separate institutional
-                  network, connecting students, educators, and volunteers
-                  through their respective schools.
-                </p>
-              </div>
+              <p>
+                Chapters may be organized at the provincial, municipal, city,
+                or university and college level, depending on their geographic
+                or institutional scope.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Network structure */}
+        <section className="bg-[#f7f3ea]">
+          <div className="mx-auto max-w-7xl px-6 py-20 sm:px-8 lg:px-12 lg:py-24">
+            <div className="max-w-3xl">
+              <p className="text-sm font-bold uppercase tracking-[0.22em] text-[#470112]">
+                How we are organized
+              </p>
+              <h2 className="mt-4 text-4xl font-bold tracking-tight sm:text-5xl">
+                Different places,
+                <br />
+                one movement.
+              </h2>
+              <p className="mt-6 text-lg leading-8 text-black/65">
+                Geographic chapters create a structure for local action, while
+                university and college chapters provide institutional spaces
+                for youth participation and volunteerism.
+              </p>
+            </div>
+
+            <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+              {[
+                {
+                  number: "01",
+                  title: "National Team",
+                  text: "Provides organization-wide direction, coordination, and support.",
+                },
+                {
+                  number: "02",
+                  title: "Provincial Chapters",
+                  text: "Coordinate Subang activities across provinces and their local units.",
+                },
+                {
+                  number: "03",
+                  title: "City Chapters",
+                  text: "Serve communities within cities with their own chapter scope.",
+                },
+                {
+                  number: "04",
+                  title: "University & College",
+                  text: "Connect students and institutions to volunteer action.",
+                },
+              ].map((item) => (
+                <div
+                  key={item.number}
+                  className="rounded-3xl border border-black/10 bg-white p-7"
+                >
+                  <span className="text-sm font-bold tracking-[0.2em] text-[#ffb401]">
+                    {item.number}
+                  </span>
+                  <h3 className="mt-8 text-xl font-bold">{item.title}</h3>
+                  <p className="mt-3 text-sm leading-6 text-black/60">
+                    {item.text}
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
         </section>
 
         {/* National Team */}
-        <section className="border-b border-black/10 bg-[#470112] text-white">
-          <div className="mx-auto max-w-7xl px-6 py-20 md:px-10 md:py-24">
-            <div className="grid gap-10 md:grid-cols-[0.7fr_1.3fr] md:items-end">
+        <section className="bg-white">
+          <div className="mx-auto max-w-7xl px-6 py-20 sm:px-8 lg:px-12 lg:py-24">
+            <div className="flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
               <div>
-                <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#ffb401]">
-                  03 / National Team
+                <p className="text-sm font-bold uppercase tracking-[0.22em] text-[#470112]">
+                  01 / National
                 </p>
-
-                <h2 className="mt-5 text-4xl font-semibold tracking-tight md:text-5xl">
+                <h2 className="mt-4 text-4xl font-bold tracking-tight sm:text-5xl">
                   National Team
                 </h2>
               </div>
 
-              <div>
-                <p className="max-w-2xl text-lg leading-8 text-white/75">
-                  The National Team provides organization-wide leadership,
-                  coordination, partnerships, and support for Subang chapters
-                  and initiatives across the network.
-                </p>
+              <p className="max-w-xl text-base leading-7 text-black/60">
+                The National Team provides organization-wide leadership and
+                helps connect chapters, departments, programs, and volunteers
+                across the Subang network.
+              </p>
+            </div>
+
+            <div className="mt-12 rounded-3xl bg-[#470112] p-8 text-white sm:p-10">
+              <div className="flex flex-col gap-8 sm:flex-row sm:items-center sm:justify-between">
+                <div>
+                  <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#ffb401]">
+                    Organization-wide
+                  </p>
+                  <h3 className="mt-3 text-3xl font-bold">
+                    Subang Philippines
+                  </h3>
+                  <p className="mt-3 max-w-2xl leading-7 text-white/70">
+                    Coordinating the organization&apos;s shared direction,
+                    systems, partnerships, programs, and volunteer network.
+                  </p>
+                </div>
+
+                <Link
+                  href="/leadership"
+                  className="inline-flex shrink-0 items-center gap-2 text-sm font-bold text-[#ffb401] transition-transform hover:translate-x-1"
+                >
+                  Meet the leadership
+                  <ArrowRight size={17} />
+                </Link>
               </div>
             </div>
           </div>
         </section>
 
         {/* Provincial Chapters */}
-        <section className="border-b border-black/10 bg-white">
-          <div className="mx-auto max-w-7xl px-6 py-20 md:px-10 md:py-24">
-            <div className="mb-14 max-w-3xl">
-              <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#470112]">
-                04 / Provincial chapters
+        <section className="bg-[#f7f3ea]">
+          <div className="mx-auto max-w-7xl px-6 py-20 sm:px-8 lg:px-12 lg:py-24">
+            <div className="max-w-3xl">
+              <p className="text-sm font-bold uppercase tracking-[0.22em] text-[#470112]">
+                02 / Geographic
               </p>
-
-              <h2 className="mt-5 text-4xl font-semibold tracking-tight text-[#1d1d1b] md:text-5xl">
+              <h2 className="mt-4 text-4xl font-bold tracking-tight sm:text-5xl">
                 Provincial Chapters
               </h2>
-
               <p className="mt-6 text-lg leading-8 text-black/65">
-                Provincial chapters coordinate Subang's local presence within
-                their respective provinces and may serve as the organizational
-                home of municipal and component city chapters in the area.
+                Provincial chapters provide a geographic structure for
+                coordinating community action. Municipal and component city
+                chapters may operate within the jurisdiction of their
+                respective provincial chapter.
               </p>
             </div>
 
-            <div className="space-y-5">
+            <div className="mt-14 space-y-6">
               {provincialChapters.map((province, index) => (
                 <div
                   key={province.slug}
-                  className="overflow-hidden rounded-2xl border border-black/10 bg-[#f7f3ea]"
+                  className="overflow-hidden rounded-3xl border border-black/10 bg-white"
                 >
-                  <div className="flex flex-col gap-5 p-7 md:flex-row md:items-center md:justify-between md:px-9 md:py-8">
+                  <div className="flex flex-col gap-5 p-7 sm:flex-row sm:items-center sm:justify-between sm:p-9">
                     <div className="flex items-start gap-5">
-                      <span className="pt-1 text-sm font-bold text-[#470112]">
+                      <span className="pt-1 text-sm font-bold tracking-[0.18em] text-[#ffb401]">
                         {String(index + 1).padStart(2, "0")}
                       </span>
 
                       <div>
-                        <p className="text-xs font-bold uppercase tracking-[0.18em] text-black/40">
+                        <p className="text-xs font-bold uppercase tracking-[0.16em] text-black/40">
                           Provincial Chapter
                         </p>
-
-                        <h3 className="mt-2 text-2xl font-semibold tracking-tight text-[#1d1d1b]">
+                        <h3 className="mt-2 text-2xl font-bold sm:text-3xl">
                           {province.name}
                         </h3>
                       </div>
                     </div>
-
-                    {province.municipalities.length > 0 && (
-                      <span className="text-sm font-semibold text-black/45">
-                        {province.municipalities.length} local{" "}
-                        {province.municipalities.length === 1
-                          ? "chapter"
-                          : "chapters"}
-                      </span>
-                    )}
                   </div>
 
                   {province.municipalities.length > 0 && (
-                    <div className="border-t border-black/10 bg-white px-7 py-6 md:px-9">
+                    <div className="border-t border-black/10 bg-[#faf8f3] px-7 py-7 sm:px-9">
                       <p className="mb-5 text-xs font-bold uppercase tracking-[0.18em] text-black/40">
-                        Municipal / City Chapters
+                        Local chapters
                       </p>
 
                       <div className="grid gap-3 md:grid-cols-2">
                         {province.municipalities.map((chapter) => (
-                          <div
+                          <Link
                             key={chapter.slug}
-                            className="rounded-xl border border-black/10 bg-[#f7f3ea] px-5 py-4"
+                            href={`/network/${chapter.slug}`}
+                            className="group flex items-center justify-between rounded-2xl border border-black/10 bg-white px-5 py-4 transition hover:border-[#470112]/30 hover:shadow-sm"
                           >
-                            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#470112]">
-                              {chapter.type}
-                            </p>
+                            <div>
+                              <p className="text-xs font-semibold uppercase tracking-[0.12em] text-black/40">
+                                {chapter.type}
+                              </p>
+                              <p className="mt-1 font-bold">{chapter.name}</p>
+                            </div>
 
-                            <p className="mt-2 font-semibold text-[#1d1d1b]">
-                              {chapter.name}
-                            </p>
-                          </div>
+                            <ArrowUpRight
+                              size={18}
+                              className="text-black/30 transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-[#470112]"
+                            />
+                          </Link>
                         ))}
                       </div>
                     </div>
@@ -332,159 +412,177 @@ export default function NetworkPage() {
         </section>
 
         {/* City Chapters */}
-        <section className="border-b border-black/10 bg-[#f7f3ea]">
-          <div className="mx-auto max-w-7xl px-6 py-20 md:px-10 md:py-24">
-            <div className="mb-12 max-w-3xl">
-              <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#470112]">
-                05 / City chapters
+        <section className="bg-white">
+          <div className="mx-auto max-w-7xl px-6 py-20 sm:px-8 lg:px-12 lg:py-24">
+            <div className="max-w-3xl">
+              <p className="text-sm font-bold uppercase tracking-[0.22em] text-[#470112]">
+                03 / Cities
               </p>
-
-              <h2 className="mt-5 text-4xl font-semibold tracking-tight text-[#1d1d1b] md:text-5xl">
-                Independent City Chapters
+              <h2 className="mt-4 text-4xl font-bold tracking-tight sm:text-5xl">
+                City Chapters
               </h2>
-
               <p className="mt-6 text-lg leading-8 text-black/65">
-                Subang maintains separate city chapters for highly urbanized
-                cities and independent component cities that are not under the
-                jurisdiction of a provincial government.
+                City chapters are maintained separately when their geographic
+                jurisdiction is independent of the surrounding provincial
+                structure.
               </p>
             </div>
 
-            <div className="grid gap-5 md:grid-cols-2">
+            <div className="mt-12 grid gap-5 sm:grid-cols-2">
               {cityChapters.map((chapter) => (
-                <div
+                <Link
                   key={chapter.slug}
-                  className="rounded-2xl border border-black/10 bg-white p-7 md:p-8"
+                  href={`/network/${chapter.slug}`}
+                  className="group rounded-3xl border border-black/10 bg-[#f7f3ea] p-8 transition hover:-translate-y-0.5 hover:shadow-lg"
                 >
-                  <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#470112]">
-                    {chapter.type}
-                  </p>
+                  <div className="flex items-start justify-between gap-6">
+                    <div>
+                      <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#470112]">
+                        {chapter.type}
+                      </p>
+                      <h3 className="mt-4 text-3xl font-bold">
+                        {chapter.name}
+                      </h3>
+                    </div>
 
-                  <h3 className="mt-3 text-2xl font-semibold tracking-tight text-[#1d1d1b]">
-                    {chapter.name}
-                  </h3>
-                </div>
+                    <ArrowUpRight
+                      size={21}
+                      className="mt-1 shrink-0 text-black/30 transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-[#470112]"
+                    />
+                  </div>
+                </Link>
               ))}
             </div>
           </div>
         </section>
 
         {/* University Chapters */}
-        <section className="border-b border-black/10 bg-white">
-          <div className="mx-auto max-w-7xl px-6 py-20 md:px-10 md:py-24">
-            <div className="grid gap-12 md:grid-cols-[0.8fr_1.2fr] md:gap-20">
+        <section className="bg-[#f7f3ea]">
+          <div className="mx-auto max-w-7xl px-6 py-20 sm:px-8 lg:px-12 lg:py-24">
+            <div className="grid gap-12 lg:grid-cols-[0.85fr_1.15fr]">
               <div>
-                <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#470112]">
-                  06 / University chapters
+                <p className="text-sm font-bold uppercase tracking-[0.22em] text-[#470112]">
+                  04 / Institutional
                 </p>
-
-                <h2 className="mt-5 text-4xl font-semibold tracking-tight text-[#1d1d1b] md:text-5xl">
-                  University & College Chapters
+                <h2 className="mt-4 text-4xl font-bold tracking-tight sm:text-5xl">
+                  University &amp; College Chapters
                 </h2>
+                <p className="mt-6 text-lg leading-8 text-black/65">
+                  Institutional chapters provide students and young people
+                  with spaces to organize volunteer action, develop leadership,
+                  and connect academic communities with real-world needs.
+                </p>
               </div>
 
+              <div className="grid gap-3">
+                {universityChapters.map((chapter, index) => (
+                  <Link
+                    key={chapter.slug}
+                    href={`/network/${chapter.slug}`}
+                    className="group flex items-center justify-between rounded-2xl border border-black/10 bg-white px-6 py-5 transition hover:border-[#470112]/30 hover:shadow-sm"
+                  >
+                    <div className="flex items-center gap-5">
+                      <span className="text-sm font-bold text-[#ffb401]">
+                        {String(index + 1).padStart(2, "0")}
+                      </span>
+
+                      <div>
+                        <p className="text-xs font-bold uppercase tracking-[0.13em] text-black/35">
+                          University/College Chapter
+                        </p>
+                        <p className="mt-1 font-bold">{chapter.name}</p>
+                      </div>
+                    </div>
+
+                    <ArrowUpRight
+                      size={18}
+                      className="shrink-0 text-black/25 transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-[#470112]"
+                    />
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Growing Network */}
+        <section className="bg-[#470112] text-white">
+          <div className="mx-auto max-w-7xl px-6 py-20 sm:px-8 lg:px-12 lg:py-24">
+            <div className="grid gap-12 lg:grid-cols-[1fr_0.8fr] lg:items-end">
               <div>
-                <p className="mb-8 max-w-2xl text-lg leading-8 text-black/65">
-                  Institutional chapters connect Subang's volunteer movement
-                  with students, educators, researchers, and communities
-                  through higher education institutions.
+                <p className="text-sm font-bold uppercase tracking-[0.22em] text-[#ffb401]">
+                  Growing the network
                 </p>
 
-                <div className="grid gap-3 sm:grid-cols-2">
-                  {universityChapters.map((chapter, index) => (
-                    <div
-                      key={chapter.slug}
-                      className="group rounded-xl border border-black/10 p-5 transition-colors hover:bg-[#f7f3ea]"
-                    >
-                      <div className="flex items-start justify-between gap-4">
-                        <span className="text-xs font-bold text-[#470112]">
-                          {String(index + 1).padStart(2, "0")}
-                        </span>
+                <h2 className="mt-5 text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
+                  Start where you are.
+                  <br />
+                  Build where you can.
+                </h2>
 
-                        <ArrowUpRight
-                          size={18}
-                          strokeWidth={1.7}
-                          className="text-black/30 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-                        />
-                      </div>
+                <p className="mt-7 max-w-2xl text-lg leading-8 text-white/70">
+                  Subang chapters grow through volunteers and communities who
+                  are ready to organize, collaborate, and create meaningful
+                  local action.
+                </p>
+              </div>
 
-                      <p className="mt-8 font-semibold leading-6 text-[#1d1d1b]">
-                        {chapter.name}
-                      </p>
-                    </div>
-                  ))}
+              <div className="rounded-3xl border border-white/15 bg-white/5 p-7 sm:p-8">
+                <p className="text-sm font-bold uppercase tracking-[0.15em] text-[#ffb401]">
+                  Interested in joining?
+                </p>
+
+                <p className="mt-4 leading-7 text-white/70">
+                  Learn more about becoming part of the Subang volunteer
+                  network or connect with the organization about local
+                  collaboration.
+                </p>
+
+                <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+                  <Link
+                    href="/volunteer"
+                    className="inline-flex items-center justify-center gap-2 rounded-full bg-[#ffb401] px-6 py-3 text-sm font-bold text-[#470112] transition hover:opacity-90"
+                  >
+                    Become a volunteer
+                    <ArrowRight size={17} />
+                  </Link>
+
+                  <Link
+                    href="/connect"
+                    className="inline-flex items-center justify-center gap-2 rounded-full border border-white/25 px-6 py-3 text-sm font-bold text-white transition hover:bg-white/10"
+                  >
+                    Connect with us
+                    <ArrowRight size={17} />
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Network growth */}
-        <section className="border-b border-black/10 bg-[#f7f3ea]">
-          <div className="mx-auto max-w-7xl px-6 py-20 md:px-10 md:py-24">
-            <div className="grid gap-12 md:grid-cols-[0.8fr_1.2fr] md:items-start">
-              <div>
-                <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#470112]">
-                  07 / Growing the network
-                </p>
+        {/* Final CTA */}
+        <section className="bg-[#f7f3ea]">
+          <div className="mx-auto max-w-7xl px-6 py-20 text-center sm:px-8 lg:px-12 lg:py-24">
+            <p className="text-sm font-bold uppercase tracking-[0.22em] text-[#470112]">
+              Live. Create. Inspire.
+            </p>
 
-                <h2 className="mt-5 text-4xl font-semibold tracking-tight text-[#1d1d1b] md:text-5xl">
-                  Local chapters, shared direction.
-                </h2>
-              </div>
+            <h2 className="mx-auto mt-5 max-w-3xl text-4xl font-bold tracking-tight sm:text-5xl">
+              Communities become stronger when people choose to act together.
+            </h2>
 
-              <div className="space-y-6">
-                <p className="text-lg leading-8 text-black/65">
-                  Every chapter contributes to the same broader mission while
-                  responding to the realities of its own community, province,
-                  city, municipality, or institution.
-                </p>
+            <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-black/60">
+              Our network is built on that simple idea: local people, local
+              action, and a shared commitment to creating better communities.
+            </p>
 
-                <p className="text-lg leading-8 text-black/65">
-                  As Subang grows, the network can provide a stronger structure
-                  for volunteers to organize locally, collaborate across
-                  locations, and bring community experience into national
-                  conversations.
-                </p>
-
-                <Link
-                  href="/connect"
-                  className="inline-flex items-center gap-2 font-semibold text-[#470112] transition-colors hover:text-[#ffb401]"
-                >
-                  Connect with Subang
-                  <ArrowRight size={18} />
-                </Link>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* CTA */}
-        <section className="bg-[#470112] text-white">
-          <div className="mx-auto max-w-7xl px-6 py-20 md:px-10 md:py-24">
-            <div className="flex flex-col gap-10 md:flex-row md:items-end md:justify-between">
-              <div className="max-w-3xl">
-                <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#ffb401]">
-                  08 / Be part of the network
-                </p>
-
-                <h2 className="mt-5 text-4xl font-semibold tracking-tight md:text-6xl">
-                  Live. Create. Inspire.
-                </h2>
-
-                <p className="mt-6 max-w-2xl text-lg leading-8 text-white/70">
-                  Whether through a chapter, a community initiative, a school,
-                  or individual volunteer service, there is a place for people
-                  who want to turn shared purpose into action.
-                </p>
-              </div>
-
+            <div className="mt-9">
               <Link
                 href="/volunteer"
-                className="inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-[#ffb401] px-7 py-4 font-bold text-[#470112] transition-transform hover:-translate-y-0.5"
+                className="inline-flex items-center gap-2 rounded-full bg-[#470112] px-7 py-3.5 text-sm font-bold text-white transition hover:bg-[#5b061b]"
               >
-                Become a Volunteer
-                <ArrowRight size={18} />
+                Join the movement
+                <ArrowRight size={17} />
               </Link>
             </div>
           </div>
