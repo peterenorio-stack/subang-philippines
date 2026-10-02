@@ -39,6 +39,11 @@ const teamNavigation = [
     description: "Explore the five departments driving Subang's work.",
   },
   {
+    label: "Our Network",
+    href: "/network",
+    description: "Explore Subang's growing chapter network.",
+  },
+  {
     label: "Founder’s Corner",
     href: "/founder",
     description: "The story and perspective behind Subang.",
@@ -163,7 +168,7 @@ export function Header() {
                   </p>
                 </div>
 
-                <div className="grid grid-cols-3 gap-3">
+                <div className="grid grid-cols-4 gap-3">
                   {teamNavigation.map((item) => (
                     <Link
                       key={item.href}
