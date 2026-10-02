@@ -201,13 +201,20 @@ export function Header() {
           ))}
         </nav>
 
-        {/* Desktop Connect + Mobile Menu Button */}
+        {/* Desktop Actions + Mobile Menu Button */}
         <div className="flex items-center gap-3">
           <Link
             href="/connect"
             className="hidden border border-white/35 px-4 py-2 text-sm font-bold transition-colors hover:bg-white hover:text-maroon md:block"
           >
             Connect ↗
+          </Link>
+
+          <Link
+            href="/donate"
+            className="hidden rounded-full bg-gold px-5 py-2 text-sm font-extrabold text-maroon transition-transform hover:-translate-y-0.5 md:block"
+          >
+            Donate
           </Link>
 
           <button
@@ -347,6 +354,16 @@ export function Header() {
               <span>Connect</span>
               <ArrowRight size={17} className="text-gold" />
             </Link>
+
+            {/* Mobile Donate */}
+            <Link
+              href="/donate"
+              onClick={closeMenu}
+              className="mt-3 flex items-center justify-between rounded-xl bg-gold px-4 py-4 text-base font-extrabold text-maroon"
+            >
+              <span>Donate</span>
+              <ArrowRight size={18} />
+            </Link>
           </nav>
         </div>
       )}
@@ -388,6 +405,10 @@ export function Footer() {
 
           <Link className="block" href="/stories">
             Stories
+          </Link>
+
+          <Link className="block text-gold" href="/donate">
+            Donate
           </Link>
         </div>
 
