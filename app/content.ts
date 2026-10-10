@@ -13,6 +13,25 @@ export type Story = {
 
 export const stories: Story[] = [
   {
+  slug: "subang-siquijor-organizational-strengthening-activity-2026",
+  type: "Project Story",
+  title: "Subang - Province of Siquijor Conducts Organizational Strengthening Activity",
+  date: "October 10, 2026",
+  dateValue: "2026-10-10",
+  excerpt:
+    "Subang - Province of Siquijor gathered its volunteers and officers for an organizational strengthening activity focused on onboarding, leadership, volunteerism, community development practice, and team building.",
+  body: [
+    "Subang - Province of Siquijor gathered its volunteers and officers on October 10, 2026, for an Organizational Strengthening Activity in Poblacion Sur, Maria, Siquijor. The activity focused on developing organizational knowledge, strengthening leadership, and fostering collaboration among volunteers.",
+    "The program opened with an onboarding session led by Subang Philippines Executive Vice President Dyn Michael M. Lozana. In the afternoon, he facilitated sessions on leadership and the realities of volunteerism in the Province of Siquijor, encouraging participants to reflect on the challenges and responsibilities involved in community service.",
+    "Subang Philippines Executive President Peter John C. Enorio then facilitated an interactive session on the Fundamentals of Community Development Practice. The session introduced participants to key concepts and approaches to community development, emphasizing the importance of understanding community needs and engaging people meaningfully in the development process.",
+    "The activity also featured a series of team-building exercises facilitated by Subang Philippines officers, providing opportunities for volunteers to strengthen their teamwork and build camaraderie.",
+    "Through this organizational strengthening activity, Subang - Province of Siquijor continues to invest in its volunteers by creating opportunities for learning, leadership development, and collaboration in support of its community development work."
+  ],
+  image: "/assets/stories/subang-siquijor-organizational-strengthening-activity-2026.jpg",
+  category: "Youth Leadership & Participation",
+  partner: "Subang - Province of Siquijor"
+},
+  {
   slug: "subang-gender-responsive-water-security-discussion-2026",
   type: "Project Story",
   title: "Subang Philippines Participates in Discussion on Gender-Responsive Approaches to Water Security",
