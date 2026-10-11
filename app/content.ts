@@ -13,6 +13,25 @@ export type Story = {
 
 export const stories: Story[] = [
   {
+  slug: "kauban-mo-project-outreach-lico-an-maria-siquijor-2026",
+  type: "Project Story",
+  title: "Kauban Mo Project Brings Learning and Volunteerism to Barangay Lico-an",
+  date: "October 11, 2026",
+  dateValue: "2026-10-11",
+  excerpt:
+    "Through the Kauban Mo Project, Subang - Province of Siquijor brought children together for reading and mathematics workshops, interactive games, and a community outreach activity in Barangay Lico-an, Maria.",
+  body: [
+    "Subang - Province of Siquijor conducted a community outreach activity in Barangay Lico-an, Maria, Siquijor, on October 11, 2026, through the Kauban Mo Project. Initiated by Subang - Maria, the activity brought volunteers, children, and families together for a day of learning, play, and community engagement.",
+    "The Kauban Mo Project is spearheaded by Subang Philippines Executive Vice President Dyn Michael M. Lozana, with the October 11 implementation led by Subang - Province of Siquijor Director Rachel Gulahab. The initiative aims to reach communities across the province, encourage volunteerism among young people, and promote active participation in building stronger communities.",
+    "The outreach featured reading and mathematics workshops, interactive games, and the provision of food for participating children. Through these activities, volunteers created opportunities for children to learn, interact, and participate in a welcoming community setting.",
+    "Subang - Province of Siquijor expressed its gratitude to the Barangay Council of Lico-an, Maria, for supporting the initiative and welcoming the volunteers. The organization also recognized the parents and children who participated and contributed to the activity.",
+    "Through the Kauban Mo Project, Subang Philippines seeks to bring volunteerism closer to local communities, demonstrating how time, skills, and shared resources can support children's learning and community participation. By bringing outreach activities to individual barangays, the initiative aims to encourage more young people to take part in meaningful community service."
+  ],
+  image: "/assets/stories/kauban-mo-project-outreach-lico-an-maria-siquijor-2026.jpg",
+  category: "Education & Capacity Building",
+  partner: "Barangay Council of Lico-an, Maria"
+},
+  {
   slug: "subang-siquijor-organizational-strengthening-activity-2026",
   type: "Project Story",
   title: "Subang - Province of Siquijor Conducts Organizational Strengthening Activity",
