@@ -13,6 +13,26 @@ export type Story = {
 
 export const stories: Story[] = [
   {
+  slug: "subang-siquijor-childrens-creativity-science-kimba-2025",
+  type: "Project Story",
+  title: "Subang - Siquijor Brings Creative Learning and Science Activities to Children in Kimba",
+  date: "June 14, 2025",
+  dateValue: "2025-06-14",
+  excerpt:
+    "Subang - Siquijor organized a children's learning activity in Barangay Kimba, Lazi, featuring basic drawing, hands-on science experiments, and group games designed to encourage creativity, curiosity, and teamwork.",
+  body: [
+    "On June 14, 2025, Subang - Siquijor conducted “Inspiring Young Hearts and Minds: A Comprehensive Program for Children's Creativity and Hands-on Experiments” in Barangay Kimba, Lazi, Siquijor. The activity brought children together for interactive learning experiences combining creativity, science, and play.",
+    "The program featured basic drawing workshops, hands-on science experiments, and children's games that encouraged participants to explore, express themselves, and work together. Through these activities, children had opportunities to engage with creative exercises and observe scientific concepts in an accessible, participatory setting.",
+    "The initiative was spearheaded by Niño Sierras, Director of Community Affairs, together with Deputy Director Jannah Omandam. Their team facilitated the activities and helped deliver the program for children in the community.",
+    "Subang - Siquijor extended its appreciation to Hon. Danilo C. Yano and SK Chairperson Vladimir Josh B. Jumantoc for welcoming and supporting the activity. The organization also recognized Hon. Phil Moore Largo and Local Youth Development Officer Jhaye Largo for granting the necessary permission and supporting youth-focused initiatives.",
+    "Ms. Fritzie Omandam was recognized as the activity's major sponsor, whose contribution helped make the program possible.",
+    "Through initiatives such as this, Subang - Siquijor creates opportunities for children to explore their interests, participate in educational activities, and learn alongside their peers. The program reflects the value of collaboration among volunteers, community leaders, and local supporters in making learning activities accessible at the barangay level."
+  ],
+  image: "/assets/stories/subang-siquijor-childrens-creativity-science-kimba-2025.jpg",
+  category: "Education & Capacity Building",
+  partner: "Subang - Siquijor"
+},
+  {
   slug: "kauban-mo-project-outreach-lico-an-maria-siquijor-2026",
   type: "Project Story",
   title: "Kauban Mo Project Brings Learning and Volunteerism to Barangay Lico-an",
