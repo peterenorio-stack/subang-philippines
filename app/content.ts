@@ -13,6 +13,22 @@ export type Story = {
 
 export const stories: Story[] = [
   {
+  slug: "subang-siquijor-international-coastal-cleanup-day-simacolong-2026",
+  type: "Project Story",
+  title: "Subang - Province of Siquijor Joins International Coastal Cleanup Day in Simacolong",
+  date: "September 19, 2026",
+  dateValue: "2026-09-19",
+  excerpt: "Subang - Province of Siquijor volunteers joined an environmental cleanup in Simacolong, Lazi, collecting plastic waste and other litter in observance of International Coastal Cleanup Day.",
+  body: [
+    "Volunteers from Subang - Province of Siquijor gathered in Simacolong, Lazi, Siquijor, on September 19, 2026, to take part in a cleanup activity marking International Coastal Cleanup Day. The initiative brought volunteers together to support a cleaner environment through collective action.",
+    "The activity began at approximately 6:30 AM and was led by Jaynard Cruz, Director of Environmental Affairs. Equipped with gloves, sacks, and cleaning materials, volunteers worked together to collect plastic waste, wrappers, and other litter found around the area.",
+    "Beyond removing waste, the cleanup highlighted the importance of proper waste disposal and shared responsibility for environmental protection. It also provided an opportunity for volunteers to demonstrate how community participation can contribute to cleaner public spaces.",
+    "Through activities like this, Subang - Province of Siquijor continues to promote environmental responsibility and volunteerism. Collective efforts, sustained by responsible waste practices and community participation, can help build cleaner and more resilient communities."
+  ],
+  image: "/assets/stories/subang-siquijor-international-coastal-cleanup-day-simacolong-2026.jpg",
+  category: "Coastal & Marine Action"
+},
+  {
   slug: "subang-siquijor-childrens-creativity-science-kimba-2025",
   type: "Project Story",
   title: "Subang - Siquijor Brings Creative Learning and Science Activities to Children in Kimba",
