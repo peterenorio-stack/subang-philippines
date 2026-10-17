@@ -12,6 +12,23 @@ export type Story = {
 };
 
 export const stories: Story[] = [
+{
+  slug: "subang-coastal-cleanup-poblacion-enrique-villanueva-2026",
+  type: "Project Story",
+  title: "Subang Volunteers and Local Partners Join Coastal Cleanup in Enrique Villanueva",
+  date: "October 17, 2026",
+  dateValue: "2026-10-17",
+  excerpt: "Subang volunteers from across Siquijor joined local authorities and barangay officials in a coastal cleanup in Poblacion, Enrique Villanueva, reinforcing shared responsibility for environmental protection.",
+  body: [
+    "Subang volunteers and local partners gathered in Poblacion, Enrique Villanueva, Siquijor, on October 17, 2026, for a coastal cleanup initiative that began at approximately 7:30 AM. The activity brought together volunteers from different Subang municipal chapters and local authorities to help maintain the cleanliness of the coastal area and promote environmental responsibility.",
+    "The initiative was led by Juliene Fe D. Abordo of Subang - Municipality of Enrique Villanueva, with support from fellow volunteers Roel L. Dagohoy, Jellian Macadildig, and Stella Elaine C. Maglinte of Subang - Municipality of Siquijor, as well as Ian Bahian and Martin Jacob P. Miñao of Subang - Municipality of Maria. Their participation demonstrated how volunteers from different communities can work together toward a shared environmental goal.",
+    "The activity was supported by the Bureau of Fire Protection (BFP), Philippine Coast Guard (PCG), Philippine National Police (PNP), and Poblacion barangay officials. Their participation underscored the value of cooperation among youth volunteers, public safety agencies, and local community leaders in advancing environmental initiatives.",
+    "Subang - Municipality of Enrique Villanueva also recognized the support and cooperation of the Poblacion Barangay Council, the Barangay Captain, the Local Government Unit of Enrique Villanueva, and the Local Youth Development Office. The team likewise expressed appreciation for the assistance and participation of Subang - Municipality of Maria and Subang - Municipality of Siquijor.",
+    "The coastal cleanup reflects Subang Philippines' commitment to environmental sustainability and volunteerism. By bringing together volunteers and community partners, the initiative reinforces the principle that protecting Siquijor's coastal resources requires shared responsibility and continued community participation."
+  ],
+  image: "/assets/stories/subang-coastal-cleanup-poblacion-enrique-villanueva-2026.jpg",
+  category: "Coastal & Marine Action"
+},
   {
   slug: "subang-siquijor-international-coastal-cleanup-day-simacolong-2026",
   type: "Project Story",
