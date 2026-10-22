@@ -16,8 +16,8 @@ export const stories: Story[] = [
   slug: "peter-enorio-selected-top-30-ilace-regional-fellows-2026",
   type: "Volunteer Story",
   title: "Subang Philippines President Selected as Top 30 iLACE 2026 Regional Fellow",
-  date: "October 2026",
-  dateValue: "2026-10-22",
+  date: "September 12, 2026",
+  dateValue: "2026-09-12",
   excerpt: "Subang Philippines National Executive President Peter John C. Enorio has been selected as one of the Top 30 Fellows for the face-to-face regional fellowship of the +iMPACT Leadership Academy for Civic Empowerment (iLACE) 2026.",
   body: [
     "Peter John C. Enorio, National Executive President of Subang Philippines, has been selected as one of the Top 30 Fellows who will advance to the face-to-face regional fellowship of the +iMPACT Leadership Academy for Civic Empowerment (iLACE) 2026. The selection follows the program's online learning phase and recognizes his participation and commitment to civic engagement, leadership, and meaningful community action.",
