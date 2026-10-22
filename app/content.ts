@@ -13,6 +13,23 @@ export type Story = {
 
 export const stories: Story[] = [
 {
+  slug: "peter-enorio-selected-top-30-ilace-regional-fellows-2026",
+  type: "Volunteer Story",
+  title: "Subang Philippines President Selected as Top 30 iLACE 2026 Regional Fellow",
+  date: "October 2026",
+  dateValue: "2026-10-22",
+  excerpt: "Subang Philippines National Executive President Peter John C. Enorio has been selected as one of the Top 30 Fellows for the face-to-face regional fellowship of the +iMPACT Leadership Academy for Civic Empowerment (iLACE) 2026.",
+  body: [
+    "Peter John C. Enorio, National Executive President of Subang Philippines, has been selected as one of the Top 30 Fellows who will advance to the face-to-face regional fellowship of the +iMPACT Leadership Academy for Civic Empowerment (iLACE) 2026. The selection follows the program's online learning phase and recognizes his participation and commitment to civic engagement, leadership, and meaningful community action.",
+    "A youth leader from the Province of Siquijor, Enorio has dedicated years to volunteerism and community development, with initiatives spanning youth empowerment, environmental sustainability, and disaster resilience. Through Subang Philippines, he works with volunteers and community partners to promote civic participation and help build safer, more equitable, sustainable, and resilient communities.",
+    "The regional fellowship will provide selected fellows with opportunities to deepen their learning, strengthen their leadership, and build connections with fellow youth leaders. For Enorio, the next phase offers another opportunity to broaden his understanding of civic leadership and bring relevant insights back to his work with communities and young volunteers.",
+    "His selection reflects the continuing importance of investing in young people who are willing to take part in community problem-solving and public service. As he continues the iLACE journey, Enorio carries forward Subang Philippines' commitment to developing young people as active contributors to inclusive and meaningful community action."
+  ],
+  image: "/assets/stories/peter-enorio-top-30-ilace-regional-fellow-2026.jpg",
+  category: "Youth Leadership & Participation",
+  partner: "+iMPACT Leadership Academy for Civic Empowerment (iLACE)"
+},
+{
   slug: "subang-coastal-cleanup-poblacion-enrique-villanueva-2026",
   type: "Project Story",
   title: "Subang Volunteers and Local Partners Join Coastal Cleanup in Enrique Villanueva",
