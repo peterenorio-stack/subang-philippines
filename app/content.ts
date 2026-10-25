@@ -12,6 +12,28 @@ export type Story = {
 };
 
 export const stories: Story[] = [
+  {
+  slug: "subang-youth-mental-wellness-session-tara-kape-3-larena-2026",
+  type: "Project Story",
+  title: "Subang Philippines President Serves as Resource Speaker on Youth Mental Wellness at Tara Kape 3.0",
+  date: "October 24, 2026",
+  dateValue: "2026-10-24",
+  excerpt: "Subang Philippines National Executive President Peter John C. Enorio served as a resource speaker on mental wellness during Tara Kape 3.0 at El Paraiso Campsite in Bintangan, Larena, Siquijor.",
+  body: [
+    "Young people gathered for an afternoon of reflection, meaningful conversations, and shared learning during Tara Kape 3.0: Paminaw, Pakig-istorya, Pahuway, held on October 24, 2026, at El Paraiso Campsite in Bintangan, Larena, Siquijor. Peter John C. Enorio, National Executive President of Subang Philippines, served as the resource speaker for a mental wellness-aligned session. The activity was led by the Larena Youth Care Organization (LYCO) and the Sangguniang Kabataan Municipal Federation of Larena.",
+    "Designed as an activity-based, four-hour engagement, the session encouraged participants to reflect on their emotional well-being, practice compassionate listening, strengthen supportive relationships, and recognize the importance of rest and seeking help when needed.",
+    "Anchored on the themes Paminaw (listen), Pakig-istorya (talk with one another), and Pahuway (rest), the session emphasized that mental well-being is not solely an individual responsibility. It is also shaped by the relationships and communities that allow young people to feel heard, supported, and understood.",
+    "Rather than relying on a lecture-based format, the session incorporated interactive activities, individual reflection, paired conversations, and small-group discussions. These exercises gave participants opportunities to explore emotional awareness, respond more compassionately to others, and identify practical ways to care for themselves and support their peers.",
+    "The discussions also highlighted the importance of listening without judgment, respecting personal boundaries, and recognizing when a friend may need assistance beyond what peer support can provide. Participants were encouraged to identify trusted people and appropriate support systems they could approach during difficult moments.",
+    "Through this engagement, the session underscored the value of youth-centered conversations that approach mental wellness with empathy, care, and responsibility. It also demonstrated how participatory learning can give young people opportunities to reflect, learn from one another, and explore practical ways to foster more supportive communities.",
+    "Subang - Province of Siquijor volunteer Jellian Macadildig assisted during the engagement, supporting Subang Philippines' participation in the activity. The engagement aligns with the organization's broader commitment to youth development, community well-being, and the creation of safer, more equitable, sustainable, and resilient communities.",
+    "As young people continue to navigate personal, academic, social, and community responsibilities, conversations such as those fostered by Tara Kape 3.0 serve as reminders that listening, reaching out, and taking time to rest are meaningful steps toward building a culture of care.",
+    "Paminaw. Pakig-istorya. Pahuway. Dili ka nag-inusara."
+  ],
+  image: "/assets/stories/subang-tara-kape-3-youth-mental-wellness-larena-2026.jpg",
+  category: "Youth Leadership & Participation",
+  partner: "Larena Youth Care Organization (LYCO); Sangguniang Kabataan Municipal Federation of Larena"
+},
 {
   slug: "peter-enorio-selected-top-30-ilace-regional-fellows-2026",
   type: "Volunteer Story",
