@@ -28,7 +28,7 @@ export const stories: Story[] = [
     "Through this engagement, the session underscored the value of youth-centered conversations that approach mental wellness with empathy, care, and responsibility. It also demonstrated how participatory learning can give young people opportunities to reflect, learn from one another, and explore practical ways to foster more supportive communities.",
     "Subang - Province of Siquijor volunteer Jellian Macadildig assisted during the engagement, supporting Subang Philippines' participation in the activity. The engagement aligns with the organization's broader commitment to youth development, community well-being, and the creation of safer, more equitable, sustainable, and resilient communities.",
     "As young people continue to navigate personal, academic, social, and community responsibilities, conversations such as those fostered by Tara Kape 3.0 serve as reminders that listening, reaching out, and taking time to rest are meaningful steps toward building a culture of care.",
-    "Paminaw. Pakig-istorya. Pahuway. Dili ka nag-inusara."
+    "Paminaw. Pakig-istorya. Pahuway. Wala ka nag-inusara."
   ],
   image: "/assets/stories/subang-tara-kape-3-youth-mental-wellness-larena-2026.jpg",
   category: "Youth Leadership & Participation",
