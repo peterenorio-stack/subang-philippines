@@ -13,6 +13,27 @@ export type Story = {
 
 export const stories: Story[] = [
   {
+  slug: "project-resilient-mental-health-awareness-suicide-prevention-evnhs-2026",
+  type: "Project Story",
+  title: "Project Resilient Promotes Mental Health Awareness and Suicide Prevention at Enrique Villanueva National High School",
+  date: "October 26, 2026",
+  dateValue: "2026-10-26",
+  excerpt: "Project Resilient brought mental health awareness, suicide prevention education, and practical coping strategies to Senior High School students at Enrique Villanueva National High School in Siquijor.",
+  body: [
+    "Senior High School students of Enrique Villanueva National High School (EVNHS) participated in a mental health awareness and suicide prevention activity under Project Resilient on October 26, 2026. Held under the theme You Matter: Building Hope, Strengthening Connections, and Promoting Mental Wellness, the activity brought together students, educators, resource persons, and partner organizations to promote emotional well-being, resilience, and help-seeking among young people.",
+    "The program opened with welcome remarks from Dr. Angie T. Manginsay, delivered on behalf of the Department of Education (DepEd), Schools Division of Siquijor. Participants then took part in a mental health awareness session and film showing organized by Subang - Province of Siquijor, exploring stress, anxiety, emotional struggles, and common misconceptions about mental health. Guided reflection, discussion, and a mental wellness check-in complemented the session.",
+    "The morning sessions covered Understanding Mental Health and Emotional Well-Being and Suicide Prevention, Warning Signs, and Safe Intervention. Resource persons Brycth Dhaira D. Tumarong and Hon. Brylle Deeiah T. Quio discussed the importance of recognizing warning signs, responding with empathy, and encouraging individuals experiencing emotional distress to seek appropriate support.",
+    "In the afternoon, Peter John C. Enorio, Executive President of Subang Philippines, served as the resource speaker for Stress Management, Mindfulness, and Coping Skills. The session introduced practical approaches to managing stress, practicing mindfulness, and developing healthier coping strategies that young people can apply in their daily lives.",
+    "The program continued with a Help-Seeking and Mental Health Referral Orientation led by DepEd Siquijor, with Ma'am Ciarra Gwynn Jimenez serving as resource person. The discussion highlighted the importance of reaching out to trusted individuals, understanding available referral pathways, and seeking professional assistance when needed.",
+    "The activity also featured the Gratitude Wall and You Matter Message Campaign, alongside Move for Mental Wellness. These activities reinforced the importance of connection, encouragement, and collective responsibility in fostering a supportive school environment. Emer Anthony V. Docejo, Senior High School Teacher-in-Charge, delivered the closing remarks.",
+    "Project Resilient is spearheaded by the Office of Board Member Brylle Deeiah T. Quio in collaboration with DepEd Siquijor, Subang Philippines, and Subang - Province of Siquijor. The initiative brings together local leadership, education partners, and youth volunteers to promote mental health awareness and suicide prevention among young people in the province.",
+    "The EVNHS activity emphasized that mental health deserves understanding, emotional struggles call for compassion, and seeking help is an important step toward well-being. Through continued awareness and supportive connections, Project Resilient advances its message that every young person matters and no one should have to face life's challenges alone."
+  ],
+  image: "/assets/stories/project-resilient-evnhs-mental-health-awareness-2026.jpg",
+  category: "Education & Capacity Building",
+  partner: "Office of Board Member Brylle Deeiah T. Quio; DepEd Schools Division of Siquijor; Subang - Province of Siquijor"
+},
+  {
   slug: "subang-youth-mental-wellness-session-tara-kape-3-larena-2026",
   type: "Project Story",
   title: "Subang Philippines President Serves as Resource Speaker on Youth Mental Wellness at Tara Kape 3.0",
