@@ -13,6 +13,28 @@ export type Story = {
 
 export const stories: Story[] = [
   {
+  slug: "project-resilient-mental-health-awareness-suicide-prevention-lnas-2026",
+  type: "Project Story",
+  title: "Project Resilient Advances Mental Health Awareness and Suicide Prevention at Lazi National Agricultural School",
+  date: "October 30, 2026",
+  dateValue: "2026-10-30",
+  excerpt: "Project Resilient brought mental health awareness, suicide prevention education, and practical coping strategies to Grade 9 students of Lazi National Agricultural School in Siquijor.",
+  body: [
+    "Grade 9 students of Lazi National Agricultural School (LNAS) participated in a mental health awareness and suicide prevention activity under Project Resilient on October 30, 2026. Carrying the theme You Matter: Building Hope, Strengthening Connections, and Promoting Mental Wellness, the activity brought together students, resource persons, and partner organizations to strengthen conversations on emotional well-being, resilience, and help-seeking.",
+    "The program opened with welcome remarks from Hon. Myrna B. Ondo, Municipal Councilor of Lazi, followed by a message from Anna Rose M. Cabasag, School Principal of LNAS. The opening program also introduced Project Resilient and its objectives, setting the direction for the day's activities.",
+    "Participants then took part in a mental health awareness session and film showing facilitated by Subang - Province of Siquijor. The session explored stress, anxiety, emotional struggles, and common misconceptions about mental health. Guided reflection, discussion, and a mental wellness check-in facilitated by DepEd Siquijor complemented the activity.",
+    "The morning discussions featured Brycth Dhaira D. Tumarong, Registered Psychometrician, who discussed Understanding Mental Health and Emotional Well-Being, and Felice T. Basong, Registered Psychometrician and Registered Psychologist, who served as resource person for Suicide Prevention, Warning Signs, and Safe Intervention. The sessions highlighted the importance of understanding mental health, recognizing warning signs, and responding to individuals experiencing emotional distress with empathy and appropriate support.",
+    "In the afternoon, Peter John C. Enorio, Executive President of Subang Philippines, served as the resource speaker for Stress Management, Mindfulness, and Coping Skills, together with Subang - Province of Siquijor. The session introduced practical strategies for managing stress, developing healthy coping mechanisms, and cultivating mindfulness when navigating everyday challenges.",
+    "The learning sessions concluded with a Help-Seeking and Mental Health Referral Orientation facilitated by DepEd Siquijor, with Ma'am Ciarra Gwynn Jimenez as resource person. The orientation emphasized the importance of reaching out to trusted individuals, understanding available mental health referral pathways, and accessing appropriate support when needed.",
+    "The program also featured the Gratitude Wall and You Matter Message Campaign, alongside Move for Mental Wellness. These activities provided participants opportunities to express encouragement, strengthen connections, and reinforce the importance of care and support within the school community.",
+    "Project Resilient is spearheaded by the Office of Board Member Brylle Deeiah T. Quio in collaboration with the Department of Education (DepEd) Siquijor, Subang Philippines, and Subang - Province of Siquijor. The initiative brings together local leadership, education partners, and youth volunteers to promote mental health awareness and suicide prevention among young people in the province.",
+    "Following its activities at Enrique Villanueva National High School and Lazi National Agricultural School, Project Resilient continues its commitment to building more informed, compassionate, and supportive school communities across the Province of Siquijor. Its message remains clear: every young person matters, emotional struggles deserve to be heard with compassion, and asking for help is a meaningful step toward well-being."
+  ],
+  image: "/assets/stories/project-resilient-lnas-mental-health-awareness-2026.jpg",
+  category: "Education & Capacity Building",
+  partner: "Office of Board Member Brylle Deeiah T. Quio; Department of Education (DepEd) Siquijor; Subang Philippines; Subang - Province of Siquijor"
+},
+  {
   slug: "project-resilient-mental-health-awareness-suicide-prevention-evnhs-2026",
   type: "Project Story",
   title: "Project Resilient Promotes Mental Health Awareness and Suicide Prevention at Enrique Villanueva National High School",
