@@ -18,7 +18,7 @@ export const stories: Story[] = [
   title: "Subang Philippines Executive President Selected for Oxford-Hosted International Executive Training on Sustainable Economy",
   date: "November 4, 2026",
   dateValue: "2026-11-05",
-  excerpt: "Peter John C. Enorio, Executive President of Subang Philippines and member of the pioneering SIBOL Cohort of the DAP BAGANI Rising Leaders Development Program, has been selected as one of 20 participants in an Oxford-hosted international executive training programme on sustainable economy.",
+  excerpt: "Peter John C. Enorio, Executive President of Subang Philippines and a Fellow of the pioneering SIBOL Cohort of the DAP BAGANI Rising Leaders Development Program, has been selected as one of 20 participants in an Oxford-hosted international executive training programme on sustainable economy.",
   body: [
     "Peter John C. Enorio, Executive President of Subang Philippines, has been selected as one of 20 participants in the BAGANI International Learning Immersion (ILI), earning an opportunity to attend an online executive training programme hosted by the University of Oxford.",
     "Titled Future-Proofing Business and the Economy, the programme is delivered by the Smith School of Enterprise and the Environment (SSEE) under the University of Oxford's School of Geography and the Environment, in partnership with the United Nations Partnership for Action on Green Economy (UN-PAGE).",
