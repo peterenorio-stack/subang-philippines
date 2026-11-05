@@ -13,6 +13,25 @@ export type Story = {
 
 export const stories: Story[] = [
   {
+  slug: "peter-enorio-selected-oxford-international-executive-training-sustainable-economy-2026",
+  type: "Volunteer Story",
+  title: "Subang Philippines Executive President Selected for Oxford-Hosted International Executive Training on Sustainable Economy",
+  date: "November 4, 2026",
+  dateValue: "2026-11-05",
+  excerpt: "Peter John C. Enorio, Executive President of Subang Philippines and member of the pioneering SIBOL Cohort of the DAP BAGANI Rising Leaders Development Program, has been selected as one of 20 participants in an Oxford-hosted international executive training programme on sustainable economy.",
+  body: [
+    "Peter John C. Enorio, Executive President of Subang Philippines, has been selected as one of 20 participants in the BAGANI International Learning Immersion (ILI), earning an opportunity to attend an online executive training programme hosted by the University of Oxford.",
+    "Titled Future-Proofing Business and the Economy, the programme is delivered by the Smith School of Enterprise and the Environment (SSEE) under the University of Oxford's School of Geography and the Environment, in partnership with the United Nations Partnership for Action on Green Economy (UN-PAGE).",
+    "Enorio's selection recognizes his performance and contributions throughout the Development Academy of the Philippines (DAP) BAGANI Rising Leaders Development Program, where he is part of the pioneering SIBOL Cohort. The International Learning Immersion provides selected participants with an opportunity to engage in further executive learning through an international academic programme.",
+    "The executive training programme aims to equip emerging public leaders with knowledge and tools to navigate global economic and environmental transformations. Its curriculum covers global policy developments, scenario forecasting, technological and environmental drivers of change, and strategies for building competitive, resilient, and inclusive economies as countries transition toward a green economy.",
+    "As Executive President of Subang Philippines, Enorio leads a youth-led movement advancing environmental protection, community innovation, and sustainable development. The organization implements initiatives in ecosystem restoration, sustainable agriculture, climate and disaster resilience, and youth participation in community development.",
+    "His selection into the BAGANI International Learning Immersion marks another opportunity to deepen his understanding of sustainable economic transitions and strengthen the connection between leadership development, environmental responsibility, and community-based action."
+  ],
+  image: "/assets/stories/peter-enorio-oxford-bagani-international-learning-immersion-2026.jpg",
+  category: "Youth Leadership & Participation",
+  partner: "Development Academy of the Philippines (DAP); University of Oxford - Smith School of Enterprise and the Environment; United Nations Partnership for Action on Green Economy (UN-PAGE)"
+},
+  {
   slug: "project-resilient-mental-health-awareness-suicide-prevention-lnas-2026",
   type: "Project Story",
   title: "Project Resilient Advances Mental Health Awareness and Suicide Prevention at Lazi National Agricultural School",
