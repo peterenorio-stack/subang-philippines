@@ -13,6 +13,24 @@ export type Story = {
 
 export const stories: Story[] = [
   {
+  slug: "project-happiyas-environmental-learning-youth-volunteerism-logucan-maria-2026",
+  type: "Project Story",
+  title: "Project HappiYas Promotes Environmental Learning and Youth Volunteerism in Barangay Logucan, Maria",
+  date: "November 14, 2026",
+  dateValue: "2026-11-14",
+  excerpt: "Subang - Province of Siquijor brought environmental learning, creative activities, and community fellowship to children in Barangay Logucan, Maria, through Project HappiYas under the Kauban Mo Project.",
+  body: [
+    "Subang - Province of Siquijor implemented Project HappiYas on November 14, 2026, in Barangay Logucan, Maria, bringing together local children for a day of environmental learning, creative engagement, and fellowship. The activity featured an environmental stewardship discussion, arts and crafts workshops, interactive games, and a community outreach component.",
+    "Project HappiYas was conducted under the Kauban Mo Project, spearheaded by Subang Philippines Executive Vice President Dyn Michael M. Lozana. The November 14 implementation was led by Rachel Gulahab, Director of Subang - Province of Siquijor, as part of the initiative's efforts to extend community-based activities across the province, encourage youth volunteerism, and strengthen local participation.",
+    "During the program, volunteers introduced participants to responsible environmental practices through the 3Rs: reduce, reuse, and recycle. The children then took part in hands-on craft activities and group games, while meals were provided to all participants. These activities created opportunities for children to learn, express their creativity, build friendships, and engage with their community in a welcoming environment.",
+    "Subang - Province of Siquijor extends its sincere appreciation to the Barangay Council of Logucan, Maria, for its support and gracious reception of the volunteers. The organization also recognizes the parents and children whose participation contributed to the implementation of the activity.",
+    "Through Project HappiYas, Subang - Province of Siquijor continues to bring volunteerism closer to local communities by creating opportunities for young people to share their time, skills, and resources in service of others. As part of the Kauban Mo Project, the initiative demonstrates how community outreach can support children's learning, encourage environmental responsibility, and strengthen meaningful participation at the barangay level."
+  ],
+  image: "/assets/stories/project-happiyas-environmental-learning-logucan-maria-2026.jpg",
+  category: "Community Development",
+  partner: "Kauban Mo Project; Barangay Council of Logucan, Maria"
+},
+  {
   slug: "subang-golden-bamboo-propagation-activity-san-juan-siquijor-2026",
   type: "Project Story",
   title: "Subang Philippines Leads Golden Bamboo Propagation Activity in San Juan, Siquijor",
