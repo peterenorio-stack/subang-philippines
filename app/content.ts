@@ -13,6 +13,24 @@ export type Story = {
 
 export const stories: Story[] = [
   {
+  slug: "subang-golden-bamboo-propagation-activity-san-juan-siquijor-2026",
+  type: "Project Story",
+  title: "Subang Philippines Leads Golden Bamboo Propagation Activity in San Juan, Siquijor",
+  date: "November 19, 2026",
+  dateValue: "2026-11-19",
+  excerpt: "Subang Philippines conducted a hands-on golden bamboo propagation activity in Cansayang, San Juan, Siquijor, providing Province of Siquijor volunteers with practical experience in plant propagation and environmental stewardship.",
+  body: [
+    "Subang Philippines spearheaded a hands-on golden bamboo (Bambusa vulgaris 'Vittata') propagation activity on November 19, 2026, in Cansayang, San Juan, Siquijor. The initiative engaged volunteers from Subang - Province of Siquijor in practical environmental education and community-based ecological action.",
+    "Led by Subang Philippines Executive President Peter John C. Enorio, the activity involved volunteers Joshua Hinojales, Jellian Macadildig, Venice Dawn D. Girasol, Shem Israel Losdoc, and Roel L. Dagohoy. Through culm cutting propagation, the participants gained firsthand experience in preparing and propagating bamboo planting materials while developing practical knowledge and skills in plant propagation.",
+    "Beyond the technical activity, the initiative provided an opportunity for volunteers to learn more about bamboo cultivation and its potential contributions to environmental sustainability. The experience also encouraged greater appreciation of practical, community-level participation in environmental initiatives.",
+    "Subang Philippines extends its sincere appreciation to Mr. Joshua Hinojales for generously providing the planting materials and propagation site, as well as for his invaluable assistance in making the activity possible.",
+    "Conducted in line with the 2026 Climate Change Consciousness Week and the observance of November as National Environmental Awareness Month, the activity reinforces Subang Philippines' commitment to advancing environmental awareness through meaningful, community-driven initiatives.",
+    "Through practical learning and volunteer engagement, Subang Philippines continues to encourage communities, particularly young people, to take an active role in environmental stewardship and in building safer, more sustainable, and climate-resilient communities."
+  ],
+  image: "/assets/stories/subang-golden-bamboo-propagation-san-juan-siquijor-2026.jpg",
+  category: "Environmental Sustainability"
+},
+  {
   slug: "peter-enorio-selected-oxford-international-executive-training-sustainable-economy-2026",
   type: "Volunteer Story",
   title: "Subang Philippines Executive President Selected for Oxford-Hosted International Executive Training on Sustainable Economy",
