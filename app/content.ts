@@ -12,6 +12,27 @@ export type Story = {
 };
 
 export const stories: Story[] = [
+{
+  slug: "project-kalinga-childrens-rights-welfare-candanay-sur-siquijor-2026",
+  type: "Project Story",
+  title: "Subang - Municipality of Siquijor Upholds Children's Rights and Welfare Through Project KALINGA in Candanay Sur",
+  date: "November 22, 2026",
+  dateValue: "2026-11-22",
+  excerpt: "In celebration of National Children's Month 2026, Subang - Municipality of Siquijor conducted Project KALINGA in Barangay Candanay Sur, bringing children together through activities promoting their rights, welfare, safety, and well-being.",
+  body: [
+    "In celebration of National Children's Month 2026, Subang - Municipality of Siquijor successfully conducted Project KALINGA (Kabataan Alagaan, Lingapin at Gabayan) on November 22, 2026, in Barangay Candanay Sur, Siquijor, Siquijor. The initiative provided children with an opportunity to learn, participate, and engage in activities centered on their rights, welfare, and protection.",
+    "Anchored on this year's National Children's Month theme, “Manindigan! Tumugon at Kumalinga: Sa Batang Handa, Ligtas ang Bansa,” the activity featured storytelling, arts and crafts, interactive games, and an educational discussion designed to make learning about children's rights accessible and engaging.",
+    "Representatives of the Siquijor Municipal Police Station (SMPS) facilitated an educational discussion on children's rights, safety, and protection, sharing relevant information to help the children better understand their rights and the importance of keeping themselves safe.",
+    "The activity was led by Team Leader Roel L. Dagohoy, together with volunteers Venice Dawn D. Girasol, Jellian Macadildig, Shem Israel Losdoc, Joshua Hinojales, Precious Lorraine P. Rosario, Czarina Mae J. Dela Pena, Stella Elaine C. Maglinte, Angel S. Dela Pena, and Laiza B. Sucuano.",
+    "Subang Philippines Executive President Peter John C. Enorio and Vice President for Community Affairs John Blair More J. Omandam also attended and extended their support to the implementation of the initiative.",
+    "The activity was supported by the Office of Board Member Brylle Deeiah T. Quio and PPSK President Christian Ian B. Cariño. Subang - Municipality of Siquijor also extends its appreciation to the Barangay Council of Candanay Sur, represented by SK Chairperson Alexis Adan and Councilor Junnah Marie L. Elnar, for their assistance throughout the activity.",
+    "The gathering concluded with a shared meal, providing an opportunity for the children, volunteers, and community partners to connect and celebrate the importance of creating safe, caring, and supportive spaces for every child.",
+    "Through Project KALINGA, Subang - Municipality of Siquijor continues to promote children's rights and welfare through community-based learning and meaningful youth volunteerism, recognizing that protecting children requires the shared commitment of families, communities, and institutions."
+  ],
+  image: "/assets/stories/project-kalinga-childrens-rights-candanay-sur-siquijor-2026.jpg",
+  category: "Youth Leadership & Participation",
+  partner: "Office of Board Member Brylle Deeiah T. Quio; PPSK President Christian Ian B. Cariño; Barangay Council of Candanay Sur; Siquijor Municipal Police Station"
+},
   {
   slug: "project-happiyas-environmental-learning-youth-volunteerism-logucan-maria-2026",
   type: "Project Story",
