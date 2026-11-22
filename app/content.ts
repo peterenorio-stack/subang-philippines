@@ -13,6 +13,26 @@ export type Story = {
 
 export const stories: Story[] = [
 {
+  slug: "project-happiyas-environmental-learning-waste-management-sawang-maria-2026",
+  type: "Project Story",
+  title: "Project HappiYas Brings Environmental Learning and Proper Waste Management to Children in Barangay Sawang, Maria",
+  date: "November 21, 2026",
+  dateValue: "2026-11-21",
+  excerpt: "Through interactive games and creative activities, Project HappiYas introduced children in Barangay Sawang, Maria, to environmental responsibility and proper waste segregation in celebration of National Children's Month 2026.",
+  body: [
+    "Subang - Municipality of Maria brought environmental awareness, creativity, and meaningful engagement to children in Barangay Sawang through Project HappiYas on November 21, 2026. The initiative, implemented under the Kauban Mo Project, formed part of the organization's efforts to celebrate National Children's Month 2026 through community-based learning and youth volunteerism.",
+    "Led by its local volunteer team, the activity featured interactive games and creative activities designed to make learning enjoyable and accessible to children while encouraging friendship, participation, and environmental responsibility.",
+    "One of the highlights was “Dula-Dula sa Basura,” an interactive learning activity that introduced children to the proper identification and segregation of biodegradable and non-biodegradable waste. Through play, participants learned the importance of proper waste disposal and how irresponsible waste management can affect community cleanliness and public health.",
+    "The activity concluded with a shared snack time, giving the children and volunteers an opportunity to connect, strengthen friendships, and enjoy a meaningful afternoon together.",
+    "Subang - Municipality of Maria extends its appreciation to Municipal Mayor Hon. Roselyn Asok for her financial assistance and support in making the initiative possible. The team also acknowledges Barangay Captain Hon. Regie Lorejo and the entire Barangay Council of Sawang for their warm welcome and cooperation.",
+    "Through Project HappiYas, Subang - Municipality of Maria continues to bring learning beyond the classroom and closer to children in local communities. By integrating environmental education with creative and participatory activities, the initiative encourages children to become more responsible, informed, and socially aware members of their communities.",
+    "The activity also reflects the continuing commitment of Subang Philippines to strengthen local volunteerism, build community partnerships, and create meaningful opportunities for children to learn, connect, and grow."
+  ],
+  image: "/assets/stories/project-happiyas-environmental-learning-waste-management-sawang-maria-2026.jpg",
+  category: "Education & Capacity Building",
+  partner: "Kauban Mo Project; Municipal Government of Maria; Barangay Council of Sawang"
+},
+{
   slug: "project-kalinga-childrens-rights-welfare-candanay-sur-siquijor-2026",
   type: "Project Story",
   title: "Subang - Municipality of Siquijor Upholds Children's Rights and Welfare Through Project KALINGA in Candanay Sur",
