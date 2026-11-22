@@ -13,6 +13,27 @@ export type Story = {
 
 export const stories: Story[] = [
 {
+  slug: "kiddie-joy-childrens-month-parol-making-lomangcapan-enrique-villanueva-2026",
+  type: "Project Story",
+  title: "Subang - Municipality of Enrique Villanueva Brings Children Together Through Kiddie Joy in Barangay Lomangcapan",
+  date: "November 21, 2026",
+  dateValue: "2026-11-21",
+  excerpt: "Through interactive games, creative activities, and a parol-making session, Subang - Municipality of Enrique Villanueva brought children together for an afternoon of fun, friendship, and meaningful fellowship in Barangay Lomangcapan.",
+  body: [
+    "In celebration of National Children's Month 2026, Subang - Municipality of Enrique Villanueva conducted Kiddie Joy: A Day of Fun and Friendship on November 21, 2026, gathering children in Barangay Lomangcapan for an afternoon of interactive games, creative activities, and meaningful fellowship.",
+    "Led by its local volunteer team, the initiative sought to create a safe and welcoming space where children could build friendships, express themselves, explore their creativity, and experience the value of community participation. Beyond recreation, the activity highlighted how simple, thoughtfully prepared initiatives can make community engagement more accessible to children.",
+    "One of the highlights was the Parol-Making Activity, where children created their own Christmas lanterns using simple and readily available materials. The hands-on activity allowed participants to explore their creativity while becoming more familiar with a cherished Filipino Christmas tradition. It also demonstrated how meaningful learning experiences can be created without expensive materials or elaborate facilities.",
+    "The program concluded with a shared snack time, giving the children and volunteers an opportunity to enjoy one another's company and strengthen the friendships formed throughout the afternoon.",
+    "The activity was made possible through the collective effort and dedication of Subang - Municipality of Enrique Villanueva's local volunteers. Their initiative demonstrated how youth volunteerism can create meaningful experiences through simple, community-based efforts that directly engage children and families.",
+    "Subang - Municipality of Enrique Villanueva extends its sincere appreciation to Hon. Gerold V. Pal-ing, Vice Mayor of the Municipality of Enrique Villanueva, for the financial sponsorship that supported the procurement of materials, supplies, and other necessities for the activity. The team also acknowledges the Barangay Captain of Lomangcapan and the Barangay Council for their warm reception and support, as well as the personnel of the Enrique Villanueva Municipal Police Station for their assistance and cooperation.",
+    "More than a Children's Month activity, Kiddie Joy reflects the value of local initiative, collective action, and community-centered volunteerism. Through opportunities for children to learn, create, play, and connect, Subang - Municipality of Enrique Villanueva continues to bring meaningful activities closer to the communities it serves.",
+    "The initiative reinforces a simple yet important reminder: meaningful community service does not always begin with grand programs. Sometimes, it begins with a simple gathering, a handmade parol, a shared snack, and volunteers who choose to make children feel valued."
+  ],
+  image: "/assets/stories/kiddie-joy-childrens-month-parol-making-lomangcapan-enrique-villanueva-2026.jpg",
+  category: "Community Development",
+  partner: "Office of the Vice Mayor of Enrique Villanueva; Barangay Council of Lomangcapan; Enrique Villanueva Municipal Police Station"
+},
+{
   slug: "project-happiyas-environmental-learning-waste-management-sawang-maria-2026",
   type: "Project Story",
   title: "Project HappiYas Brings Environmental Learning and Proper Waste Management to Children in Barangay Sawang, Maria",
