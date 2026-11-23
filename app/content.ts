@@ -13,6 +13,28 @@ export type Story = {
 
 export const stories: Story[] = [
 {
+  slug: "subang-executive-president-challenges-student-leaders-lead-beyond-organizational-positions-2026",
+  type: "Press Release",
+  title: "Subang Philippines Executive President Challenges Student Leaders to Lead Beyond Organizational Positions",
+  date: "November 5, 2026",
+  dateValue: "2026-11-05",
+  excerpt: "Subang Philippines Executive President Peter John C. Enorio challenged more than 150 student leaders at Laguna State Polytechnic University - Siniloan Campus to embrace leadership beyond organizational positions through ethical service, community engagement, and sustainable development.",
+  body: [
+    "Subang Philippines Executive President Peter John C. Enorio brought a message of transformational leadership and sustainable development to more than 150 student leaders during the Ikalawang PAHAYAG of Laguna State Polytechnic University (LSPU) - Siniloan Campus on November 5, 2026. Serving as keynote speaker, Enorio delivered a session titled “Charting the Course Beyond the Organization: Transformational Leadership for Sustainable Development,” encouraging young leaders to look beyond organizational positions and recognize leadership as a continuing responsibility to people, communities, and future generations.",
+    "The session explored the distinction between holding a leadership position and genuinely practicing leadership. Enorio emphasized that positions may provide authority and recognition, but meaningful leadership is built through trust, integrity, accountability, and service. He challenged participants to reflect on how they exercise their responsibilities, make decisions, and uphold ethical standards, particularly when doing what is right becomes difficult or unpopular.",
+    "Moving beyond the usual concerns of organizational management, the discussion encouraged participants to understand the communities they serve, identify underlying issues, and evaluate the lasting impact of their initiatives. Enorio emphasized that leadership should not be measured solely by the number of activities conducted or outputs produced, but also by the meaningful and sustainable changes these efforts create.",
+    "The keynote also examined the relationship between development and environmental responsibility. Drawing from observations of infrastructure and renewable energy developments in Laguna, Enorio encouraged student leaders to critically assess development initiatives by looking at their social and environmental implications, the participation of affected communities, and the accountability of those responsible for implementation. He stressed that renewable energy and infrastructure projects must be evaluated not only through their intended benefits but also through their effects on people, ecosystems, livelihoods, and future generations.",
+    "Another key discussion focused on transformational leadership as a means of developing people, strengthening institutions, encouraging critical thinking, and building organizations that can sustain their work beyond the tenure of individual leaders. Through reflective exercises and practical leadership scenarios, participants examined their own leadership practices and identified areas for improvement.",
+    "One of the session's activities challenged participants to identify the leadership practices they needed to stop, start, continue, and contribute. This exercise encouraged them to translate personal reflection into concrete commitments and consider how their actions could create value beyond their respective organizations.",
+    "Through the keynote session, Enorio underscored that leadership is not defined by the position one occupies, but by the responsibility one accepts and the difference one makes. The discussion encouraged student leaders to become more conscious of their influence, remain accountable to the people they serve, and pursue initiatives that respond to real community needs.",
+    "The engagement contributes to the Sustainable Development Goals, particularly SDG 4 (Quality Education) through leadership learning and personal development; SDG 11 (Sustainable Cities and Communities) through community-centered approaches to development; SDG 16 (Peace, Justice and Strong Institutions) through ethical leadership, accountability, and responsible governance; and SDG 17 (Partnerships for the Goals) through shared responsibility and collaboration in advancing sustainable development.",
+    "Through opportunities such as this, Subang Philippines continues to advance its commitment to youth leadership and meaningful civic participation, encouraging young people to move beyond positions and become responsible contributors to safer, equitable, sustainable, and resilient communities."
+  ],
+  image: "/assets/press/subang-executive-president-ikalawang-pahayag-lspu-siniloan-2026.jpg",
+  category: "Youth Leadership & Participation",
+  partner: "Laguna State Polytechnic University (LSPU) - Siniloan Campus"
+},
+{
   slug: "kiddie-joy-childrens-month-parol-making-lomangcapan-enrique-villanueva-2026",
   type: "Project Story",
   title: "Subang - Municipality of Enrique Villanueva Brings Children Together Through Kiddie Joy in Barangay Lomangcapan",
